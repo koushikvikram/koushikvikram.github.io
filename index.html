@@ -102,7 +102,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSceNkLA_vQFBC94qOuNIx9O81dkDD0hBBuCGdh1m5EtVifK0A/formResponse?">
+								<form name="gform", id="gform", method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSceNkLA_vQFBC94qOuNIx9O81dkDD0hBBuCGdh1m5EtVifK0A/formResponse?", target="hidden_iframe", onsubmit="submitted-true;">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">NAME</label>
@@ -122,6 +122,8 @@
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
+                                
+                                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                                 
 							</section>
 						</div>
@@ -153,6 +155,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            
+            <!--Thank you message after submitting form-->
+            <script src="assets/js/jquery.min.js"></script>
+            <script type="text/javascript">var submitted=false;</script>
+            <script type="text/javascript">
+            $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Thank you for your message!');
+            });
+            </script>
 
 	</body>
 </html>
