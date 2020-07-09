@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Koushik Vikram's Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+        <link href="../../assets/css/prism.css", rel="stylesheet">        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	
+    <body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../index.html" class="logo"><strong>Koushik Vikram</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="../../index.html">Home</a></li>
+							<li><a href="../../about.html">About me</a></li>
+							<li><a href="../../index.html#main">My Work</a></li>
+							<li><a href="#footer">Let's Connect</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="../../index.html#contact" class="button primary fit">Contact Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header>
+										<h1>Calculus By Inspection</h1>
+									</header>
+                                    
+                                    <p>In Mathematics, doing things by "inspection" means doing things mentally just by looking at the problem. i.e. not calculating step by step with pen and paper. </p>
+                                    
+                                    <hr>
+                                    
+                                    <!--Section one-->
+                                    <h2>A flat line</h2>
+                                    
+                                    <p>Let's consider an example of a car travelling at a <em><b>constant</b></em> speed of 30 miles per hour. We'll use 3 mathematical tools to visualize this and then establish how the car's speed changes with time. </p>
+                                    
+                                    <h3> Graph of the car's speed over time </h3>
+                                    <img src="images/inspection_straight_line.JPG" alt="Straight Line">
+                                    
+                                    <p></p>
+                                    
+                                    <header>
+										<h3>Table showing the car's speed over time</h3>
+									</header>
+                                    
+                                    <table style="width:50%">
+                                            <tr>
+                                                <th> time &nbsp; (minutes) </th> <th> speed &nbsp; (miles/hour) </th>
+                                            </tr>
+                                            <tr>
+                                                <td> 0.0 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 0.5 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 1.0 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 1.5 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2.0 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2.5 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 3.0 </td> <td> 30 </td>
+                                            </tr>
+                                    </table>
+                                    
+                                    <h3> Equation of the car's speed over time $$s = 30 $$</h3>
+                                    
+                                    <p> Upon inspection (i.e. just by looking at the graph, table and equation), we can see that the car's speed is 30 miles/hour for all values of time i.e. it's speed <b><em>doesn't change</em></b> over time. To put it another way, the rate of change of speed over time is <b><em>zero</em></b>. Mathematically, this can be written as $${ds \over dt} = 0$$ </p>
+                                    
+                                    <h3>Dependence</h3>
+                                    <p> The <b><em>derivative</em></b> also indicates how one variable <b><em>depends</em></b> on the other variable. If the derivate is <b><em>zero</em></b>, it means there is no dependency between the variables and both the variables are <b><em>independent</em></b> of one another. </p>
+                                    
+                                    <hr>
+                                    
+                                    <!--Section two-->
+                                    <h2>A sloped straight line and it's gradient</h2>
+                                    
+                                    <p>Let's consider another example of an accelerating car. This means the car's speed increases over time. </p>
+                                    
+                                    <h3> Graph of the car's speed over time </h3>
+                                    <img src="images/inspection_slope.JPG" alt="Straight Line">
+                                    
+                                    <p></p>
+                                    
+                                    <header>
+										<h3>Table showing the car's speed over time</h3>
+									</header>
+                                    
+                                    <table style="width:50%">
+                                            <tr>
+                                                <th> time &nbsp; (minutes) </th> <th> speed &nbsp; (miles/hour) </th>
+                                            </tr>
+                                            <tr>
+                                                <td> 0.0 </td> <td> 30 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 0.5 </td> <td> 35 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 1.0 </td> <td> 40 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 1.5 </td> <td> 45 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2.0 </td> <td> 50 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2.5 </td> <td> 55 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 3.0 </td> <td> 60 </td>
+                                            </tr>
+                                    </table>
+                                    
+                                    <h3> Equation of the car's speed over time $$s = 30 + 10t$$</h3>
+                                    
+                                    <p> Upon inspection, we can see that the car's speed changes by <b><em>+5 mph every 0.5 minute(s)</em></b>. Mathematically, it can be written as $${ds \over dt} = {5 \over 0.5}$$</p> 
+                                    <p> It's always good to have a "1" in the denominator. So, we can either multiply the numerator and denominator by 2 or inspect the change in speed over 1 minute and get the rate of change of the car's speed over time as $${ds \over dt} = 10$$ </p>
+                                    
+                                    <h3>Dependence</h3>
+                                    <p> Since the <b><em>derivative is not zero</em></b>, there is a <b><em>dependency</em></b> between the variables. </p>
+                                    
+                                    <h3> Gradient </h3>
+                                    <p> So far, we've arrived at the derivative by inspecting the graph and the table. Now, let's find out the derivative by looking at the equation. The equation of a straight line is $$y = mx + c$$ where </p>
+                                    <ul>
+                                        <li><b><em>m</em></b> is the <b><em>slope of the line</em></b></li>
+                                        <li><b><em>c</em></b> is the <b><em>y-intercept</em></b> (i.e. the starting value of y)</li>
+                                    </ul>
+                                    
+                                    <p> The mathematical term for the slope of the line is <b><em>gradient</em></b>. It tells us how the value of y <b><em>changes</em></b> as the value of x changes. We know that "rate of change" is also called <b><em> derivate</em></b>. Thus the <b><em>derivative of a sloped line is it's gradient</em></b> (it's <b><em>m value</em></b>/it's <b><em>slope</em></b>). </p>
+                                    
+                                    <p> The equation of our sloped straight line is \(s = 30 + 10t\). Rearranging the right hand side of our equation gives us $$s = 10t + 30$$</p>
+                                    
+                                    Here
+                                    <ul>
+                                        <li>m = 10</li>
+                                        <li>c = 30</li>
+                                    </ul>
+                                    
+                                    <p> Comparing this equation with the equation of a line, we can conclude that it's derivative is $${ds \over dt} = 10$$ which is the same as the result we arrived at earlier.</p>
+                                    
+                                    <p>Let's quickly summarize what we've learned before moving on to curved lines.</p>
+                                    
+                                    <hr>
+                                    
+                                    <h2>Summary</h2>
+                                    
+                                    <ul>
+                                        <li>Derivative represents the rate of change of one variable with respect to the other. </li>
+                                        <li>Derivative also tells us the dependence between variables.</li>
+                                        <li>The derivative of a flat line is zero.</li>
+                                        <li>A derivative of zero indicates independence between the variables involved.</li>
+                                        <li>The derivative of a sloped straight line is a constant(non-zero), which means there is a dependence between the variables.</li>
+                                        <li>It's also known as gradient, which is the slope of the line.</li>
+                                        <li>Derivative = rate of change = gradient = slope.</li>
+                                    </ul>
+                                    
+                                    Read next: &nbsp; <a href="tangent.html"> Calculus By Hand And Calculus Not By Hand - Tangent, Secant </a> <br>
+                                    
+                                    <hr>
+                                    
+                                    Original Material: &nbsp; <a href="https://www.amazon.com/Make-Your-Own-Neural-Network-ebook/dp/B01EER4Z4G/" target="_blank"> Make Your Own Neural Network</a>
+                                    
+								</div>
+                                
+                                    
+							</section>
+                        
+                        
+                </div>
+
+                
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/koushikvikram" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/koushikvikram" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/koushikvikram" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="mailto:koushikvikram91@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+            <script src="../../assets/js/prism.js"></script>
+
+	</body>
+</html>
