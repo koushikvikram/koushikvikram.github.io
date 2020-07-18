@@ -52,23 +52,27 @@
 										<h1>Calculus By Inspection</h1>
 									</header>
                                     
-                                    <p>In Mathematics, doing things by "inspection" means doing things mentally just by looking at the problem. i.e. not calculating step by step with pen and paper. </p>
+                                    <p>
+                                        In Mathematics, doing things by "inspection" means doing things mentally just by looking at the problem. i.e. not calculating step by step with pen and paper. 
+                                    </p>
                                     
                                     <hr>
                                     
                                     <!--Section one-->
                                     <h2>A flat line</h2>
                                     
-                                    <p>Let's consider an example of a car travelling at a <em><b>constant</b></em> speed of 30 miles per hour. We'll use 3 mathematical tools to visualize this and then establish how the car's speed changes with time. </p>
+                                    <p>
+                                        Let's consider an example of a car travelling at a <em><b>constant</b></em> speed of 30 miles per hour. We'll use 3 mathematical tools to visualize this and then establish how the car's speed changes with time. 
+                                    </p>
                                     
                                     <h3> Graph of the car's speed over time </h3>
                                     <img src="images/inspection_straight_line.JPG" alt="Straight Line">
                                     
-                                    <p></p>
+                                    <p> 
+                                        <b><em>Inspection:</em></b> For all points along time, the graph stays at speed=30 mph.
+                                    </p>
                                     
-                                    <header>
-										<h3>Table showing the car's speed over time</h3>
-									</header>
+                                    <h3>Table showing the car's speed over time</h3>
                                     
                                     <table style="width:50%">
                                             <tr>
@@ -97,24 +101,42 @@
                                             </tr>
                                     </table>
                                     
+                                    <p> 
+                                        <b><em> Inspection: </em></b>The values in the "time" column keep changing but the ones is speed are same throughout. 
+                                    </p>
+                                    
                                     <h3> Equation of the car's speed over time $$s = 30 $$</h3>
                                     
-                                    <p> Upon inspection (i.e. just by looking at the graph, table and equation), we can see that the car's speed is 30 miles/hour for all values of time i.e. it's speed <b><em>doesn't change</em></b> over time. To put it another way, the rate of change of speed over time is <b><em>zero</em></b>. Mathematically, this can be written as $${ds \over dt} = 0$$ </p>
+                                    <p> 
+                                        <b><em> Inspection: </em></b>The equation doesn't have a "t" variable. So, speed is 30 mph throughout. 
+                                    </p>
+                                    
+                                    <p> 
+                                        We can see that the car's speed is 30 miles/hour for all values of time i.e. it's speed <b><em>doesn't change</em></b> over time. To put it another way, the rate of change of speed over time is <b><em>zero</em></b>. <br> 
+                                        Mathematically, this can be written as $${ds \over dt} = 0$$ 
+                                    </p>
                                     
                                     <h3>Dependence</h3>
-                                    <p> The <b><em>derivative</em></b> also indicates how one variable <b><em>depends</em></b> on the other variable. If the derivate is <b><em>zero</em></b>, it means there is no dependency between the variables and both the variables are <b><em>independent</em></b> of one another. </p>
+                                    
+                                    <p> 
+                                        The <b><em>derivative</em></b> also indicates how one variable <b><em>depends</em></b> on the other variable. If the derivate is <b><em>zero</em></b>, it means there is no dependency between the variables and both the variables are <b><em>independent</em></b> of one another. 
+                                    </p>
                                     
                                     <hr>
                                     
                                     <!--Section two-->
                                     <h2>A sloped straight line and it's gradient</h2>
                                     
-                                    <p>Let's consider another example of an accelerating car. This means the car's speed increases over time. </p>
+                                    <p>
+                                        Let's consider another example of an accelerating car. This means the car's speed increases over time. 
+                                    </p>
                                     
                                     <h3> Graph of the car's speed over time </h3>
                                     <img src="images/inspection_slope.JPG" alt="Straight Line">
                                     
-                                    <p></p>
+                                    <p>
+                                        <b><em>Inspection:</em></b> The line touches 30, 40, 50, 60 mph at time 0, 1, 2, 3 minutes. 
+                                    </p>
                                     
                                     <header>
 										<h3>Table showing the car's speed over time</h3>
@@ -147,24 +169,49 @@
                                             </tr>
                                     </table>
                                     
+                                    <p>
+                                        <b><em>Inspection:</em></b> Between consecutive rows, the difference in speed is 5 mph and the difference in time is 0.5 minutes.
+                                    </p>
+                                    
                                     <h3> Equation of the car's speed over time $$s = 30 + 10t$$</h3>
                                     
-                                    <p> Upon inspection, we can see that the car's speed changes by <b><em>+5 mph every 0.5 minute(s)</em></b>. Mathematically, it can be written as $${ds \over dt} = {5 \over 0.5}$$</p> 
-                                    <p> It's always good to have a "1" in the denominator. So, we can either multiply the numerator and denominator by 2 or inspect the change in speed over 1 minute and get the rate of change of the car's speed over time as $${ds \over dt} = 10$$ </p>
+                                    <p>
+                                        <b><em>Inspection:</em></b> Plugging in t=1, t=2 and t=3, we get s=40, s=50, s=60 respectively. 
+                                    </p>
+                                    
+                                    <p> 
+                                        Upon inspection, we can see that the car's speed changes by <b><em>+5 mph every 0.5 minute(s)</em></b>. Mathematically, it can be written as $${ds \over dt} = {5 \over 0.5}$$
+                                    </p> 
+                                    
+                                    <p> 
+                                        It's always good to have a "1" in the denominator. To make the denominator "1", we can either multiply the numerator and denominator by 2 or inspect the change in speed over 1 minute and get the rate of change of the car's speed over time as $${ds \over dt} = 10$$ 
+                                    </p>
                                     
                                     <h3>Dependence</h3>
-                                    <p> Since the <b><em>derivative is not zero</em></b>, there is a <b><em>dependency</em></b> between the variables. </p>
+                                    
+                                    <p> 
+                                        Since the <b><em>derivative is not zero</em></b>, there is a <b><em>dependency</em></b> between the variables. 
+                                    </p>
                                     
                                     <h3> Gradient </h3>
-                                    <p> So far, we've arrived at the derivative by inspecting the graph and the table. Now, let's find out the derivative by looking at the equation. The equation of a straight line is $$y = mx + c$$ where </p>
+                                    
+                                    <p> 
+                                        So far, we've arrived at the derivative by inspecting the graph and the table. Now, let's find out the derivative by looking at the equation. The equation of a straight line is $$y = mx + c$$ where 
+                                    </p>
+                                    
                                     <ul>
                                         <li><b><em>m</em></b> is the <b><em>slope of the line</em></b></li>
                                         <li><b><em>c</em></b> is the <b><em>y-intercept</em></b> (i.e. the starting value of y)</li>
                                     </ul>
                                     
-                                    <p> The mathematical term for the slope of the line is <b><em>gradient</em></b>. It tells us how the value of y <b><em>changes</em></b> as the value of x changes. We know that "rate of change" is also called <b><em> derivate</em></b>. Thus the <b><em>derivative of a sloped line is it's gradient</em></b> (it's <b><em>m value</em></b>/it's <b><em>slope</em></b>). </p>
+                                    <p> 
+                                        The mathematical term for the slope of the line is <b><em>gradient</em></b>. The gradient tells us how the value of y <b><em>changes</em></b> as the value of x changes. <br>
+                                        We know that "rate of change" is also called <b><em> derivate</em></b>. Thus the <b><em>derivative of a sloped line is it's gradient</em></b> (it's <b><em>m value</em></b>/it's <b><em>slope</em></b>)
+                                    </p>
                                     
-                                    <p> The equation of our sloped straight line is \(s = 30 + 10t\). Rearranging the right hand side of our equation gives us $$s = 10t + 30$$</p>
+                                    <p> 
+                                        The equation of our sloped straight line is \(s = 30 + 10t\). Rearranging the right hand side of our equation gives us $$s = 10t + 30$$
+                                    </p>
                                     
                                     Here
                                     <ul>
@@ -172,9 +219,13 @@
                                         <li>c = 30</li>
                                     </ul>
                                     
-                                    <p> Comparing this equation with the equation of a line, we can conclude that it's derivative is $${ds \over dt} = 10$$ which is the same as the result we arrived at earlier.</p>
+                                    <p> 
+                                        Comparing this equation with the equation of a line, we can conclude that it's derivative is $${ds \over dt} = 10$$ which is the same as the result we arrived at earlier.
+                                    </p>
                                     
-                                    <p>Let's quickly summarize what we've learned before moving on to curved lines.</p>
+                                    <p>
+                                        Let's summarize what we've learned before moving on to curved lines.
+                                    </p>
                                     
                                     <hr>
                                     
@@ -214,6 +265,7 @@
 								<li><a href="https://www.linkedin.com/in/koushikvikram" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
                                 <li><a href="mailto:koushikvikram91@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
+                            
 							<ul class="copyright">
 								<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 							</ul>

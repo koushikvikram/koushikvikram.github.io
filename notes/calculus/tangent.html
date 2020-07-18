@@ -54,7 +54,179 @@
                                     
                                     <p> Previous: &nbsp; <a href="inspection.html" target="_blank"> Calculus By Inspection - Flat Line, Sloped Straight Line, Gradient </a> </p>
                                     
-                                    <p>In the previous section, we arrived at the derivative of a straight line by inspecting it's graph, table and equation. We also understood that the derivative of a straight line is it's slope(i.e. gradient). Doing things by inspection is good for a start, but let's try to reduce the manual effort required to calculate the slope by looking at it's formula. This will help us solidify our understanding of the concept.</p>
+                                    <p>
+                                        In the previous section, we arrived at the derivative of a straight line by inspecting it's graph, table and equation. We also understood that the derivative of a straight line is it's slope(i.e. gradient). Doing things by inspection is good for a start, but let's try to reduce the manual effort required to calculate the slope by looking at it's formula. This will help us solidify our understanding of the concept.
+                                    </p>
+                                    
+                                    <hr>
+                                    
+                                    <h2>Slope of a straight line</h2>
+                                    
+                                    <p>
+                                        To calculate the slope by inspection, we rearranged the equation of the line, compared it with the general equation and figured out the <b><em>m</em></b> value. How do we calculate the slope if we're not given the equation of the line?
+                                    </p>
+                                    
+                                    <p> 
+                                        We know that the slope of a straight line is it's rate of change. i.e. Given that x changes by a certain amount, what is the <b><em>corresponding amount of change</em></b> in y? Mathematically, this is written as \(\Delta y \over \Delta x\), where \(\Delta\) means a "small change". 
+                                    </p>
+                                    
+                                    <p> 
+                                        This can be represented on a graph as: <br> 
+                                        <img src="images/slope_calculation.png" alt="slope of a straight line" width="300"> <br>
+                                        where \(\Delta x = x_2-x_1\) and the corresponding \(\Delta y = y_2-y_1\). Note that \(\Delta x\) can be chosen to be of any size and the corresponding \(\Delta y\) can be calculated.
+                                    </p>
+                                    
+                                    <p>
+                                        Thus, for a straight line, $$derivative = gradient = slope = rate \ of \ change = {\Delta y \over \Delta x} = {y_2-y_1 \over x_2-x_1}$$
+                                    </p>
+                                    
+                                    <hr>
+                                    
+                                    <h2>A curved line</h2>
+                                    
+                                    <p> 
+                                        Let's inspect a curved line and try to find it's derivative. Consider a car that starts from rest and keeps accelerating as time goes by. Imagine that the accelerator is pressed really hard and the increase in speed isn't constant. i.e. it is not adding 10 miles/hour every minute. Instead it is adding speed at a rate that keeps going up the longer we keep the accelerator pressed. 
+                                    </p>
+                                    
+                                    <h3>Graph of the car's speed over time</h3>
+                                    
+                                    <p>
+                                        <img src="images/curved_line.JPG" alt="curved line">    
+                                    </p>
+                                    
+                                    <h3>Table showing the car's speed over time</h3>
+                                    
+                                    <table style="width:50%">
+                                            <tr>
+                                                <th> time &nbsp; (minutes) </th> <th> speed &nbsp; (miles/hour) </th>
+                                            </tr>
+                                            <tr>
+                                                <td> 0 </td> <td> 0 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 1 </td> <td> 1 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2 </td> <td> 4 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 3 </td> <td> 9 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 4 </td> <td> 16 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 5 </td> <td> 25 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 6 </td> <td> 36 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 7 </td> <td> 49 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 8 </td> <td> 64 </td>
+                                            </tr>
+                                    </table>
+                                    
+                                    <h3>Equation of the car's speed over time</h3>
+                                    
+                                    $$s = t^2$$
+                                    
+                                    <p> 
+                                        Upon inspection, we see that the <b><em>change in speed at different points in time are not the same</em></b>. <br>
+                                        For example, at time=3 minutes, the change in speed is 16-9=7 miles/hour and at time=6 minutes, the change in speed is 49-36=13 miles/hour. 
+                                    </p>
+                                    
+                                    <p>
+                                        We also see that the graph isn't a straight line anymore.
+                                    </p>
+                                    
+                                    <p>
+                                        In this case, how do we calculate the derivative of speed with respect to time. <br> 
+                                        In other words, what's the rate of change of speed with respect to time?
+                                    </p>
+                                    
+                                    <p>
+                                        In the previous examples, where we the graphs were <b><em>straight lines</em></b>, we saw that the <b><em>rate of change</em></b> was the <b><em>slope</em></b> of the graph of speed against time. Can we apply the same thinking to curved lines? <br>
+                                        Yes, we can! But, we need to think about this in a slightly different way.
+                                    </p>
+                                    
+                                    <hr>
+                                    
+                                    <h2> Calculus by hand - Tangents </h2>
+                                    
+                                    <p>
+                                        We've seen that the derivative(rate of change) of the curve is different at different points in the curve. Let's visualize this by drawing "tangents" at different two points - time =3 minutes and time=6 minutes. <br> <br>
+                                        <b><em>The tangent of a curve at a particular point is a straight line that touches the curve only at that particular point and tries to be at the same gradient as the curve</em></b>.
+                                    </p>
+                                    
+                                    <img src="images/tangent.jpg" alt="tangent">
+                                    
+                                    <p> 
+                                        By calculating the slope of these tangents, we can find the rate of change of speed with time at those points. 
+                                    </p>
+                                    
+                                    <img src="images/tangent_slope.JPG" alt="slope of tangent">
+                                    
+                                    <p> 
+                                        <br> <br> <b><em>Therefore, the rate of change of a curve at any point is the slope of the curve at that point.</em></b> 
+                                    </p>
+                                    
+                                    <hr>
+                                    
+                                    <h2> Calculus not by hand - Secants </h2>
+                                    
+                                    <p> 
+                                        Using rulers to draw tangents is not going to be very accurate. So, let's look at a more sophisticated method. Take a look at the graph below.
+                                    </p>
+                                    
+                                    <img src="images/secant_line.JPG" alt="Secant Line">
+                                    
+                                    <p>
+                                        <br>
+                                        The straight line in the above graph is called a <b><em>secant</em></b>. A secant of a curve is a line that <b><em>intersects the curve at a minimum of two distinct points</em></b>.  
+                                    </p>
+                                    
+                                    <p>
+                                        We've drawn a secant that is <b><em>centered</em></b> at time=3 minutes and <b><em>intersects</em></b> at points 2 minutes above and below the center. (i.e. time=1 minute and time=5 minutes). In mathematical terms:
+                                    </p>
+                                    
+                                    <ul>
+                                        <li>\(x = 3 \ minutes\)</li>
+                                        <li>\(\Delta x\ = 2 \ minutes\) (the small change in x  )</li>
+                                        <li>\(x+\Delta x = 5 \ minutes\)</li>
+                                        <li>\(x-\Delta x = 1 \ minute\)</li>
+                                    </ul>
+                                    
+                                    <p> 
+                                        Eyeballing our secant line centered at x=3 minutes, we can see that it has roughtly the same slope of the tangent line at x=3 minutes. Let's calculate the slope of the secant to confirm this.
+                                    </p>
+                                    
+                                    <img src="images/secant_slope.JPG" alt="Secant Slope">
+                                    
+                                    <p> 
+                                        $$Slope \ of \ the \ secant = {height \over extent} = {24 \over 4} = 6 {mph \over minute} $$
+                                    </p>
+                                    
+                                    <p> 
+                                        This value is pretty close to slope of the tangent at time=3 minutes(7 mph/minute). 
+                                    </p>
+                                    
+                                    <h3> Tangent vs Secant for gradient calculation</h3>
+                                    
+                                    <p>
+                                        
+                                    </p>
+                                    
+                                    <hr>
+                                    
+                                    <h2> Summary </h2>
+                                    
+                                    <hr>
+                                    
+                                    Based on: &nbsp; <a href="https://www.amazon.com/Make-Your-Own-Neural-Network-ebook/dp/B01EER4Z4G/">Make Your Own Neural Network</a>
+                                    
 								</div>
                                 
 							</section>
