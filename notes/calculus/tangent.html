@@ -143,7 +143,7 @@
                                     </p>
                                     
                                     <p>
-                                        In this case, how do we calculate the derivative of speed with respect to time. <br> 
+                                        In this case, how do we calculate the derivative of speed with respect to time? <br> 
                                         In other words, what's the rate of change of speed with respect to time?
                                     </p>
                                     
@@ -216,12 +216,40 @@
                                     <h3> Tangent vs Secant for gradient calculation</h3>
                                     
                                     <p>
-                                        
+                                        Calculating the derivative using hand-drawn tangents will never be accurate. The repetitive nature of this task leads to tiredness and boredom, thereby causing errors.<br>
+                                        In the secant approach, we follow a recipe in which a point of interest is chosen on the curve and two more points on the curve, above and below this point are used to construct a straight line which gives us approximately the correct slope. Since we have a recipe, it can be automated by a computer.
+                                    </p>
+                                    
+                                    <p>
+                                        Our approach using secants is good, but, it only gives us an approximation. How can we improve on our result to make it more accurate? Should we try making the extent smaller? Let's give it a shot!
+                                    </p>
+                                    
+                                    <h3> Improving gradient accuracy using Secants </h3>
+                                    
+                                    <p>
+                                        Making the extent of the triangle along the secant smaller is the same as reducing \(\Delta x\). The following diagram illustrates how the secant changes as \(\Delta x\) decreases.
+                                    </p>
+                                    
+                                    <img src="images/secant_reduce_extent.JPG" alt="Reducing Extent">
+                                    
+                                    <p>
+                                        We can see that <b><em>as \(\Delta x\) gets closer to 0, the secant begins to represent the tangent of the curve at that point.</em></b> <br>
+                                        This approach gives us the best of both worlds. We can arrive at an accurate value of the derivative while also automating the entire process. 
                                     </p>
                                     
                                     <hr>
                                     
                                     <h2> Summary </h2>
+                                    
+                                    <ul>
+                                        <li> \(\Delta x = x_2 - x_1\) represents a "small change" in x. </li>
+                                        <li> For a straight line, \(derivative = gradient = slope = rate \ of \ change = {height \over extent} = {\Delta y \over \Delta x} = {y_2-y_1 \over x_2-x_1}\) </li>
+                                        <li> The tangent of a curve at a particular point is a straight line that touches the curve only at that particular point and tries to be at the same gradient as the curve. </li>
+                                        <li> The rate of change of a curve at any point is the slope of the curve at that point. (i.e. the slope of the tangent at that point) </li>
+                                        <li> A secant is a line that intersects the curve at a minimum of two distinct points. </li>
+                                        <li> The slope of a secant gives us approximately the correct value of the curve's slope. </li>
+                                        <li> As the extent of the secant's slope gets closer to 0, the secant begins to represent the tangent of the curve at that point, thereby giving us an accurate value of the derivative. </li>
+                                    </ul>
                                     
                                     <hr>
                                     
@@ -230,7 +258,6 @@
 								</div>
                                 
 							</section>
-                        
                         
                 </div>
 
