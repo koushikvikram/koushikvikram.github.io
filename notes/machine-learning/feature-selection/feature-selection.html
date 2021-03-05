@@ -48,11 +48,90 @@
 										<h2>Feature Selection for Machine Learning</h2>
 									</header>
                                     
-                                    This course is divided into the following 10 sections: <br><br>
+                                    <p>Feature Selection is the process of selecting a <b>subset</b> of <b>relevant</b> features(variables, predictors) for use in Machine Learning model building.</p>
                                     
-                                    <p>
-                                        Course: <a href="https://www.udemy.com/course/feature-selection-for-machine-learning/" target="_blank"> Feature Selection for Machine Learning - Udemy </a>
-                                    </p>
+                                    <p>Feature Selection = Search Technique for proposing new feature subsets + Evaluation Measure.</p>
+                                    
+                                    <p>Feature Selection is <em>computationally expensive</em>. Also, different feature subsets render optimal performance for different machine learning algorithms. Due to these reasons, many different methods for feature selection have been developed to accommodate as many caveats and limitations as possible.</p>
+                                    
+                                    Feature selection is important because
+                                    <ul>
+                                        <li>Simpler models are easier to interpret (a model with 10 variables is easier for the user to interpret than a model with 100 variables)</li>
+                                        
+                                        <li>Simpler models in turn have shorter training and inference times, which is important in a live environment.</li>
+                                        
+                                        <li>Enhanced generalization by reducing overfitting (removing noisy variables and irrelevant features enhances generalization)</li>
+                                        
+                                        <li>Easier to implement by software developers.
+                                        <em>Less Variables -> Less code -> Less Bugs</em>
+                                        </li>
+                                        
+                                        <li>Reduced risk of data errors during model use.</li>
+                                        
+                                        <li>Variable Redundancy can be avoided. Redundant variables do not provide any new information to the model.</li>
+                                        
+                                        <li>High dimensional spaces causes poor performance of models, especially tree-based models. Reducing the feature space helps build more robust models.</li>
+                                        
+                                    </ul>
+                                    
+                                    Feature Selection can be divided into three main categories:
+                                    <ul>
+                                        <li>Filter Methods</li>
+                                        <ul>
+                                            <li>Variance</li>
+                                            <li>Correlation</li>
+                                            <li>Univariate selection</li>
+                                        </ul>
+                                        <li>Wrapper Methods</li>
+                                        <ul>
+                                            <li>Forward Selection</li>
+                                            <li>Backward Selection</li>
+                                            <li>Exhaustive Search</li>
+                                        </ul>
+                                        <li>Embedded Methods</li>
+                                        <ul>
+                                            <li>LASSO</li>
+                                            <li>Tree Importance</li>
+                                        </ul>
+                                    </ul>
+                                    
+                                    <table>
+                                        <tr>
+                                            <th>Filter Methods</th>
+                                            <th>Wrapper Methods</th>
+                                            <th>Embedded Methods</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Rely on characteristics of the data.</td>
+                                            <td>Use predictive ML models to score the feature subset</td>
+                                            <td>Perform feature selection as part of the model construction process.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Don't use ML algorithms.</td>
+                                            <td>Train a new model on each feature subset</td>
+                                            <td>Consider the <b>interaction</b> between features and models.&#128515</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Model agnostic.</b> &#128515</td>
+                                            <td>Computationally very expensive. &#128543</td>
+                                            <td>Less computationally expensive than wrapper methods because they fit the ML model only once.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tend to be less computationally expensive.</td>
+                                            <td>Usually provide the best performing feature subset for a given ML algorithm.</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Usually give lower prediction performance than wrapper methods.</td>
+                                            <td>May not produce the best feature combination for a different ML model.</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Very well suited for a quick screen and removal of irrelevant features.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                     
 								</div>
                                 
