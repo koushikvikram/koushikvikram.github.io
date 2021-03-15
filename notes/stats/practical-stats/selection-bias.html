@@ -52,6 +52,46 @@
 										<h1>Selection Bias</h1>
 									</header>
                                     
+                                    If you specify a <b>hypothesis</b> and <em>conduct a well-designed experiment</em> to <b>test your hypothesis</b>, you can have high confidence in your conclusion.
+                                    
+                                    <br><br>
+                                    
+                                    However, this is often not the case. We usually perform analysis on large datasets that are already available. 
+                                    
+                                    <br><br>
+                                    
+                                    <b>Data Snooping</b> is the process of extensive hunting through the data in search of something interesting.
+                                    
+                                    <br><br>
+                                    
+                                    <b>Selection bias</b> refers to the practice of <em>selectively choosing data</em> (consciously or unconsciously) in a way that leads to a conculsion that is misleading or ephemeral (lasting for a short time).
+                                    
+                                    <br><br>
+                                    
+                                    Typical forms of selection bias include
+                                    <ul>
+                                        <li>vast search effect</li>
+                                        <li>nonramdom sampling (sampling bias)</li>
+                                        <li>cherry picking data</li>
+                                        <li>selection of time intervals that accentuate a particular statistical effect</li>
+                                        <li>stopping an experiment when the results look "interesting"</li>
+                                    </ul>
+                                    
+                                    <b>Vast search effect</b> - If you repeatedly run different models and ask different questions with a large data set, you are bound to find something interesting. Is the result you found truly something interesting or is it the chance outlier?
+                                    
+                                    <br><br>
+                                    
+                                    Using one or more <b>holdout set(s)</b> to validate performance and <b>target shuffling</b> are techniques that can be used to guard against the vast search effect.
+                                    
+                                    <br><br>
+                                    
+                                    <b>Target shuffling</b> is used to estimate the baseline performance of a predictive model. It is particularly useful for identifying false positives, or when two events or variables occurring together are perceived to have a cause-and-effect relationship, as opposed to a coincidental one. The more variables you have, the easier it becomes to ‘oversearch’ and identify (false) patterns among them—called the ‘vast search effect’. 
+                                    
+                                    It's expected that the quality of a model (accuracy, area under the curve, R², etc.) will decrease drastically if the target values were shuffled as any relationship between input and target was removed. It's advisable to repeat this process (target shuffling + model building + model evaluation) many times and record the bogus result in order to receive good estimates on how well the real model performs in comparison to randomized data.
+                                    
+                                    <br><br>
+                                    
+                                    <b>Regression to the mean</b> - successive measurements on a given variable show that extreme observations tend to be followed by more central ones. So, attaching special focus and meaning to the extreme value can lead to a form of selection bias.
                                     
                                     <hr>
                                     
@@ -70,6 +110,13 @@
                                     </ul>
                                     
                                     <hr>
+                                    
+                                    <h2>References</h2>
+                                    
+                                    <ul>
+                                        <li><a href="https://www.elderresearch.com/resource/innovations/target-shuffling-process/" target="_blank">Target Shuffling</a></li>
+                                        <li><a href="https://hub.knime.com/knime/extensions/org.knime.features.base/latest/org.knime.base.node.preproc.targetshuffling.TargetShufflingNodeFactory" target="_blank">Target Shuffling - Knime hub</a></li>
+                                    </ul>
                                     
                                     Read Next: <a href="sampling-distribution-of-a-statistic.html">Sampling Distribution of a Statistic</a>
                                     
