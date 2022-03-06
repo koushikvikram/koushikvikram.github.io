@@ -12,7 +12,11 @@ Authors: Ted Dunning, Ellen Friedman
 
 ## Lessons Learned
 
-1. Machine Learning Logistics: Manage the overall *flow* of data and work across organizations. Key to making the next generation of advances in Machine Learning truly valuable.
+1. Machine Learning Logistics: 
+    - Manage the overall *flow* of data and work across organizations.
+    - Handle multiple models.
+    - Collect and analyze metrics throughout the lifecycle of models.
+    - Key to making the next generation of advances in Machine Learning truly valuable.
 2. How well prepared will we be when we need to build Machine Learning systems? - The question we need to ask ourselves.
 3. DataOps shows how *team structure* and *communication* change to meet Machine Learning at scale.
 4. **Rendezvous architecture** makes it easier to manage Machine Learning logistics.
@@ -22,4 +26,3 @@ Authors: Ted Dunning, Ellen Friedman
     - will lead to drop in entry costs of building complex Machine Learning systems as this approach becomes more prevalent
         - this will in turn lead to an even larger stampede of people jumping into Machine Learning to build new systems
 6. Advances in Reinforcement Learning will help computers truly interact with real world.
-
