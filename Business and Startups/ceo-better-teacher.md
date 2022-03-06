@@ -6,11 +6,11 @@ nav_order: 2
 permalink: /business/ceoteacher/
 ---
 
-# [Can CEOs Teach Business Better Than Professors? Ft. Pratham M, Masters' Union](https://www.youtube.com/watch?v=JSIlQ6VAXLE)
+# Can CEOs Teach Business Better Than Professors?
 
-Source: https://www.youtube.com/watch?v=JSIlQ6VAXLE
+Source: [Can CEOs Teach Business Better Than Professors? Ft. Pratham M, Masters' Union](https://www.youtube.com/watch?v=JSIlQ6VAXLE) - YouTube
 
-> Medicine gives students the best ROI in their career. This is because the professors who teach in college are actual doctors who are currently practicing. Similarly, it is very important for CEOs to teach business.
+> Medical Education gives students the best ROI in their career. This is because the professors who teach in college are actual doctors who are currently practicing. Similarly, it is very important for CEOs to teach business students.
 
 - Modern MBA has to focus on technology.
 - Work on projects where you get to use **Microsoft Excel**.
