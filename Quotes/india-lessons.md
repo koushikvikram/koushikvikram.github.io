@@ -24,6 +24,24 @@ permalink: /quotes/lessonsfromindia/
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+अहिंसा प्रथमं पुष्पं  पुष्पं इन्द्रियनिग्रह      ।  
+सर्वभूत दया पुष्पं क्षमा पुष्पं विशेषत       ॥  
+ज्ञान पुष्पं तप पुष्पं शान्ति पुष्पं तथैवच     ।  
+सत्यं अष्टविदं पुष्पो विष्णो : प्रीतिकरं भवेत्  ॥  
+
+1. Ahimsa - Non-Violence.   
+2. Indriya Nigraha: - Sense Control.
+3. Sarva Bhuta Daya - Love to all Living Beings.   
+4. Kshama - Forgiveness.
+5. Jnanam - Knowledge.     
+6. Tapas - Austerities / Meditation
+7. Shanti - Peace. Peace arises when we realize that all things happen by God's will.
+8. Satyam - Truth. Truth is Sri Vishnu Himself.  To abide by truth and never swerving from it is the final (8th) flower offering to Vishnu. 
+
+Bhagavan Sri Vishnu is indeed pleased by offering the above mentioned eight flowers. (Vishno: preetikaram bhaveth!) By inculcating these Sattwa  Gunas in us, we'll become dear to the lord. 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 विद्या विवादाय धनं मदाय शक्तिः परेश्हां पर-पीडनाय   ।  
 खलस्य साधोर्-विपरीतम्-एतत् ज्नानाय दानाय च रक्षणाय ॥  
 
