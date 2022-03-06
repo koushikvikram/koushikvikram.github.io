@@ -24,5 +24,5 @@ Authors: Ted Dunning, Ellen Friedman
     - use deep learning to build a base model from very large amounts of unlabeled data or even labeled examples for some generic task, then, refine the base model by retraining with a relatively small number of examples that are labeled for our specific task.
     - this approach makes it easier to apply advanced Machine Learning to practical problems with only a few examples for training
     - will lead to drop in entry costs of building complex Machine Learning systems as this approach becomes more prevalent
-        - this will in turn lead to an even larger stampede of people jumping into Machine Learning to build new systems
+        - will in turn lead to an even larger stampede of people jumping into Machine Learning to build new systems
 6. Advances in Reinforcement Learning will help computers truly interact with real world.
