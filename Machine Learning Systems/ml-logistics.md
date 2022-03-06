@@ -10,13 +10,15 @@ permalink: /mlsystems/logistics/
 
 Authors: Ted Dunning, Ellen Friedman
 
-## Lessons Learned
-
-1. Machine Learning Logistics: 
+Machine Learning Logistics: 
     - Manage the overall *flow* of data and work across organizations.
     - Handle multiple models.
     - Collect and analyze metrics throughout the lifecycle of models.
     - Key to making the next generation of advances in Machine Learning truly valuable.
+
+## Lessons Learned
+
+1. 90% of the effort in successful ML is about logistics aka Model Management.
 2. How well prepared will we be when we need to build Machine Learning systems? - The question we need to ask ourselves.
 3. DataOps shows how *team structure* and *communication* change to meet Machine Learning at scale.
 4. **Rendezvous architecture** makes it easier to manage Machine Learning logistics.
