@@ -11,10 +11,10 @@ permalink: /mlsystems/logistics/
 Authors: Ted Dunning, Ellen Friedman
 
 Machine Learning Logistics: 
-    - Manage the overall *flow* of data and work across organizations.
-    - Handle multiple models.
-    - Collect and analyze metrics throughout the lifecycle of models.
-    - Key to making the next generation of advances in Machine Learning truly valuable.
+- Manage the overall *flow* of data and work across organizations.
+- Handle multiple models.
+- Collect and analyze metrics throughout the lifecycle of models.
+- Key to making the next generation of advances in Machine Learning truly valuable.
 
 ## Lessons Learned
 
