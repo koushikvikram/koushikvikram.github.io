@@ -15,17 +15,17 @@ permalink: /quotes/lessonsfromindia/
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-विद्या विवादाय धनं मदाय शक्तिः परेश्हां पर-पीडनाय   ।  
-खलस्य साधोर्-विपरीतम्-एतत् ज्नानाय दानाय च रक्षणाय ॥  
-
-*For the wicked, knowledge is for arguments, wealth is for arrogance, and power is for tormenting others; for the virtuous, they are just for the opposite: wisdom, charity and protection. - Ramayana*
-
-----------------------------------------------------------------------------------------------------------------------------------
-
 पापानां वा शुभानां वा वधार्हाणां प्लवङ्गम ।  
 कार्यं कारुण्यमार्येण न कश्चिन्नापराध्यति   ॥  
 
 *Kindness is to be shown by a noble person either towards a sinner or to a virtuous person or even to a person who deserves death, for, there is none who never commits a wrong. - Ramayana*
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+विद्या विवादाय धनं मदाय शक्तिः परेश्हां पर-पीडनाय   ।  
+खलस्य साधोर्-विपरीतम्-एतत् ज्नानाय दानाय च रक्षणाय ॥  
+
+*For the wicked, knowledge is for arguments, wealth is for arrogance, and power is for tormenting others; for the virtuous, they are just for the opposite: wisdom, charity and protection. - Ramayana*
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
