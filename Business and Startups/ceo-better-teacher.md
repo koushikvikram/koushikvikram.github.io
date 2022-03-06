@@ -18,7 +18,7 @@ Source: [Can CEOs Teach Business Better Than Professors? Ft. Pratham M, Masters'
 - Get comfortable working remotely.
 
 Requirements for Industry 4.0
-- Humility - people should listen to each other, appreciate others and look at things from other viewpoint
+- Humility - people should listen to each other, appreciate others and look at things from others' viewpoint
 - Teamwork - comes with humility
 - Understand and appreciate technology. We need Digital Marketers, Fintech graduates, etc. because all these industries have become digital.
 
