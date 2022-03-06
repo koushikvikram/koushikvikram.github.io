@@ -22,7 +22,7 @@ title: Koushik Vikram's Notes
 description: >- # this means to ignore newlines until "baseurl:"
   Koushik Vikram notes on Machine Learning Systems, Product Development and Startups.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://koushikvikram.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://koushikvikram.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: koushikvikram
 github_username:  koushikvikram
 
