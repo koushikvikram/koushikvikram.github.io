@@ -8,7 +8,7 @@ permalink: /product/cdh/
 
 # Continous Discovery Habits: Discover Products that Create Customer Value and Business Value
 
-Author: [Teresa Torres](https://www.amazon.ca/Teresa-Torres/e/B094Q5BF2W/)
+Author: [Teresa Torres](https://www.producttalk.org/)
 
 # I. What is Continous Discovery
 
