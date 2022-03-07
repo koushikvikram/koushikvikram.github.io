@@ -31,7 +31,7 @@ Machine Learning Logistics:
 ## Why Model Management?
 
 1. 90% of the effort in successful ML is about logistics aka Model Management.
-2. Try out more than one Machine Learning tool as we build and evaluate models for any particular goal. 5 to 12 tools are used by organizations that have successfully put Machine Learning to work. Different projects have different *goals, settings, types of data, scale, SLAs.* So, tools optimal in one situation might not be the best even in a similar project.
+2. Projects differ in terms of *goals, settings, types of data, scale, SLAs.* Try out many Machine Learning tools to build and evaluate models for any particular goal. 5 to 12 Machine Learning tools typically used.
 3. In some ways, the best tool for machine learning is the data platform we use to deal with the logistics. With the right capabilities, the underlying data platform can handle the logistics across a variety of machine learning systems in a unified way. It doesn't have to be handled at the application level.
 4. Lessons learned from Ian's toy project:
 - ![Ian's Toy Project](images/tensorchicken-data-flow.png)
