@@ -25,6 +25,13 @@ What Chris Mercury gained by practicing Continous Discovery Habits:
 |   | Improved customer and business outcomes. |
 |   | Improved team's confidence that they knew what they were doing. After a few wins, team started to believe that they could achieve anything. |
 
+## Introduction
+
+This book will teach a *structured* and *sustainable* approach to continous discovery that will help me answer the following questions:
+- Am I making a product/service that my customers want?
+- How do I ensure that I'm improving my product/service over time?
+- How do I guarantee that my team is creating value for my customers in a way that creates value for my business?
+
 > After reading this book and practicing the habits, product work will still be hard and I will still make plenty of mistakes, but I will 
 > - **make better product decisions**
 > - **chances that I will succeeed will dramatically increase**. 
