@@ -39,7 +39,15 @@ This book will teach a *structured* and *sustainable* approach to continous disc
 
 # I. What is Continous Discovery
 
+## Discovery vs Delivery
 
+Discovery: The work I do to decide what to build.
+
+Delivery: The work I do to build and ship a product.
+
+Many companies put a heavy emphasis on delivery, but **discovery and delivery need to be balanced.**
+
+> Teams should continously keep discovering new products to solve unmet customer needs and keep iterating on existing ones.
 
 # II. The 11 Habits
 
