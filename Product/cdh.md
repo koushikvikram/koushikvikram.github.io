@@ -34,7 +34,7 @@ This book will teach a *structured* and *sustainable* approach to continous disc
 
 > After reading this book and practicing the habits, product work will still be hard and I will still make plenty of mistakes, but I will 
 > - **make better product decisions**
-> - **chances that I will succeeed will dramatically increase**. 
+> - **chances that I will succeeed will dramatically increase**
 
 
 # I. What is Continous Discovery
