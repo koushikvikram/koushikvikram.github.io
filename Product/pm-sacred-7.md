@@ -15,7 +15,7 @@ Authors: Neel Mehta, Parth Detroja, Aditya Agashe
 We'll cover
 - Choosing the right data to care about
 - Measuring data
-- Move the numbers we care about
+- Moving the numbers we care about
 
 ## 20. Distributions of data
 
