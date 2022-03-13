@@ -3,7 +3,7 @@ layout: default
 title: What Makes Data Valuable - The Truth About Data Network Effects
 parent: Network Effects
 nav_order: 2
-permalink: /networkeffects/data/
+permalink: /network-effects/data/
 ---
 
 # What Makes Data Valuable: The Truth About Data Network Effects

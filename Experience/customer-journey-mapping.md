@@ -3,7 +3,7 @@ layout: default
 title: Customer Journey Mapping
 parent: Experience
 nav_order: 2
-permalink: /experience/cjm/
+permalink: /experience/customer-journey-mapping/
 ---
 
 # Customer Journey Mapping

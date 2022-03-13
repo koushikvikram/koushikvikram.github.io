@@ -3,7 +3,7 @@ layout: default
 title: Continous Discovery Habits
 parent: Product
 nav_order: 2
-permalink: /product/cdh/
+permalink: /product/continuous-discovery-habits/
 ---
 
 # Continous Discovery Habits: Discover Products that Create Customer Value and Business Value

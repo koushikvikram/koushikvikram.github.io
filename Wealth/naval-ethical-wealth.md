@@ -3,7 +3,7 @@ layout: default
 title: Ethical Wealth Building (aka How to Get Rich Tweetstorm) - Naval Ravikant
 parent: Wealth Building
 nav_order: 2
-permalink: /wealth/navalhowtogetrich/
+permalink: /wealth/naval-how-to-get-rich/
 ---
 
 # Ethical Wealth Building (aka How to Get Rich Tweetstorm) by Naval Ravikant - Mind Map

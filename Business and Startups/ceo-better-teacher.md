@@ -3,7 +3,7 @@ layout: default
 title: Can CEOs Teach Business Better Than Professors?
 parent: Business and Startups
 nav_order: 2
-permalink: /business/ceoteacher/
+permalink: /business/ceo-teacher/
 ---
 
 # Can CEOs Teach Business Better Than Professors?

@@ -3,7 +3,7 @@ layout: default
 title: 8 Creativity Hacks
 parent: Self Improvement
 nav_order: 2
-permalink: /selfimprovement/8creativityhacks/
+permalink: /self-improvement/creativity-hacks/
 ---
 
 

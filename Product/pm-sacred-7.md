@@ -3,7 +3,7 @@ layout: default
 title: Product Management's Sacred Seven
 parent: Product
 nav_order: 2
-permalink: /product/pmsacred7/
+permalink: /product/pm-sacred-seven/
 ---
 
 # Product Management's Sacred 7 - The Skills Required to be a World-Class PM

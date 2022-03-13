@@ -3,7 +3,7 @@ layout: default
 title: Machine Learning Logistics
 parent: Machine Learning Systems
 nav_order: 2
-permalink: /mlsystems/logistics/
+permalink: /ml-systems/logistics/
 ---
 
 # Machine Learning Logistics
