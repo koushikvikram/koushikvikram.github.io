@@ -67,7 +67,7 @@ Data is not inherently valuable. Most data doesn’t produce a real data network
 
 ## Advice from James Currier
 
-- James' website Tickle created a dataset of 24 billion answers from 150 million users, but realized that the data wasn't monetizable.
+- James' website Tickle created a structured dataset of 24 billion answers from 150 million users, but realized that the data was difficult to monetize.
 - After two years of trying, clever use of the data made Tickle's core products maybe 20% better. Even 40% better doesn’t typically move the needle in growth or in defensibility against competitors.
 - In a world of abundant data, it's getting harder to differentiate on the basis of data quantity alone.
 - Make sure to understand the methods for creating real value with my data.
