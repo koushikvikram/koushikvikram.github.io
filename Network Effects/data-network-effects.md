@@ -22,7 +22,16 @@ Data is not inherently valuable. Most data doesn’t produce a real data network
     - product’s value grows as a result of more usage via the accretion of data
     - highly valuable, very rare
 2. Data Scale
+    - Next best thing to Network effects because scale effects are linear and asymptote quickly, while network effects are nonlinear and create increasing returns.
+    - Eg. The scale of data with Yelp (number of restaurants and local businesses it covers) and Amazon (breadth of products) makes it hard for a new competitor to challenge them
+    - Caution: Data is NOT an ongoing insight engine.
+        - In practice, most of the valuable insights you will glean from a scaled-up dataset in a particular domain will come early on. More data just confirms those insights. 
+        - Further, the number of insights that will matter enough for customers to pay you or choose me over other providers is typically small. 
+        - So data scale can give you these early 1-3 key insights, but I typically need to develop other aspects of my defensibility to build an important company.
 3. Data Embedding
+    - Data embedding is the idea that by holding more and more of my clients’/users’ data, the harder I am to remove, and that gives me some defensibility.
+    - This is NOT a network effect because the value the clients get from me working with the other clients is typically a small part of the value I provide and is not the reason clients would stay with me. 
+    - The greater part of my value is that the more data I hold for them embedded in their operations, the harder it would be to remove me. That gives me defensibility.
 
 ## 6 elements of Data Network Effects
 
@@ -55,5 +64,12 @@ Data is not inherently valuable. Most data doesn’t produce a real data network
     - Peripheral data network effects like recommendation engines at Netflix are not powerful. 
 6. Value created by data is perceived by the customer as valuable.
     - Makes the product more defensible against competition.
+
+## Advice from James Currier
+
+- James' website Tickle created a dataset of 24 billion answers from 150 million users, but realized that the data wasn't monetizable.
+- After two years of trying, clever use of the data made Tickle's core products maybe 20% better. Even 40% better doesn’t typically move the needle in growth or in defensibility against competitors.
+- In a world of abundant data, it's getting harder to differentiate on the basis of data quantity alone.
+- Make sure to understand the methods for creating real value with my data.
 
 Mind Map: Coming Soon!
