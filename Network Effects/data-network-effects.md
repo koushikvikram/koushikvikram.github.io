@@ -8,6 +8,8 @@ permalink: /networkeffects/data/
 
 # What Makes Data Valuable: The Truth About Data Network Effects
 
+Source: [https://www.nfx.com/post/truth-about-data-network-effects/](https://www.nfx.com/post/truth-about-data-network-effects/)
+
 Data is not inherently valuable. Most data doesn’t produce a real data network effect, and most data network effects aren’t that powerful even once established.
 
 ## 3 Broad Approaches to Making Data Valuable
