@@ -66,4 +66,22 @@ Groups
 
 ## Access Management
 
+Policies
+- Allow us to **define access permissions**
+- Defined using JSON
+- Must be attached to an entity (eg. user) to be useful
+- Policy types
+    - Vendor Managed: Created and managed by the vendor
+    - Customer Managed: Created and managed by us. Can be shared across resources.
+    - Inline: Created and managed by us. Attached to a single entity and cannot be shared. Can make ongoing maintenance and permissions difficult.
+- Explicit Denial: Overrides previously granted access.
+
+Roles
+- Defines what an entity (user/service) can do
+- Think of them as 'hats' we wear. By themselves, they don't provide much value. They need to be worn.
+- An entity an assume a role on a **temporary basis**, allowing it to perform a given task.
+- We can grant IAM users permission to switch to roles within our cloud account or in other cloud accounts we own.
+- When we assume a role, we're provided temporary security credentials in JSON format, that last for just that session.
+- Policies can be attached to roles.
+
 
