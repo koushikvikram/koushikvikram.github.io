@@ -8,6 +8,8 @@ permalink: /aws/iam/
 
 # Identity and Access Management
 
+Source: https://acloudguru.com/course/aws-identity-and-access-management-iam-concepts
+
 ## Introduction
 
 IAM allows us to provide ***Cloud Security*** by managing 
