@@ -20,8 +20,20 @@ Authentication vs Authorization
 
 Security Credentials
 - Username and password
+    - Use strong password and don't expose it anywhere
 - Multi-Factor Authentication (MFA)
+    - Ultimate level of security
 - Access Keys (often used by developers for application code)
+    - Never expose these anywhere!
+    - Guard these with my life!
+
+IAM can be accessed
+- Through the AWS Management Console
+- Programmatically through
+    - CLI (using the Terminal)
+        - eg. ```aws iam list-policies --scope AWS --max-items 1```
+    - Application Code (using SDKs programmatic calls)
+    - SDKs
 
 ## Identities
 
