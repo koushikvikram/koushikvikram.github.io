@@ -70,19 +70,16 @@ Product management today looks different everywhere.
 
 <details>
     <summary> 1. Build my Trio and work together to decide what to build (can be more than 3 people, can be people that are design/PM/engineering-minded or are interested in these if Designers/PMs/Engineers are not available) </summary>
-        
-        - Guiding principle: "How can I include all three disciplines in as many discovery decisions as I can? Make next week look better than last week. Repeat."
+
+- Guiding principle: "How can I include all three disciplines in as many discovery decisions as I can? Make next week look better than last week. Repeat."
 </details>
 
 <details>
     <summary>2. Start Talking to Customers Every Week</summary>
-        
-        - Once my trio is in place, I'm ready to adopt this keystone habit of Continous Discovery.    
-        
-        - Keystone habits are habits that, once adopted, drive the adoption of other habits.  
-        
-        - Start small, talk to someone similar to my customers if I can't find a single customer to talk to. Use each conversation to get introduced to another person to talk to.  
 
+- Once my trio is in place, I'm ready to adopt this keystone habit of Continous Discovery.
+- Keystone habits are habits that, once adopted, drive the adoption of other habits.
+- Start small, talk to someone similar to my customers if I can't find a single customer to talk to. Use each conversation to get introduced to another person to talk to.
 </details>
 
 <details>
