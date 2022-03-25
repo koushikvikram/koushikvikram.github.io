@@ -44,6 +44,8 @@ This book will teach a *structured* and *sustainable* approach to continous disc
 > *Where they conduct small research activities*  
 > *In pursuit of a desired outcome*  
 
+Goal: Infuse product team's everyday decisions with as much customer input as possible.
+
 ## Discovery vs Delivery
 
 Discovery: The work I do to decide what to build.
@@ -56,11 +58,9 @@ Many companies put a heavy emphasis on delivery, but **discovery and delivery ne
 
 ## The Evolution of Modern Product Discovery
 
-Product management today looks different everywhere.
+Product management looks different everywhere today.
 
-| Traditional Product Discovery                 | Product Discovery After Agile                 |
-|:---------------------------------------------:|:---------------------------------------------:|
-| Owned by Business Leaders                     |                                               |
+
 
 # II. The 11 Habits
 
