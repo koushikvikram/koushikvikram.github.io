@@ -77,8 +77,10 @@ Product management today looks different everywhere.
 <details>
     <summary>2. Start Talking to Customers Every Week</summary>
         
-        - Once my trio is in place, I'm ready to adopt this keystone habit of Continous Discovery.  
+        - Once my trio is in place, I'm ready to adopt this keystone habit of Continous Discovery.    
+        
         - Keystone habits are habits that, once adopted, drive the adoption of other habits.  
+        
         - Start small, talk to someone similar to my customers if I can't find a single customer to talk to. Use each conversation to get introduced to another person to talk to.  
 
 </details>
