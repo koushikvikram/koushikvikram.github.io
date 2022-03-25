@@ -16,7 +16,7 @@ What Chris Mercury gained by practicing Continous Discovery Habits:
 
 | Before                                       | After                                             |
 |:---------------------------------------------|:--------------------------------------------------|
-| Chopping and chaning discovery approach. Needing lots of meetings to work out what to do next | More structured discovery process. People knew what was expected of them and delivered more consistent results. |
+| Chopping and changing discovery approach. Needing lots of meetings to work out what to do next | More structured discovery process. People knew what was expected of them and delivered more consistent results. |
 | Superficial understanding of their customers. Heavy, infrequent research. | Developed deeper understanding of customer's needs, problems and desires through regular contact and lightweight research methods. |
 | Having a list of metrics to increase and outputs to deliver. | Fewer goals, more clarity, a focus on solving the customer's problems in ways that drive business value. |
 | Falling in love with a single idea and building it. | Come up with many ideas. Learn faster by testing sets of ideas and running smaller simulations. |
