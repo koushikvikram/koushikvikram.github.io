@@ -80,4 +80,18 @@ Split into 3 main buckets:
 
 - We can use Secondary Indexes to address this issue.
 - Secondary Indexes can be declared on our table and we give it a new primary key or a key schema.
-- Now, when an item is written into our table, it's going to be replicated into that secondary index in that new shape. So, we don't have to worry about dual writing to 2 tables in 2 different formats. Replication is going to be handled for us and gives us those additional query patterns on those secondary indexes.
+- Now, when an item is written into our table, it's going to be replicated into that secondary index in that new shape. So, we don't have to worry about dual writing to 2 tables in 2 different formats. Replication is going to be handled for us and gives us those additional query patterns on those secondary indexes. We can use query, scan operations on secondary indexes just like we could with our Primary Key.
+
+Why might this be useful?
+
+![Actors and Movies Database](images/dynamodb-actors-movies-db.png)
+
+We've seen how to query for actors and actressess, but what if we wanted to flip it? i.e. Query by movie name and get all the actors and actresses in that movie?
+
+> *We can flip the partition key and the sort key.*
+
+![Flipped Keys](images/dynamodb-flipped-keys.png)
+
+We can now query the index directly by movie and ask for all the actors and actresses that are in the movie.
+
+## Data Modeling Example
