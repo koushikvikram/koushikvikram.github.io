@@ -59,14 +59,14 @@ DynamoDB works well with these because of its HTTPS connection model and global 
 We usually interact with DynamoDB using the AWS SDK. *It's very API driven, rather than query-driven.*
 
 Split into 3 main buckets:
-- Item-based actions - writing, updating, deleting
+- *Item-based actions - writing, updating, deleting*
     - Must provide **entire primary key**
-- Query actions - read-only
+- *Query actions - read-only*
     - Powerful because it allows us to fetch multiple items in a single request
     - Must provide **partition key**
     - May optionally provide **sort key conditions**
     - ![DynamoDB Query API Actions](images/dynamodb-query-api.png)
-- Scan actions 
+- *Scan actions*
     - Full-table scan. *Looks at every item in the table.*
     - Avoid as much as we can. Expensive at scale.
         - Expensive in terms of 
