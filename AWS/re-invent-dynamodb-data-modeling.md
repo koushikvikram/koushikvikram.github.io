@@ -10,7 +10,7 @@ permalink: /aws/dynamodb-data-modeling-reinvent-2019/
 
 Source: [https://www.youtube.com/watch?v=DIQVJqiSUkE](https://www.youtube.com/watch?v=DIQVJqiSUkE)
 
-Contents:
+## Contents:
 - What is Amazon DynamoDB?
 - Key Concepts
 - Data Modeling Strategies
