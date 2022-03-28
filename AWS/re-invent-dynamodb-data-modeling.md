@@ -11,11 +11,11 @@ permalink: /aws/dynamodb-data-modeling-reinvent-2019/
 Source: [https://www.youtube.com/watch?v=DIQVJqiSUkE](https://www.youtube.com/watch?v=DIQVJqiSUkE)
 
 ## Contents:
-- What is Amazon DynamoDB?
-- Key Concepts
-- Data Modeling Strategies
+1. What is Amazon DynamoDB?
+2. Key Concepts
+3. Data Modeling Strategies
 
-## What is Amazon DynamoDB?
+## 1. What is Amazon DynamoDB?
 
 - NoSQL DB
 - Fully managed by AWS
@@ -32,7 +32,7 @@ When we have compute like AWS Lambda and AWS AppSync that scale up and down real
 
 DynamoDB works well with these because of its HTTPS connection model and global request-router layer.
 
-## Key Concepts
+## 2. Key Concepts
 
 - Table
     - ![Table](images/dynamodb-table.png) 
@@ -59,14 +59,14 @@ DynamoDB works well with these because of its HTTPS connection model and global 
 We usually interact with DynamoDB using the AWS SDK. *It's very API driven, rather than query-driven.*
 
 Split into 3 main buckets:
-- *Item-based actions - writing, updating, deleting*
+1. *Item-based actions - writing, updating, deleting*
     - Must provide **entire primary key**
-- *Query actions - read-only*
+2. *Query actions - read-only*
     - Powerful because it allows us to fetch multiple items in a single request
     - Must provide **partition key**
     - May optionally provide **sort key conditions**
     - ![DynamoDB Query API Actions](images/dynamodb-query-api.png)
-- *Scan actions*
+3. *Scan actions*
     - Full-table scan. *Looks at every item in the table.*
     - Avoid as much as we can. Expensive at scale in terms of
         - time taken to respond to the request
