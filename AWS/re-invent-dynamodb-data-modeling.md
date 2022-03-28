@@ -68,10 +68,9 @@ Split into 3 main buckets:
     - ![DynamoDB Query API Actions](images/dynamodb-query-api.png)
 - *Scan actions*
     - Full-table scan. *Looks at every item in the table.*
-    - Avoid as much as we can. Expensive at scale.
-        - Expensive in terms of 
-            - how long it takes to respond to requests
-            - how much capacity we need to service that request
+    - Avoid as much as we can. Expensive at scale in terms of
+        - time taken to respond to the request
+        - capacity needed to service the request
     - May be needed in cases like doing an export in an ETL.
 
 ### Secondary Indexes
