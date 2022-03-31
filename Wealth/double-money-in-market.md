@@ -19,7 +19,7 @@ Teaches new investors about compound rates of return by employing the rule of 72
 Eg. FD interest rate = 6.2% p.a.
 Time taken for money to double = 72/6.2 = 11.62 years
 
-Try this: https://scripbox.com/plan/fd-calculator
+Try this: [https://scripbox.com/plan/fd-calculator](https://scripbox.com/plan/fd-calculator)
 
 Enter FD amount as 10,000
 
