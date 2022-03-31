@@ -1,3 +1,11 @@
+---
+layout: default
+title: Scrum: A Breathtakingly Brief and Agile Introduction
+parent: Project Management
+nav_order: 2
+permalink: /project-management/scrum-breathtakingly-brief-agile-intro/
+---
+
 # Scrum: A Breathtakingly Brief and Agile Introduction - Chris Sims & Hillary Louise Johnson
 
 Contents
