@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Scrum: A Breathtakingly Brief and Agile Introduction
+title: Scrum - A Breathtakingly Brief and Agile Introduction
 parent: Project Management
 nav_order: 2
 permalink: /project-management/scrum-breathtakingly-brief-agile-intro/
