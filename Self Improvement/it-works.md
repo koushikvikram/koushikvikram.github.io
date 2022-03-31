@@ -1,3 +1,11 @@
+---
+layout: default
+title: It Works by RHJ
+parent: Self Improvement
+nav_order: 2
+permalink: /self-improvement/it-works/
+---
+
 # It Works - The Famous Little Red Book that Makes Your Dreams Come True - by R.H.Jarrett
 
 ## Mind Map
