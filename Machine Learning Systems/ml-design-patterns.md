@@ -6,7 +6,9 @@ nav_order: 2
 permalink: /ml-systems/ml-design-patterns/
 ---
 
-# Machine Learning Design Patterns - Solutions to Common Challenges in Data Preparation, Model Building and MLOps
+# [Machine Learning Design Patterns - Solutions to Common Challenges in Data Preparation, Model Building and MLOps](https://www.oreilly.com/library/view/machine-learning-design/9781098115777/)
+
+Authors: Michael Munn, Sara Robinson, and Valliappa Lakshmanan
 
 ![Map](images/ml-design-patterns-map.jpeg)
 
@@ -53,4 +55,17 @@ permalink: /ml-systems/ml-design-patterns/
 | Two-phase Predictions | **Large, complex models** must be kept **performant** when they are deployed at the **edge or on distributed devices**. | **Split the use case into two phases** with
 only the **simpler phase being carried out on the edge**. |
 | Keyed Predictions | How to map the model predictions that are returned to the corresponding model input when submitting large prediction jobs. | Allow the model to pass through a **client-supported key during prediction** that can be used to join model inputs to model predictions. |
+
+### ---------------------------- Reproducibility ----------------------------
+
+| Design Pattern | Problem Solved | Solution |
+|:---------------|:---------------|:---------|
+| Transform      | The inputs to a model must be transformed to create the features the model expects and that process must be consistent between training and serving. | **Explicitly capture and store the transformations applied** to convert the model inputs into features. |
+| Repeatable Splitting | When creating data splits, it’s important to have a method that is **lightweight and repeatable** regardless of the programming language or random seeds. | Identify a **column that captures the correlation relationship between rows** and use the **Farm Fingerprint hashing** algorithm to split the available data into training, validation, and testing datasets. |
+| Bridged Schema | As new data becomes available, any changes to the data schema could prevent using both the new and old data for retraining. | **Adapt the data** from its older, original data schema to match the schema of the newer, better data. |
+| Windowed Inference | Some models require an ongoing sequence of instances to run inference, or features must be aggregated across a time window in such a way that avoids training–serving skew. | **Externalize the model state and invoke the model from a stream analytics pipeline** to ensure that features calculated in a dynamic, time-dependent way can be correctly repeated between training and serving. |
+| Workflow Pipeline | When scaling the ML workflow, run trials independently and track performance for each step of the pipeline. | Make **each step** of the ML workflow a **separate, containerized service that can be chained together** to make a pipeline that can be run with a single REST API
+call. |
+| Feature Store | The **ad hoc approach to feature engineering** slows model development and leads to duplicated effort between teams as well as work stream inefficiency. | Create a feature store, a centralized location to store and document feature datasets that will be used in building machine learning models and can be **shared across projects and teams**. |
+| Model Versioning | It is difficult to carry out performance monitoring and split test model changes while having a single model in production or to update models without breaking existing users. | Deploy a changed model as a **microservice with a different REST endpoint** to achieve **backward compatibility for deployed models**. |
 
