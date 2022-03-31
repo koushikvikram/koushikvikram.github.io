@@ -10,6 +10,8 @@ permalink: /ml-systems/ml-design-patterns/
 
 Authors: Michael Munn, Sara Robinson, and Valliappa Lakshmanan
 
+GitHub Repo: [https://github.com/GoogleCloudPlatform/ml-design-patterns](https://github.com/GoogleCloudPlatform/ml-design-patterns)
+
 ![Map](images/ml-design-patterns-map.jpeg)
 
 ## Patterns Reference
