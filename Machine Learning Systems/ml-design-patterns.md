@@ -69,3 +69,10 @@ call. |
 | Feature Store | The **ad hoc approach to feature engineering** slows model development and leads to duplicated effort between teams as well as work stream inefficiency. | Create a feature store, a centralized location to store and document feature datasets that will be used in building machine learning models and can be **shared across projects and teams**. |
 | Model Versioning | It is difficult to carry out performance monitoring and split test model changes while having a single model in production or to update models without breaking existing users. | Deploy a changed model as a **microservice with a different REST endpoint** to achieve **backward compatibility for deployed models**. |
 
+### ---------------------------- Responsible AI ----------------------------
+
+| Design Pattern | Problem Solved | Solution |
+|:---------------|:---------------|:---------|
+| Heuristic Benchmark | Explaining model performance using complicated evaluation metrics does not provide the intuition that business decision makers need. | Compare an ML model against a simple, easy-to-understand heuristic. |
+| Explainable Predictions | Sometimes it is necessary to know why a model makes certain predictions either for debugging or for regulatory and compliance standards. | Apply model explainability techniques **to understand how and why models make predictions and improve user trust in ML systems.** |
+| Fairness Lens | Bias can cause machine learning models to not treat all users equally and can have adverse effects on some populations. | Use tools to **identify bias in datasets before training and evaluate trained models through a fairness lens** to ensure model predictions are equitable across different groups of users and different scenarios. |
