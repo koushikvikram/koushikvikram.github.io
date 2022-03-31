@@ -21,7 +21,6 @@ permalink: /ml-systems/ml-design-patterns/
 | Feature Cross | **Model complexity insufficient to learn feature relationships.** | Help models learn relationships between inputs faster by **explicitly making each combination of input values a separate feature.** |
 | Multimodal Input | How to **choose between** several potential **data representations**. | **Concatenate** all the available data representations. |
 
-
 ### ---------------------------- Problem Representation ----------------------------
 
 | Design Pattern | Problem Solved | Solution |
@@ -33,6 +32,17 @@ permalink: /ml-systems/ml-design-patterns/
 | Neutral Class  | The **class label** for some **subset** of examples is essentially **arbitrary**. | Introduce an **additional label** for a classification model, **disjoint from the current labels**. |
 | Rebalancing    | Heavily imbalanced data. | Downsample, upsample, or use a weighted loss function depending on different considerations. |
 
+### ---------------------------- Modifying the Training Loop ----------------------------
+
+| Design Pattern | Problem Solved | Solution |
+|:---------------|:---------------|:---------|
+| Useful Overfitting | Using machine learning methods to **learn a physics-based model or dynamical system.** | Forgo the usual generalization techniques in order to **intentionally overfit on the training dataset.** |
+| Checkpoints | Lost progress during long-running training jobs due to machine failure. | **Store the full state of the model periodically**, so that partially trained models are available and can be used to resume training from an intermediate point, instead of starting from scratch. |
+| Transfer Learning | Lack of large datasets that are needed to train complex machine learning models. | Take part of a previously trained model, freeze the weights, and use these nontrainable layers in a new model that solves a similar problem. |
+| Distribution Strategy | Training large neural networks can take a very long time, which slows experimentation. | Carry the training loop out at scale over multiple workers, taking advantage of
+**caching, hardware acceleration, and parallelization**. |
+| Hyperparameter Tuning | How to determine the optimal hyperparameters of a machine learning model. | **Insert the training loop into an optimization method** to find the optimal set of model hyperparameters. |
+
 ### ---------------------------- Resilience ----------------------------
 
 | Design Pattern | Problem Solved | Solution |
@@ -43,3 +53,4 @@ permalink: /ml-systems/ml-design-patterns/
 | Two-phase Predictions | **Large, complex models** must be kept **performant** when they are deployed at the **edge or on distributed devices**. | **Split the use case into two phases** with
 only the **simpler phase being carried out on the edge**. |
 | Keyed Predictions | How to map the model predictions that are returned to the corresponding model input when submitting large prediction jobs. | Allow the model to pass through a **client-supported key during prediction** that can be used to join model inputs to model predictions. |
+
