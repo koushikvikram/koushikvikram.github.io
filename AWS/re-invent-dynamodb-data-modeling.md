@@ -14,12 +14,13 @@ Source: [https://www.youtube.com/watch?v=DIQVJqiSUkE](https://www.youtube.com/wa
 1. What is Amazon DynamoDB?
 2. Key Concepts
 3. Data Modeling Strategies
+4. Summary
 
 ## 1. What is Amazon DynamoDB?
 
 - NoSQL DB
 - Fully managed by AWS
-- HTTPS with AWS IAM auth
+- Uses HTTPS connection with AWS IAM for authentication unlike most other DBs which use a TCP connection
 - Fast, consistent performance as it scales
 
 ### Hyperscale
@@ -50,9 +51,13 @@ DynamoDB works well with these because of its HTTPS connection model and global 
         - Composite Primary key (partition key + sort key) - example:
             - ![Composite Primary Key](images/dynamodb-composite-pk.png)
     - *All our access patterns are going to be driven off our primary keys*
+    - We need to do a lot of thinking about
+        - how we're going to access our data
+        - how we model that data
+        - how we model our Primary Keys
 - Attributes
     - ![Attributes](images/dynamodb-attributes.png)
-    - Similar to columns, but flexible
+    - Similar to columns, but flexible. Don't have to be defined upfront. Can differ across items in the table.
 
 ### API Actions
 
@@ -93,4 +98,28 @@ We've seen how to query for actors and actressess, but what if we wanted to flip
 
 We can now query the index directly by movie and ask for all the actors and actresses that are in the movie.
 
+### [Aside: Improving Data Access with Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
+
+
+
+
 ## Data Modeling Example
+
+## Summary
+
+1. DynamoDB is a NoSQL DB fully managed by AWS. It uses a HTTPS connection with AWS IAM for authentication.
+2. DynamoDB is made for **Hyperscale use cases** and it works well with **Hyper-Ephemeral Compute** like AWS Lambda and AWS AppSync which scale up and down really fast.
+3. DynamoDB works well with Hyper-Ephemeral Compute because of its HTTPS connection model and its global request-router layer.
+4. 6 Key concepts - Table, Item, Primary Key, Attributes, API Actions, Secondary Indexes
+- Table - All the data together.
+- Item - A single record.
+- Primary Key - The column that uniquely identifies each item in the table. Should be included in every item of the table. All our access patterns are driven off our Primary Keys. Can be either
+    - Simple (partition key)
+    - Composite (partition key + sort key)
+- Attributes - Similar to columns, but don't have to be defined upfront and can differ across items in the table.
+- DynamoDB is very much API-driven, rather than query-driven. The API actions are split into Item-based (write, update, delete), Query (read-only) and Scan actions.
+- Item-based actions require the **entire primary key.**
+- Query actions allow us to fetch multiple items in a single request. It requires a **partition key** and optionally **sort key conditions**.
+- Scan looks at every item in the table. It is expensive in terms of the time taken to respond to the request and capacity needed to serve the request. So, it has to be avoided as much as possible.
+- 
+5. We need to do a lot of thinking about how we're going to access our data, how we model that data and how we model our Primary Keys.
