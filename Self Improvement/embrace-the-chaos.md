@@ -6,7 +6,7 @@ nav_order: 2
 permalink: /self-improvement/embrace-the-chaos/
 ---
 
-# Embrace The Chaos - How India Taught Me to Stop Overthinking and Start Living - Bob Miglani
+# [Embrace The Chaos - How India Taught Me to Stop Overthinking and Start Living - Bob Miglani](https://www.amazon.ca/Embrace-Chaos-Taught-Overthinking-Living/dp/1609948254)
 
 "Hurry Sickness" is numbing our conscious awareness of what's really going on in our lives. Our very sense of humanity - our full presence in our own lives - is being hijacked by busyness. When we're hurrying, we rarely really know anyone. Instead, we live on the *assumption* that we know each other.
 
