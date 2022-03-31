@@ -6,7 +6,7 @@ nav_order: 2
 permalink: /self-improvement/compound-effect/
 ---
 
-# The Compound Effect - Darren Hardy
+# [The Compound Effect - Darren Hardy](https://www.amazon.ca/Compound-Effect-Darren-Hardy/dp/159315724X)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Bottom line: You already know all that you need to know to succeed. You don't ne
 Hardy's dad had painted a huge **"No pain, no gain"** sign on the wall of the garage.  
 He never missed a single day of workout.  
 You could set a watch by his routine.  
-**"No excuses"** guy - not unless you're *showing bone.**
+**"No excuses"** guy - not unless you're **showing bone.**
 
 One of Dad's philosophies - 
 > "It doesn't matter how smart you are or aren't, you need to make up in hard work what you lack in experience, skill, intelligence or innate ability. If you competitor is smarter, more talented, or experienced, you just need to work three or four times as hard. You can still beat them!"
@@ -150,7 +150,7 @@ Nothing fails like success. People get to a certain level of success and get too
 
 ### Microwave Mentality
 
-Understanding the Compound Effect will **rid you of "insta-results" expectation. Promise yourself that you'll let go once and for all the lottery-winner expectations, because for every lottery winner, there are millions of losers.
+Understanding the Compound Effect will **rid you of "insta-results" expectation**. Promise yourself that you'll let go once and for all the lottery-winner expectations, because for every lottery winner, there are millions of losers.
 
 Begin everyday earlier than others and end later than others. Know in your bones that your only path to success is through a **continuum of**
 - mundane
