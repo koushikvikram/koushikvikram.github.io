@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Lessons from Entrepreneurs
-parent: My Favorite Quotes
+parent: Lessons
 nav_order: 2
-permalink: /quotes/entrepreneurs/
+permalink: /lessons/entrepreneurs/
 ---
 
 # Lessons from Entrepreneurs

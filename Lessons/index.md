@@ -1,7 +1,7 @@
 ---
 layout: default
-title: My Favorite Quotes
+title: Lessons
 nav_order: 2
 has_children: true
-permalink: /quotes/
+permalink: /lessons/
 ---

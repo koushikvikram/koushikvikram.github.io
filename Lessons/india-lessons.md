@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Lessons from India
-parent: My Favorite Quotes
+parent: Lessons
 nav_order: 2
-permalink: /quotes/lessons-from-india/
+permalink: /lessons/lessons-from-india/
 ---
 
 # Lessons from India
