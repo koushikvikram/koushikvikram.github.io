@@ -3,7 +3,7 @@ layout: default
 title: What's common between the best researchers and founders?
 parent: Business and Startups
 nav_order: 2
-permalink: /business/ceo-teacher/
+permalink: /business/researchers-and-founders/
 ---
 
 # What's common between the best researchers and founders?
