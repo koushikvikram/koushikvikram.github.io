@@ -159,6 +159,6 @@ LKY set high standards for Singapore's people.
 2. Understand the difference between
 - Mindless Socialism - when goverment gives subsidies only for the sake of the votebank, rather than for the progress of the people
 - Evil Capitalism - government and companies try to make money even if that means charging for Cancer medicines and making money out of disease caused to citizens
-- Conscious Capitalism - government puts restrictions on citizens and spends every penny of the public fund to generate a ROI. Government runs the country like an organization which needs to channelize the profits towards the welfare of its citizens.
+- **Conscious Capitalism - government puts restrictions on citizens and spends every penny of the public fund to generate a ROI. Government runs the country like an organization which needs to channelize the profits towards the welfare of its citizens.**
 3. Learn from the success and failures of other countries so that we become constructive critics and frame policies based on our learning.
 
