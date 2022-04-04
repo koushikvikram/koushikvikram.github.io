@@ -23,6 +23,8 @@ I always end up concluding satisfactorily as **"Dharma"**.
 
 Dharma seems to happen when everyone is willingly unselfish and works for everyone's good. The meaning of "everyone" could vary depending on the situation and actors involved.
 
+The things that need to be followed/carried out/adhered to seems to include all varieties like soft and hard methods, thinking from the heart and thinking from the brain, and so on, depending on what the situation is.
+
 When talking about a family, "everyone" refers to all the people in a family. When talking about a team, it refers to all the people in the team. When talking about a country, it refers to everyone in the country. So on and so forth.
 
 ### So, what should I or anyone do in life?
