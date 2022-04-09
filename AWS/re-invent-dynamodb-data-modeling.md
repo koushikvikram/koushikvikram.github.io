@@ -100,10 +100,36 @@ We can now query the index directly by movie and ask for all the actors and actr
 
 ### [Aside: Improving Data Access with Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
 
-
-
-
 ## Data Modeling Example
+
+Basic Steps
+1. Start with an ERD
+- What entities do I have in my application
+- How do the entities relate to each other
+2. Define our access patterns
+- How are we going to use this application
+- How are we going to fetch and manipulate these entities
+- Write all these down and make sure we can handle all those patterns
+3. Design our Primary Key & Secondary Indexes to handle all our access patterns
+
+Forget our relational experience
+- Normalization, JOINs, One entity type per table don't exist in DynamoDB
+    - JOINs are expensive at scale. So, we pre-aggregate our data and de-normalize it
+    - Users and orders might both be in the same table
+
+### Setup of our Example 
+
+- We run an E-commerce Store
+- Users make orders
+- An order may have many items
+
+1. Entitity-Relationship Diagram
+
+![ERD for ECommerce Store](images/dynamodb-ecommerce-erd.png)
+
+2. Identify Access Patterns
+
+![Ecommerce Access Patterns](images/dynamodb-ecommerce-access.png)
 
 ## Summary
 
