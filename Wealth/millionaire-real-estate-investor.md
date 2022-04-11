@@ -103,7 +103,7 @@ By being intentional and purposeful, we start to find success in the things we p
 
 When the outcome really does matter, this kind of careful approach makes all the difference. Our own learning and experience aren't always enough. We also need to learn from others - books, teachers, mentors and consultants. Learning from others is faster.
 
-> ***If we look to the very best people in a field and study what they do, we often can repeat their success. The key is to **learn how they achieved their goals and then understand why they did it that way**. When we grasp these two things, we can start where they left off.***
+> ***If we look to the very best people in a field and study what they do, we often can repeat their success. The key is to learn how they achieved their goals and then understand why they did it that way. When we grasp these two things, we can start where they left off.***
 
 Every success story worth exploring has three fundamental parts: 
 - what a person thought he or she could do
