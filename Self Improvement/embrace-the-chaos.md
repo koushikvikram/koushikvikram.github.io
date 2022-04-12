@@ -39,7 +39,7 @@ India is a country bursting with the 4 forces of chaos that cause so many of us 
 - complexity
 - speed
 
-In India, one doesn't know what's going to happend next or when it's going to happen, and when it does happen, it seems scary and comes out of nowhere, fast! The place has a way of completely destroying any notions of control that we think we have and you realize it wasn't so bad afterall.
+In India, one doesn't know what's going to happen next or when it's going to happen, and when it does happen, it seems scary and comes out of nowhere, fast! The place has a way of completely destroying any notions of control that we think we have and you realize it wasn't so bad afterall.
 
 > Liberated from the shackles of an orderly framework that your mind no longer needs to control, you begin to **stop analyzing life and start living it**. For me, India's allure as a training ground was that, **despite** crumbling infrastructure, a complex society of many different castes, cultures, and languages, and extreme poverty and awful conditions, **people continue to be happy. They forge ahead in their lives and their work, sometimes with joy in their eyes, kindness in their hearts, and passionate effort. Despite the unpredictability, Indians continue to move forward.** 
 
