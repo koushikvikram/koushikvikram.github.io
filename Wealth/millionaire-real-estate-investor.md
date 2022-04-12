@@ -181,3 +181,13 @@ The path of the Millionaire Real Estate Investor is a progression through four s
     - A place where only the best have gone.
     - Pivotal to this stage is that our investment business be designed so that we can choose to get out of the day-to-day work and enjoy the benefits of what we've created.
 
+## (3+5) Mythunderstandings
+
+> *"Fears are educated into us, and can, if we wish, be educated out." - Dr. Karl A. Menninger*
+
+> *"There’s never a perfect time to start, so people should just start. Because there are always deals. You just learn your market and always buy below value, and you can’t go wrong." - Jimmy and Linda McKissack, Millionaire Real Estate Investors, Highland Village, TX*
+
+Fears and doubts undermine our confidence and our actions and ultimately can drive a powerful wedge between us and our dreams.
+
+![8 Mythunderstandings](images/8-mythunderstandings.png)
+
