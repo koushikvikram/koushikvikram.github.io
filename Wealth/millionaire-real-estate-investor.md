@@ -271,4 +271,112 @@ Similarly, ability can be had with time (think books and seminars) or bought wit
 
 ![Current Potential](images/current-potential.png)
 
+### INVESTING MYTH 1: Investing is Complicated
+### TRUTH: Investing is only as complicated as I make it
 
+Investing is complicated, but not as complicated as people make it out to be. The trick is to step back and identify the aspects that matter the most.
+
+> *"People try to overcomplicate real estate investing. You can’t pay $5,000 a month if you’re not making $5,000 a month." - Jimmy Napier, Millionaire Real Estate Investor, Chipley, FL*
+
+> ***Learning is that it is always progressive. It builds on itself step by step. On a practical basis, what I know is that I never need to know everything in order to do something. I just need to know the right things to do at any given moment. Over time, given enough chances to study and experience something, I naturally and progressively will learn everything I need to know to do it well. That is how I become an expert.***
+
+Great investing can be learned if I take it slowly, start with the basics, and follow proven models.
+
+### INVESTING MYTH 2: The best investments require knowledge most people don't have
+### TRUTH: My best investments will always be in areas I can or already do understand
+
+> ***Investing in what I don’t know or understand isn’t investing at all. Doing that is like taking a shot in the dark, and I'll need luck to hit anything worthwhile, much less my intended target. To me, the real nature of investing is always to invest in what I know and fully understand. Choose an area that I already know or one that greatly interests me and commit myself to becoming an expert in it over time.***
+
+> *"Real estate provides investors with a tangible investment that is easy for anyone to understand. If profits were lower than expected this quarter, was that because it was a colder-thanusual winter, driving up heating expenses? Or did a pipe burst? These are issues that any investor can understand." - Paul Morris, Millionaire Real Estate Investor, West Hollywood, CA*
+
+### INVESTING MYTH 3: Investing is risky - I'll lose my money.
+### TRUTH: Investing, by definition, is not risky
+
+> *"Invest—To commit (money or capital) in order to gain a financial return."*
+
+> ***Great investors don’t think of investing as risky. For them it’s not about ignoring risk; instead, it’s about following sound investment principles and models. By doing that, they take the risk out of the game.***
+
+In investing, I make my money going in. In most cases this means buying something of value for terms that immediately create a profit for me. This way I go into the deal knowing I don’t need the market to bail me out. These are the "no-risk" deals.
+
+It is about having sound criteria, the patience to find the right opportunity, and a willingness to take the correct action quickly. Always minimize risk while maximizing return. Investing can never be absolutely risk-free, but it doesn't have to be risky.
+
+> *"One great thing about real estate is that it’s forgiving if you keep it." - Will Stewart, Millionaire Real Estate Investor, Sugar Hill, GA*
+
+### INVESTING MYTH 4: Successful investors are able to time the market
+### TRUTH: In successful investing, the timing finds me
+
+I can't truly time anything. When people say that timing is important, they are correct. Timing is not only important, it's critical to investment success. 
+
+The economy is cyclical. Markets are cyclical. And buying and selling opportunities are created by the ebb and flow of the cycles. 
+
+Finding the best time to buy or sell is called timing. What is misunderstood is the way timing actually is accomplished.
+
+| What timing is NOT                                   | What timing is                                                 |
+|:-----------------------------------------------------|:---------------------------------------------------------------|
+| Active observation                                   | Being in the game                                              |
+| Being reactive to opportunity (Pasive, then active)  | Active-active all the time                                     |
+
+The best deals come from the best opportunities, and the best opportunities go fast. This is where the phrase "a window of opportunity" comes from. Investors recognize and seize these opportunities because they are always engaged in the game and close to the action.
+
+> ***"Generally, real estate is cyclical. You have to buy in a way that lets you afford the cycles. And you have to know where you are in the cycle." - Charles Brown, Millionaire Real Estate Investor, Austin, TX***
+
+> ***"There is no crystal ball that tells you what the market will do. So you need to know the fundamentals of a property: what it will do in a good market, and what it will do in a bad market." - Robert Kiyosaki, Best-selling author and millionaire investor, Scottsdale, AZ***
+
+**Successful timing is made possible by time spent on the task over time.** Being active and engaged doesn't mean I'm always buying and selling. What it does mean is that I'm consistently searching with my Criteria, watchful for the moment when opportunity surfaces. 
+
+This is what we mean when we say that timing finds us. I can never know the absolute best time to act except after the fact. 
+
+> Better to look at it like this: ***Any time an opportunity meets my strict Criteria and I act, I have timed the market successfully. Timing isn't about being in the right place at the right time; it's about being in the right place all the time.***
+
+> "It doesn’t matter what the market's doing. You’re going to buy what the market gives you." -  Bill O'Kane, Millionaire Real Estate Investor, Chicago, IL
+
+### INVESTING MYTH 5: All the good investments are taken
+### TRUTH: Every market, in every time, has its share of good investments
+
+> ***Opportunities are always there in every market and in every time.***
+
+Rest assured: All the good investments will be taken. The only question is by whom. As simple as it sounds, the truth is that those who take them are those who best understand the conditions that create them.
+
+***There are two fundamental forces at work — economic ones and personal ones — and they are always present, always at work, and always influencing the marketplace.***
+- Basic economic forces show up in the form of things such as 
+    - job growth
+    - interest rates
+    - population shifts
+    - area revitalization. 
+    - These are the things most people think of when they think of the forces that create investment opportunities.
+- What is often overlooked, however, is a second set of human, or personal, forces that are always present and can create additional and significant investment opportunities. Some arise from 
+    - positive circumstances such as 
+        - relocation
+        - marriage
+        - family growth. 
+    - Others arise from negative conditions such as 
+        - divorce
+        - death
+        - debt. 
+
+> ***In my experience, those who declare that all the good deals are taken are almost always overlooking this second set of human forces and the unique opportunities they create. Because personal forces are always at work, these opportunities are constantly being created.***
+
+The opportunities are gone only for those who assume they are. I'm too late only if I believe I'm too late.
+
+> *"When markets go down, opportunities go up for smart real estate investors—if you know what you're doing. I would much rather play the downturn than the upturn." - Harry S. Dent, Jr., Best-selling author and economist, Burlington, VT*
+
+
+## The Law of Momentum: Compounding My Success
+
+Everything big starts small. Step past short-term thinking and look at the larger implications of small investments.
+
+> ***"There's room for the little fellow in this business. Houses are too small for big guys to get started in." - Jack Miller, Millionaire Real Estate Investor, Reno, NV***
+
+> ***Compounding -  What starts small and grows slowly builds in size and momentum over time.***
+
+![Penny Doubled](images/penny-doubled.png)
+
+> ***Any form of investing is about putting my money to work and letting it work for me over time.*** 
+
+Real estate investing is no different. What distinguishes it from other investments is that the **original value of my asset tends to be large and, through the magic of leverage, can be purchased for less**. 
+
+For example, if I bought a $100,000 investment house each year by putting $10,000 down and achieved only a modest 5 percent rate of return on the total value of the assets, I'd be a millionaire in less than a decade.
+
+> ***With each asset you add to your portfolio, your portfolio grows. As your investments grow, so do your buying power and your investment knowledge. That’s the foundation for bigger and ever-increasing investments.***
+
+The trick is to get started and then let the power of growth on growth take you higher.
