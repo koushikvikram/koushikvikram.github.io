@@ -191,3 +191,84 @@ Fears and doubts undermine our confidence and our actions and ultimately can dri
 
 ![8 Mythunderstandings](images/8-mythunderstandings.png)
 
+### PERSONAL MYTH 1: I don't need to be an investor — my job will take care of my financial wealth.
+### TRUTH: Yes, I do need to be an investor - my job is not my financial wealth.
+
+Almost without fail, at one time or another, high-achieving investors had to confront a persistent fear or a nagging doubt about investing that later proved to be unfounded.
+
+The image I have of myself as an investor becomes the lens through which I see the world of investing, and that self-image will either guide or misguide me.
+
+Only a tiny percentage of people, probably less than 1 percent, like highly paid athletes, actors, musicians,
+and executives make enough income from their jobs to become financially wealthy.
+
+Prosperity can provide a false sense of security and makes people think they don't need to invest.
+
+A high income doesn’t necessarily translate to financial wealth if I spend propotionately and don't invest.
+
+![Net Worth Chart](images/net-worth-chart.png) ![Cash Flow Chart](images/cash-flow-chart.png) 
+
+> *No matter how I make my money or how much I make, if I don’t take an active role in my financial planning and money management, I'm at grave risk of seeing my investments underperform or, worse, be lost. Not acting like an investor or not being active in my investments is one of the most financially foolish positions I can take.*
+
+Choosing the path to financial wealth will require that I live off less than I make and consume less than the world tells me to. I can’t let the media and advertisers set my values for me. Don’t get caught keeping up with the Joneses. 
+
+> *The faster I reach a position where I can begin my investment career, the faster I'll be able to achieve financial independence. Start early and start small.*
+
+Earning money in a job and saving some of it or sticking it in the company retirement plan does not make me an investor.
+
+> Wake up in the morning telling myself, **"I'm an investor. I'm building financial wealth. Today's the day I could find an opportunity and make a deal!"**
+
+### PERSONAL MYTH 2: I don't need or want to be financially wealthy - I'm happy with what I have.
+### TRUTH: I need to open my eyes - I do need and want to be financially wealthy.
+
+I cannot predict what life will offer down the road for good or for bad. Some needs are also about seizing valuable opportunities to move forward in life and that sometimes I may want money beyond my current needs and necessities. It is really difficult to find more money just because I all of a sudden want or need it. Small money comes easily — big money does not. Becoming an investor — someone who pursues financial wealth building every day — is all about preparing for the minimums and maximums in my life. 
+
+There are two types of people in the world:
+- First, there are those who (because they chose not to build financial wealth) have limited opportunities to care for themselves and their loved ones. 
+- Second, there are those who (because they chose to pursue financial wealth as an investor) have much larger opportunities to care not only for themselves and their loved ones but also for so much more. 
+
+It’s the difference between a focus on the minimums life can require and a focus on the maximums life can offer. It comes down to what kind of person you want to be and the life you want to lead.
+
+Most people are taught to live within their means, but instead of forgetting my dreams and living within my means, try pursuing the means to live my dreams.
+
+### PERSONAL MYTH 3: It doesn't matter if I want or need it - I just can't do it.
+### TRUTH: I can't predict what I can or can't do until I try.
+
+People who would rather not set themselves up for disappointment by going for it are the very ones destined for disappointment.
+
+The moment I buy into the idea that I can’t achieve financial wealth, I put myself on the path to complacency, compromise, and, ultimately, regret.
+
+There are basically two ways people view their financial potential. There are those who think in terms of 
+- what’s financially probable
+- what’s financially possible
+
+Probability thinkers base their view of their future financial selves on their past history and current capabilities. As a result, when they are presented with a new opportunity that doesn’t fit their preconceived notions of their financial potential, they often conclude that they simply "can't do it." For them, their financial future is determined, predictable, and ultimately static.
+
+Possibilities thinkers, in contrast, rarely utter the words "I can't do it." They set aside any limiting notions they might have about their financial potential and base their view of their future financial selves on what they imagine themselves to be capable of accomplishing. They take into account that they might have to learn new things, acquire new skills, or change their habits to reach their full financial potential. For them, their financial future is flexible, active, and, ultimately, alive.
+
+![Probabilities and Possibilities](images/probabilities-possibilities.png)
+
+Many of the real estate investors told stories about how before becoming investors they would have been voted least likely to become financially wealthy by the world.
+
+Most big things start small. In the end, what I actually need to become a successful investor is a lot less than what I think I need.
+
+![The Gap Between What I Need and What I think I Want](images/gap-need-want.png)
+
+Over time, each of those three areas can grow and my power as an investor will increase.
+
+> ***The hidden secret is that the three factors are multipliers of each other. My self-assessment in these three areas often dictates my strategy.***
+
+If I double my time, even if my ability and money remain the same, I double my current investment potential.  
+If I double my ability and my time, I quadruple my current investment potential.  
+If I double each of the three (2 x 2 x 2 = 8), I increase my current investment potential eightfold.
+
+> *"It takes patience and perseverance, but you can make it big on little deals. You’re not going to get rich overnight, but you will slowly." - Will Stewart, Millionaire Real Estate Investor, Sugar Hill, GA*
+
+![Multiplier Effect](images/multiplier-effect.png)
+
+Time and money often are strongly connected, in that time can be used to earn money and money can be spent to buy time.
+
+Similarly, ability can be had with time (think books and seminars) or bought with money (think consultants).
+
+![Current Potential](images/current-potential.png)
+
+
