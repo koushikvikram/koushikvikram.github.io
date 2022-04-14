@@ -380,3 +380,8 @@ For example, if I bought a $100,000 investment house each year by putting $10,00
 > ***With each asset you add to your portfolio, your portfolio grows. As your investments grow, so do your buying power and your investment knowledge. That’s the foundation for bigger and ever-increasing investments.***
 
 The trick is to get started and then let the power of growth on growth take you higher.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+# Part Two: The Four Stages
+
