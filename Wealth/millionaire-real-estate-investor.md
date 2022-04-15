@@ -278,7 +278,7 @@ Investing is complicated, but not as complicated as people make it out to be. Th
 
 > *"People try to overcomplicate real estate investing. You can’t pay $5,000 a month if you’re not making $5,000 a month." - Jimmy Napier, Millionaire Real Estate Investor, Chipley, FL*
 
-> ***Learning is that it is always progressive. It builds on itself step by step. On a practical basis, what I know is that I never need to know everything in order to do something. I just need to know the right things to do at any given moment. Over time, given enough chances to study and experience something, I naturally and progressively will learn everything I need to know to do it well. That is how I become an expert.***
+> ***Learning is always progressive. It builds on itself step by step. On a practical basis, what I know is that I never need to know everything in order to do something. I just need to know the right things to do at any given moment. Over time, given enough chances to study and experience something, I naturally and progressively will learn everything I need to know to do it well. That is how I become an expert.***
 
 Great investing can be learned if I take it slowly, start with the basics, and follow proven models.
 
