@@ -8,6 +8,8 @@ permalink: /business/how-yc-companies-beat-amazon-and-google/
 
 # How YC Companies Beat Amazon and Google
 
+Source: [https://www.youtube.com/watch?v=tzsmJtKZ2No](https://www.youtube.com/watch?v=tzsmJtKZ2No)
+
 ## Fear of Failure and Lies Founders Tell Themselves
 
 Founders quickly learn that they're not the only one having the idea and it's easy to start thinking that you have to compete with the other companies that have your idea and you have to beat them in order to succeed with your own company.
