@@ -141,7 +141,7 @@ If I'm making progress on an important problem, I will have a constant tailwind 
 
 > ***A big secret is that I can bend the world to my will a surprising percentage of the time — most people don’t even try, and just accept that things are the way that they are. People have an enormous capacity to make things happen. A combination of self-doubt, giving up too early, and not pushing hard enough prevents most people from ever reaching anywhere near their potential. Ask for what I want.*** 
 
-I usually won’t get it, and often the rejection will be painful. But when this works, it works surprisingly well.***
+I usually won’t get it, and often the rejection will be painful. But when this works, it works surprisingly well.
 
 > ***Almost always, the people who say "I am going to keep going until this works, and no matter what the challenges are I'm going to figure them out", and mean it, go on to succeed. They are persistent long enough to give themselves a chance for luck to go their way.***
 
