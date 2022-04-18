@@ -10,7 +10,9 @@ permalink: /ml-systems/logistics/
 
 Authors: Ted Dunning, Ellen Friedman
 
-Example Implementation: [https://github.com/ddotabma/rendezvous-on-aws](https://github.com/ddotabma/rendezvous-on-aws)
+Example Implementation: 
+- [Machine learning models on AWS with the Rendezvous architecture](https://medium.com/bigdatarepublic/machine-learning-models-on-aws-with-the-rendezvous-architecture-23a597699597)
+- [https://github.com/ddotabma/rendezvous-on-aws](https://github.com/ddotabma/rendezvous-on-aws)
 
 Machine Learning Logistics: 
 - Manage the overall *flow* of data and work across organizations.
