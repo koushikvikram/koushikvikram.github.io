@@ -6,9 +6,11 @@ nav_order: 2
 permalink: /ml-systems/logistics/
 ---
 
-# Machine Learning Logistics
+# [Machine Learning Logistics](https://www.oreilly.com/library/view/machine-learning-logistics/9781491997628/)
 
 Authors: Ted Dunning, Ellen Friedman
+
+Example Implementation: [https://github.com/ddotabma/rendezvous-on-aws](https://github.com/ddotabma/rendezvous-on-aws)
 
 Machine Learning Logistics: 
 - Manage the overall *flow* of data and work across organizations.
