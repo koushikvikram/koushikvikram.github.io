@@ -64,7 +64,7 @@ Machine Learning Logistics:
 7. Mission creep - once we have one win by fielding a successful model, we'll be expected to build on it and repeat it in new areas.
 8. Pretty soon, we'll have models depending on models in a much more complex system than we planned for initially.
 
-## Sample Questions we should ask about Model Management
+### Sample Questions we should ask about Model Management
 
 1. Is there a way to **save data in raw-ish form** to use in training
 later models? We don’t always know what features will be valuable
@@ -82,4 +82,6 @@ premises, in cloud, or with a hybrid design?
 7. Does our system easily **handle hot hand-offs** so new models can seamlessly replace a model in production?
 8. Do we have **automated fall back**? (for instance, if a model is not responding within a specified time, is there an automated step that will go to a secondary model instead?)
 9. Are our models functioning in a **precisely specified and documented environment**?
+
+## What Matters In Model Management
 
