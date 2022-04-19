@@ -188,3 +188,4 @@ file_format=(type=parquet, compression=SNAPPY)
 ;
 ```
 
+Source: [https://community.snowflake.com/s/article/How-To-Unload-Timestamp-data-in-a-Parquet-file](https://community.snowflake.com/s/article/How-To-Unload-Timestamp-data-in-a-Parquet-file)
