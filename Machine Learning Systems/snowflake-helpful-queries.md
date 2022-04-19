@@ -145,7 +145,7 @@ Using IF NOT EXISTS along with LIKE
 CREATE TABLE <DB.SCHEMA.TABLE> IF NOT EXISTS LIKE <DB.SCHEMA.TABLE>;
 ```
 
-## CLONE A TABLE
+## Clone a table
 
 Creates a new table with the same column definitions and containing all the existing data from the source table, without actually copying the data. This variant can also be used to clone a table at a specific time/point in the past (using Time Travel):
 
@@ -155,7 +155,7 @@ CREATE [ OR REPLACE ] TABLE <name> CLONE <source_table>
   [ COPY GRANTS ]
   [ ... ]
 ```
-## SELECT THE LIST OF COLUMNS IN THE TABLE WITHOUT USING INFORMATION SCHEMA
+## Select the list of columns in a table without using INFORMATION_SCHEMA
 
 The most obvious way would be using the information_schema:
 
@@ -170,3 +170,21 @@ SELECT * FROM TABLE(RESULT_SCAN(last_query_id()));
 ```
 
 Source: [https://community.snowflake.com/s/article/Select-the-list-of-columns-in-the-table-without-using-information-schema](https://community.snowflake.com/s/article/Select-the-list-of-columns-in-the-table-without-using-information-schema)
+
+## How to: Unload `TIMESTAMP_TZ` and `TIMESTAMP_LTZ` data to a parquet file
+
+**Issue**: When we try to unload the data from a table, which has `TIMESTAMP_TZ` and `LTZ` columns, to a Parquet file, we hit the below error for these 2 columns:  
+`Error encountered when unloading to PARQUET: TIMESTAMP_TZ and LTZ types are not supported for unloading to Parquet. value get: TIMESTAMP_TZ`
+
+**Solution**: This issue can be fixed by manually casting these columns to String data type while unloading the data through `COPY INTO` query transformation method, when you are not concerned about the parquet data file schema for the Timestamp column.  
+Here is an example, where a table which has 2 columns `abc(string)` and `timestamp(TIMESTAMP_TZ(9))`. The timestamp column can be unloaded with the below `COPY INTO` statement to a Parquet file:
+
+```SQL
+copy into @~/parquet/new_parquet from
+(
+select abc,timestamp::string from t1
+)
+file_format=(type=parquet, compression=SNAPPY)
+;
+```
+
