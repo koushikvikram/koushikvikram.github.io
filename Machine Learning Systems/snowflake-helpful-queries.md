@@ -21,7 +21,7 @@ ORDER  BY row_count;
 ```
 
 ## Information Schema
-- https://docs.snowflake.com/en/sql-reference/info-schema.html#list-of-views
+- [https://docs.snowflake.com/en/sql-reference/info-schema.html#list-of-views](https://docs.snowflake.com/en/sql-reference/info-schema.html#list-of-views)
 
 ## Get row counts for all views in a DB:
 
