@@ -75,10 +75,12 @@ Open multiple worksheets, fill them with queries and run all of them. (If needed
     COPY INTO <S3_LOCATION>
          FROM <DB_NAME>.<SCHEMA_NAME>.<TABLE_NAME>
   CREDENTIALS = (aws_key_id='XXXX' aws_secret_key='XXXX')
-  FILE_FORMAT = (TYPE=CSV COMPRESSION=NONE)
+  FILE_FORMAT = (TYPE=PARQUET COMPRESSION=SNAPPY)
        HEADER = TRUE
 MAX_FILE_SIZE = 5000000000;
 ```
+
+Scroll further down to know how to deal with `TIMESTAMP_TZ` and `TIMESTAMP_LTZ` formats while unloading as `parquet`.
 
 ## List details of all columns in a DB
 
