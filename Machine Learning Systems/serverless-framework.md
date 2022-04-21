@@ -65,3 +65,10 @@ serverless remove
 Reference: 
 - [Serverless Framework by Anuj Kumar, Medium](https://medium.com/kodeyoga/serverless-framework-a73f63ab603b)
 - [How to deprovision/clean up deployed components (Website)? #485](https://github.com/serverless/components/issues/485)
+
+# Things to Consider
+
+To prevent accidental deletion, either:
+- Create separate CloudFormation Stack for data storage components like S3 and DynamoDB.
+- Set stackpolicy in serverless.yml to prevent replacing or deleting these components.
+    - See: [https://www.serverless.com/plugins/serverless-stack-policy-by-resource-type](https://www.serverless.com/plugins/serverless-stack-policy-by-resource-type)
