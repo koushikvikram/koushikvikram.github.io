@@ -82,3 +82,39 @@ even for local development.
 For local development boto will automatically look them up in either our env vars (if we're using a tool like `aws-vault`) or in our `~/.aws/credentials` file.
 
 ----------------------------------------------------------------------------------------------------
+
+## AWS Lambda Environment Variables Best Practices
+
+Reference: [AWS Lambda Environment Variables Best Practices - Medium](https://isenberg-ran.medium.com/aws-lambda-environment-variables-best-practices-f760384c23ed)
+
+
+## AWS Lambda Under the Hood
+
+Reference: [How AWS Lambda Works Under The Hood - Oliver Jumpertz](https://blog.oliverjumpertz.dev/how-aws-lambda-works-under-the-hood)
+
+## AWS Lambda Lifecycle
+
+Reference: [AWS Lambda Lifecycle](https://medium.com/trackit/aws-lambda-lifecycle-8e8e510d9989)
+
+## AWS Lambda - Manage Feature Flags
+
+Reference: [Manage Your AWS Lambda Feature Flags Like a Boss - Medium](https://isenberg-ran.medium.com/manage-your-aws-lambda-feature-flags-like-a-boss-cd29d6b49751)
+
+
+## AWS Lambda Performance and Cost Optimization
+
+Reference: [AWS Lambda Performance and Cost Optimization - Medium](https://ramchandra-vadranam.medium.com/following-are-key-factors-affecting-the-performance-of-serverless-applications-8582b0a33e21)
+
+# AWS Lambda and SQS - Lessons Learnt
+
+Reference: [Lessons learnt from using SQS and Lambda](https://medium.com/@devatharaviteja/lessons-learnt-from-using-sqs-and-lambda-f37e23b4a47e)
+
+# Serverless: An Example System Architecture
+
+Reference: [Serverless: An Example System Architecture - Medium](https://medium.com/@jgilbert001/serverless-an-example-system-architecture-23aed85fd504)
+
+# How Do You Test Serverless Functions?
+
+Reference: [How Do You Test Serverless Functions? - Medium](https://medium.com/@jgilbert001/how-do-you-test-serverless-functions-3403fdca3071)
+
+----------------------------------------------------------------------------------------------------
