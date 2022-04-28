@@ -76,3 +76,7 @@ To prevent accidental deletion, either:
 - Create separate CloudFormation Stack for data storage components like S3 and DynamoDB.
 - Set stackpolicy in serverless.yml to prevent replacing or deleting these components.
     - See: [https://www.serverless.com/plugins/serverless-stack-policy-by-resource-type](https://www.serverless.com/plugins/serverless-stack-policy-by-resource-type)
+
+# Production-Ready Serverless Course
+
+Source: [Production-Ready Serverless - Operational Best Practices](https://www.manning.com/livevideo/production-ready-serverless)
