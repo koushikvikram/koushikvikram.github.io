@@ -8,9 +8,11 @@ permalink: /aws/iam/
 
 # Identity and Access Management
 
+## AWS Identity and Access Management Concepts - ACloudGuru
+
 Source: [https://acloudguru.com/course/aws-identity-and-access-management-iam-concepts](https://acloudguru.com/course/aws-identity-and-access-management-iam-concepts)
 
-## Introduction
+### Introduction
 
 IAM allows us to provide ***Cloud Security*** by managing 
 - who can access our resources
@@ -37,7 +39,7 @@ IAM can be accessed
     - Application Code (using SDKs programmatic calls)
     - SDKs
 
-## Identities
+### Identities
 
 Identities
 - Relates to the concept of **Authentication**
@@ -66,7 +68,7 @@ Groups
 - Groups help manage the permissions for all users in the group
 - When new people join/leave, we can add/remove users to/from groups
 
-## Access Management
+### Access Management
 
 Policies
 - Allow us to **define access permissions**
@@ -86,4 +88,30 @@ Roles
 - When we assume a role, we're provided temporary security credentials in JSON format, that last for just that session.
 - Policies can be attached to roles.
 
+## Is there an S3 policy for limiting access to only see/access one bucket?
 
+Source: [https://stackoverflow.com/questions/6615168/is-there-an-s3-policy-for-limiting-access-to-only-see-access-one-bucket](https://stackoverflow.com/questions/6615168/is-there-an-s3-policy-for-limiting-access-to-only-see-access-one-bucket)
+
+As cloudberryman explained, "You can either list all buckets or none."
+
+> IAM Policy (replace `bucket-name`):
+
+```Python
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::bucket-name",
+                "arn:aws:s3:::bucket-name/*"
+            ]
+        }
+    ]
+}
+```
