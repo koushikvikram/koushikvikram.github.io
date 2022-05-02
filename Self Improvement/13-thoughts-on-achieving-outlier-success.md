@@ -173,7 +173,7 @@ Everyone is better at some things than others. Define myself by my strengths, no
 
 Acknowledge my weaknesses and figure out how to work around them, but don’t let them stop me from doing what I want to do. 
 
-> ***"I can’t do X because I'm not good at Y" almost always reflects a lack of creativity. The best way to make up for my weaknesses is to hire complementary team members instead of just hiring people who are good at the same things I am.
+> ***"I can’t do X because I'm not good at Y" almost always reflects a lack of creativity***. The best way to make up for my weaknesses is to hire complementary team members instead of just hiring people who are good at the same things I am.
 
 A particularly valuable part of building a network is to get good at discovering undiscovered talent. 
 
