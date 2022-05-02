@@ -130,3 +130,12 @@ Reference: [Serverless Applications with AWS - Marcia Villalba](https://www.mann
 
 ----------------------------------------------------------------------------------------------------
 
+## Facts and fallacies of Serverless
+
+Reference: [https://jeromevdl.medium.com/facts-and-fallacies-of-serverless-5e0b97faeeb](https://jeromevdl.medium.com/facts-and-fallacies-of-serverless-5e0b97faeeb)
+
+----------------------------------------------------------------------------------------------------
+
+## Is serverless cheaper for your use case? Find out with this calculator.
+
+Reference: [https://medium.com/serverless-transformation/is-serverless-cheaper-for-your-use-case-find-out-with-this-calculator-2f8a52fc6a68](https://medium.com/serverless-transformation/is-serverless-cheaper-for-your-use-case-find-out-with-this-calculator-2f8a52fc6a68)
