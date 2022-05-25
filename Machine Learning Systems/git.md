@@ -12,9 +12,9 @@ permalink: /ml-systems/git-reference/
 
 Source: [https://medium.com/@ayushya/move-directory-from-one-repository-to-another-preserving-git-history-d210fa049d4b](https://medium.com/@ayushya/move-directory-from-one-repository-to-another-preserving-git-history-d210fa049d4b)
 
-### Step 1: Getting files ready to move from Repository A
+### Step 1: Getting files ready to move from Repository A (7 mini-steps)
 
-1. Make a copy of repository A as the following steps make major changes to this copy which you should not push!
+Make a copy of repository A as the following steps make major changes to this copy which you should not push!
 
 ```bash
 mkdir cloneA
@@ -28,7 +28,7 @@ git clone --branch <branch> --origin origin --progress \
 # (assuming myprojects is the repository you want to copy from)
 ```
 
-2. Go to that directory.
+Go to that directory.
 
 ```bash
 cd <git repository A directory>
@@ -37,20 +37,20 @@ cd <git repository A directory>
 # Folder Path is ~/cloneA/myproject
 ```
 
-3. To avoid accidentally making any remote changes (eg. by pushing), delete the link to the original repository.
+To avoid accidentally making any remote changes (eg. by pushing), delete the link to the original repository.
 
 ```bash
 git remote rm origin
 ```
 
-4. Go through your history and files, removing anything that is not in `FOLDER_TO_KEEP`. The result is the contents of `FOLDER_TO_KEEP` spewed out into the base of repository A.
+Go through your history and files, removing anything that is not in `FOLDER_TO_KEEP`. The result is the contents of `FOLDER_TO_KEEP` spewed out into the base of repository A.
 
 ```bash
 git filter-branch --subdirectory-filter <directory> -- --all
 # eg. git filter-branch --subdirectory-filter subfolder1/subfolder2/FOLDER_TO_KEEP -- --all
 ```
 
-5. Clean the unwanted data.
+Clean the unwanted data.
 
 ```bash
 git reset --hard
@@ -59,7 +59,7 @@ git prune
 git clean -fd
 ```
 
-6. Move all the files and directories to a NEW_FOLDER which you want to push to repository B.
+Move all the files and directories to a NEW_FOLDER which you want to push to repository B.
 
 ```bash
 mkdir <base directory>
@@ -71,7 +71,7 @@ mv * <base directory>
 
 Alternatively, you can drag all the files and directory to the NEW_FOLDER using GUI.
 
-7. Add the changes and commit them.
+Add the changes and commit them.
 
 ```bash
 git add .
@@ -80,7 +80,7 @@ git commit
 
 ### Step 2: Merge the files into the new repository B
 
-1. Make a copy of repository B if you don’t have one already.
+Make a copy of repository B if you don’t have one already.
 
 ```bash
 mkdir cloneB
@@ -91,7 +91,7 @@ git clone <git repository B url>
 https://github.com/username/newproject.git
 ```
 
-2. Go to that directory.
+Go to that directory.
 
 ```bash
 cd <git repository B directory>
@@ -99,7 +99,7 @@ cd <git repository B directory>
 # Folder Path is ~/cloneB/newproject
 ```
 
-3. Create a remote connection to repository A as a branch in repository B.
+Create a remote connection to repository A as a branch in repository B.
 
 ```bash
 git remote add repo-A <git repository A directory>
@@ -108,19 +108,19 @@ git remote add repo-A <git repository A directory>
 # eg. git remote add repo-A ~/cloneA/myproject
 ```
 
-4. Pull files and history from this branch (containing only the directory you want to move) into repository B.
+Pull files and history from this branch (containing only the directory you want to move) into repository B.
 
 ```bash
 git pull repo-A master --allow-unrelated-histories
 # This merges master from repository A into repository B
 ```
 
-5. Remove the remote connection to repository A.
+Remove the remote connection to repository A.
 ```bash
 git remote rm repo-A
 ```
 
-6. Finally, push the changes
+Finally, push the changes
 
 ```bash
 git push
@@ -129,3 +129,5 @@ git push
 You can delete both the cloned repositories.
 
 The files changes with history are now available online in repository B.
+
+-----------------------------------------------------------------------------------------------------
