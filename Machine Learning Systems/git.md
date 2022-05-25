@@ -12,8 +12,7 @@ permalink: /ml-systems/git-reference/
 
 Source: [https://medium.com/@ayushya/move-directory-from-one-repository-to-another-preserving-git-history-d210fa049d4b](https://medium.com/@ayushya/move-directory-from-one-repository-to-another-preserving-git-history-d210fa049d4b)
 
-<details>
-    <summary> Step 1: Getting files ready to move from Repository A. </summary>
+### Step 1: Getting files ready to move from Repository A
 
 1. Make a copy of repository A as the following steps make major changes to this copy which you should not push!
 
@@ -78,10 +77,8 @@ Alternatively, you can drag all the files and directory to the NEW_FOLDER using 
 git add .
 git commit
 ```
-</details>
 
-<details> 
-    <summary>Step 2: Merge the files into the new repository B.</summary>
+### Step 2: Merge the files into the new repository B
 
 1. Make a copy of repository B if you don’t have one already.
 
@@ -128,7 +125,6 @@ git remote rm repo-A
 ```bash
 git push
 ```
-</details>
 
 You can delete both the cloned repositories.
 
