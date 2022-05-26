@@ -48,6 +48,25 @@ Source: [DynamoDBGuide - Querying](https://www.dynamodbguide.com/querying/)
 
 Source: [DynamoDBGuide - Expression Basics](https://www.dynamodbguide.com/expression-basics/)
 
+## Get row count for a table
+
+Source: [How to get the row count of a table instantly in DynamoDB? - StackOverflow](https://stackoverflow.com/questions/31378347/how-to-get-the-row-count-of-a-table-instantly-in-dynamodb)
+
+```python
+import boto3
+
+REGION_NAME = "<REGION_NAME>"
+TABLE_NAME = "<TABLE_NAME>"
+
+dynamodb = boto3.resource("dynmaodb", REGION_NAME)
+table = dynamodb.Table(TABLE_NAME)
+
+n_rows = table.item_counts
+
+
+print(f"# rows in {TABLE_NAME}: {n_rows}")
+```
+
 ## Scan a Table
 
 Source: [Complete scan of dynamoDb with boto3 - StackOverflow](https://stackoverflow.com/questions/36780856/complete-scan-of-dynamodb-with-boto3)
