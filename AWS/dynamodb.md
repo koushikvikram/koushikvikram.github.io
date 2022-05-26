@@ -33,3 +33,17 @@ However, since DynamoDB is schema less you can store any combination of other at
 
 - [Secondary Indexes](https://www.dynamodbguide.com/secondary-indexes)
 - [SQL, NoSQL, and Scale: How DynamoDB scales where relational databases don't](https://www.alexdebrie.com/posts/dynamodb-no-bad-queries/)
+
+## KeyConditions
+
+Selection criteria for a `Query` operation.
+
+Source: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.KeyConditions.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.KeyConditions.html)
+
+## Querying
+
+Source: [DynamoDBGuide - Querying](https://www.dynamodbguide.com/querying/)
+
+## Expressions Basics
+
+Source: [DynamoDBGuide - Expression Basics](https://www.dynamodbguide.com/expression-basics/)
