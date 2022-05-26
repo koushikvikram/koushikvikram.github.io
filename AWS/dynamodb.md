@@ -47,3 +47,16 @@ Source: [DynamoDBGuide - Querying](https://www.dynamodbguide.com/querying/)
 ## Expressions Basics
 
 Source: [DynamoDBGuide - Expression Basics](https://www.dynamodbguide.com/expression-basics/)
+
+## Scan a Table
+
+Source: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html)
+
+```python
+import boto3
+
+dynamodb = boto3.resource("dynamodb", "<REGION_NAME>")
+table = dynamodb.Table("<TABLE_NAME>")
+
+response = table.scan()
+```
