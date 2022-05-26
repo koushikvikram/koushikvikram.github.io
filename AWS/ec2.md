@@ -41,3 +41,17 @@ If an instance has multiple security groups, it has the sum of all rules in the 
 > For example, lets say I have a class of instances that will only ever talk to other instances in the same account. I also have a class of instances that will only accept traffic via http (port 80).
 
 This is a perfect situation for AWS Virtual Private Cloud. Put the internal instances in private subnets, and the public-facing instances in public subnets.
+
+## Check Event History of Possibly Deleted EC2 Instance
+
+Source: [https://superuser.com/questions/1137766/how-do-i-check-the-event-history-of-a-possibly-deleted-ec2-instance](https://superuser.com/questions/1137766/how-do-i-check-the-event-history-of-a-possibly-deleted-ec2-instance)
+
+Answer:
+
+You should be able to use Amazon CloudTrail if you have access. There you can use filters to select EC2 instance history, for example, and see which account was responsible for its deletion, as well as other things like volume attachment, when it was spun up, etc! Sorry if that's two years too late.
+
+Example of CloudTrail Dashboard:
+
+![CloudTrail Dashboard Example](images/cloudtrail-example.png)
+
+
