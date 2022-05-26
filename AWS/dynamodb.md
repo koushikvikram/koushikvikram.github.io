@@ -50,7 +50,7 @@ Source: [DynamoDBGuide - Expression Basics](https://www.dynamodbguide.com/expres
 
 ## Scan a Table
 
-Source: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html)
+Source: [Complete scan of dynamoDb with boto3 - StackOverflow](https://stackoverflow.com/questions/36780856/complete-scan-of-dynamodb-with-boto3)
 
 Below code is for a single page scan - this does not get all items in the table, but the first subset
 
