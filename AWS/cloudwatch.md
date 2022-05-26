@@ -33,3 +33,11 @@ fields @timestamp, @message
 | limit 20
 ```
 
+## Filter and Pattern Syntax
+
+- [Filter and pattern syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html)
+
+
+## Sample queries
+
+- [Sample queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html)
