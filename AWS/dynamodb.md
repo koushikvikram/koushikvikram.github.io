@@ -58,7 +58,7 @@ import boto3
 REGION_NAME = "<REGION_NAME>"
 TABLE_NAME = "<TABLE_NAME>"
 
-dynamodb = boto3.resource("dynmaodb", REGION_NAME)
+dynamodb = boto3.resource("dynamodb", REGION_NAME)
 table = dynamodb.Table(TABLE_NAME)
 
 n_rows = table.item_counts
