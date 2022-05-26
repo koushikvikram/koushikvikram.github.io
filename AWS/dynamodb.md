@@ -52,6 +52,8 @@ Source: [DynamoDBGuide - Expression Basics](https://www.dynamodbguide.com/expres
 
 Source: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Scan.html)
 
+Below code is for a single page scan - this does not get all items in the table, but the first subset
+
 ```python
 import boto3
 
@@ -59,4 +61,20 @@ dynamodb = boto3.resource("dynamodb", "<REGION_NAME>")
 table = dynamodb.Table("<TABLE_NAME>")
 
 response = table.scan()
+```
+
+Full table scan needs pagination:
+
+```python
+import boto3
+
+dynamodb = boto3.resource("dynamodb", "<REGION_NAME>")
+table = dynamodb.Table("<TABLE_NAME>")
+
+response = table.scan()
+data = response.get('Items')
+
+while response.get('LastEvaluatedKey', False):
+    response = table.scan(ExclusiveStartKey=response.get('LastEvaluatedKey'))
+    data.extend(response.get('Items'))
 ```
