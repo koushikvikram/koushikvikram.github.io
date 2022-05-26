@@ -61,7 +61,7 @@ TABLE_NAME = "<TABLE_NAME>"
 dynamodb = boto3.resource("dynamodb", REGION_NAME)
 table = dynamodb.Table(TABLE_NAME)
 
-n_rows = table.item_counts
+n_rows = table.item_count
 
 
 print(f"# rows in {TABLE_NAME}: {n_rows}")
@@ -87,13 +87,23 @@ Full table scan needs pagination:
 ```python
 import boto3
 
-dynamodb = boto3.resource("dynamodb", "<REGION_NAME>")
-table = dynamodb.Table("<TABLE_NAME>")
+
+REGION_NAME = "<REGION_NAME>"
+TABLE_NAME = "<TABLE_NAME>"
+
+dynamodb = boto3.resource("dynamodb", REGION_NAME)
+table = dynamodb.Table(TABLE_NAME)
+
+n_rows = table.item_count
 
 response = table.scan()
-data = response.get('Items')
+data = response.get("Items")
 
-while response.get('LastEvaluatedKey', False):
+n_scanned = response.get("ScannedCount")
+
+while response.get("LastEvaluatedKey", False):
     response = table.scan(ExclusiveStartKey=response.get('LastEvaluatedKey'))
-    data.extend(response.get('Items'))
+    data.extend(response.get("Items"))
+    n_scanned += response.get("ScannedCount")
+    print(f"Scanned {n_scanned}/{n_rows} rows")
 ```
