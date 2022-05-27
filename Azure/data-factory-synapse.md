@@ -25,6 +25,9 @@ permalink: /azure/data-factory-synapse/
 ## Synapse Delta Sharing
 - [Azure Synapse — How to use Delta Sharing](https://medium.com/@wahidatoui/azure-synapse-how-to-use-delta-sharing-f9f76e5083b7)
 
+## Spark Job for Synapse
+- [Tutorial: Create Apache Spark job definition in Synapse Studio](https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-job-definitions)
+
 ## Pipeline
 - [Quickstart: Create a data factory and pipeline using Python](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-python)
 - [Create a trigger that runs a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory)
