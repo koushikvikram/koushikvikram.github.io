@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Azure Functions
-parent: AWS
+parent: Azure
 nav_order: 2
 permalink: /azure/functions/
 ---

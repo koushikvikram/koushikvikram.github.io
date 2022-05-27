@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Azure Data Factory and Synapse
-parent: AWS
+parent: Azure
 nav_order: 2
 permalink: /azure/data-factory-synapse/
 ---
