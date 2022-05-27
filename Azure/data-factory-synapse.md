@@ -19,6 +19,12 @@ permalink: /azure/data-factory-synapse/
 ## Synapse with CosmosDB
 - [Azure Synapse Link for Azure Cosmos DB: Near real-time analytics use cases](https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-use-cases)
 
+## API Synapse Serverless SQL Pools
+- [How to create APIs on top of Synapse serverless SQL pools](https://towardsdatascience.com/how-to-create-apis-on-top-of-synapse-serverless-sql-pools-f09e087400ab)
+
+## Synapse Delta Sharing
+- [Azure Synapse — How to use Delta Sharing](https://medium.com/@wahidatoui/azure-synapse-how-to-use-delta-sharing-f9f76e5083b7)
+
 ## Pipeline
 - [Quickstart: Create a data factory and pipeline using Python](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-python)
 - [Create a trigger that runs a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory)
