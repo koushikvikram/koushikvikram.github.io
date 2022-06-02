@@ -131,3 +131,8 @@ You can delete both the cloned repositories.
 The files changes with history are now available online in repository B.
 
 -----------------------------------------------------------------------------------------------------
+
+## Git Bash on Windows - using the `tree` command
+
+Use `cmd //c tree` to use Windows' tree in Git Bash
+
