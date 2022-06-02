@@ -75,3 +75,7 @@ INFO:test:[123] Finished
 ```
 
 Source: [https://stackoverflow.com/questions/46895678/python-logging-inherit-contextual-information](https://stackoverflow.com/questions/46895678/python-logging-inherit-contextual-information)
+
+## Solving `psutil` error while running Jupyter Notebooks
+
+If you run into the error `ModuleNotFoundError: No module named 'psutil'` while running Jupyter Notebooks, uninstall and reinstall psutil using pip.
