@@ -136,3 +136,16 @@ The files changes with history are now available online in repository B.
 
 Use `cmd //c tree` to use Windows' tree in Git Bash
 
+-----------------------------------------------------------------------------------------------------
+
+## Writing Better Commit Messages
+
+Source: [https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67](https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67)
+
+start commit message with clickup task number/JIRA ticket number
+
+-----------------------------------------------------------------------------------------------------
+
+## Templating Pull Requests & Merge Requests
+
+Source: [https://appi2393.medium.com/templating-pull-request-merge-request-b6e1f51a2994](https://appi2393.medium.com/templating-pull-request-merge-request-b6e1f51a2994)
