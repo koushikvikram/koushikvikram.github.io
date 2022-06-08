@@ -18,3 +18,8 @@ permalink: /ml-systems/testing/
 - [Testing In Production, The Netflix Way](https://www.youtube.com/watch?v=3WRVgC8SiGc)
 - [Let's test the Data pipeline](https://www.linkedin.com/pulse/lets-test-data-pipeline-sanjay-dubey)
 - [The challenge of testing Data Pipelines](https://medium.com/slalom-build/the-challenge-of-testing-data-pipelines-4450744a84f1)
+
+## Great Expectations
+
+- [Great (data) expectations — automatic data quality validation](https://medium.com/cisco-fpie/great-data-expectations-automatic-data-quality-validation-889852819bc9)
+- [Kedro Great: Use Great Expectations with Ease!](https://github.com/tamsanh/kedro-great)
