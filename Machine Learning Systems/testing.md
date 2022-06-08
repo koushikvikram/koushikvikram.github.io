@@ -15,3 +15,4 @@ permalink: /ml-systems/testing/
 - [Beyond Accuracy: Behavioral Testing of NLP models with CheckList](https://arxiv.org/abs/2005.04118)
 - [Beyond NDCG: behavioral testing of recommender systems with RecList](https://arxiv.org/abs/2111.09963)
     - [RecList GitHub](https://github.com/jacopotagliabue/reclist)
+- [Testing In Production, The Netflix Way](https://www.youtube.com/watch?v=3WRVgC8SiGc)
