@@ -149,3 +149,11 @@ start commit message with clickup task number/JIRA ticket number
 ## Templating Pull Requests & Merge Requests
 
 Source: [https://appi2393.medium.com/templating-pull-request-merge-request-b6e1f51a2994](https://appi2393.medium.com/templating-pull-request-merge-request-b6e1f51a2994)
+
+-----------------------------------------------------------------------------------------------------
+
+## Roll back Git code to previous commit
+
+Source: [https://www.techtarget.com/searchitoperations/answer/How-to-roll-back-Git-code-to-a-previous-commit](https://www.techtarget.com/searchitoperations/answer/How-to-roll-back-Git-code-to-a-previous-commit)
+
+-----------------------------------------------------------------------------------------------------
