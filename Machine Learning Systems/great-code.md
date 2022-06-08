@@ -57,3 +57,9 @@ Torvalds is not alone in this, by the way: *"Show me your flowchart and conceal 
     - [Welcome to the PostgreSQL Wiki!](https://wiki.postgresql.org/wiki/Main_Page)
 - [Flask - GitHub](https://github.com/pallets/flask)
 - [Rusty's API Design Manifesto](http://sweng.the-davies.net/Home/rustys-api-design-manifesto)
+
+## Views and Comments
+
+Great code should be an expression of what needs to be done, not how to do it, abstracts away implementation details.
+
+Values don't have side effects.
