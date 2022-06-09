@@ -26,6 +26,10 @@ In contrast, despite an explosion of features in git, its underlying data struct
 
 Torvalds is not alone in this, by the way: *"Show me your flowchart and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowchart; it'll be obvious."* – Fred Brooks, The Mythical Man-Month. *"Show me your code and conceal your data structures, and I shall continue to be mystified. Show me your data structures, and I won't usually need your code; it'll be obvious."* and *"Smart data structures and dumb code works a lot better than the other way around."* – Eric S. Raymond, The Cathedral and The Bazaar.
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+"A wise engineering solution would produce—or better, exploit—reusable parts." - Doug McIlroy
+
 ## Other References
 
 - [Software exoskeletons - John D. Cook](https://www.johndcook.com/blog/2011/07/21/software-exoskeletons/)
