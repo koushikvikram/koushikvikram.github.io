@@ -157,3 +157,15 @@ Source: [https://appi2393.medium.com/templating-pull-request-merge-request-b6e1f
 Source: [https://www.techtarget.com/searchitoperations/answer/How-to-roll-back-Git-code-to-a-previous-commit](https://www.techtarget.com/searchitoperations/answer/How-to-roll-back-Git-code-to-a-previous-commit)
 
 -----------------------------------------------------------------------------------------------------
+
+## Fatal: Not possible to fast-forward, aborting
+
+Source: [https://stackoverflow.com/questions/13106179/fatal-not-possible-to-fast-forward-aborting](https://stackoverflow.com/questions/13106179/fatal-not-possible-to-fast-forward-aborting)
+
+`git pull --rebase` You don't need to know the name of your destination branch.
+
+If your upstream branch is not set, try `git pull origin <branch> --rebase`
+
+To set this option globally, use `git config --global pull.rebase true`
+
+-----------------------------------------------------------------------------------------------------
