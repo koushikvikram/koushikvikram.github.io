@@ -81,4 +81,8 @@ import tensorflow as tf
 tf.config.list_physical_devices('GPU')
 ```
 
+`boto3` comes pre-installed in the environment.
+
+The EC2 instance comes with `aws-cli` and `git` pre-installed.
+
 -----------------------------------------------------------------------------------------------------
