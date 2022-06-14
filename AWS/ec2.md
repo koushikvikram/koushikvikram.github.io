@@ -42,6 +42,8 @@ If an instance has multiple security groups, it has the sum of all rules in the 
 
 This is a perfect situation for AWS Virtual Private Cloud. Put the internal instances in private subnets, and the public-facing instances in public subnets.
 
+-----------------------------------------------------------------------------------------------------
+
 ## Check Event History of Possibly Deleted EC2 Instance
 
 Source: [https://superuser.com/questions/1137766/how-do-i-check-the-event-history-of-a-possibly-deleted-ec2-instance](https://superuser.com/questions/1137766/how-do-i-check-the-event-history-of-a-possibly-deleted-ec2-instance)
@@ -54,4 +56,5 @@ Example of CloudTrail Dashboard:
 
 ![CloudTrail Dashboard Example](images/cloudtrail-example.png)
 
+-----------------------------------------------------------------------------------------------------
 
