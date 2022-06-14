@@ -58,3 +58,27 @@ Example of CloudTrail Dashboard:
 
 -----------------------------------------------------------------------------------------------------
 
+## Setting up Infra for Training Deep Learning Models
+
+Select EC2 instance - g4dn.2xlarge	
+
+Select Deep Learning AMI (Ubuntu 18.04) Version 61.0
+
+Create Elastic IP and associate with this instance
+
+Create keypair for SSH access
+
+Set inbound rules - allow traffic from my IP address
+
+SSH into instance (using Putty or the command-line)
+
+Activate TensorFlow conda environment (comes with the Ubuntu DL AMI)
+
+Open Python REPL and check if TensorFlow can be imported and if GPU is available
+
+```Python
+import tensorflow as tf
+tf.config.list_physical_devices('GPU')
+```
+
+-----------------------------------------------------------------------------------------------------
