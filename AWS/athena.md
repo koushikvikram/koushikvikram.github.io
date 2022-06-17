@@ -265,3 +265,9 @@ FROM
 ## Top 10 Performance Tuning Tips for Amazon Athena
 
 Source: [https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/](https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Working with Athena in Python using Boto3
+
+Source: [WORKING WITH ATHENA IN PYTHON USING BOTO3](https://hands-on.cloud/working-with-athena-in-python-using-boto3/)
