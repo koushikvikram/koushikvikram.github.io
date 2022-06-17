@@ -271,3 +271,5 @@ Source: [https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-fo
 ## Working with Athena in Python using Boto3
 
 Source: [WORKING WITH ATHENA IN PYTHON USING BOTO3](https://hands-on.cloud/working-with-athena-in-python-using-boto3/)
+
+------------------------------------------------------------------------------------------------------------------------------------
