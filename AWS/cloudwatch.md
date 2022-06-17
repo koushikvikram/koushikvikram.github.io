@@ -8,17 +8,31 @@ permalink: /aws/cloudwatch-reference/
 
 # CloudWatch Reference
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Working With CloudWatch In Python Using boto3
+
+Source: [Working With CloudWatch In Python Using boto3](https://hands-on.cloud/working-with-cloudwatch-in-python-using-boto3/)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 ## Analyzing CloudWatch logs
 
 Source: [https://marbot.io/blog/analyze-cloudwatch-logs-like-a-pro.html](https://marbot.io/blog/analyze-cloudwatch-logs-like-a-pro.html)
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 ## JSON Logs
 
 Source: [JSON Logs with CloudWatch Logs Insights](https://aws.plainenglish.io/json-logs-with-cloudwatch-logs-insights-66dca9370ed4)
 
+------------------------------------------------------------------------------------------------------------------------------------
+
 ## Filter, Parse & Group Log Data in AWS CloudWatch Logs Insights
 
 Source: [https://harishkm.in/2020/06/25/filter-parse-group-log-data-in-aws-cloudwatch-logs-insights/](https://harishkm.in/2020/06/25/filter-parse-group-log-data-in-aws-cloudwatch-logs-insights/)
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 ## Query with string contains
 
@@ -33,11 +47,16 @@ fields @timestamp, @message
 | limit 20
 ```
 
+------------------------------------------------------------------------------------------------------------------------------------
+
 ## Filter and Pattern Syntax
 
 - [Filter and pattern syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html)
 
+------------------------------------------------------------------------------------------------------------------------------------
 
 ## Sample queries
 
 - [Sample queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html)
+
+------------------------------------------------------------------------------------------------------------------------------------
