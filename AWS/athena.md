@@ -273,3 +273,10 @@ Source: [https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-fo
 Source: [WORKING WITH ATHENA IN PYTHON USING BOTO3](https://hands-on.cloud/working-with-athena-in-python-using-boto3/)
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## SQL Query Amazon Athena using Python
+
+Source: [SQL Query Amazon Athena using Python](https://gist.github.com/sysboss/d40ea8a7a12f510e61d7980269323b36)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
