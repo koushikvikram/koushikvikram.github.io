@@ -79,3 +79,33 @@ Source: [https://stackoverflow.com/questions/46895678/python-logging-inherit-con
 ## Solving `psutil` error while running Jupyter Notebooks
 
 If you run into the error `ModuleNotFoundError: No module named 'psutil'` while running Jupyter Notebooks, uninstall and reinstall psutil using pip.
+
+## Marshmallow - Object Serialization
+
+Source: [Marshmallow Documentation](https://marshmallow.readthedocs.io/en/stable/)
+
+
+## Attrs Schema Validation Examples
+
+Source: 
+- [Attrs Examples](https://www.attrs.org/en/stable/examples.html)
+- [Validators](https://www.attrs.org/en/stable/examples.html#validators)
+
+## Attrs - Dataclasses
+
+Source: [Attrs, Dataclasses and Pydantic](https://stefan.sofa-rockers.org/2020/05/29/attrs-dataclasses-pydantic/)
+
+## Templating SQL Queries with JinjaSQL
+
+- [Simple Approach](https://towardsdatascience.com/a-simple-approach-to-templated-sql-queries-in-python-adc4f0dc511)
+- [Advanced Approach](https://towardsdatascience.com/advanced-sql-templates-in-python-with-jinjasql-b996eadd761d)
+- [JinjaSQL Source Code](https://github.com/sripathikrishnan/jinjasql)
+
+## ImportError: cannot import name 'Markup' from 'jinja2'
+
+- [ImportError: cannot import name 'Markup' from 'jinja2'](https://stackoverflow.com/questions/71645272/importerror-cannot-import-name-markup-from-jinja2)
+
+## JSON/Dictionary Valdiation
+
+- [Validation using jsonschema](https://pynative.com/python-json-validation/)
+- [Only allow properties that are declared in JSON schema](https://stackoverflow.com/questions/17530762/only-allow-properties-that-are-declared-in-json-schema)
