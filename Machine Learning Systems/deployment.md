@@ -19,3 +19,8 @@ permalink: /ml-systems/deployment/
 ## Considerations for Production
 
 - [7 Considerations Before Pushing Machine Learning Models to Production](https://towardsdatascience.com/7-considerations-before-pushing-machine-learning-models-to-production-efab64c4d433)
+- [Shipping to Production](https://blog.pragmaticengineer.com/shipping-to-production/)
+
+## Over-the-wall Data Science
+
+- [Over-the-Wall Data Science and How to Avoid Its Pitfalls](https://towardsdatascience.com/over-the-wall-data-science-and-how-to-avoid-its-pitfalls-5af6fa2eef2b)
