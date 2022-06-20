@@ -24,3 +24,8 @@ permalink: /ml-systems/deployment/
 ## Over-the-wall Data Science
 
 - [Over-the-Wall Data Science and How to Avoid Its Pitfalls](https://towardsdatascience.com/over-the-wall-data-science-and-how-to-avoid-its-pitfalls-5af6fa2eef2b)
+
+## MLOps Courses
+
+- [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+- [MLOps Zoomcamp Summary](https://github.com/ThinamXx/MLOps/tree/main/MLOps%20Zoomcamp)
