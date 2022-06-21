@@ -12,3 +12,14 @@ permalink: /ml-systems/modularity/
 
 - [Kedro Docs](https://kedro.readthedocs.io/en/stable/index.html)
 - [Examples of data science projects created with Kedro.](https://github.com/kedro-org/kedro-community)
+
+## Setting up Kedro in a Conda Environment
+
+```bash
+conda create --name <ENV_NAME>
+conda activate <ENV_NAME>
+pip install kedro # not via conda
+kedro new
+cd <PROJECT_DIR>
+kedro build-reqs
+```
