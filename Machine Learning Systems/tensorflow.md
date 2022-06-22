@@ -168,3 +168,19 @@ This doesn't block all logging, though (only TF-Learn). I have two solutions; on
 ```
 script -c 'python [FILENAME].py' | grep -v 'I tensorflow/'
 ```
+
+## ImportError: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.26' not found
+
+Do the following on Ubuntu:
+```bash
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install gcc-5
+sudo apt-get upgrade libstdc++6
+```
+
+Note: might have to change `gcc-5` to `gcc-7` if version is unavailable.
+
+References:
+- [https://github.com/lhelontra/tensorflow-on-arm/issues/13](https://github.com/lhelontra/tensorflow-on-arm/issues/13)
+- [https://www.kaggle.com/product-feedback/281990](https://www.kaggle.com/product-feedback/281990)
