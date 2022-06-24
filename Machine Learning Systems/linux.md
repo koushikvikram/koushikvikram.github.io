@@ -33,3 +33,8 @@ permalink: /ml-systems/linux/
 ## COUNT JSON ARRAY ELEMENTS WITH JQ
 
 Reference: [https://phpfog.com/count-json-array-elements-with-jq/](https://phpfog.com/count-json-array-elements-with-jq/)
+
+## generating frequency table from file
+
+`sort -n input.txt | uniq -c`
+
