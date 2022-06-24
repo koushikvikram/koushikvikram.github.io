@@ -19,3 +19,13 @@ permalink: /ml-systems/linux/
 ## bin vs sbin
 
 - [What is the difference between bin and sbin in Linux?](https://www.sluiceartfair.com/2020/writing-helper/what-is-the-difference-between-bin-and-sbin-in-linux/)
+
+## 5 Ways to Keep Remote SSH Sessions and Processes Running After Disconnection
+
+- screen
+- tmux
+- nohup
+- disown
+- setsid
+
+- [https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/](https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/)

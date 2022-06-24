@@ -60,3 +60,25 @@ fields @timestamp, @message
 - [Sample queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html)
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## AWS Log Insights query with string contains
+
+```
+fields @timestamp, @message
+| filter @message like /user not found/
+| sort @timestamp desc
+| limit 20
+```
+
+Reference: [https://stackoverflow.com/questions/61995669/aws-log-insights-query-with-string-contains](https://stackoverflow.com/questions/61995669/aws-log-insights-query-with-string-contains)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## AWS cloudwatch is truncating logs
+
+Looks like it's one of the known issues in AWS API Gateway.
+
+API Gateway currently limits log events to 1024 bytes. Log events larger than 1024 bytes, such as request and response bodies, will be truncated by API Gateway before submission to CloudWatch Logs.
+
+------------------------------------------------------------------------------------------------------------------------------------
+

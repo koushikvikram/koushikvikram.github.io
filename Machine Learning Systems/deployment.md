@@ -29,3 +29,38 @@ permalink: /ml-systems/deployment/
 
 - [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
 - [MLOps Zoomcamp Summary](https://github.com/ThinamXx/MLOps/tree/main/MLOps%20Zoomcamp)
+
+## Docker build with -f option cannot find Dockerfile
+
+Well, as the error message is suggesting, your Dockerfile is not within the context, which is the current directory (.) in your case.
+
+**The docker file, specified with -f, must always be within the context directory specified as an argument.**
+
+So, normally this should work fine:
+
+`docker build -f /path/to/context/dir/Dockerfile /path/to/context/dir`
+
+And this too:
+
+```bash
+cd /some/dir
+docker build -f /some/dir/customDir/Custom-Dockerfile-name .
+```
+
+While, this would fail:
+
+```bash
+docker build -f /path/to/diff/dir/Dockerfile /path/to/context/dir
+```
+
+From the Docs:
+
+`docker build [OPTIONS] PATH | URL | -`
+
+> The docker build command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified PATH or URL
+
+And:
+
+> By default the docker build command will look for a Dockerfile at the root of the build context. The -f, --file, option lets you specify the path to an alternative file to use instead. This is useful in cases where the same set of files are used for multiple builds. The path must be to a file within the build context. If a relative path is specified then it is interpreted as relative to the root of the context.
+
+Source: [https://stackoverflow.com/questions/32235987/docker-build-with-f-option-cannot-find-dockerfile](https://stackoverflow.com/questions/32235987/docker-build-with-f-option-cannot-find-dockerfile)

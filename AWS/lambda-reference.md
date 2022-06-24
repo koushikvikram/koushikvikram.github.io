@@ -139,3 +139,18 @@ Reference: [https://jeromevdl.medium.com/facts-and-fallacies-of-serverless-5e0b9
 ## Is serverless cheaper for your use case? Find out with this calculator.
 
 Reference: [https://medium.com/serverless-transformation/is-serverless-cheaper-for-your-use-case-find-out-with-this-calculator-2f8a52fc6a68](https://medium.com/serverless-transformation/is-serverless-cheaper-for-your-use-case-find-out-with-this-calculator-2f8a52fc6a68)
+
+-----------------------------------------------------------------------------------------------------
+
+## Monitor your Lambda function and get notified with AWS Chatbot
+
+Reference: [https://aws.amazon.com/blogs/mt/monitor-your-lambda-function-and-get-notified-with-aws-chatbot/](https://aws.amazon.com/blogs/mt/monitor-your-lambda-function-and-get-notified-with-aws-chatbot/)
+
+------------------------------------------------------------------------------------------------------
+
+## FUNCTION_ERROR_INIT_FAILURE AWS lambda
+
+Reference: [https://stackoverflow.com/questions/59932690/function-error-init-failure-aws-lambda](https://stackoverflow.com/questions/59932690/function-error-init-failure-aws-lambda)
+
+------------------------------------------------------------------------------------------------------
+

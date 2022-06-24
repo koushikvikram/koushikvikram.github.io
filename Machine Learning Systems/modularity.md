@@ -23,3 +23,12 @@ kedro new
 cd <PROJECT_DIR>
 kedro build-reqs
 ```
+
+## Kedro - 6 Months In
+
+Source: [https://lou.dev/blog/2020/kedro/](https://lou.dev/blog/2020/kedro/)
+
+## Introduction to Kedro training with Joel Schwarzmann
+
+Source: [Introduction to Kedro training with Joel Schwarzmann - YouTube](https://www.youtube.com/watch?v=NU7LmDZGb6E&ab_channel=QuantumBlack)
+
