@@ -29,3 +29,7 @@ permalink: /ml-systems/linux/
 - setsid
 
 - [https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/](https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/)
+
+## COUNT JSON ARRAY ELEMENTS WITH JQ
+
+Reference: [https://phpfog.com/count-json-array-elements-with-jq/](https://phpfog.com/count-json-array-elements-with-jq/)
