@@ -170,3 +170,16 @@ In simple examples like yours, it might be possible for the Python interpreter t
 
 - [https://stackoverflow.com/questions/36153805/difference-between-raise-and-raise-e](https://stackoverflow.com/questions/36153805/difference-between-raise-and-raise-e)
 
+## Abstract base classes
+
+Source: [abc — Abstract Base Classes](https://docs.python.org/3/library/abc.html)
+
+## Return libraries the current shell has imported
+
+```Python
+import sys
+
+print(sys.modules)
+```
+
+Source: [https://www.geeksforgeeks.org/python-sys-module/](https://www.geeksforgeeks.org/python-sys-module/)

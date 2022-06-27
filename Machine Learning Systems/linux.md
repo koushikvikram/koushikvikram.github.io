@@ -38,3 +38,13 @@ Reference: [https://phpfog.com/count-json-array-elements-with-jq/](https://phpfo
 
 `sort -n input.txt | uniq -c`
 
+## How to reset WSL2 Linux distro on Windows 10
+
+1. Open Start.
+2/ Search for Command Prompt, right-click the top result, and select the Run as administrator option.
+3. Type the following command to view a list of all available distros and press Enter: `wsl --list`. Quick tip: You can also write the command like this: `wsl -l`.
+4. Type the following command to set a distro as the new default and press Enter: `wsl --unregister DISTRO-NAME`. In the command, replace DISTRO-NAME for the name of the distro you want to set as default (see step No. 3). For example, this command unregisters Kali Linux: `wsl --unregister Kali-linux`
+5. Type the following command to confirm distros and press Enter: `wsl --list`
+
+Source: [https://pureinfotech.com/reset-wsl2-linux-distro-windows-10/](https://pureinfotech.com/reset-wsl2-linux-distro-windows-10/)
+

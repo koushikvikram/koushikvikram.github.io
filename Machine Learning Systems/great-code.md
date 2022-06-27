@@ -67,3 +67,7 @@ Torvalds is not alone in this, by the way: *"Show me your flowchart and conceal 
 Great code should be an expression of what needs to be done, not how to do it, abstracts away implementation details.
 
 Values don't have side effects.
+
+## Functional Programming Design Patterns
+
+Source: [Functional Programming Design Patterns](https://fsharpforfunandprofit.com/fppatterns/)
