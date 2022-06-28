@@ -32,3 +32,7 @@ permalink: /ml-systems/books/
 ## Making work visible
 
 - [Making Work Visible: Exposing Time Theft to Optimize Work & Flow](https://www.amazon.ca/Making-Work-Visible-Exposing-Optimize-dp-1950508498/dp/1950508498/ref=dp_ob_title_bk)
+
+## Balaji Srinivasan Mentions
+
+- [Books mentioned by Balaji Srinivasan.](https://www.goodreads.com/list/show/167530.Balaji_Srinivasan_Mentions)
