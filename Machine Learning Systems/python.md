@@ -183,3 +183,15 @@ print(sys.modules)
 ```
 
 Source: [https://www.geeksforgeeks.org/python-sys-module/](https://www.geeksforgeeks.org/python-sys-module/)
+
+## raise JSONDecodeError("Expecting value", s, err.value) from None >JSONDecodeError: Expecting value
+
+Use `json.dumps()` to convert to JSON-readable string and then read it back using `json.loads()`
+
+## Get a random value from range
+
+`random.randint(start: int, end: int)`
+
+## Randomly choose 'n' items from sequence
+
+`random.sample(seq, n)`
