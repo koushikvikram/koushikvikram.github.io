@@ -62,3 +62,49 @@ Be careful not to over-optimize for 'second order' data impacts. Yes, being able
 ![Modern Data Stack](images/data-stack.jfif)
 
 Source: [https://www.linkedin.com/posts/chad-sanderson_daily-reminder-that-despite-the-amazing-technology-activity-6947590189955321856-kpt7?utm_source=linkedin_share&utm_medium=member_desktop_web](https://www.linkedin.com/posts/chad-sanderson_daily-reminder-that-despite-the-amazing-technology-activity-6947590189955321856-kpt7?utm_source=linkedin_share&utm_medium=member_desktop_web)
+
+## You should write online every single day.
+
+You should write online every single day.
+
+Here's what will happen:
+- Some people will love it.
+- Some people will hate it.
+- Many people will ignore it.
+
+It doesn't matter.
+
+Writing is a critical piece of personal growth
+
+If you want to start writing, here are 3 things that work for me:
+
+1. Build something
+    - Anything. A website. A newsletter. An app. A course. An eBook. A marketplace. A car.
+    - Then, write about the ups and downs.
+    - Publish it.
+2. Journal for 15 minutes at the end of each day.
+    - What did you learn that day? Brain dump it.
+    - Cut out all the fluff. Make it easy to digest.
+    - Post it.
+3. Reframe interesting articles
+    - Schedule time each week to review saved articles.
+    - Pull out the most interesting thing you read. Write your perspective on it.
+    - Add your flair + send it.
+
+Or do none of these things and try something else, because what works for me may not work for you.
+
+But if you're trying, at least you're starting.
+
+Try today.
+
+It's a muscle you'll never regret building.
+
+Source: [https://www.linkedin.com/posts/justinwelsh_you-should-write-online-every-single-day-activity-6947594525980692481-wQ85?utm_source=linkedin_share&utm_medium=member_desktop_web](https://www.linkedin.com/posts/justinwelsh_you-should-write-online-every-single-day-activity-6947594525980692481-wQ85?utm_source=linkedin_share&utm_medium=member_desktop_web)
+
+## The Anatomy of a Viral LinkedIn Post
+
+Source: [https://www.justinwelsh.me/blog/04232022](https://www.justinwelsh.me/blog/04232022)
+
+## 5 questions for endless content
+
+Source: [https://www.justinwelsh.me/blog/6112022](https://www.justinwelsh.me/blog/6112022)
