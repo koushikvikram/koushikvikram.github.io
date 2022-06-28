@@ -36,3 +36,18 @@ permalink: /ml-systems/books/
 ## Balaji Srinivasan Mentions
 
 - [Books mentioned by Balaji Srinivasan.](https://www.goodreads.com/list/show/167530.Balaji_Srinivasan_Mentions)
+
+## Software Design
+
+- [A Philosophy of Software Design](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design)
+- [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
+- [How to Design Programs](https://htdp.org/)
+- [Designing Data-Intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
+- [Fundamentals of Software Architecture: An Engineering Approach](https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture)
+- [Software Architecture: The Hard Parts](https://www.oreilly.com/library/view/software-architecture-the/9781492086888/)
+- [The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer)
+- [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.goodreads.com/book/show/3735293-clean-code)
+- [Clean Architecture](https://www.goodreads.com/book/show/18043011-clean-architecture)
+- [Architecture Patterns with Python: Enabling Test-Driven Development, Domain-Driven Design, and Event-Driven Microservices](https://www.goodreads.com/book/show/50083115-architecture-patterns-with-python)
+
+- [Cracking the Low Level Design (LLD) Interview](https://shashibhushankr.medium.com/cracking-the-low-level-design-lld-interview-4e02b3b555e2)
