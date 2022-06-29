@@ -86,7 +86,7 @@ Full table scan needs pagination:
 
 ```python
 import boto3
-
+import pickle
 
 REGION_NAME = "<REGION_NAME>"
 TABLE_NAME = "<TABLE_NAME>"
@@ -106,4 +106,7 @@ while response.get("LastEvaluatedKey", False):
     data.extend(response.get("Items"))
     n_scanned += response.get("ScannedCount")
     print(f"Scanned {n_scanned}/{n_rows} rows")
+
+with open(f"{TABLE_NAME}-items.pkl", "wb") as f:
+    pickle.dump(data, f)
 ```
