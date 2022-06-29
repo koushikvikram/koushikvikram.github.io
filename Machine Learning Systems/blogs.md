@@ -129,3 +129,7 @@ Good writing is not a natural gift. You have to learn to write well. Here are 10
 10. If you want ACTION, don’t write. Go and tell the guy what you want.
 
 Source: [https://fs.blog/david-ogilvy-10-tips-on-writing/](https://fs.blog/david-ogilvy-10-tips-on-writing/)
+
+## Why You Should Write Weekly 15-5s
+
+Source: [https://eugeneyan.com/writing/15-5/](https://eugeneyan.com/writing/15-5/)
