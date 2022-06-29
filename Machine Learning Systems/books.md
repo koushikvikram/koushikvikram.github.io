@@ -8,6 +8,11 @@ permalink: /ml-systems/books/
 
 # Books
 
+## Ace Advanced ML Strategy
+
+- [The Only Book You Need to Ace Advanced Machine Learning Strategy](https://towardsdatascience.com/the-only-book-you-need-to-ace-advanced-machine-learning-strategy-8d48ddbbe73d)
+- [Machine Learning Yearning - Andrew Ng](https://github.com/ajaymache/machine-learning-yearning)
+
 ## DevOps must-to-read list
 
 - [DevOps must-to-read list](https://www.goodreads.com/list/show/110058.DevOps_must_to_read_list)
