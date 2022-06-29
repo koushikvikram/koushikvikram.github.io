@@ -42,6 +42,7 @@ permalink: /ml-systems/books/
 - [A Philosophy of Software Design](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design)
 - [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
 - [How to Design Programs](https://htdp.org/)
+- [Architecture/Performance of Open-Source Applications, 500 lines or less](http://aosabook.org/en/index.html)
 - [Designing Data-Intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
 - [Fundamentals of Software Architecture: An Engineering Approach](https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture)
 - [Software Architecture: The Hard Parts](https://www.oreilly.com/library/view/software-architecture-the/9781492086888/)
