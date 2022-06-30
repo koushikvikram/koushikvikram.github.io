@@ -25,6 +25,10 @@ permalink: /ml-systems/spark/
 - [Performance Optimization in Apache Spark](https://medium.com/@harun.raseed093/performance-optimization-in-apache-spark-6067b9d96b80)
 - [Part 3: Cost Efficient Executor Configuration for Apache Spark](https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262)
 - [Spark Performance Tuning - Decide Number of executors](https://www.youtube.com/playlist?list=PL9sbKmQTkW04QUP55qXJwaOO-2URMvGS_)
+- [Garbage Collection Tuning Concepts in Spark](https://joydipnath.medium.com/garbage-collection-tuning-concepts-in-spark-cf1a784e83c)
+- [Spark Performance Tuning: Skewness Part 1](https://selectfrom.dev/spark-performance-tuning-skewness-part-1-82502246cb32)
+- [Spark Performance Tuning: Skewness Part 2](https://selectfrom.dev/spark-performance-tuning-skewness-part-2-9f50c765a87e)
+- [Spark Tuning, Optimization, and Performance Techniques](https://medium.com/@contactnavaneethpal/spark-tuning-optimization-and-performance-techniques-5db655c655bb)
 
 ## Basic Concepts
 - [Apache Spark: RDDs, DataFrames, Datasets](https://medium.com/@life-is-short-so-enjoy-it/apache-spark-rdds-dataframes-datasets-3072bdd9448d)
@@ -64,3 +68,9 @@ permalink: /ml-systems/spark/
 - [Data Modeling in Apache Spark - Part 2 : Working With Multiple Dates](http://blog.madhukaraphatak.com/data-modeling-spark-part-2/)
 - [Continuous Data Processing with Star Schema Data Warehouse using Apache Spark](https://medium.com/alef-education/continuous-data-processing-with-star-schema-data-warehouse-using-apache-spark-73c5fdf9cefa)
 - [Processing a Slowly Changing Dimension Type 2 Using PySpark in AWS](https://towardsdatascience.com/processing-a-slowly-changing-dimension-type-2-using-pyspark-in-aws-9f5013a36902)
+
+## Jupyter + PySpark Setup on AWS EMR
+- [Setup Jupyter Notebook with EMR to run spark job in 5 minutes](https://towardsdev.com/setup-jupyter-notebook-with-emr-to-run-spark-job-in-5-minutes-21c23de4fdf3)
+
+## Accumulators
+- [Instrumenting PySpark Applications using Spark Accumulators](https://rotemtam.medium.com/instrumenting-pyspark-applications-using-spark-accumulators-3c6fe93ea5c3)
