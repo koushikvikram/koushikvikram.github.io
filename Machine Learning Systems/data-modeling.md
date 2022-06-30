@@ -10,7 +10,15 @@ permalink: /ml-systems/data-modeling/
 
 ## Star Schema
 
-[The star schema separates business process data into facts, which hold the measurable, quantitative data about a business, and dimensions which are descriptive attributes related to fact data. Examples of fact data include sales price, sale quantity, and time, distance, speed and weight measurements.](https://en.wikipedia.org/wiki/Star_schema)
+```
+The star schema separates business process data into 
+- facts, which hold the measurable, quantitative data about a business
+- dimensions, which are descriptive attributes related to fact data
+
+Examples of fact data include sales price, sale quantity, and time, distance, speed and weight measurements.
+
+Source: https://en.wikipedia.org/wiki/Star_schema
+```
 
 - [The Star Schema: A Hands-On Approach to Modeling](https://medium.com/mlearning-ai/the-star-schema-a-hands-on-approach-to-modeling-fcf9e87edc08)
 
