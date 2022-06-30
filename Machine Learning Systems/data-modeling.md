@@ -9,7 +9,6 @@ permalink: /ml-systems/data-modeling/
 # Data Modeling
 
 ## Star Schema
-
 ```
 The star schema separates business process data into 
 - facts, which hold the measurable, quantitative data about a business
