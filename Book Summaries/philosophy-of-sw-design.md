@@ -13,7 +13,7 @@ Author: John Ousterhout
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Contents
-1. Introduction
+1. Introduction (It's All About Complexity)
 2. The Nature of Complexity
 3. Working Code Isn't Enough
 4. Modules Should Be Deep
@@ -39,24 +39,25 @@ Contents
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 1. Introduction
+## 1. Introduction (It's All About Complexity)
 
 > Preface
 
 **Summary:**
+- *Reducing complexity* is the overall goal
 - *Problem Decomposition*
     - Meaning: *Taking a complex problem and dividing it up into pieces that can be solved independently.*
     - Most fundamental problem in Computer Science
     - Central design task that programmers face everyday
     - This skill separates great programmers from average ones
+- Software design principles in this book are fairly high level and border on the philosophical
 - Learn software design in an iterative process
     - Learn software design principles from this book and work through a series of projects to assimilate and practice the principles
     - Write code, make mistakes and then see how these mistakes and subsequent fixes relate to the principles
     - While developing a substantial piece of software from scratch
         - Go through extensive code reviews to identify design problems
         - Revise projects to fix the problems
-- *Reducing complexity* is the overall goal
-- Software design principles in this book are fairly high level and border on the philosophical
+
 
 **Resources:**
 - [CS 190: Software Design Studio (Winter 2021)](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter21/index.php)
@@ -64,7 +65,7 @@ Contents
 - [On the criteria to be used in decomposing systems into modules - Paper](https://github.com/koushikvikram/koushikvikram.github.io/blob/main/Book%20Summaries/resources/criteria_for_modularization.pdf)
 
 
-> Introduction
+> Introduction (It's All About Complexity)
 
 **Summary:**
 
