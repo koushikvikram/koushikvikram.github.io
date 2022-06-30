@@ -24,7 +24,7 @@ permalink: /ml-systems/spark/
 # Performance Optimization
 - [Performance Optimization in Apache Spark](https://medium.com/@harun.raseed093/performance-optimization-in-apache-spark-6067b9d96b80)
 - [Part 3: Cost Efficient Executor Configuration for Apache Spark](https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262)
-- [Spark Performance Tuning | Decide Number of executors](https://www.youtube.com/playlist?list=PL9sbKmQTkW04QUP55qXJwaOO-2URMvGS_)
+- [Spark Performance Tuning - Decide Number of executors](https://www.youtube.com/playlist?list=PL9sbKmQTkW04QUP55qXJwaOO-2URMvGS_)
 
 ## Basic Concepts
 - [Apache Spark: RDDs, DataFrames, Datasets](https://medium.com/@life-is-short-so-enjoy-it/apache-spark-rdds-dataframes-datasets-3072bdd9448d)
