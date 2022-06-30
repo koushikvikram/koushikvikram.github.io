@@ -43,21 +43,22 @@ Contents
 
 > Preface
 
-**Summary:**
-- *Reducing complexity* is the overall goal
-- *Problem Decomposition*
-    - Meaning: *Taking a complex problem and dividing it up into pieces that can be solved independently.*
-    - Most fundamental problem in Computer Science
-    - Central design task that programmers face everyday
-    - This skill separates great programmers from average ones
-- Software design principles in this book are fairly high level and border on the philosophical
-- Learn software design in an iterative process
-    - Learn software design principles from this book and work through a series of projects to assimilate and practice the principles
-    - Write code, make mistakes and then see how these mistakes and subsequent fixes relate to the principles
-    - While developing a substantial piece of software from scratch
-        - Go through extensive code reviews to identify design problems
-        - Revise projects to fix the problems
+**Definitions:**
+- Problem Decomposition: *Taking a complex problem and dividing it up into pieces that can be solved independently.*
 
+**Summary:**
+- *Problem Decomposition* is the most fundamental problem in Computer Science
+    - *Reducing complexity* is the overall goal
+    - Central design task that programmers face everyday
+    - Separates great programmers from average ones
+
+**Notes:**
+- Software design principles in this book are fairly high level and border on the philosophical
+- Learn in an iterative process. Learn the principles and work through a series of projects to assimilate and practice them
+- Write code, make mistakes and then see how these mistakes and subsequent fixes relate to the principles
+- While developing a substantial piece of software from scratch
+    - Go through extensive code reviews to identify design problems
+    - Revise projects to fix the problems
 
 **Resources:**
 - [CS 190: Software Design Studio (Winter 2021)](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter21/index.php)
@@ -67,7 +68,13 @@ Contents
 
 > Introduction (It's All About Complexity)
 
+**Definitions:**
+
+
 **Summary:**
+
+
+**Notes:**
 
 
 **Resources:**
