@@ -195,3 +195,7 @@ Use `json.dumps()` to convert to JSON-readable string and then read it back usin
 ## Randomly choose 'n' items from sequence
 
 `random.sample(seq, n)`
+
+## Analyzing Python Code with Python
+
+- [Analyzing Python Code with Python](https://rotemtam.medium.com/analyzing-python-code-with-python-589b0836fb2c)

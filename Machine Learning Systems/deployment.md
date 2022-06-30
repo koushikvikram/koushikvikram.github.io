@@ -71,3 +71,10 @@ Source: [https://stackoverflow.com/questions/32235987/docker-build-with-f-option
 
 [A guide on when to retrain your Machine Learning model](https://towardsdatascience.com/when-are-you-planning-to-retrain-your-machine-learning-model-5349eb0c4706)
 
+## Monitoring
+
+- [Monitoring Machine Learning Systems](https://madewithml.com/courses/mlops/monitoring/)
+
+## SageMaker Workflows
+
+- [SageMaker Workflows](https://docs.aws.amazon.com/sagemaker/latest/dg/workflows.html)
