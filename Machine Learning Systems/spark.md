@@ -41,3 +41,26 @@ permalink: /ml-systems/spark/
 ## Data Skew
 - [Data Skew in Apache Spark](https://medium.com/selectfrom/data-skew-in-apache-spark-f5eb194a7e2)
 - [Skewed Data in Spark? Add SALT to Compensate](https://towardsdatascience.com/skewed-data-in-spark-add-salt-to-compensate-16d44404088b)
+
+## Read CSV
+- [PySpark Read CSV file into DataFrame](https://sparkbyexamples.com/pyspark/pyspark-read-csv-file-into-dataframe/)
+
+## Spark Metastore
+- [Metastore in Apache Spark](https://medium.com/@sarfarazhussain211/metastore-in-apache-spark-9286097180a4)
+
+## Pandas on Spark
+- [Pandas API on Apache Spark - Part 1: Introduction](http://blog.madhukaraphatak.com/spark-pandas-part-1/)
+- [Pandas API on Apache Spark - Part 2: Hello World](http://blog.madhukaraphatak.com/spark-pandas-part-2/)
+
+## XGBoost on PySpark
+- [dmlc - eXtreme Gradient Boosting](https://github.com/dmlc/xgboost)
+- [PySpark ML and XGBoost full integration tested on the Kaggle Titanic dataset](https://towardsdatascience.com/pyspark-and-xgboost-integration-tested-on-the-kaggle-titanic-dataset-4e75a568bdb)
+
+## XGBoost on Spark
+- [XGBoost4J-Spark Tutorial](https://xgboost.readthedocs.io/en/stable/jvm/xgboost4j_spark_tutorial.html)
+
+## Data Modeling
+- [Data Modeling in Apache Spark - Part 1 : Date Dimension](http://blog.madhukaraphatak.com/data-modeling-spark-part-1/)
+- [Data Modeling in Apache Spark - Part 2 : Working With Multiple Dates](http://blog.madhukaraphatak.com/data-modeling-spark-part-2/)
+- [Continuous Data Processing with Star Schema Data Warehouse using Apache Spark](https://medium.com/alef-education/continuous-data-processing-with-star-schema-data-warehouse-using-apache-spark-73c5fdf9cefa)
+- [Processing a Slowly Changing Dimension Type 2 Using PySpark in AWS](https://towardsdatascience.com/processing-a-slowly-changing-dimension-type-2-using-pyspark-in-aws-9f5013a36902)

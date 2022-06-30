@@ -77,3 +77,8 @@ Source: [https://examples.dask.org/dataframes/01-data-access.html#Read-CSV-files
 The Dask dataframes implement a subset of the Pandas dataframe API. If all the data fits into memory, you can call `df.compute()` to convert the dataframe into a Pandas dataframe.
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## SQL to pandas
+- [Writing 5 common SQL queries in pandas](https://towardsdatascience.com/writing-5-common-sql-queries-in-pandas-90b52f17ad76)
+
+------------------------------------------------------------------------------------------------------------------------------------
