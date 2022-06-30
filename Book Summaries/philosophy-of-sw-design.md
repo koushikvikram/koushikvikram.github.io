@@ -55,4 +55,4 @@ Contents
 **Resources:**
 - [CS 190: Software Design Studio (Winter 2021)](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter21/index.php)
 - [On the criteria to be used in decomposing systems into modules - Summary](https://blog.acolyer.org/2016/09/05/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/)
-- [On the criteria to be used in decomposing systems into modules - Paper]()
+- [On the criteria to be used in decomposing systems into modules - Paper](https://github.com/koushikvikram/koushikvikram.github.io/blob/main/Book%20Summaries/resources/criteria_for_modularization.pdf)
