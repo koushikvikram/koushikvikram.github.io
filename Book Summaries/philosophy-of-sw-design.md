@@ -10,6 +10,8 @@ permalink: /book-summaries/a-philosophy-of-software-design/
 
 Author: John Ousterhout
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Contents
 1. Introduction
 2. The Nature of Complexity
@@ -35,7 +37,11 @@ Contents
 22. Summary of Design Principles
 23. Summary of Red Flags
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## 1. Introduction
+
+> Preface
 
 **Summary:**
 - *Problem Decomposition*
@@ -56,3 +62,14 @@ Contents
 - [CS 190: Software Design Studio (Winter 2021)](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter21/index.php)
 - [On the criteria to be used in decomposing systems into modules - Summary](https://blog.acolyer.org/2016/09/05/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/)
 - [On the criteria to be used in decomposing systems into modules - Paper](https://github.com/koushikvikram/koushikvikram.github.io/blob/main/Book%20Summaries/resources/criteria_for_modularization.pdf)
+
+
+> Introduction
+
+**Summary:**
+
+
+**Resources:**
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
