@@ -71,3 +71,7 @@ Values don't have side effects.
 ## Functional Programming Design Patterns
 
 Source: [Functional Programming Design Patterns](https://fsharpforfunandprofit.com/fppatterns/)
+
+## Courses
+- [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+- [Stanford - Programming Abstractions](https://www.youtube.com/playlist?list=PLFE6E58F856038C69)
