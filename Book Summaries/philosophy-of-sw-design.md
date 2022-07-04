@@ -1,7 +1,7 @@
 ---
 layout: default
 title: A Philosophy of Software Design
-parent: Business and Startups
+parent: Book Summaries
 nav_order: 2
 permalink: /book-summaries/a-philosophy-of-software-design/
 ---
