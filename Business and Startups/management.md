@@ -42,3 +42,7 @@ Source: [What I Learnt About Setting Expectations from Working at a Big 4 Firm](
 
 - [Technical Debt: How to Identify, Plan and Deliver Debt Changes](https://betterprogramming.pub/technical-debt-how-to-identify-plan-and-deliver-debt-changes-80aae7161312)
 - [Chronic early-adopter tech-debt syndrome](https://medium.com/swlh/chronic-early-adopter-tech-debt-syndrome-4bfbf532e77)
+
+## Value Stream Analytics on Gitlab
+
+[Value stream analytics for projects](https://docs.gitlab.com/ee/user/analytics/value_stream_analytics.html)
