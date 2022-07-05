@@ -82,3 +82,40 @@ The Dask dataframes implement a subset of the Pandas dataframe API. If all the d
 - [Writing 5 common SQL queries in pandas](https://towardsdatascience.com/writing-5-common-sql-queries-in-pandas-90b52f17ad76)
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## How to group dataframe rows into list in pandas groupby
+
+You can do this using `groupby` to group on the column of interest and then `apply` `list` to every group:
+
+```Python
+df = pd.DataFrame( {'a':['A','A','B','B','B','C'], 'b':[1,2,5,5,4,6]})
+
+df.groupby('a')['b'].apply(list)
+df1 = df.groupby('a')['b'].apply(list).reset_index(name='new')
+```
+
+Source: [https://stackoverflow.com/questions/22219004/how-to-group-dataframe-rows-into-list-in-pandas-groupby](https://stackoverflow.com/questions/22219004/how-to-group-dataframe-rows-into-list-in-pandas-groupby)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Pandas - Sort DataFrame by Column 
+
+By single column:
+
+`df.sort_values(by=['col1'])`
+
+By multiple columns:
+
+`df.sort_values(by=['col1', 'col2'])`
+
+Putting NAs first
+
+`df.sort_values(by='col1', ascending=False, na_position='first')`
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## How to display all rows from data frame using pandas
+
+`pd.set_option('display.max_rows', None)`
+
+------------------------------------------------------------------------------------------------------------------------------------
