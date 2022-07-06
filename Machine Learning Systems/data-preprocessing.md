@@ -159,3 +159,26 @@ Source: [Set Operations Applied to Pandas DataFrames](https://www.kdnuggets.com/
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+## Pandas - Read only selected columns from CSV
+
+```Python
+import pandas as pd
+
+df = pd.read_csv('some_data.csv', usecols = ['col1','col2'])
+```
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Pandas - low_memory, usecols - when dataset doesn't fit in memory
+
+```Python
+import pandas as pd
+
+df = pd.read_csv('some_data.csv', usecols = ['col1','col2'], low_memory = True)
+```
+
+We use `low_memory` so that we internally process the file in chunks.
+
+Source: [https://stackoverflow.com/questions/26063231/read-specific-columns-with-pandas-or-other-python-module](https://stackoverflow.com/questions/26063231/read-specific-columns-with-pandas-or-other-python-module)
+
+------------------------------------------------------------------------------------------------------------------------------------
