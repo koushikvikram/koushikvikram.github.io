@@ -169,3 +169,36 @@ If your upstream branch is not set, try `git pull origin <branch> --rebase`
 To set this option globally, use `git config --global pull.rebase true`
 
 -----------------------------------------------------------------------------------------------------
+
+## Gitlab: Connect commits to issues, MRs and snippets
+
+In the commit message include:
+- To reference an issue: #ISSUE_ID
+- To reference a MR: !MR_ID
+- To reference a snippet: $SNIPPET_ID
+
+Source: [Tutorial: It's all connected in GitLab](https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/)
+
+-----------------------------------------------------------------------------------------------------
+
+## Gitlab Issue: Time Tracking
+
+> Aside: Quick Actions: Quick actions are text-based shortcuts for common actions that are usually done by selecting buttons or dropdowns in the GitLab user interface. You can enter these commands in the descriptions or comments of issues, epics, merge requests, and commits. Be sure to enter each quick action on a separate line to allow GitLab to properly detect and execute the commands. Source: [https://docs.gitlab.com/ee/user/project/quick_actions.html](https://docs.gitlab.com/ee/user/project/quick_actions.html)
+
+- `/estimate`
+- `/remove_estimate`
+- `/spend`
+- `/remove_time_spent`
+
+Eg. `/spend 30m`
+
+You can view a breakdown of time spent on an issue or merge request.
+
+To view a time tracking report:
+1. Go to an issue or a merge request.
+2. In the right sidebar, select Time tracking report.
+
+Source: [Time tracking](https://docs.gitlab.com/ee/user/project/time_tracking.html)
+
+-----------------------------------------------------------------------------------------------------
+
