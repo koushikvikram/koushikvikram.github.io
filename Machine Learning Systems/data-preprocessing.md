@@ -119,3 +119,43 @@ Putting NAs first
 `pd.set_option('display.max_rows', None)`
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## Set operations on Pandas DataFrames
+
+- Union: concat() + drop_duplicates()
+- Intersection: merge()
+- Difference: isin() + Boolean indexing
+
+Union:
+
+```Python
+import pandas as pd
+
+def union(df1, df2):
+    concat_df = pd.concat([df1, df2], ignore_index=True)
+    union_df = concat_df.drop_duplicates()
+    return union_df
+```
+
+Intersection:
+
+```Python
+import pandas as pd
+
+def intersection(df1, df2):
+    return df1.merge(df2)
+```
+
+Difference:
+
+```Python
+import pandas as pd
+
+def difference(df1, df2, col: str):
+    return df1[df1[col].isin(df2[col]) == False]
+```
+
+Source: [Set Operations Applied to Pandas DataFrames](https://www.kdnuggets.com/2019/11/set-operations-applied-pandas-dataframes.html)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
