@@ -86,3 +86,11 @@ tf.config.list_physical_devices('GPU')
 The EC2 instance comes with `aws-cli` and `git` pre-installed.
 
 -----------------------------------------------------------------------------------------------------
+
+## Start EC2 instance from AWS CLI
+
+```bash
+aws ec2 start-instances --instance-ids i-1234567890abcdef0
+```
+
+-----------------------------------------------------------------------------------------------------

@@ -85,3 +85,11 @@ API Gateway currently limits log events to 1024 bytes. Log events larger than 10
 ## CloudWatch statistics definitions
 
 Reference: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Statistics-definitions.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Statistics-definitions.html)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Cloudwatch Alarms to Slack
+
+Reference: [https://medium.com/pixelpoint/how-to-send-aws-cloudwatch-alarms-to-slack-502bcf106047](https://medium.com/pixelpoint/how-to-send-aws-cloudwatch-alarms-to-slack-502bcf106047)
+
+------------------------------------------------------------------------------------------------------------------------------------
