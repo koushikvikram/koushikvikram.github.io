@@ -91,21 +91,26 @@ import pickle
 REGION_NAME = "<REGION_NAME>"
 TABLE_NAME = "<TABLE_NAME>"
 
-dynamodb = boto3.resource("dynamodb", REGION_NAME)
-table = dynamodb.Table(TABLE_NAME)
+def get_table_items(table, region):
+    dynamodb = boto3.resource("dynamodb", region)
+    table = dynamodb.Table(table)
 
-n_rows = table.item_count
+    n_rows = table.item_count
 
-response = table.scan()
-data = response.get("Items")
+    response = table.scan()
+    data = response.get("Items")
 
-n_scanned = response.get("ScannedCount")
+    n_scanned = response.get("ScannedCount")
 
-while response.get("LastEvaluatedKey", False):
-    response = table.scan(ExclusiveStartKey=response.get('LastEvaluatedKey'))
-    data.extend(response.get("Items"))
-    n_scanned += response.get("ScannedCount")
-    print(f"Scanned {n_scanned}/{n_rows} rows")
+    while response.get("LastEvaluatedKey", False):
+        response = table.scan(ExclusiveStartKey=response.get('LastEvaluatedKey'))
+        data.extend(response.get("Items"))
+        n_scanned += response.get("ScannedCount")
+        print(f"Scanned {n_scanned}/{n_rows} rows")
+    
+    return data
+
+data = get_table_items(TABLE_NAME, REGION_NAME)
 
 with open(f"{TABLE_NAME}-items.pkl", "wb") as f:
     pickle.dump(data, f)
