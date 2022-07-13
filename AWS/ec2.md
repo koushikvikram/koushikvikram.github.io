@@ -94,3 +94,22 @@ aws ec2 start-instances --instance-ids i-1234567890abcdef0
 ```
 
 -----------------------------------------------------------------------------------------------------
+
+## Private keys and connecting to EC2
+
+Only the keys (.ppk/.pem) associated with an EC2 instance can be used for connecting to the instance.
+
+-----------------------------------------------------------------------------------------------------
+
+## Connect to EC2 with SSH in Mac
+
+Source: [https://asf.alaska.edu/how-to/data-recipes/connect-to-ec2-with-ssh-mac-os-x/](https://asf.alaska.edu/how-to/data-recipes/connect-to-ec2-with-ssh-mac-os-x/)
+
+-----------------------------------------------------------------------------------------------------
+
+## Connect to your Linux instance using SSH
+
+Source: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+
+-----------------------------------------------------------------------------------------------------
+

@@ -154,3 +154,12 @@ Reference: [https://stackoverflow.com/questions/59932690/function-error-init-fai
 
 ------------------------------------------------------------------------------------------------------
 
+## How to deploy your FastAPI application on AWS Lambda with Serverless
+
+Source: [https://adem.sh/blog/tutorial-fastapi-aws-lambda-serverless](https://adem.sh/blog/tutorial-fastapi-aws-lambda-serverless)
+
+------------------------------------------------------------------------------------------------------
+
+## Simple Serverless FastAPI with AWS Lambda
+
+Source: [https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/](https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/)

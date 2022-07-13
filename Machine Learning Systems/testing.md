@@ -23,3 +23,11 @@ permalink: /ml-systems/testing/
 
 - [Great (data) expectations — automatic data quality validation](https://medium.com/cisco-fpie/great-data-expectations-automatic-data-quality-validation-889852819bc9)
 - [Kedro Great: Use Great Expectations with Ease!](https://github.com/tamsanh/kedro-great)
+
+## Pandera
+
+- [Using SchemaModels to Validate Endpoint Inputs and Outputs](https://pandera.readthedocs.io/en/stable/fastapi.html#using-schemamodels-to-validate-endpoint-inputs-and-outputs)
+- [Using Pandera Schemas in Pydantic Models](https://pandera.readthedocs.io/en/stable/pydantic_integration.html)
+- [Pandera Hypothesis Testing Suite](https://github.com/pandera-dev/pandera/issues/168)
+- [Pandera - Hypothesis Testing](https://pandera.readthedocs.io/en/stable/hypothesis.html#:~:text=Wide%20Hypotheses,across%20columns%20in%20a%20DataFrame%20.)
+- [Validate Your pandas DataFrame with Pandera](https://towardsdatascience.com/validate-your-pandas-dataframe-with-pandera-2995910e564)

@@ -199,3 +199,69 @@ Use `json.dumps()` to convert to JSON-readable string and then read it back usin
 ## Analyzing Python Code with Python
 
 - [Analyzing Python Code with Python](https://rotemtam.medium.com/analyzing-python-code-with-python-589b0836fb2c)
+
+## How to get current date and time in Python?
+
+### Get today's date
+```python
+from datetime import date
+
+today = date.today()
+print("Today's date:", today)
+```
+
+### Current date in different formats
+```python
+from datetime import date
+
+today = date.today()
+
+# dd/mm/YY
+d1 = today.strftime("%d/%m/%Y")
+print("d1 =", d1)
+
+# Textual month, day and year	
+d2 = today.strftime("%B %d, %Y")
+print("d2 =", d2)
+
+# mm/dd/y
+d3 = today.strftime("%m/%d/%y")
+print("d3 =", d3)
+
+# Month abbreviation, day and year	
+d4 = today.strftime("%b-%d-%Y")
+print("d4 =", d4)
+```
+
+Output:
+```bash
+d1 = 16/09/2019
+d2 = September 16, 2019
+d3 = 09/16/19
+d4 = Sep-16-2019
+```
+
+Get the current date and time
+```python
+from datetime import datetime
+
+# datetime object containing current date and time
+now = datetime.now()
+ 
+print("now =", now)
+
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+print("date and time =", dt_string)	
+```
+
+output:
+```bash
+now = 2021-06-25 07:58:56.550604
+date and time = 25/06/2021 07:58:56
+```
+
+Source: [How to get current date and time in Python?](https://www.programiz.com/python-programming/datetime/current-datetime)
+
+## Fugue and DuckDB: Fast SQL Code in Python
+- [Fugue and DuckDB: Fast SQL Code in Python](https://towardsdatascience.com/fugue-and-duckdb-fast-sql-code-in-python-e2e2dfc0f8eb)
