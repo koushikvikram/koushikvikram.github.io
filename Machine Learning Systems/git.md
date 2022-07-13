@@ -207,3 +207,7 @@ Source: [Time tracking](https://docs.gitlab.com/ee/user/project/time_tracking.ht
 Source: [https://stackoverflow.com/questions/59061816/git-forces-refresh-index-after-switching-between-windows-and-linux](https://stackoverflow.com/questions/59061816/git-forces-refresh-index-after-switching-between-windows-and-linux)
 
 -----------------------------------------------------------------------------------------------------
+
+## GitHub Profile Achievements
+
+- [GitHub Profile Achievements 🏆](https://github.com/Schweinepriester/github-profile-achievements)
