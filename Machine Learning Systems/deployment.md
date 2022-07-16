@@ -91,3 +91,21 @@ Source: [https://stackoverflow.com/questions/32235987/docker-build-with-f-option
 
 Source: [Does Model Performance Even Matter? - YouTube - Ritvikmath](https://www.youtube.com/watch?v=vVTPP5gJe2g&ab_channel=ritvikmath)
 
+> TL;DR  
+> Q: What makes a model "good"?/How to choose which model to use?     
+> A: Depends on what it's going to be used for.  
+
+A non-exhaustive list of metrics we need to consider depending on the model's purpose:
+- Performance (accuracy, precision, etc.)
+- Training volume
+- Training time
+- Inference time
+- Interpretability
+- Model storage (size in MB/GB)
+
+Consider trade-offs for your situation and environment
+- K-NNs take up a lot of disk space because they hold the entire dataset. So, if storage is limited, go for a different model.
+- If model HA has higher accuracy than LA, but Longer Inference time than LA and if our most important consideration is how quickly we can show the result rather than how accurate it has to be, go for model LA and vice-versa.
+- Neural Networks take a long time to train because they have a lot of parameters that need to be updated. They're also hard to explain and interpret.
+- Whereas, Linear Regression is fast to train and also easy to explain and interpret.
+- However, a Neural Network *may* perform better (eg. higher accuracy) than Linear Regression.
