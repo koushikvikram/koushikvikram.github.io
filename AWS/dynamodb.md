@@ -266,3 +266,20 @@ It might be creating that GSI. Wait for sometime based on the amount of data in 
 
 Source: [https://stackoverflow.com/questions/59322281/com-amazonaws-services-dynamodbv2-model-amazondynamodbexception-cannot-read-fro](https://stackoverflow.com/questions/59322281/com-amazonaws-services-dynamodbv2-model-amazondynamodbexception-cannot-read-fro)
 
+## Backfill Attribute Values
+
+```Python
+def add_dt_attribute(table, region, items):
+    dynamodb = boto3.resource("dynamodb", region)
+    table = dynamodb.Table(table)
+    for item in items:
+        table.update_item(
+                Key={
+                    'pk': item.get('pk'),
+                    'sk': item.get('sk')
+                },
+                UpdateExpression="set dt=:dt",
+                ExpressionAttributeValues={':dt': item.get('sk').split("T")[0]},
+                ReturnValues="UPDATED_NEW"
+            )
+```

@@ -20,3 +20,7 @@ permalink: /ml-systems/models/
 - [Do Wide and Deep Networks Learn the Same Things? Google AI Blog](https://ai.googleblog.com/2021/05/do-wide-and-deep-networks-learn-same.html)
 - [Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth - Arxiv](https://arxiv.org/abs/2010.15327)
 - [Similarity of Neural Network Representations Revisited](https://arxiv.org/abs/1905.00414)
+
+## Regression
+
+- [An Overview of Model Selection Tests for Nested and Non-Nested Regression Models](https://towardsdatascience.com/an-overview-of-model-selection-tests-for-nested-and-non-nested-regression-models-5edfa00a12bc)

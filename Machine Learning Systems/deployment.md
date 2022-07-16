@@ -78,3 +78,16 @@ Source: [https://stackoverflow.com/questions/32235987/docker-build-with-f-option
 ## SageMaker Workflows
 
 - [SageMaker Workflows](https://docs.aws.amazon.com/sagemaker/latest/dg/workflows.html)
+
+## Bayesian vs Frequentist - Bayesian is Computationally Expensive because of integration
+
+- [Technically Wrong: When Bayesian and Frequentist methods differ](https://www.countbayesie.com/blog/2021/4/27/technically-wrong-when-bayesian-and-frequentist-methods-differ)
+
+## Machine Learning Operations (MLOps): Overview, Definition, and Architecture
+
+- [Machine Learning Operations (MLOps): Overview, Definition, and Architecture](https://arxiv.org/abs/2205.02302)
+
+## Does Model Performance Even Matter?
+
+Source: [Does Model Performance Even Matter? - YouTube - Ritvikmath](https://www.youtube.com/watch?v=vVTPP5gJe2g&ab_channel=ritvikmath)
+

@@ -211,3 +211,27 @@ Source: [https://stackoverflow.com/questions/59061816/git-forces-refresh-index-a
 ## GitHub Profile Achievements
 
 - [GitHub Profile Achievements 🏆](https://github.com/Schweinepriester/github-profile-achievements)
+
+-----------------------------------------------------------------------------------------------------
+
+## Gitlab SSH Setup and Clone
+
+- [Use SSH keys to communicate with GitLab](https://docs.gitlab.com/ee/user/ssh.html)
+
+-----------------------------------------------------------------------------------------------------
+
+## Gitlab CI/CD
+
+- [CI/CD pipelines](https://docs.gitlab.com/ee/ci/pipelines/)
+- [Mastering Continous Software Development](https://learn.gitlab.com/c/mastering-continuous-1?x=RSo4AM&_pfses=ekvULexSYmiEygtTHCZKZt6N)
+- [CI Quickstart](https://docs.gitlab.com/ee/ci/quick_start/)
+- [GitLab CI/CD hello world examples](https://www.saltycrane.com/blog/2021/03/gitlab-cicd-hello-world-examples/)
+- [Configure OpenID Connect in AWS to retrieve temporary credentials](https://docs.gitlab.com/ee/ci/cloud_services/aws/)
+- [Run pytest tests with report publication on GitLab](https://eokulik.com/run-pytest-tests-with-report-publication-on-gitlab/)
+- [GitLab CI/CD: Run jobs only when files in a specific directory have changed](https://stackoverflow.com/questions/51661076/gitlab-ci-cd-run-jobs-only-when-files-in-a-specific-directory-have-changed)
+- [Setup GitLab runner on AWS-ec2](https://medium.com/nonstopio/setup-gitlab-runner-on-aws-ec2-e652a41026a6)
+- [How to Configure your own GitLab Runner with a Docker Executor on AWS EC2](https://medium.com/devops-with-valentine/how-to-configure-your-own-gitlab-runner-with-a-docker-executor-on-aws-ec2-d76c7be0660d)
+- [Deploy and Manage Gitlab Runners on Amazon EC2](https://aws.amazon.com/blogs/devops/deploy-and-manage-gitlab-runners-on-amazon-ec2/)
+- [Merge Request (MR) Pipelines](https://docs.gitlab.com/ee/ci/pipelines/merge_request_pipelines.html)
+- [Pipeline artifacts](https://docs.gitlab.com/ee/ci/pipelines/pipeline_artifacts.html)
+- [Job artifacts](https://docs.gitlab.com/ee/ci/pipelines/job_artifacts.html)

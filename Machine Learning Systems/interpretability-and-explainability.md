@@ -17,3 +17,8 @@ permalink: /ml-systems/interpretability-and-explainability/
 
 ## Counterfactual Explanations
 - [Counterfactual Explanations](https://christophm.github.io/interpretable-ml-book/counterfactual.html)
+
+## Science Before Statistics: Causal Inference
+
+- [Science Before Statistics: Causal Inference](https://www.youtube.com/watch?v=KNPYUVmY3NM&ab_channel=RichardMcElreath)
+- [causal_salad_2021](https://github.com/rmcelreath/causal_salad_2021)
