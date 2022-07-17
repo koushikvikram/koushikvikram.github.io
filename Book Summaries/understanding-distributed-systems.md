@@ -8,6 +8,8 @@ permalink: /book-summaries/understanding-distributed-systems/
 
 # Understanding Distributed Systems
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <details>
     <summary> From the website: </summary>
 
@@ -83,3 +85,13 @@ In this part, we will explore some of the best practices for testing and operati
 - `Chapter 33 ("Manageability")` describes how to modify a system's behavior without changing its code, which is a must-have to enable operators to quickly mitigate failures in production when everything else fails.
 
 </details>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Preface
+
+- The available information on building distributed systems is spread out all over the place. 
+- There's a lot of theoretical material and a lot of practical material, but not much in between. 
+- This book brings together the core theoretical and practical concepts of distributed systems.
+- It focuses on breadth rather than depth.
+
