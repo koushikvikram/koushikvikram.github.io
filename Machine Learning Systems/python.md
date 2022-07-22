@@ -109,6 +109,7 @@ Source: [Attrs, Dataclasses and Pydantic](https://stefan.sofa-rockers.org/2020/0
 
 - [Validation using jsonschema](https://pynative.com/python-json-validation/)
 - [Only allow properties that are declared in JSON schema](https://stackoverflow.com/questions/17530762/only-allow-properties-that-are-declared-in-json-schema)
+- [How to Validate Your JSON Using JSON Schema](https://towardsdatascience.com/how-to-validate-your-json-using-json-schema-f55f4b162dce)
 
 ## Conda - unable to completely delete environment
 
