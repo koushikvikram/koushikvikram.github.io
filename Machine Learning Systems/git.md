@@ -235,3 +235,16 @@ Source: [https://stackoverflow.com/questions/59061816/git-forces-refresh-index-a
 - [Merge Request (MR) Pipelines](https://docs.gitlab.com/ee/ci/pipelines/merge_request_pipelines.html)
 - [Pipeline artifacts](https://docs.gitlab.com/ee/ci/pipelines/pipeline_artifacts.html)
 - [Job artifacts](https://docs.gitlab.com/ee/ci/pipelines/job_artifacts.html)
+
+-----------------------------------------------------------------------------------------------------
+
+## Squash several commits into a single a commit
+- [Squashing several Git commits into a single commit](https://makandracards.com/makandra/527-squashing-several-git-commits-into-a-single-commit)
+- [How Do You Squash All Commits in One?](https://linuxhint.com/squash-all-commits-git/)
+- [How to Squash Commits in Git](https://www.git-tower.com/learn/git/faq/git-squash)
+- [Do You Know How to Use Git Merge — Squash?](https://levelup.gitconnected.com/do-you-know-how-to-use-git-merge-squash-7d96c1191fd5)
+- [Squash the Last X Commits Using Git](https://www.baeldung.com/ops/git-squash-commits)
+- [Git: How to squash all commits on branch](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch)
+
+-----------------------------------------------------------------------------------------------------
+
