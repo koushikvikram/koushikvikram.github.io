@@ -235,6 +235,15 @@ Source: [https://stackoverflow.com/questions/59061816/git-forces-refresh-index-a
 - [Merge Request (MR) Pipelines](https://docs.gitlab.com/ee/ci/pipelines/merge_request_pipelines.html)
 - [Pipeline artifacts](https://docs.gitlab.com/ee/ci/pipelines/pipeline_artifacts.html)
 - [Job artifacts](https://docs.gitlab.com/ee/ci/pipelines/job_artifacts.html)
+- [Choose when to run jobs](https://docs.gitlab.com/ee/ci/jobs/job_control.html)
+- [Gitlab-CI: Specify that Job C should run after Job B if Job A fails](https://stackoverflow.com/questions/64205410/gitlab-ci-specify-that-job-c-should-run-after-job-b-if-job-a-fails)
+- [use apt-get install python packages in .gitlab-ci.yml](https://stackoverflow.com/questions/41504869/use-apt-get-install-python-packages-in-gitlab-ci-yml)
+- [Enable Docker commands in your CI/CD jobs](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#enable-docker-commands-in-your-cicd-jobs)
+- [Install GitLab Runner using the official GitLab repositories](https://docs.gitlab.com/runner/install/linux-repository.html)
+- [.gitlab-ci.yml keyword reference](https://docs.gitlab.com/ee/ci/yaml/)
+- [Install GitLab Runner](https://docs.gitlab.com/runner/install/)
+- [Gitlab - Registering runners](https://docs.gitlab.com/runner/register/)
+- [Semantic Versioning 2.0.0](https://semver.org/)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -248,3 +257,39 @@ Source: [https://stackoverflow.com/questions/59061816/git-forces-refresh-index-a
 
 -----------------------------------------------------------------------------------------------------
 
+## How to enter command with password for git pull?
+
+For http(s):
+- you can put the password in `.netrc` file (_netrc on windows). From there it would be picked up automatically. It would go to your home folder with 600 permissions.
+- you could also just clone the repo with `https://user:pass@domain/repo` but that's not really recommended as it would show your user/pass in a lot of places...
+- a new option is to use the credential helper. Note that credentials would be stored in clear text in your local config using standard credential helper. credential-helper with wincred can be also used on windows.
+
+Usage examples for credential helper
+- `git config credential.helper store` - stores the credentials indefinitely.
+- `git config credential.helper 'cache --timeout=3600'`- stores for 60 minutes
+
+For ssh-based access, you'd use ssh agent that will provide the ssh key when needed. This would require generating keys on your computer, storing the public key on the remote server and adding the private key to relevant keystore.
+
+Source: 
+- [How to enter command with password for git pull?](https://stackoverflow.com/questions/11506124/how-to-enter-command-with-password-for-git-pull)
+- [git-credential-cache(1) Manual Page](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-credential-cache.html)
+
+-----------------------------------------------------------------------------------------------------
+
+## How do I push a new local branch to a remote Git repository and track it too?
+
+In Git 1.7.0 and later, you can checkout a new branch:
+
+```bash
+git checkout -b <branch>
+```
+
+Edit files, add and commit. Then push with the -u (short for `--set-upstream`) option:
+
+```bash
+git push -u origin <branch>
+```
+
+Git will set up the tracking information during the push.
+
+Source: [How do I push a new local branch to a remote Git repository and track it too?](https://stackoverflow.com/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too)

@@ -113,3 +113,25 @@ Source: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesL
 
 -----------------------------------------------------------------------------------------------------
 
+## IAM role for EC2
+
+Everytime you setup an EC2 instance, create/attach an IAM role to the instance. Don't pass in aws credentials inside EC2.
+
+EC2 Instance -> Actions -> Security -> Modify IAM role
+
+Source: [Using instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html)
+
+-----------------------------------------------------------------------------------------------------
+
+## Generate SSH Keypair for EC2 - Ubuntu on WSL
+
+Steps
+1. Create public and private SSH key pairs using ssh-keygen
+- `ssh-keygen -t rsa -b 2048`
+- Enter the location and filename to save the key pair. (default is `id_rsa.pub`)
+- Enter passphrase to secure the key (optional).
+2. Copy the contents of `id_rsa.pub`
+3. In the AWS EC2 console, go to `Network & Security` -> `Key Pairs` `Actions` -> Import Key Pair -> Paste the contents of `id_rsa.pub` -> Give it a name and click `Import Key Pair`
+4. Attach this key pair to your instance.
+
+-----------------------------------------------------------------------------------------------------

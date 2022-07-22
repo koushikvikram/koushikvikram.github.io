@@ -31,3 +31,17 @@ permalink: /ml-systems/testing/
 - [Pandera Hypothesis Testing Suite](https://github.com/pandera-dev/pandera/issues/168)
 - [Pandera - Hypothesis Testing](https://pandera.readthedocs.io/en/stable/hypothesis.html#:~:text=Wide%20Hypotheses,across%20columns%20in%20a%20DataFrame%20.)
 - [Validate Your pandas DataFrame with Pandera](https://towardsdatascience.com/validate-your-pandas-dataframe-with-pandera-2995910e564)
+
+- [Infer Schema and Write to a Python Script](https://pandera.readthedocs.io/en/stable/schema_inference.html)
+```Python
+import pandera as pa
+
+schema = pa.infer_schema(df)
+schema_script = schema.to_script()
+print(schema_script)
+```
+
+## iPytest
+
+- [ipytest - Pytest in Jupyter notebooks](https://github.com/chmp/ipytest)
+
