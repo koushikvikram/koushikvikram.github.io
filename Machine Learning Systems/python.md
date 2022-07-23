@@ -286,3 +286,59 @@ print(installed_packages_list)
 Source: 
 - [Python: List Modules, Search Path, Loaded Modules](http://xahlee.info/python/standard_modules.html)
 - [How do I get a list of locally installed Python modules?](https://stackoverflow.com/questions/739993/how-do-i-get-a-list-of-locally-installed-python-modules)
+
+## Convert string dictionary to dictionary
+
+Using `json.loads()`
+
+```python
+import json
+
+string_dict = '{"a": "apple", "z": "zebra"}'
+d = json.loads(string_dict)
+
+print(type(d))
+```
+
+Using `ast.literal_eval()`
+
+```python
+import ast
+
+string_dict = '{"a": "apple", "z": "zebra"}'
+d = ast.literal_eval(string_dict)
+
+print(type(d))
+```
+
+Source: [Python | Convert string dictionary to dictionary](https://www.geeksforgeeks.org/python-convert-string-dictionary-to-dictionary/)
+
+## Calculate Size of all Installed Packages
+
+```Python
+import os
+import pkg_resources
+
+def calc_container(path):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            total_size += os.path.getsize(fp)
+    return total_size
+
+
+
+dists = [d for d in pkg_resources.working_set]
+
+for dist in dists:
+    try:
+        path = os.path.join(dist.location, dist.project_name)
+        size = calc_container(path)
+        if size/1000 > 1.0:
+            print (f"{dist}: {size/1000} KB")
+            print("-"*40)
+    except OSError:
+        '{} no longer exists'.format(dist.project_name)
+```
+
