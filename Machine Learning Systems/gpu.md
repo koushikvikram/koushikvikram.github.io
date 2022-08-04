@@ -124,3 +124,6 @@ To check GPU Card info, deep learner might use this all the time.
 
 Source: [https://medium.com/@totokk/nv-how-to-check-cuda-and-cudnn-version-e05aa21daf6c](https://medium.com/@totokk/nv-how-to-check-cuda-and-cudnn-version-e05aa21daf6c)
 
+## Choosing the right GPU for deep learning on AWS
+
+Source: https://towardsdatascience.com/choosing-the-right-gpu-for-deep-learning-on-aws-d69c157d8c86

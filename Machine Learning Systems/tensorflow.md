@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Working With TensorFlow
+title: TensorFlow
 parent: Machine Learning Systems
 nav_order: 2
-permalink: /ml-systems/working-with-tensorflow/
+permalink: /ml-systems/tensorflow/
 ---
 
-# Working With TensorFlow
+# TensorFlow
 
 ## Disable Tensorflow debugging information
 
@@ -227,14 +227,12 @@ touch ./etc/conda/deactivate.d/env_vars.sh
 Edit ./etc/conda/activate.d/env_vars.sh as follows:
 ```bash
 #!/bin/sh
-
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib
 ```
 
 Edit ./etc/conda/deactivate.d/env_vars.sh as follows:
 ```bash
 #!/bin/sh
-
 unset LD_LIBRARY_PATH
 ```
 
