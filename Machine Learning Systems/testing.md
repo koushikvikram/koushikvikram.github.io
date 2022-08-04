@@ -45,3 +45,11 @@ print(schema_script)
 
 - [ipytest - Pytest in Jupyter notebooks](https://github.com/chmp/ipytest)
 
+## Pandera - Data Synthesis Strategies
+
+Source: [https://pandera.readthedocs.io/en/stable/data_synthesis_strategies.html](https://pandera.readthedocs.io/en/stable/data_synthesis_strategies.html)
+
+## Pandera - Hypothesis Testing
+
+Source: [https://pandera.readthedocs.io/en/stable/hypothesis.html](https://pandera.readthedocs.io/en/stable/hypothesis.html)
+

@@ -474,3 +474,10 @@ Below are some of the most commonly used operators:
 
 Source: [Bash if..else Statement](https://linuxize.com/post/bash-if-else-statement/)
 
+## How to Evaluate Strings as Numbers in Bash
+
+To convert strings to integers in bash, wrap them in `$((X))`. Like this:
+```bash
+$((string))
+```
+

@@ -283,3 +283,4 @@ def add_dt_attribute(table, region, items):
                 ReturnValues="UPDATED_NEW"
             )
 ```
+

@@ -320,3 +320,19 @@ sudo docker run hello-world
 
 Source: [How to Install Docker on Ubuntu: A Step-By-Step Guide [Updated]](https://www.simplilearn.com/tutorials/docker-tutorial/how-to-install-docker-on-ubuntu)
 
+## Lambda response expected format
+
+We have to adhere to the contract between Lambda and API GW which only knows about statusCode/body.
+
+## Working with AWS and Python to trigger Lambda to send a message to an SQS queue.
+
+https://mdclarkjr.medium.com/working-with-aws-and-python-to-trigger-lambda-to-send-a-message-to-an-sqs-queue-81d0341c986
+
+## Get alias CLI
+
+https://docs.aws.amazon.com/cli/latest/reference/lambda/get-alias.html
+
+## Update alias CLI
+
+https://docs.aws.amazon.com/cli/latest/reference/lambda/update-alias.html
+

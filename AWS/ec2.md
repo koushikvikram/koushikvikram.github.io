@@ -135,3 +135,16 @@ Steps
 4. Attach this key pair to your instance.
 
 -----------------------------------------------------------------------------------------------------
+
+## Giving SSH access for multiple computers to single EC2 instance
+
+Get their ssh public key and add it to ~/.ssh/authorized_keys inside the EC2 instance
+
+-----------------------------------------------------------------------------------------------------
+
+
+## How to Deploy a Streamlit App using an Amazon Free ec2 instance?
+
+https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
+
+-----------------------------------------------------------------------------------------------------

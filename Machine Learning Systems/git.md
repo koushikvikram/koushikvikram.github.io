@@ -293,3 +293,64 @@ git push -u origin <branch>
 Git will set up the tracking information during the push.
 
 Source: [How do I push a new local branch to a remote Git repository and track it too?](https://stackoverflow.com/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too)
+
+## Squash commits and merge on new branch
+
+```bash
+# create a new branch
+git checkout -b new_clean_branch
+
+# apply all changes
+git merge original_messy_branch
+
+# forget the commits but have the changes staged for commit
+git reset --soft main        
+
+git commit -m "Squashed changes from original_messy_branch"
+```
+
+Source: https://stackoverflow.com/questions/3133449/why-does-git-rebase-give-me-merge-conflicts-when-all-im-doing-is-squashing-comm
+
+## How do I delete a Git branch locally and remotely?
+
+Executive Summary
+```bash
+$ git push -d <remote_name> <branchname>
+$ git branch -d <branchname>
+```
+
+Note: In most cases, `<remote_name>` will be origin.
+
+Delete Local Branch
+
+To delete the local branch use one of the following:
+```bash
+$ git branch -d <branch_name>
+$ git branch -D <branch_name>
+```
+
+- The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch.
+- The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status." [Source: man git-branch]
+- As of Git v2.3, git branch -d (delete) learned to honor the -f (force) flag.
+- You will receive an error if you try to delete the currently selected branch.
+
+Delete Remote Branch
+
+As of Git v1.7.0, you can delete a remote branch using
+
+`$ git push <remote_name> --delete <branch_name>`
+
+which might be easier to remember than
+
+`$ git push <remote_name> :<branch_name>`
+
+which was added in Git v1.5.0 "to delete a remote branch or a tag."
+
+Starting with Git v2.8.0, you can also use git push with the -d option as an alias for --delete. Therefore, the version of Git you have installed will dictate whether you need to use the easier or harder syntax.
+
+Source: https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+
+## Pro Git Book
+
+https://git-scm.com/book/en/v2
+

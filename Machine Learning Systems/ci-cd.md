@@ -123,3 +123,32 @@ Push this file to your GitLab repo and check the Pipeline runs by going to 🚀 
 - [How to fix docker: Got permission denied while trying to connect to the Docker daemon socket](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 
 --------------------------------------------------------------------------
+
+## Gitlab CI/CD Reference
+
+Source: [https://docs.gitlab.com/ee/ci/pipelines/](https://docs.gitlab.com/ee/ci/pipelines/)
+
+--------------------------------------------------------------------------
+
+## Gitlab CI/CD Disable Pipeline
+
+When you disable GitLab CI/CD:
+- The CI/CD item in the left sidebar is removed.
+- The /pipelines and /jobs pages are no longer available.
+- Existing jobs and pipelines are hidden, not removed.
+
+To disable GitLab CI/CD in your project:
+1. On the top bar, select Menu > Projects and find your project.
+2. On the left sidebar, select Settings > General.
+3. Expand Visibility, project features, permissions.
+4. In the Repository section, turn off CI/CD.
+5. Select Save changes.
+
+Source: [https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html](https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html)
+
+--------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------

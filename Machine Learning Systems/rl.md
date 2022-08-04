@@ -21,3 +21,11 @@ Source: [General resources on reinforcement learning](https://www.reddit.com/r/r
 - [David Silver Reinforcement Learning Course (2016)](https://www.youtube.com/playlist?list=PLbWDNovNB5mqFBgq7i3MY6Ui4zudcvNFJ) - video lectures aligned with book above. Very well explained, covers basics and some modern deep rl methods. Very fun to watch IMHO.
 - [Advanced Deep Learning & Reinforcement Learning (2018)](https://www.youtube.com/watch?v=iOh7QUZGyiU&list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs&ab_channel=DeepMind) - updated version of the above, more slower paced, but some things are better explained in 2016 version IMHO.
 - [Deep Reinforcement Learning](https://arxiv.org/abs/1810.06339) - 2018 paper by Yuxi Li is a recent(ish) survey and overview of the field.
+
+## Articles and Applications
+
+- https://medium.com/@junlin.shang/deep-reinforcement-learning-for-solving-rubiks-cube-f091598b3075
+- https://medium.com/@yoyo6213/neural-architecture-search-w-reinforcement-learning-b99d7a3c23cb
+- https://medium.com/mlearning-ai/reinforcement-learning-snake-algorithm-14a8d20dec7f
+- https://medium.com/data-science-in-your-pocket/game-development-using-pygame-reinforcement-learning-with-example-f5b78c768610
+

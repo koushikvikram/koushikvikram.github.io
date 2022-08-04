@@ -184,3 +184,59 @@ Note: might have to change `gcc-5` to `gcc-7` if version is unavailable.
 References:
 - [https://github.com/lhelontra/tensorflow-on-arm/issues/13](https://github.com/lhelontra/tensorflow-on-arm/issues/13)
 - [https://www.kaggle.com/product-feedback/281990](https://www.kaggle.com/product-feedback/281990)
+
+## Non-exhaustive list of reasons why Tensorflow doesn't detect GPU
+
+- Nvidia Driver not installed
+- CUDA not installed, or incompatible version
+- CuDNN not installed or incompatible version
+- Tensorflow running on Docker but without Nvidia drivers installed in host, or Nvidia Docker not installed
+
+## Check GPU availability
+
+```bash
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+```
+
+## Install Tensorflow with pip on Linux
+
+```bash
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+python3 -m pip install tensorflow
+# Verify install:
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+```
+
+Source: [https://www.tensorflow.org/install/pip#linux](https://www.tensorflow.org/install/pip#linux)
+
+## TensorFlow 2.7 does not detect CUDA installed through conda #52988
+
+This seems to solve the issue:
+
+```bash
+conda activate ENVNAME
+
+cd $CONDA_PREFIX
+mkdir -p ./etc/conda/activate.d
+mkdir -p ./etc/conda/deactivate.d
+touch ./etc/conda/activate.d/env_vars.sh
+touch ./etc/conda/deactivate.d/env_vars.sh
+```
+
+Edit ./etc/conda/activate.d/env_vars.sh as follows:
+```bash
+#!/bin/sh
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib
+```
+
+Edit ./etc/conda/deactivate.d/env_vars.sh as follows:
+```bash
+#!/bin/sh
+
+unset LD_LIBRARY_PATH
+```
+
+Source: [https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#macos-and-linux](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#macos-and-linux)
+

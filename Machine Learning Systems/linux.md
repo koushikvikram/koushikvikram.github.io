@@ -130,3 +130,30 @@ Source: [AliMD/install-doceker.md](https://gist.github.com/AliMD/cfa12d314071739
 
 Make sure to install Python extension for WSL inside VSCode.
 
+## How to permanently export a variable in Linux?
+
+You have to edit three files to set a permanent environment variable as follow:
+
+- `~/.bashrc`
+When you open any terminal window this file will be run. Therefore, if you wish to have a permanent environment variable in all of your terminal windows you have to add the following line at the end of this file:
+`export DISPLAY=0`
+- `~/.profile`
+Same as bashrc you have to put the mentioned command line at the end of this file to have your environment variable in every login of your OS.
+- `/etc/environment`
+If you want your environment variable in every window or application (not just terminal window) you have to edit this file. Add the following command at the end of this file:
+
+`DISPLAY=0`
+
+**Note that in this file you do not have to write export command**
+
+Normally you have to restart your computer to apply these changes. But you can apply changes in bashrc and profile by these commands:
+
+```bash
+$ source ~/.bashrc
+$ source ~/.profile
+```
+
+But for `/etc/environment` you have **no choice but restarting** (as far as I know)
+
+Source: [https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux](https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux)
+
