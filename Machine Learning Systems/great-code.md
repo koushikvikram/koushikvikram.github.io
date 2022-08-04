@@ -75,3 +75,30 @@ Source: [Functional Programming Design Patterns](https://fsharpforfunandprofit.c
 ## Courses
 - [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [Stanford - Programming Abstractions](https://www.youtube.com/playlist?list=PLFE6E58F856038C69)
+
+## Code Review
+
+- [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
+
+## Call Stack
+
+- [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)
+- [A Deep Dive into Python Stack Frames](https://www.youtube.com/watch?v=smiL_aV1SOc&ab_channel=PyGotham2018)
+
+## The Factory Method Pattern and Its Implementation in Python
+
+Source: https://realpython.com/factory-method-python/
+
+## Strategy Design Pattern
+
+- https://refactoring.guru/design-patterns/strategy/python/example
+- https://refactoring.guru/design-patterns/strategy
+- https://pytorch-lightning.readthedocs.io/en/stable/extensions/strategy.html
+
+## Dependency Injection
+
+- https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,leading%20to%20loosely%20coupled%20programs.
+
+## Principle of Least Power
+
+- https://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html

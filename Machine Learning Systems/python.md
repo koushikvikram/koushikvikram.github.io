@@ -785,24 +785,6 @@ with Progress() as progress:
 References:
 - https://www.freecodecamp.org/news/use-the-rich-library-in-python/
 
-## The Factory Method Pattern and Its Implementation in Python
-
-Source: https://realpython.com/factory-method-python/
-
-## Strategy Design Pattern
-
-- https://refactoring.guru/design-patterns/strategy/python/example
-- https://refactoring.guru/design-patterns/strategy
-- https://pytorch-lightning.readthedocs.io/en/stable/extensions/strategy.html
-
-## Dependency Injection
-
-- https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,leading%20to%20loosely%20coupled%20programs.
-
-## Principle of Least Power
-
-- https://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
-
 ## Pandas – Append a List as a Row to DataFrame
 
 ```Python
@@ -999,11 +981,4 @@ Source: https://www.delftstack.com/howto/git/git-squash-all-commits-on-a-branch/
 
 Source: https://www.oreilly.com/library/view/programming-python-second/0596000855/ch04s04.html
 
-## Code Review
 
-- [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
-
-## Call Stack
-
-- [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)
-- [A Deep Dive into Python Stack Frames](https://www.youtube.com/watch?v=smiL_aV1SOc&ab_channel=PyGotham2018)
