@@ -102,3 +102,32 @@ Source: https://realpython.com/factory-method-python/
 ## Principle of Least Power
 
 - https://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
+
+## The Call Stack and Stackoverflow
+
+The stack is the place in memory where all your
+- local variables
+- function arguments 
+
+go
+
+The program's address space looks like this:
+
+![The Program's address space](images/program-address-space.png)
+
+How the stack grows:
+
+![How the Call Stack Changes](images/stackframes_call_stack.gif)
+
+- Everytime a function is called, it gets its own **StackFrame** in the stack.
+- A stackframe is a chunk of memory we added in the stack for a function call.
+- This StackFrame holds function arguments and local variables for a function call as well as the return address.
+    - The return address is the place in code the program has to jump back to when the function is finished executing.
+- When another function is called, we overwrite the old StackFrames with new StackFrames.
+- **Frame pointer** helps us keep track of where the different StackFrames begin and end.
+- **Stackoverflow** occurs when we allow our stack to get too big and it overflows the memory the OS is willing to give us.
+    - Common causes are very deep recursion and very large stack variables (eg. creating local array variables that are too large).
+
+**Looking at stack traces is really handy for helping us see how we got where we are. It's useful when debugging.**
+
+Source: [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)
