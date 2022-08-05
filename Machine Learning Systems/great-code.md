@@ -75,3 +75,59 @@ Source: [Functional Programming Design Patterns](https://fsharpforfunandprofit.c
 ## Courses
 - [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [Stanford - Programming Abstractions](https://www.youtube.com/playlist?list=PLFE6E58F856038C69)
+
+## Code Review
+
+- [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/)
+
+## Call Stack
+
+- [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)
+- [A Deep Dive into Python Stack Frames](https://www.youtube.com/watch?v=smiL_aV1SOc&ab_channel=PyGotham2018)
+
+## The Factory Method Pattern and Its Implementation in Python
+
+Source: https://realpython.com/factory-method-python/
+
+## Strategy Design Pattern
+
+- https://refactoring.guru/design-patterns/strategy/python/example
+- https://refactoring.guru/design-patterns/strategy
+- https://pytorch-lightning.readthedocs.io/en/stable/extensions/strategy.html
+
+## Dependency Injection
+
+- https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,leading%20to%20loosely%20coupled%20programs.
+
+## Principle of Least Power
+
+- https://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
+
+## The Call Stack and Stackoverflow
+
+The stack is the place in memory where all your
+- local variables
+- function arguments 
+
+go
+
+The program's address space looks like this:
+
+![The Program's address space](images/program-address-space.png)
+
+How the stack grows:
+
+![How the Call Stack Changes](images/stackframes_call_stack.gif)
+
+- Everytime a function is called, it gets its own **StackFrame** in the stack.
+- A stackframe is a chunk of memory we added in the stack for a function call.
+- This StackFrame holds function arguments and local variables for a function call as well as the return address.
+    - The return address is the place in code the program has to jump back to when the function is finished executing.
+- When another function is called, we overwrite the old StackFrames with new StackFrames.
+- **Frame pointer** helps us keep track of where the different StackFrames begin and end.
+- **Stackoverflow** occurs when we allow our stack to get too big and it overflows the memory the OS is willing to give us.
+    - Common causes are very deep recursion and very large stack variables (eg. creating local array variables that are too large).
+
+**Looking at stack traces is really handy for helping us see how we got where we are. It's useful when debugging.**
+
+Source: [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)

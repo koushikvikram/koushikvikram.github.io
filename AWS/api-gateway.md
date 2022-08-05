@@ -18,3 +18,8 @@ Source: [https://www.pluralsight.com/guides/web-scraping-with-request-python](ht
 
 - [Synchronous AWS Lambda & Amazon API Gateway limits and what to do about them](https://dev.to/aws-builders/synchronous-aws-lambda-amazon-api-gateway-limits-and-what-to-do-about-them-2oec)
 - [Enabling payload compression for an API](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-gzip-compression-decompression.html)
+
+## AWS Client
+
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key
+

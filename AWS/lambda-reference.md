@@ -163,3 +163,176 @@ Source: [https://adem.sh/blog/tutorial-fastapi-aws-lambda-serverless](https://ad
 ## Simple Serverless FastAPI with AWS Lambda
 
 Source: [https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/](https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/)
+
+## get-alias
+
+Returns details about a Lambda function alias .
+
+```bash
+aws lambda  get-alias
+--function-name <value>
+--name <value>
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## list-aliases
+
+Returns a list of aliases for a Lambda function.
+
+```bash
+aws lambda list-aliases
+--function-name <value>
+[--function-version <value>]
+[--max-items <value>]
+[--cli-input-json <value>]
+[--starting-token <value>]
+[--page-size <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## function-updated
+
+Waits for the function's LastUpdateStatus to be Successful. This waiter uses GetFunctionConfiguration API. This should be used after function updates. It will poll every 5 seconds until a successful state has been reached. This will exit with a return code of 255 after 60 failed checks.
+
+```bash
+aws lambda wait function-updated
+--function-name <value>
+[--qualifier <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## update-alias
+
+Updates the configuration of a Lambda function alias .
+
+```bash
+aws lambda update-alias
+--function-name <value>
+--name <value>
+[--function-version <value>]
+[--description <value>]
+[--routing-config <value>]
+[--revision-id <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## list-versions-by-function
+
+Returns a list of versions , with the version-specific configuration of each. Lambda returns up to 50 versions per call.
+
+```bash
+aws lambda list-versions-by-function
+--function-name <value>
+[--max-items <value>]
+[--cli-input-json <value>]
+[--starting-token <value>]
+[--page-size <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## get-function
+
+Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
+
+```bash
+aws lambda get-function
+--function-name <value>
+[--qualifier <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## publish-version
+
+Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change.
+
+Lambda doesn't publish a version if the function's configuration and code haven't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function before publishing a version.
+
+Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias
+
+```bash
+aws lambda publish-version
+--function-name <value>
+[--code-sha256 <value>]
+[--description <value>]
+[--revision-id <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## update-function-code
+
+Updates a Lambda function's code. If code signing is enabled for the function, the code package must be signed by a trusted publisher. For more information, see Configuring code signing .
+
+If the function's package type is Image , you must specify the code package in ImageUri as the URI of a container image in the Amazon ECR registry.
+
+If the function's package type is Zip , you must specify the deployment package as a .zip file archive . Enter the Amazon S3 bucket and key of the code .zip file location. You can also provide the function code inline using the ZipFile field.
+
+The code in the deployment package must be compatible with the target instruction set architecture of the function (x86-64 or arm64 ).
+
+The function's code is locked when you publish a version. You can't modify the code of a published version, only the unpublished version
+
+```bash
+aws lambda update-function-code
+--function-name <value>
+[--zip-file <value>]
+[--s3-bucket <value>]
+[--s3-key <value>]
+[--s3-object-version <value>]
+[--image-uri <value>]
+[--publish | --no-publish]
+[--dry-run | --no-dry-run]
+[--revision-id <value>]
+[--architectures <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+```
+
+## How To Manage AWS Lambda Versioning And Aliases
+
+Source: [How To Manage AWS Lambda Versioning And Aliases](https://codebriefly.com/how-to-manage-aws-lambda-versioning-and-aliases/)
+
+## Lambda function states
+
+```bash
+aws lambda get-function --function-name my-function --query 'Configuration.[State, LastUpdateStatus]'
+```
+
+Source: [Lambda function states](https://docs.aws.amazon.com/lambda/latest/dg/functions-states.html)
+
+## Using Lambda with the AWS CLI
+
+Source: [Using Lambda with the AWS CLI](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html)
+
+## How to Install Docker on Ubuntu: A Step-By-Step Guide [Updated]
+
+```bash
+sudo apt-get remove docker docker-engine docker.io
+sudo apt-get update
+sudo apt install docker.io
+sudo snap install docker
+docker --version
+sudo docker run hello-world
+```
+
+Source: [How to Install Docker on Ubuntu: A Step-By-Step Guide [Updated]](https://www.simplilearn.com/tutorials/docker-tutorial/how-to-install-docker-on-ubuntu)
+
+## Lambda response expected format
+
+We have to adhere to the contract between Lambda and API GW which only knows about statusCode/body.
+
+## Working with AWS and Python to trigger Lambda to send a message to an SQS queue.
+
+https://mdclarkjr.medium.com/working-with-aws-and-python-to-trigger-lambda-to-send-a-message-to-an-sqs-queue-81d0341c986
+
+## Get alias CLI
+
+https://docs.aws.amazon.com/cli/latest/reference/lambda/get-alias.html
+
+## Update alias CLI
+
+https://docs.aws.amazon.com/cli/latest/reference/lambda/update-alias.html
+
