@@ -990,3 +990,241 @@ Source: https://www.oreilly.com/library/view/programming-python-second/059600085
 
 Source: [https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda](https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda)
 
+## A Deep Dive into Python Stack Frames
+
+![Python Stack Frame Evaluation](images/python-stack-frames.png)
+
+Frame Evaluation Python Code
+```Python
+def PyEval_EvalFrameEx(f):
+    code = f.f_code
+    while True:
+        op = next_instruction()
+        if op == CALL_FUNCTION:
+            call_function(...)
+    t.frame = f.f_back
+
+def call_function(...):
+    fast_function()
+
+def fast_function():
+    t = PyThreadState_GET()
+    f = PyFrameObject()
+    f.f_back = t.frame
+    t.frame = f
+    ...
+    PyEval_EvalFrameEx(f)
+    del f
+```
+
+Source: https://www.youtube.com/watch?v=smiL_aV1SOc&ab_channel=PyGotham2018
+
+## Python Threading Lock - Guide to Race-condition
+
+### Race condition example:
+
+```Python
+import threading
+import time
+ 
+x = 10
+ 
+def increment(increment_by):
+    global x  # x is a shared resource
+ 
+    local_counter = x
+    local_counter += increment_by
+ 
+    time.sleep(1)  # we make the function sleep for a second so that both threads have enough time to finish execution
+ 
+    x = local_counter  # update the shared resource
+    print(f'{threading.current_thread().name} increments x by {increment_by}, x: {x}')
+ 
+# creating threads
+t1 = threading.Thread(target=increment, args=(5,))
+t2 = threading.Thread(target=increment, args=(10,))
+ 
+# starting the threads
+t1.start()
+t2.start()
+ 
+# waiting for the threads to complete
+t1.join()
+t2.join()
+ 
+print(f'The final value of x is {x}')
+```
+
+Let’s understand the code above:
+1. We have imported the threading and time module of python in the first lines.
+2. A variable x = 10 , is acting like a shared resource for threads t1 and t2. ![Shared Resource](images/py-thread-locking-shared-resource.png)
+3. Two threads t1 and t2 are created using the threading module, with target function pointing to increment.
+4. t1 and t2 will try to modify the value of x in the increment function with 5 and 10 of increment as specified in args tuple. ![Two threads try to modify same resource](images/py-thread-locking-two-threads-try-to-modify.png)
+5. start will intitiate the threads while join will wait for them to finish the execution as they will sleep for 1 sec in the increment function.
+6. t1 increments x to 15 and store/replace it in x.
+7. t2 modified x(which is 10 for t2) to 20 and then store/replace it in x.
+8. Then we will endup with x = 20 as **t2 will replace/overwrite t1's incremented value**.
+9. This is the race condition, **both t1 and t2 race to see who will write the value last.**
+
+Output:
+```bash
+Thread-1 increments x by 5, x: 15
+Thread-2 increments x by 10, x: 20
+The final value of x is 20 
+```
+
+### Solution using threading's Lock
+
+Intended Outcome
+
+![Intended Outcome](images/intended-outcome.png)
+
+**Race condition brings unpredictability to the shared variable/resource.**This is due to the order in which threads run. If each thread is executed individually, the expected outcome can be achieved.
+
+A mechanism that ensures only one program has access to the shared resource(here x) at a time, this region will be called the **critical section**. It is possible through *locking*.
+
+![Critical Section](images/critical-section.png)
+
+Locking is a **synchronization** (between two or more threads) mechanism. *One process can lock the shared resource and make it inaccessible to others if operating on it.*
+
+Locking has two states:
+- **Locked** – means critical section is **occupied**, in binary i.e. 1
+- **Unlocked** – means critical section is **vacant**, in binary i.e 0
+
+```Python
+import threading
+from threading import Lock
+import time
+ 
+x = 10
+ 
+def increment(increment_by, lock):
+    global x  # x is a shared resource
+ 
+    lock.acquire()
+ 
+    local_counter = x
+    local_counter += increment_by
+ 
+    time.sleep(1) # thread gets locked while sleeping
+ 
+    x = local_counter  # update the shared resource
+    print(f'{threading.current_thread().name} increments x by {increment_by}, x: {x}')
+ 
+    lock.release()
+ 
+lock = Lock()
+ 
+# creating threads
+t1 = threading.Thread(target=increment, args=(5, lock))
+t2 = threading.Thread(target=increment, args=(10, lock))
+ 
+# starting the threads
+t1.start()
+t2.start()
+ 
+# waiting for the threads to complete
+t1.join()
+t2.join()
+ 
+print(f'The final value of x is {x}')
+```
+
+Let’s try to understand the code above:
+1. To avoid the race condition we have imported the Lock class of threading module and created an instance/object of it, named lock.
+2. Lock has methods namely **acquire** and **release**, which as the name suggests acquires and releases the lock.
+3. For instance, in increment function **t1 aquires the lock and rights to operate on shared resource(here x). t2 can’t modify or interfere in the operation until the lock gets released for t1.**
+4. Firstly t1 completes its increment and finally t2 completes its increment on x, hence we obtain the intended value as the result.
+
+Output:
+```bash
+Thread-1 increments x by 5, x: 15
+Thread-2 increments x by 10, x: 25
+The final value of x is 25
+```
+
+Alternatively, we can thread lock using a context manager
+
+Context managers are a way of allocating and releasing some sort of resource exactly where you need it.
+
+```Python
+import threading
+from threading import Lock
+import time
+ 
+x = 10
+ 
+lock = Lock()
+ 
+def increment(increment_by,lock):
+    global x
+ 
+    with lock:
+        local_counter = x
+        local_counter += increment_by
+ 
+        time.sleep(1)
+ 
+        x = local_counter
+        print(f'{threading.current_thread().name} increments x by {increment_by}, x: {x}')
+ 
+# creating threads
+t1 = threading.Thread(target=increment, args=(5,lock))
+t2 = threading.Thread(target=increment, args=(10,lock))
+ 
+# starting the threads
+t1.start()
+t2.start()
+ 
+# waiting for the threads to complete
+t1.join()
+t2.join()
+ 
+print(f'The final value of x is {x}')
+```
+
+Source: https://www.pythonpool.com/python-threading-lock/
+
+## Race condition with a shared variable
+
+Source: https://superfastpython.com/thread-race-condition-shared-variable/
+
+## Global Interpreter Lock (GIL)
+
+- https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
+- [Understanding the Python GIL](https://www.youtube.com/watch?v=Obt-vMVdM8s&ab_channel=DavidBeazley)
+
+## Lock Critical Sections
+
+Source: https://www.geeksforgeeks.org/python-how-to-lock-critical-sections/
+
+## Implementing Python Lock in Various Circumstances
+
+Source: https://www.pythonpool.com/python-lock/
+
+## How to lock a variable in Python
+
+Source: https://superfastpython.com/lock-variable-in-python/
+
+## Global Variables are bad
+
+This has nothing to do with Python; global variables are bad in any programming language.
+
+However, global constants are not conceptually the same as global variables; global constants are perfectly harmless. In Python the distinction between the two is purely by convention: `CONSTANTS_ARE_CAPITALIZED` and `globals_are_not`.
+
+The reason global variables are bad is that they enable functions to have hidden (non-obvious, surprising, hard to detect, hard to diagnose) side effects, leading to an increase in complexity, potentially leading to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code).
+
+However, sane use of global state is acceptable (as is local state and mutability) even in functional programming, either for algorithm optimization, reduced complexity, caching and memoization, or the practicality of porting structures originating in a predominantly imperative codebase.
+
+All in all, your question can be answered in many ways, so your best bet is to just google "why are global variables bad". Some examples:
+- [Global Variables Are Bad - Wiki Wiki Web](http://wiki.c2.com/?GlobalVariablesAreBad)
+- [Why is Global State so Evil? - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil)
+- [Are global variables bad?](https://stackoverflow.com/questions/484635/are-global-variables-bad)
+
+If you want to go deeper and find out why side effects are all about, and many other enlightening things, you should learn Functional Programming:
+- [Side effect (computer science) - Wikipedia](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+- [Why are side-effects considered evil in functional programming - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/15269/why-are-side-effects-considered-evil-in-functional-programming)
+- [Functional programming - Wikipedia](https://en.wikipedia.org/wiki/Functional_programming)
+
+Source: https://stackoverflow.com/questions/19158339/why-are-global-variables-evil
+

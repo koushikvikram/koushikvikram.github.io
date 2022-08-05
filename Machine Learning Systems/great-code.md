@@ -131,3 +131,11 @@ How the stack grows:
 **Looking at stack traces is really handy for helping us see how we got where we are. It's useful when debugging.**
 
 Source: [The Call Stack and Stack Overflows (example in C)](https://www.youtube.com/watch?v=jVzSBkbfdiw&ab_channel=JacobSorber)
+
+## Race Conditions Explained
+
+Source: https://www.baeldung.com/cs/race-conditions
+
+## Multithreading: Critical Section in Synchronization
+
+Source: https://www.geeksforgeeks.org/g-fact-70/
