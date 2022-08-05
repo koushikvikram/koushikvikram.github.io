@@ -981,4 +981,12 @@ Source: https://www.delftstack.com/howto/git/git-squash-all-commits-on-a-branch/
 
 Source: https://www.oreilly.com/library/view/programming-python-second/0596000855/ch04s04.html
 
+## 4 Types of Comprehension in Python
+
+1. List Comprehension: `my_list = [<expression> for <item> in <iterable> if <condition>]`
+2. Dictionary Comprehension: `my_dict = [<key>:<value> for <item> in <iterable> if <condition>]`
+3. Set Comprehension: `my_set = {<expression> for <item> in <iterable> if <condition>}`
+4. Generator Comprehension: `my_gen = (<expression> for <item> in <iterable> if <condition>)`
+
+Source: [https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda](https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda)
 
