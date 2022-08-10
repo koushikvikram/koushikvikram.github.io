@@ -108,3 +108,24 @@ Further Reading:
 
 Source: https://realpython.com/python-debugging-pdb/
 
+## Python DataClass Type Validator
+
+Requires additional python package
+
+Source: https://pypi.org/project/dataclass-type-validator/
+
+## attrs
+
+Source: https://www.attrs.org/en/stable/examples.html
+
+## Pydantic Validators
+
+- https://pydantic-docs.helpmanual.io/usage/validators/
+- https://pydantic-docs.helpmanual.io/install/
+- https://pydantic-docs.helpmanual.io/usage/types/#strict-types
+- https://codeutility.org/python-best-practice-to-pydantic-validate_arguments-for-non-built-in-types-like-pandas-dataframe-stack-overflow/
+- https://stackovercoder.com.de/code/python/pydantic+numpy+ndarray+type
+
+## 7 approaches to validate class attributes in Python
+
+Source: https://towardsdatascience.com/6-approaches-to-validate-class-attributes-in-python-b51cffb8c4ea

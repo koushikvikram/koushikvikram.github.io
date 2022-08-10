@@ -354,3 +354,33 @@ Source: https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch
 
 https://git-scm.com/book/en/v2
 
+## Git symlink - Symbolic Links
+
+Good practice for creating symlink in Git
+
+```bash
+# Not good for Git repositories
+ln -s /Users/gio/repo/foo.md ./bar/foo.md
+
+# Good for Git repositories
+cd ./bar && ln -s ../foo.md foo.md
+```
+
+The reason for this is that given that a symlink contains the path to the referenced file, if the path is relative to a specific machine the link won't work on others. If it's relative to the repository itself on the other hand, the OS will always be able to find the source.
+
+Reference
+- https://mokacoding.com/blog/symliks-in-git/
+- https://github.com/mokacoding/symlinks
+
+## Considerations while Sharing git repo symlinks between Windows and WSL
+
+Source: https://stackoverflow.com/questions/56504821/sharing-git-repo-symlinks-between-windows-and-wsl
+
+## Resetting, Checking Out & Reverting
+
+Source: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
+
+## Check data type in NumPy
+
+Source: https://www.geeksforgeeks.org/check-data-type-in-numpy/
+

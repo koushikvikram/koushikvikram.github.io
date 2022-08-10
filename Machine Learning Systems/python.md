@@ -1228,3 +1228,25 @@ If you want to go deeper and find out why side effects are all about, and many o
 
 Source: https://stackoverflow.com/questions/19158339/why-are-global-variables-evil
 
+## Pandas qcut - Quantile-based discretization function
+
+Source: https://pandas.pydata.org/docs/reference/api/pandas.qcut.html
+
+## Get list of holidays for each country
+
+Holidays Python pacakge: https://pypi.org/project/holidays/
+
+## Type hinting/annotation for numpy.ndarray
+
+Source: https://stackoverflow.com/questions/35673895/type-hinting-annotation-pep-484-for-numpy-ndarray
+
+## Easy way to test if each element in an numpy array lies between two values
+
+```Python
+import numpy as np
+a = np.array([1, 2, 3, 4, 5])
+(a > 1) & (a < 5)
+# array([False,  True,  True,  True, False])
+```
+
+Source: https://stackoverflow.com/questions/10542240/easy-way-to-test-if-each-element-in-an-numpy-array-lies-between-two-values

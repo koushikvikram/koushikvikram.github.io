@@ -165,3 +165,17 @@ For varying levels of seniority, from senior, to staff, and beyond.
 Source: [An incomplete list of skills senior engineers need, beyond coding](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)
 
 Ref: [The Manager's Path](https://www.amazon.ca/Managers-Path-Leaders-Navigating-Growth-ebook/dp/B06XP3GJ7F/)
+
+## 4 Key Pillars of Data Science
+
+1. Domain Knowledge
+2. Math Skills
+3. Computer Science
+4. Communication Skill
+
+Source: https://www.geeksforgeeks.org/4-key-pillars-of-data-science/
+
+## How to contribute to Open Source
+
+Source: https://opensource.guide/how-to-contribute/
+
