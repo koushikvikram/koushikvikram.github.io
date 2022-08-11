@@ -26,3 +26,8 @@ permalink: /ml-systems/models/
 
 - [An Overview of Model Selection Tests for Nested and Non-Nested Regression Models](https://towardsdatascience.com/an-overview-of-model-selection-tests-for-nested-and-non-nested-regression-models-5edfa00a12bc)
 
+## Curriculum Learning
+
+- [A Survey on Curriculum Learning](https://arxiv.org/abs/2010.13166)
+- [HeMIS: Hetero-Modal Image Segmentation](https://vitalab.github.io/article/2018/10/19/HEMIS.html)
+
