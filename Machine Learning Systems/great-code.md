@@ -139,3 +139,14 @@ Source: https://www.baeldung.com/cs/race-conditions
 ## Multithreading: Critical Section in Synchronization
 
 Source: https://www.geeksforgeeks.org/g-fact-70/
+
+## Opportunistic Programming
+
+> Opportunistic Programming is a method of software development that **emphasizes speed and ease of development** over **code robustness and maintainability**. 
+
+*Coding in this way allows individuals to explore many ideas quickly, which has an important place in the overall sofware engineering process.*
+
+Steps like prototyping, ideation and discovery are often best accomplished by building a functional piece of software quickly and easily without the typical concerns of a broader-scale software engineering project. Through fieldwork and a laboratory study, we are focusing on five characteristics of opportunistic programming: building software from scratch using high-level tools, adding new functionality through copy-and-paste, atypically rapid iteration, considering code to be impermanent, and facing a unique set of debugging challenges. Using results from these two projects, we plan on developing tools aimed at opportunistic programming that focus on debugging, code foraging and reuse, and documentation.
+
+Source: https://hci.stanford.edu/research/opportunistic/
+

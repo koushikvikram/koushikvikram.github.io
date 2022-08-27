@@ -31,3 +31,7 @@ permalink: /ml-systems/models/
 - [A Survey on Curriculum Learning](https://arxiv.org/abs/2010.13166)
 - [HeMIS: Hetero-Modal Image Segmentation](https://vitalab.github.io/article/2018/10/19/HEMIS.html)
 
+## Bagging and Random Forest for Imbalanced Classification
+
+Source: https://machinelearningmastery.com/bagging-and-random-forest-for-imbalanced-classification/
+

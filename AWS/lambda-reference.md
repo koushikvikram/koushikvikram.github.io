@@ -336,3 +336,7 @@ https://docs.aws.amazon.com/cli/latest/reference/lambda/get-alias.html
 
 https://docs.aws.amazon.com/cli/latest/reference/lambda/update-alias.html
 
+## Testing Lambda container images locally
+
+Source: https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
+

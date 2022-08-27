@@ -63,3 +63,8 @@ Source (Twitter Threads):
     - Spreading learning sessions over more intervals over longer periods of time.
     - If you have 10 hours to learn something, it makes more sense to spend 10 days studying one hour each than to spend 10 hours studying in one burst.
     - Repeat to remember.
+
+## Speed Reading
+
+- https://tim.blog/2009/07/30/speed-reading-and-accelerated-learning/
+- https://tim.blog/2015/06/09/speed-reading/

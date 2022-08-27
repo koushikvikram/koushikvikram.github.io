@@ -157,3 +157,9 @@ But for `/etc/environment` you have **no choice but restarting** (as far as I kn
 
 Source: [https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux](https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux)
 
+## Get ubuntu version from command line
+
+```bash
+lsb_release -a
+```
+

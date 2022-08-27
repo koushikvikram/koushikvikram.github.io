@@ -481,3 +481,28 @@ To convert strings to integers in bash, wrap them in `$((X))`. Like this:
 $((string))
 ```
 
+## What is .bashrc file in Linux?
+
+Source: https://www.digitalocean.com/community/tutorials/bashrc-file-in-linux
+
+## How to Create and Use Alias Command in Linux
+
+```bash
+alias shortName="your custom command here"
+```
+
+Creating Permanent Aliases
+
+```bash
+vim ~/.bashrc
+#My custom aliases
+alias home=”ssh -i ~/.ssh/mykep.pem tecmint@192.168.0.100”
+alias ll="ls -alF"
+```
+
+```bash
+source ~/.bashrc
+```
+
+Source: https://www.tecmint.com/create-alias-in-linux/
+

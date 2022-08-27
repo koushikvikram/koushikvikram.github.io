@@ -384,3 +384,72 @@ Source: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-rever
 
 Source: https://www.geeksforgeeks.org/check-data-type-in-numpy/
 
+## git fetch vs git pull
+
+`git pull = git fetch + git merge`
+
+> Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository. Git Pull on the other hand brings the copy of the remote directory changes into the local repository.
+
+Source: https://www.geeksforgeeks.org/git-difference-between-git-fetch-and-git-pull/
+
+## How do I revert a Git repository to a previous commit?
+
+Source: https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+
+## Git Detached Head: What This Means and How to Recover
+
+Source: https://www.cloudbees.com/blog/git-detached-head
+
+## Compare two git branches - git diff
+
+Source:
+- https://devconnected.com/how-to-compare-two-git-branches/
+- https://www.junosnotes.com/git/how-to-compare-two-git-branches/
+- https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches
+
+## Three Git Configurations that Should Be the Default
+
+```bash
+git config --global pull.rebase true
+git config --global fetch.prune true
+git config --global diff.colorMoved zebra
+```
+
+Source: https://spin.atomicobject.com/2020/05/05/git-configurations-default/
+
+## How can I remove an entry in global configuration with git config?
+
+You can remove the core.excludesfile setting like this:
+
+```bash
+git config --global --unset core.excludesfile
+```
+
+And of course you can simply edit the config file:
+
+```bash
+git config --global --edit
+```
+
+and then remove the setting by hand.
+
+Source: https://stackoverflow.com/questions/11868447/how-can-i-remove-an-entry-in-global-configuration-with-git-config
+
+## How can I see the changes in a Git commit?
+
+To see the diff for a particular `COMMIT` hash, where `COMMIT` is the hash of the commit:
+
+`git diff COMMIT~ COMMIT` will show you the difference between that `COMMIT`'s ancestor and the `COMMIT`. See the man pages for `git diff` for details about the command and `gitrevisions` about the `~` notation and its friends.
+
+Alternatively, `git show COMMIT` will do something very similar. (The commit's data, including its diff - but not for merge commits.) See the git show manpage.
+
+(also `git diff COMMIT` will show you the difference between that `COMMIT` and the head.)
+
+Source: https://stackoverflow.com/questions/17563726/how-can-i-see-the-changes-in-a-git-commit
+
+## gitexplorer
+
+Find the right commands you need without digging through the web.
+
+Source: https://gitexplorer.com/
+

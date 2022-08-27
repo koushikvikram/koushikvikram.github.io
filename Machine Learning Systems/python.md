@@ -1250,3 +1250,69 @@ a = np.array([1, 2, 3, 4, 5])
 ```
 
 Source: https://stackoverflow.com/questions/10542240/easy-way-to-test-if-each-element-in-an-numpy-array-lies-between-two-values
+
+## SQL on Pandas
+
+Pandas DataFrames stored in local variables can be queried as if they are regular tables within DuckDB.
+
+```Python
+import duckdb
+import pandas
+
+# connect to an in-memory database
+con = duckdb.connect()
+
+my_df = pandas.DataFrame.from_dict({'a': [42]})
+
+# query the Pandas DataFrame "my_df"
+results = con.execute("SELECT * FROM my_df").df()
+```
+
+Source: https://duckdb.org/docs/guides/python/sql_on_pandas
+
+## Pandas melt
+
+Unpivot a DataFrame from wide to long format, optionally leaving identifiers set.
+
+This function is useful to massage a DataFrame into a format where one or more columns are identifier variables *(id_vars)*, while all other columns, considered measured variables *(value_vars)*, are “unpivoted” to the row axis, leaving just two non-identifier columns, ‘variable’ and ‘value’.
+
+`pandas.melt(frame, id_vars=None, value_vars=None, var_name=None, value_name='value', col_level=None, ignore_index=True)`
+
+Source: https://pandas.pydata.org/docs/reference/api/pandas.melt.html
+
+## Get absolute path
+
+```Python
+import os
+os.path.abspath()
+```
+
+## Pandas DataFrame info
+
+```Python
+df.info(verbose=True)
+```
+
+Print a concise summary of a DataFrame.
+
+This method prints information about a DataFrame including the index dtype and columns, non-null values and memory usage.
+
+Source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.info.html
+
+## Working with Python virtual environments: the complete guide
+
+Source: https://blog.teclado.com/python-virtual-environments-complete-guide/
+
+## Automate Python Virtual Environment with a Script
+
+Source: https://tech.serhatteker.com/post/2022-04/automate-python-virtualenv/
+
+## fitter - Python Package
+
+fitter package provides a simple class to identify the distribution from which a data samples is generated from. It uses 80 distributions from Scipy and allows you to plot the results to check what is the most probable distribution and the best parameters.
+
+Source: https://fitter.readthedocs.io/en/latest/
+
+## sweetviz - Automated EDA in Python
+
+Source: https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde
