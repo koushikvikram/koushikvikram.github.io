@@ -1316,3 +1316,30 @@ Source: https://fitter.readthedocs.io/en/latest/
 ## sweetviz - Automated EDA in Python
 
 Source: https://towardsdatascience.com/sweetviz-automated-eda-in-python-a97e4cabacde
+
+## Interface
+
+Simple example of an informal interface
+
+```Python
+class Validator:
+    def validate(self, data):
+        pass
+
+class StringValidator(Validator):
+    def validate(self, data):
+        return isinstance(data, str)
+
+class IntValidator(Validator):
+    def validate(self, data):
+        return isinstance(data, int)
+
+sv = StringValidator()
+print(sv.validate("abc")) # True
+print(sv.validate(2)) # False
+
+iv = IntValidator()
+print(iv.validate(2345)) # True
+print(iv.validate("2345")) # False
+print(iv.validate(2345.2)) # False
+```
