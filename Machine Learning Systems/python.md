@@ -1343,3 +1343,24 @@ print(iv.validate(2345)) # True
 print(iv.validate("2345")) # False
 print(iv.validate(2345.2)) # False
 ```
+
+## Data Validation using dataclasses
+
+```Python
+from dataclasses import dataclass, asdict
+
+@dataclass
+class MyData:
+    x: int
+    y: str
+    z: list[str]
+
+def main():
+    a = MyData(10, 10, 10)
+    print(a)
+    print(asdict(a))
+
+if __name__ == "__main__":
+    main()
+```
+
