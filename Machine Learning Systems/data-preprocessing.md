@@ -187,3 +187,10 @@ Source: [https://stackoverflow.com/questions/26063231/read-specific-columns-with
 
 - [https://github.com/pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor)
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Visualize JSON Structure
+
+JSON Crack - Seamlessly visualize your JSON data instantly into graphs - [https://jsoncrack.com/editor](https://jsoncrack.com/)
+
+------------------------------------------------------------------------------------------------------------------------------------
