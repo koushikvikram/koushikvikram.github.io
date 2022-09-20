@@ -1364,3 +1364,9 @@ if __name__ == "__main__":
     main()
 ```
 
+## Using a hash function
+
+Python's default hash function is randomized by default each time you start an instance (server) to prevent dictionary insertion attacks. So, it doesn't produce consistent results everywhere.
+
+Instead use a deterministic hash function like `md5` or `sha256` from the `hashlib` library.
+

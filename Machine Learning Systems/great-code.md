@@ -150,3 +150,24 @@ Steps like prototyping, ideation and discovery are often best accomplished by bu
 
 Source: https://hci.stanford.edu/research/opportunistic/
 
+## Pure function
+
+Pure functions don't have any side effects. They always return the result if the same arguments are passed.
+
+## Partial Functions
+
+A partial function is a function that is not defined for all possible arguments of the specified type.
+
+Eg.
+
+```python
+def div(x, y):
+    return x/y
+```
+
+The above function blows up when `y = 0`, so it is not defined for that case.
+
+## Rule of least power
+
+The Rule of Least Power is the notion that a programmer should use the least powerful programming language required to code for a given requirement.
+

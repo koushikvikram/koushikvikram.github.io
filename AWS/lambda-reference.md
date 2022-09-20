@@ -340,3 +340,7 @@ https://docs.aws.amazon.com/cli/latest/reference/lambda/update-alias.html
 
 Source: https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
 
+## Programming AWS Lambda
+
+Anything that does an operation based on date shouldn't be in `lambda_entrypoint` because we're assuming that the lambda function gets booted up every day, which isn't necessarily a correct assumption to make.
+
