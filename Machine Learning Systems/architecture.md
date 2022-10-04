@@ -22,3 +22,8 @@ permalink: /ml-systems/architecture/
 - [Optimising serverless for BBC Online](https://medium.com/bbc-design-engineering/optimising-serverless-for-bbc-online-118fe2c04beb)
 - [Delivering BBC Online using Serverless](https://medium.com/bbc-design-engineering/delivering-bbc-online-using-serverless-79d4a9b0da16)
 - [Snap: Journey of a Snap on Snapchat Using AWS](https://www.youtube.com/watch?v=Cgv0kfp_6xQ&ab_channel=AmazonWebServices)
+
+## Rendezvous Hashing
+
+https://randorithms.com/2020/12/26/rendezvous-hashing.html
+

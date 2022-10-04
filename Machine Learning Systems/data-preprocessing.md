@@ -194,3 +194,12 @@ Source: [https://stackoverflow.com/questions/26063231/read-specific-columns-with
 JSON Crack - Seamlessly visualize your JSON data instantly into graphs - [https://jsoncrack.com/editor](https://jsoncrack.com/)
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+## Pandas timestamp to datetime date
+
+https://stackoverflow.com/questions/34386751/pandas-convert-timestamp-to-datetime-date
+
+## Query pandas DataFrame to select rows based on value and condition matching
+
+https://www.reneshbedre.com/blog/pandas-select-rows-value-matching.html
+

@@ -171,3 +171,34 @@ The above function blows up when `y = 0`, so it is not defined for that case.
 
 The Rule of Least Power is the notion that a programmer should use the least powerful programming language required to code for a given requirement.
 
+## Design Smell: Temporal Coupling
+
+https://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/
+
+## Functional Programming Guide
+
+https://mostly-adequate.gitbook.io/mostly-adequate-guide/
+
+## How to Learn Software Design and Architecture - a Roadmap
+
+https://www.freecodecamp.org/news/software-design/
+
+## Making Illegal States Unrepresentable
+
+- https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/
+- https://khalilstemmler.com/articles/enterprise-typescript-nodejs/functional-error-handling/
+- https://khalilstemmler.com/blogs/typescript/when-to-use-a-private-constructor/
+- https://khalilstemmler.com/articles/typescript-domain-driven-design/make-illegal-states-unrepresentable/
+
+## Strategy Design Pattern
+
+- https://www.geeksforgeeks.org/strategy-method-python-design-patterns/
+- https://auth0.com/blog/strategy-design-pattern-in-python/
+- https://refactoring.guru/design-patterns/strategy/python/example
+- https://medium.com/nerd-for-tech/strategy-design-pattern-python-896f2d38012d
+- https://levelup.gitconnected.com/design-patterns-in-python-strategy-pattern-2189c540756d
+- https://refactoring.guru/design-patterns/strategy
+
+## Design Pattern
+
+- https://refactoring.guru/design-patterns/what-is-pattern

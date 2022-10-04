@@ -163,3 +163,15 @@ Source: [https://stackoverflow.com/questions/13046624/how-to-permanently-export-
 lsb_release -a
 ```
 
+## How to Ping Specific Port Number in Linux and Windows
+
+https://phoenixnap.com/kb/ping-specific-port
+
+## How to configure the Windows Firewall to allow only specific IP Address to connect your ports?
+
+https://manage.accuwebhosting.com/knowledgebase/2984/How-to-configure-the-Windows-Firewall-to-allow-only-specific-IP-Address-to-connect-your-ports.html
+
+## How to see if Windows Firewall is blocking a port or program
+
+https://help.mashme.io/support/solutions/articles/29000036898-how-to-see-if-windows-firewall-is-blocking-a-port-or-program
+

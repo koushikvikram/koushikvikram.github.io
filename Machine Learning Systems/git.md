@@ -453,3 +453,14 @@ Find the right commands you need without digging through the web.
 
 Source: https://gitexplorer.com/
 
+## Git rebase and force-push
+
+https://docs.gitlab.com/ee/topics/git/git_rebase.html
+
+## Better commit messages
+
+https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/
+
+## Gitlab - transfer existing project into new namespace for the group
+
+https://about.gitlab.com/blog/2014/06/30/feature-highlight-groups/#:~:text=Transferring%20an%20existing%20project%20into,new%20namespace%20for%20the%20group

@@ -8,6 +8,8 @@ permalink: /ml-systems/solid-principles/
 
 # SOLID Principles
 
+- https://towardsdev.com/solid-principles-explained-635ad3608b20
+
 ## Udemy - SOLID Principles of Object-Oriented Design and Architecture
 
 ### 1. Introduction

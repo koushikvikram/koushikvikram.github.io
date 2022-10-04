@@ -1370,3 +1370,71 @@ Python's default hash function is randomized by default each time you start an i
 
 Instead use a deterministic hash function like `md5` or `sha256` from the `hashlib` library.
 
+## Method chaining
+
+https://www.tutorialspoint.com/Explain-Python-class-method-chaining
+
+## Using Pickle
+
+https://wiki.python.org/moin/UsingPickle
+
+## Dict
+
+- https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
+- https://stackoverflow.com/questions/3420122/filter-dict-to-contain-only-certain-keys
+
+## Abstract Base Class
+- https://dev.to/dollardhingra/understanding-the-abstract-base-class-in-python-k7h
+
+## UML
+- http://www.cs.utsa.edu/~cs3443/uml/uml.html
+
+## Creating an Executable
+
+- https://datatofish.com/executable-pyinstaller/
+
+## Dataclasses
+
+- https://medium.com/@jkishan421/dataclasses-an-awesome-approach-for-oop-in-python-50bc8b973b09
+
+## Pipenv
+
+https://realpython.com/pipenv-guide/
+
+## Flask
+
+https://reqbin.com/req/python/c-dwjszac0/curl-post-json-example
+
+https://stackabuse.com/how-to-get-and-parse-http-post-body-in-flask-json-and-form-data/
+
+https://stackabuse.com/get-request-query-parameters-with-flask/
+
+## Jupyter with pipenv
+
+In your project folder:
+
+```bash
+pipenv install ipykernel
+pipenv shell
+```
+
+This will bring up a terminal in your virtualenv like this:
+
+```bash
+(my-virtualenv-name) bash-4.4$
+```
+
+In that shell do:
+```bash
+python -m ipykernel install --user --name=my-virtualenv-name
+```
+
+Launch jupyter notebook:
+
+```bash
+jupyter notebook
+```
+
+In your notebook, Kernel -> Change Kernel. Your kernel should now be an option.
+
+Source: https://stackoverflow.com/questions/47295871/is-there-a-way-to-use-pipenv-with-jupyter-notebook

@@ -23,3 +23,9 @@ permalink: /ml-systems/recsys/
 
 - [SASRec: Self-Attentive Sequential Recommendation](https://github.com/kang205/SASRec)
 - [Sequential_Recommendation_Tensorflow](https://github.com/slientGe/Sequential_Recommendation_Tensorflow)
+
+- https://theaisummer.com/recommendation-systems/
+- https://towardsdatascience.com/transformers-for-tabular-data-tabtransformer-deep-dive-5fb2438da820
+- https://medium.com/recombee-blog/machine-learning-for-recommender-systems-part-1-algorithms-evaluation-and-cold-start-6f696683d0ed
+- https://medium.com/recombee-blog/machine-learning-for-recommender-systems-part-2-deep-recommendation-sequence-prediction-automl-f134bc79d66b
+- https://arxiv.org/pdf/2101.06286.pdf

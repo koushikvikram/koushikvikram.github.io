@@ -8,6 +8,8 @@ permalink: /aws/api-gateway/
 
 # API Gateway
 
+- https://www.alexdebrie.com/posts/api-gateway-access-logs/
+
 ## POST Requests
 
 POST requests have no restriction on data length, so they’re more suitable for files and images. Whereas GET requests have a limit of 2 kilobytes (some servers can handle 64 KB data) and GET only allows ASCII values.
