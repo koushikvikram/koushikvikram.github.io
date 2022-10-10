@@ -35,3 +35,10 @@ jupyter nbconvert your_notebook.ipynb --to pdf
 
 Source: https://blog.jupyter.org/build-a-jupyter-widget-with-react-and-typescript-d83e07340fa3
 
+## aimport
+
+Reload all modules imported using `%aimport`
+
+## Mercury - Convert Python notebook to web app and share with non-technical users
+
+mljar.com/mercury

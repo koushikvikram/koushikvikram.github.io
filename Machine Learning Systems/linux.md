@@ -175,3 +175,11 @@ https://manage.accuwebhosting.com/knowledgebase/2984/How-to-configure-the-Window
 
 https://help.mashme.io/support/solutions/articles/29000036898-how-to-see-if-windows-firewall-is-blocking-a-port-or-program
 
+## Install xdg-utils
+
+https://installati.one/ubuntu/20.04/xdg-utils/
+
+## pass in linux
+
+https://linuxhint.com/pass-ubuntu/
+

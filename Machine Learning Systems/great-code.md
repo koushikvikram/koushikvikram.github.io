@@ -202,3 +202,18 @@ https://www.freecodecamp.org/news/software-design/
 ## Design Pattern
 
 - https://refactoring.guru/design-patterns/what-is-pattern
+
+## 12 Steps to Production-Quality Data Science Code
+
+https://towardsdatascience.com/12-steps-to-production-quality-data-science-code-35ae2f868003
+
+## The Rule of Least Power
+
+- https://www.w3.org/2001/tag/doc/leastPower.html
+
+# Single-Responsibility Principle
+
+- https://medium.com/@zackbunch/applying-the-single-responsibility-principle-in-python-462449fa52c7
+- https://towardsdatascience.com/the-single-responsibility-principle-in-python-d0ab0a681853
+- https://www.linkedin.com/pulse/solid-design-principles-python-examples-hiral-amodia
+- https://www.pythontutorial.net/python-oop/python-single-responsibility-principle/

@@ -1438,3 +1438,99 @@ jupyter notebook
 In your notebook, Kernel -> Change Kernel. Your kernel should now be an option.
 
 Source: https://stackoverflow.com/questions/47295871/is-there-a-way-to-use-pipenv-with-jupyter-notebook
+
+## Software Debugging Course
+
+- https://www.udacity.com/course/software-debugging--cs259
+
+## Sort List of Tuples
+
+- https://pythonguides.com/python-sort-list-of-tuples/
+
+## Sorting dictionary using operator.itemgetter
+
+- https://stackoverflow.com/questions/4690416/sorting-dictionary-using-operator-itemgetter
+
+## How to Sort a Dictionary by Value in Python
+
+- https://stackabuse.com/how-to-sort-dictionary-by-value-in-python/
+
+## conda - point to correct pip
+
+in ~/,profile, move $PATH to front to avoid conda pointing to wrong pip
+
+## Hashing in Python
+
+- Always use a algo from `hashlib` to generate a hash. Never use Python's in-built `hash` function because if Python's default hash function is used, it generates a different hash value on different servers.
+
+https://docs.python.org/3/library/hashlib.html
+
+https://stackoverflow.com/questions/27522626/hash-function-in-python-3-3-returns-different-results-between-sessions
+
+## List of all alphanumeric signs
+
+Inside `string` module
+- `string.ascii_lowercase`
+- `string.ascii_uppercase`
+- `string.digits` as well as a few others
+
+Each is given as a single string. If you want to convert them to a list, you can simply use `list(string.ascii_lowercase + string.ascii_uppercase + string.digits)`
+
+- https://stackoverflow.com/questions/51265716/is-there-a-list-of-all-alphanumeric-signs-in-python
+
+## Pandas - rename columns
+
+- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html
+
+## Python project source codes
+
+https://thecleverprogrammer.com/2021/01/14/python-projects-with-source-code/
+
+## How To Filter Pandas Dataframe By Values of Column?
+
+https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/
+
+## Generating and using a Callgraph, in Python
+
+https://cerfacs.fr/coop/pycallgraph
+
+## Python Tutorial: Understanding Python MRO - Class search path
+
+- https://makina-corpus.com/python/python-tutorial-understanding-python-mro-class-search-path
+
+## Python Interface
+
+https://realpython.com/python-interface/#python-interface-overview
+
+## Virtual Subclass
+
+https://www.demo2s.com/python/python-virtual-subclasses.html
+
+## Multithreading
+
+https://jedyang.com/post/multithreading-in-python-pytorch-using-c++-extension/
+
+## Pypy vs CPython Multithreading
+
+https://www.cs.cornell.edu/~asampson/blog/parallelpypy.html
+
+## Dataclasses
+
+https://realpython.com/python-data-classes/
+
+## Why You Should Probably Never Use pandas inplace=True
+
+https://towardsdatascience.com/why-you-should-probably-never-use-pandas-inplace-true-9f9f211849e4
+
+## How to Summarize Data with Pandas
+
+https://medium.com/analytics-vidhya/how-to-summarize-data-with-pandas-2c9edffafbaf
+
+## 40 Useful Pandas Snippets
+
+https://medium.com/bitgrit-data-science-publication/40-useful-pandas-snippets-d7833472d12f
+
+## Black vs YAPF
+
+https://news.ycombinator.com/item?id=17155048
+

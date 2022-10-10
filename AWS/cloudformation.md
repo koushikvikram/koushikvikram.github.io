@@ -195,3 +195,24 @@ Template Helpers
 #### Deploying CloudFormation Templates
 
 Automated way of deploying - use AWS CLI or a Continuous Delivery (CD) tool
+
+### CloudFormation Parameters
+
+![Parameters](images/udemy-cfn-masterclass-parameters-1.png)
+
+The What:
+- Parameters are a way to provide inputs to your AWS CloudFormation template.
+
+The Why:
+- You want to reuse your templates across the company
+- Some inputs can not be determined ahead of time
+
+The When:
+- If the CloudFormation resource configuration is likely to change in the future, make it a parameter. That way, you won't have to re-upload a template to change its content.
+
+Advantages:
+- Extremely powerful
+- Controlled
+- Thanks to types, can prevent errors from happening in templates
+- Can be cross-validated using Rules
+

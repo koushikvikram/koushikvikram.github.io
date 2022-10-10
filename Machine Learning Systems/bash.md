@@ -506,3 +506,23 @@ source ~/.bashrc
 
 Source: https://www.tecmint.com/create-alias-in-linux/
 
+## The `set` builtin
+
+- https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+
+## bash : Bad Substitution
+
+Make sure your script didnt have
+
+`#!/bin/sh `
+
+at the top of your script. Instead, you should add
+
+`#!/bin/bash`
+
+https://stackoverflow.com/questions/20615217/bash-bad-substitution
+
+## Understanding Exit Codes and Using them in Bash scripts
+
+- https://madflojo.medium.com/understanding-exit-codes-in-bash-6942a8b96ce5
+

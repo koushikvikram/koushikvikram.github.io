@@ -148,3 +148,16 @@ Get their ssh public key and add it to ~/.ssh/authorized_keys inside the EC2 ins
 https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
 
 -----------------------------------------------------------------------------------------------------
+
+## Point Domain to AWS EC2 Instance
+
+https://w3path.com/point-domain-to-aws-ec2-instance/
+
+## Step-by-step visual guide on deploying a Flask application on AWS EC2
+
+https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-application-on-aws-ec2-8e3e8b82c4f7
+
+## How to Deploy a Production Grade Flask application to an AWS EC2 Instance using GitHub Actions: Part Three.
+
+https://medium.com/@lyle-okoth/how-to-deploy-a-production-grade-flask-application-to-an-aws-ec2-instance-using-github-actions-163be1d5fbd5
+

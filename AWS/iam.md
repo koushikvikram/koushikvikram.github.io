@@ -115,3 +115,7 @@ As cloudberryman explained, "You can either list all buckets or none."
     ]
 }
 ```
+
+## Allows IAM Users to Self-Manage an MFA Device
+
+https://asecure.cloud/a/iam_iam_3/

@@ -344,3 +344,15 @@ Source: https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
 
 Anything that does an operation based on date shouldn't be in `lambda_entrypoint` because we're assuming that the lambda function gets booted up every day, which isn't necessarily a correct assumption to make.
 
+## Testing Lambda container images locally
+
+https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
+
+## FUNCTION_ERROR_INIT_FAILURE AWS lambda
+
+This probably means there is an error with your code.
+
+Test your lambda function on the AWS console and you'll see what the error is.
+
+## if lambda alias version doesn't get updated, it might mean there's something wrong with the code like a file missing or file path not specified correctly to point to file inside the docker image/zip file
+

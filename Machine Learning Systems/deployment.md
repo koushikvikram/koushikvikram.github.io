@@ -109,3 +109,7 @@ Consider trade-offs for your situation and environment
 - Neural Networks take a long time to train because they have a lot of parameters that need to be updated. They're also hard to explain and interpret.
 - Whereas, Linear Regression is fast to train and also easy to explain and interpret.
 - However, a Neural Network *may* perform better (eg. higher accuracy) than Linear Regression.
+
+## Operationalizing Machine Learning: An interview study
+
+https://arxiv.org/pdf/2209.09125.pdf

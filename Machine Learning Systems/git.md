@@ -464,3 +464,39 @@ https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/
 ## Gitlab - transfer existing project into new namespace for the group
 
 https://about.gitlab.com/blog/2014/06/30/feature-highlight-groups/#:~:text=Transferring%20an%20existing%20project%20into,new%20namespace%20for%20the%20group
+
+## How to Undo a Git Add
+
+To undo `git add` before a commit, run `git reset <file>` or `git reset` to unstage all changes.
+
+## Delete local branch
+
+https://www.git-tower.com/learn/git/faq/delete-local-branch
+
+## How to reset, revert, and return to previous states in Git
+
+https://opensource.com/article/18/6/git-reset-revert-rebase-commands
+
+## What's the difference between git reflog and log?
+
+`git log` shows the current HEAD and its ancestry. That is, it prints the commit HEAD points to, then its parent, its parent, and so on. It traverses back through the repo's ancestry, by recursively looking up each commit's parent.
+
+(In practice, some commits have more than one parent. To see a more representative log, use a command like git log --oneline --graph --decorate.)
+
+`git reflog` doesn't traverse HEAD's ancestry at all. The reflog is an ordered list of the commits that HEAD has pointed to: it's undo history for your repo. The reflog isn't part of the repo itself (it's stored separately to the commits themselves) and isn't included in pushes, fetches or clones; it's purely local.
+
+Aside: understanding the reflog means you can't really lose data from your repo once it's been committed. If you accidentally reset to an older commit, or rebase wrongly, or any other operation that visually "removes" commits, you can use the reflog to see where you were before and git reset --hard back to that ref to restore your previous state. Remember, refs imply not just the commit but the entire history behind it.
+
+Source: https://stackoverflow.com/questions/17857723/whats-the-difference-between-git-reflog-and-log
+
+## Git - Mental models and Cheatsheet
+
+https://dsinecos.github.io/blog/Git-basics
+
+## Rebase — One of the Most Powerful Git Commands
+
+https://medium.com/osedea/git-rebase-powerful-command-507bbac4a234
+
+## How Git works under the hood?
+
+https://medium.com/@siavash.sajjady/how-git-works-under-the-hood-d3dbdfafca75
