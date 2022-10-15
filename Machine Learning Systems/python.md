@@ -1534,3 +1534,6 @@ https://medium.com/bitgrit-data-science-publication/40-useful-pandas-snippets-d7
 
 https://news.ycombinator.com/item?id=17155048
 
+## Cruft
+
+https://pypi.org/project/cruft/

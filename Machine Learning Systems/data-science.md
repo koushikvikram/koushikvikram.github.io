@@ -62,3 +62,12 @@ permalink: /ml-systems/data-science/
 ## Public APIs
 
 https://github.com/public-apis/public-apis
+
+## 30 books to learn advanced math
+
+https://abakcus.com/30-best-math-books-to-learn-advanced-mathematics-for-self-learners/
+
+## Quantile Regression
+
+https://towardsdatascience.com/quantile-regression-ff2343c4a03
+

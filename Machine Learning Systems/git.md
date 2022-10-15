@@ -500,3 +500,13 @@ https://medium.com/osedea/git-rebase-powerful-command-507bbac4a234
 ## How Git works under the hood?
 
 https://medium.com/@siavash.sajjady/how-git-works-under-the-hood-d3dbdfafca75
+
+## How to permanently remove few commits from remote branch
+
+You `git reset --hard <COMMIT_ID>` your local branch to remove changes from working tree and index, and you `git push --force`
+
+https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch
+
+## Rewriting History
+
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
