@@ -71,3 +71,35 @@ https://abakcus.com/30-best-math-books-to-learn-advanced-mathematics-for-self-le
 
 https://towardsdatascience.com/quantile-regression-ff2343c4a03
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Data Analysis and Visualization Course Notes
+
+## Udemy - Python Data Analysis & Visualization Masterclass - Colt Steele
+
+| Question                                                                  | Answer                                                                                            |
+|:--------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
+| Where does the name pandas come from?                                     | The econometrics term, "panel data", which refers to multidimensional data sets.                  |
+| What is pandas?                                                           | Open-source data analysis and manipulation package for Python.                                    |
+| How do you provide column names while reading a dataset that doesn't come with it? | pd.read_csv("filename.csv", names=["col1", "col2", ..., "colN"])                         |
+| What's the output of df.info() ?                                          | df shape, column names, column data types, null count per column, memory usage                    |
+| What's a pandas Dataframe?                                                | 2D, size-mutable, potentially heterogeneous tablular data structure with labeled axes.            |
+| How do you generate descriptive statistics for a string columns?          | df.describe(include=['object'])                                                                   |
+| What are the return types of the following dataframe methods? info(), head()/tail(), describe(), mode(), sum() | NoneType, DataFrame, DataFrame, DataFrame, Series            |
+| Can you give a few examples where the dot notation for selecting columns doesn't work? | When the column name has either a space or a dot in it, the dot notation doesn't work. The dot notation doesn't allow us to select multiple columns at the same time. The dot notation is also not helpful when we reference the column name through a variable. Another situation where the dot notation isn't helpful is when the column name is the same as a dataframe method. Eg. a column with name "head" |
+| What's a pandas Series?                                                   | `class pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)`. One-dimensional ndarray with axis labels (including time series). | 
+| What are the properties of Labels in a pandas Series?                     | Labels need not be unique but must be a hashable type. | 
+| What data types does the Series object support?                           | The Series object supports both integer- and label-based indexing. |
+| What kind of methods does a pandas Series provide?                        | Series provides methods for performing operations involving the index. |
+| What data structure is the pandas Series built on?                        | Numpy array. |
+| How do the statistical methods in a pandas Series deal with NaNs?         | Statistical methods from ndarray have been overridden to automatically exclude missing data (currently represented as NaN). | 
+| Why is it not necessary for pandas Series to be of same length for performing operations on them? | Operations between Series (+, -, /, *, **) align values based on their associated index values. So, they need not be the same length. |
+| What would be the result index of an operation on two Series objects? | The result index will be the sorted union of the two indexes. |
+
+
+| Analysis Operations Steps              | Methods                            | Documentation                                                     | Source Code                 |
+|:---------------------------------------|:-----------------------------------|-------------------------------------------------------------------|:----------------------------|
+| 1. Read the dataset as a DataFrame     | pd.read_csv("filename.csv")        | https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html | https://github.com/pandas-dev/pandas/blob/main/pandas/io/parsers/readers.py |
+| 2. Inspect the DataFrame               | df.info(), df.head(), df.tail()    | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py |
+| 3. Generate Descriptive Statistics     | df.describe(), df.sum(), df.mode(), df.describe(include=['object']) | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/describe.py |
+| 4. Work with individual columns        | df["COLUMN NAME"]
