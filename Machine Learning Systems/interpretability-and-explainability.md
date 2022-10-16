@@ -22,3 +22,11 @@ permalink: /ml-systems/interpretability-and-explainability/
 
 - [Science Before Statistics: Causal Inference](https://www.youtube.com/watch?v=KNPYUVmY3NM&ab_channel=RichardMcElreath)
 - [causal_salad_2021](https://github.com/rmcelreath/causal_salad_2021)
+
+## dtreeviz - Visualize Decision Trees
+
+- https://github.com/parrt/dtreeviz
+
+## Neural Networks are Decision Trees
+
+- https://arxiv.org/abs/2210.05189
