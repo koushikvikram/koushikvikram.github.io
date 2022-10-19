@@ -203,3 +203,16 @@ https://stackoverflow.com/questions/34386751/pandas-convert-timestamp-to-datetim
 
 https://www.reneshbedre.com/blog/pandas-select-rows-value-matching.html
 
+## Pandas Convert Week Date to Start or end of Week
+
+Start of week
+
+```Python
+df['week_start'] = df['myday'].dt.to_period('W').apply(lambda r: r.start_time)
+```
+
+End of week
+
+```Python
+df['week_start'] = df['myday'].dt.to_period('W').apply(lambda r: r.end_time)
+```
