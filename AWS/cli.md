@@ -38,3 +38,7 @@ aws configure import --csv file://credentials.csv
 ```
 
 Source: [Configuration basics](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+
+## SAWS: A Supercharged AWS CLI
+
+https://github.com/donnemartin/saws
