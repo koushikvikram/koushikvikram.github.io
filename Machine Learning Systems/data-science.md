@@ -95,11 +95,13 @@ https://towardsdatascience.com/quantile-regression-ff2343c4a03
 | How do the statistical methods in a pandas Series deal with NaNs?         | Statistical methods from ndarray have been overridden to automatically exclude missing data (currently represented as NaN). | 
 | Why is it not necessary for pandas Series to be of same length for performing operations on them? | Operations between Series (+, -, /, *, **) align values based on their associated index values. So, they need not be the same length. |
 | What would be the result index of an operation on two Series objects? | The result index will be the sorted union of the two indexes. |
+| How does pandas Series handle different dtypes in the same series? | When working with heterogeneous data, the dtype of the resulting ndarray will be chosen to accommodate all of the data involved. For example, if strings are involved, the result will be of object dtype. If there are only floats and integers, the resulting array will be of float dtype. Try: `s = pd.Series([1, 2.0, "3"])`, `type(s[0]), type(s[1]), type(s[2])`|
+| How do `nlargest` and `nsmallest` work on DataFrames?                     | df.nlargest(n, ["col1", "col2", ..., "colN"]) - returns top n rows from dataframe sorted by col1, col2, ..., colN |
 
 
 | Analysis Operations Steps              | Methods                            | Documentation                                                     | Source Code                 |
 |:---------------------------------------|:-----------------------------------|-------------------------------------------------------------------|:----------------------------|
 | 1. Read the dataset as a DataFrame     | pd.read_csv("filename.csv")        | https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html | https://github.com/pandas-dev/pandas/blob/main/pandas/io/parsers/readers.py |
-| 2. Inspect the DataFrame               | df.info(), df.head(), df.tail()    | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py |
+| 2. Inspect the DataFrame               | df.info(), df.head(), df.tail(), df.dtypes | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py |
 | 3. Generate Descriptive Statistics     | df.describe(), df.sum(), df.mode(), df.describe(include=['object']) | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/describe.py |
-| 4. Work with individual columns        | df["COLUMN NAME"]
+| 4. Work with individual columns        | col = df["COLUMN NAME"], col.min(), col.max(), col.shape, col.values, col.index, col.head(), col.tail(), col.describe(), col.unique(dropna=True), col.nunique(), col.nlargest(n=5, keep="first"), col.nsmallest(n=5, keep="first"), col.value_counts(), col.plot(), col.dtype |
