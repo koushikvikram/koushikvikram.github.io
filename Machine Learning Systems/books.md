@@ -8,6 +8,13 @@ permalink: /ml-systems/books/
 
 # Books
 
+## Free Books (they're all high quality!)
+- https://christophm.github.io/interpretable-ml-book/
+- https://theeffectbook.net/index.html
+- https://avehtari.github.io/ROS-Examples/
+- https://mixtape.scunning.com/
+- http://incompleteideas.net/book/the-book-2nd.html
+
 ## Ace Advanced ML Strategy
 - [The Only Book You Need to Ace Advanced Machine Learning Strategy](https://towardsdatascience.com/the-only-book-you-need-to-ace-advanced-machine-learning-strategy-8d48ddbbe73d)
 - [Machine Learning Yearning - Andrew Ng](https://github.com/ajaymache/machine-learning-yearning)
