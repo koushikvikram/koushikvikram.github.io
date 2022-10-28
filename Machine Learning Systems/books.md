@@ -11,9 +11,12 @@ permalink: /ml-systems/books/
 ## Free Books (they're all high quality!)
 - https://christophm.github.io/interpretable-ml-book/
 - https://theeffectbook.net/index.html
+- https://matheusfacure.github.io/python-causality-handbook/landing-page.html
+- https://timeseriesreasoning.com/
 - https://avehtari.github.io/ROS-Examples/
 - https://mixtape.scunning.com/
 - http://incompleteideas.net/book/the-book-2nd.html
+
 
 ## Ace Advanced ML Strategy
 - [The Only Book You Need to Ace Advanced Machine Learning Strategy](https://towardsdatascience.com/the-only-book-you-need-to-ace-advanced-machine-learning-strategy-8d48ddbbe73d)

@@ -216,3 +216,14 @@ End of week
 ```Python
 df['week_start'] = df['myday'].dt.to_period('W').apply(lambda r: r.end_time)
 ```
+
+## Pandas - skip empty lines while reading csv
+
+```Python
+import pandas as pd
+
+df = pd.read_csv("test.csv", sep=",")
+df.dropna(how="all", inplace=True)
+```
+
+Source: https://thomas-cokelaer.info/blog/2014/05/pandas-read_csv-how-to-skip-empty-lines/
