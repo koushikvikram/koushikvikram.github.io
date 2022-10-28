@@ -32,13 +32,15 @@ Source: [https://lou.dev/blog/2020/kedro/](https://lou.dev/blog/2020/kedro/)
 
 Source: [Introduction to Kedro training with Joel Schwarzmann - YouTube](https://www.youtube.com/watch?v=NU7LmDZGb6E&ab_channel=QuantumBlack)
 
-## Kedro - reading data from S3
+## Kedro - reading/writing from/to S3
 
 - Include `s3fs>=0.3.0,<0.5` in `src/requirements.txt`
 - Run `kedro build-reqs` from the project's root directory
 - Run `pip install -r src/requirements.txt`
-- Create a dataset in `conf/base/catalog.yml` that points to the location in S3
-- Now, when you run `catalog.load(DATASET_NAME)` 
+- Create a dataset in `conf/base/catalog.yml` that points to the location in S3. Add your AWS credentials to `conf/local/credentials.yml` and specify the credentials parameter along with the dataset parameter in `conf/base/catalog.yml`. Refer to: [https://kedro.readthedocs.io/en/stable/data/data_catalog.html#example-4-loads-a-csv-file-from-a-specific-s3-bucket-using-credentials-and-load-arguments](https://kedro.readthedocs.io/en/stable/data/data_catalog.html#example-4-loads-a-csv-file-from-a-specific-s3-bucket-using-credentials-and-load-arguments)
+- Now, when you run `catalog.load(DATASET_NAME)`, Kedro loads the data from S3 into memory
+- To save the output of a node as a dataset to S3, specify the name of the output(dataset), S3 path and credentials in `conf/base/catalog.yml`.
+- When the node is run, Kedro writes the data to S3.
 
 ## Kedro - Hello World Pipeline
 
