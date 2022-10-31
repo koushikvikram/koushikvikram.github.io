@@ -119,3 +119,23 @@ As cloudberryman explained, "You can either list all buckets or none."
 ## Allows IAM Users to Self-Manage an MFA Device
 
 https://asecure.cloud/a/iam_iam_3/
+
+## Enforce MFA Access to the AWS Console
+
+- https://dev.to/aws-builders/enforce-mfa-access-to-the-aws-console-1ho1
+
+## How do I Provide IAM users with a link to assume an IAM role?
+
+https://aws.amazon.com/premiumsupport/knowledge-center/iam-user-role-link/
+
+## How can I provide cross-account access to objects that are in Amazon S3 buckets?
+
+https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/
+
+## IAM Roles & EC2 Instance Profile - Connecting EC2 to DynamoDB | AWS in Action
+
+https://www.youtube.com/watch?v=iuzAvDtXwks&ab_channel=Academind
+
+## How to use trust policies with IAM roles
+
+https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/

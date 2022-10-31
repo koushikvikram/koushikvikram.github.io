@@ -510,3 +510,30 @@ https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commit
 ## Rewriting History
 
 https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+
+## Discard all changes and pull from upstream
+
+```bash
+git reset --hard origin/master
+git pull origin master
+```
+
+- https://stackoverflow.com/questions/13781388/git-discard-all-changes-and-pull-from-upstream
+
+## Delete a branch locally and remote
+
+```bash
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+```
+
+## Automatic prune with Git fetch or pull
+
+```bash
+git config --global fetch.prune true
+```
+
+https://stackoverflow.com/questions/18308535/automatic-prune-with-git-fetch-or-pull

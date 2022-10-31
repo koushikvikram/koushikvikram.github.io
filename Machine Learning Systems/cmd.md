@@ -36,3 +36,6 @@ setx EC2_HOME "%APPDATA%\aws\ec2-api-tools" /M
 
 Source: http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/
 
+## Chezmoi - manage your personal configuration files (dotfiles, like ~/.gitconfig) across multiple machines
+
+- https://www.chezmoi.io/
