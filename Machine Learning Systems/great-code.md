@@ -217,3 +217,8 @@ https://towardsdatascience.com/12-steps-to-production-quality-data-science-code-
 - https://towardsdatascience.com/the-single-responsibility-principle-in-python-d0ab0a681853
 - https://www.linkedin.com/pulse/solid-design-principles-python-examples-hiral-amodia
 - https://www.pythontutorial.net/python-oop/python-single-responsibility-principle/
+
+# Boundaries - Talk by Gary Bernardt
+
+- Source: https://www.youtube.com/watch?v=eOYal8elnZk&ab_channel=NextDayVideo
+
