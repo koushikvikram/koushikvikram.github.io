@@ -16,6 +16,7 @@ permalink: /ml-systems/books/
 - https://avehtari.github.io/ROS-Examples/
 - https://mixtape.scunning.com/
 - http://incompleteideas.net/book/the-book-2nd.html
+- https://datascienceincontext.com/
 
 
 ## Ace Advanced ML Strategy
