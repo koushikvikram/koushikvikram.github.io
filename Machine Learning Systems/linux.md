@@ -181,5 +181,29 @@ https://installati.one/ubuntu/20.04/xdg-utils/
 
 ## pass in linux
 
-https://linuxhint.com/pass-ubuntu/
+- https://linuxhint.com/pass-ubuntu/
+- https://linuxhint.com/pass-ubuntu/
+
+## hash -r
+
+The `hash -r` command removes the cache.
+
+## How to manage Linux passwords with the pass command
+
+- https://www.redhat.com/sysadmin/management-password-store
+
+## YubiKey Setup Guide
+
+- [GPG and SSH with Yubikey on Windows](https://suchsecurity.com/gpg-and-ssh-with-yubikey-on-windows.html)
+- https://github.com/drduh/YubiKey-Guide
+
+## Chezmoi - store state of dotfiles 
+
+- https://www.chezmoi.io/quick-start/
+
+## GPG
+
+- [Delete GPG Primary Key's Master Key](https://sites.google.com/view/chewkeanho/guides/gnupg/delete-primary-key-master-key)
+- [GPG: Remove keys from your public keyring?](https://blog.chapagain.com.np/gpg-remove-keys-from-your-public-keyring/)
+
 

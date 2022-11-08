@@ -27,3 +27,12 @@ region=ap-southeast-2
 In Windows, this file can be found by default in `C:\Users\<USER_NAME>\.aws\config`
 
 Source: [STS fails due to missing region after upgrade to v6.5.0 #866](https://github.com/99designs/aws-vault/issues/866)
+
+## How to use aws-vault to store your AWS credentials
+
+- https://www.seniorlinuxadmin.co.uk/aws-vault.html
+
+## AWS Vault Setup on WSL
+
+- https://gist.github.com/sanjay-btc/c332d6f8a886853d5071f0a08051ff70
+

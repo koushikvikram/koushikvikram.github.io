@@ -66,3 +66,19 @@ conn.close()​
 Note: You can get your impala JDBC string either from the Datahub endpoint path or from the JDBC URL from CDW.
 
 Source: https://community.cloudera.com/t5/Community-Articles/How-to-connect-to-CDP-Impala-from-python/ta-p/296405
+
+## Kerberos authentication explained
+
+- https://www.varonis.com/blog/kerberos-authentication-explained
+
+## Authentication and Authorization
+
+- https://www.udacity.com/course/authentication-authorization-oauth--ud330
+- https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff647503(v=pandp.10)
+- https://www.bu.edu/tech/about/security-resources/bestpractice/auth/
+- https://solutionsreview.com/identity-management/top-9-authentication-books-for-professionals/
+
+## Change Data Capture
+
+- https://github.com/foogaro/change-data-capture
+- https://github.com/abrarsheikhsony/SFDC-change-data-capture

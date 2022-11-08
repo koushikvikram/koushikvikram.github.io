@@ -139,3 +139,9 @@ https://www.youtube.com/watch?v=iuzAvDtXwks&ab_channel=Academind
 ## How to use trust policies with IAM roles
 
 https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/
+
+## S3 bucket permissions
+
+- https://objectivefs.com/howto/how-to-restrict-s3-bucket-policy-to-only-one-aws-s3-bucket
+- https://cloud.netapp.com/blog/aws-cvo-blg-s3-access-for-objects-with-different-permissions-in-an-s3-bucket
+
