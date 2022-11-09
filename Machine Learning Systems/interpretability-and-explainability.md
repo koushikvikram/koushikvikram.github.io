@@ -30,3 +30,7 @@ permalink: /ml-systems/interpretability-and-explainability/
 ## Neural Networks are Decision Trees
 
 - https://arxiv.org/abs/2210.05189
+
+## Interpreting ACF and PACF Plots for Time Series Forecasting
+
+- https://towardsdatascience.com/interpreting-acf-and-pacf-plots-for-time-series-forecasting-af0d6db4061c

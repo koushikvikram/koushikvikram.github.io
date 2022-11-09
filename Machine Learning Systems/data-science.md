@@ -105,3 +105,45 @@ https://towardsdatascience.com/quantile-regression-ff2343c4a03
 | 2. Inspect the DataFrame               | df.info(), df.head(), df.tail(), df.dtypes | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/frame.py |
 | 3. Generate Descriptive Statistics     | df.describe(), df.sum(), df.mode(), df.describe(include=['object']) | https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html | https://github.com/pandas-dev/pandas/blob/main/pandas/core/describe.py |
 | 4. Work with individual columns        | col = df["COLUMN NAME"], col.min(), col.max(), col.shape, col.values, col.index, col.head(), col.tail(), col.describe(), col.unique(dropna=True), col.nunique(), col.nlargest(n=5, keep="first"), col.nsmallest(n=5, keep="first"), col.value_counts(), col.plot(), col.dtype |
+
+# LinkedIn Posts
+
+Daniel Lee
+• Following
+🚀 Land Top Jobs with DataInterview.com (Ex-Google)
+3h • Edited • 3 hours ago
+
+While cleaning my closet, I found a stack of lecture notes I collected over the course of 8 years of studying data science.
+
+These notes detail the theory, formulas and application of various subjects including matrix algebra, Neural networks, Bayesian statistics, experimental design and recommender systems.
+
+Some of these pages have coffee stains from the early days of my career when I went to Starbucks right after work to learn about data science.
+
+It's a great reminder of why I love data science. I am glad that I. had a chance to study it as an undergraduate at Virginia Tech, apply it as a data scientist at Google, and teach it as an interview coach on DataInterview.com.
+
+If you are wondering what resources I personally used to learn data science, here's a detailed list:
+
+✅ Machine Learning 
+- Stanford CS224 (NLP)
+- Stanford CS229 (ML)
+- Stanford CS231 (Computer Vision)
+- Intro to Deep Learning by Lex Fridman
+- Deep Learning by Ian Goodfellow
+
+✅ Statistics
+- Probability by Jim Pitman
+- Penn State Design of Experiments
+- Time Series Analysis & Forecasting by Douglas C. Montgomery
+
+✅ Software Engineering
+- Harvard CS50 (Intro to Computer Science)
+- Effective Python by Brett Slatkin
+- Seven Databases in Seven Weeks
+- Stanford SQL & DB course
+- Automate the Boring Stuff with Python 
+
+✅ Specializations
+- Fraud Analytics by Bart Baesens 
+- Practical Recommender Systems by Kim Falk
+
+Other notable mentions include Khan Academy, Udx, Coursera and Udacity.

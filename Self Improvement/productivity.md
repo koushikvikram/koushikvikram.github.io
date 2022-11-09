@@ -45,3 +45,7 @@ Compound growth gets discussed as a financial concept, but it works in careers a
 - Sleep, excercise and nutrition
 4. Other Stuff
 - Don’t neglect family and friends for the sake of productivity — that’s a very stupid tradeoff (and very likely a net productivity loss, because I'll be less happy). Don’t neglect doing things I love or that clear my head either.
+
+## 4 Unsexy One-Minute Habits That Save Me 30+ Hours Every Week
+
+- https://betterhumans.pub/4-unsexy-one-minute-habits-that-save-me-30-hours-every-week-5eb49e42f84e

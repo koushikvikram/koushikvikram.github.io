@@ -1537,3 +1537,16 @@ https://news.ycombinator.com/item?id=17155048
 ## Cruft
 
 https://pypi.org/project/cruft/
+
+## Pandas dtypes
+
+- object
+- int64
+- float64
+- datetime64
+- bool
+
+## 5 Pandas Group By Tricks You Should Know in Python
+
+- https://towardsdatascience.com/5-pandas-group-by-tricks-you-should-know-in-python-f53246c92c94
+

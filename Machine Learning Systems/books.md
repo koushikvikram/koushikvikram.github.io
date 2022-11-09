@@ -17,6 +17,7 @@ permalink: /ml-systems/books/
 - https://mixtape.scunning.com/
 - http://incompleteideas.net/book/the-book-2nd.html
 - https://datascienceincontext.com/
+- - [Software Engineering at Google](https://abseil.io/resources/)
 
 
 ## Ace Advanced ML Strategy

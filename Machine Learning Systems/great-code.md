@@ -48,6 +48,7 @@ Torvalds is not alone in this, by the way: *"Show me your flowchart and conceal 
 - [Duck Typing in Python](https://www.pythonmorsels.com/duck-typing/)
 - [Structure and Interpretation of Computer Programs](https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs)
 - [How to Design Programs](https://htdp.org/)
+- [Software Engineering at Google](https://abseil.io/resources/)
 
 ## Reading Code Written by Brilliant Engineers
 
@@ -221,4 +222,11 @@ https://towardsdatascience.com/12-steps-to-production-quality-data-science-code-
 # Boundaries - Talk by Gary Bernardt
 
 - Source: https://www.youtube.com/watch?v=eOYal8elnZk&ab_channel=NextDayVideo
+
+# Videos to learn from
+- [The Clean Architecture in Python](https://www.youtube.com/watch?v=DJtef410XaM&ab_channel=NextDayVideo)
+- [Python Design Patterns 1](https://www.youtube.com/watch?v=Er5K_nR5lDQ&ab_channel=NextDayVideo)
+- [Boundaries](https://www.youtube.com/watch?v=eOYal8elnZk&ab_channel=NextDayVideo)
+- [Core Design Principles for Software Developers by Venkat Subramaniam](https://www.youtube.com/watch?v=llGgO74uXMI&ab_channel=Devoxx)
+- [Design Patterns in Object Oriented Programming](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
 
