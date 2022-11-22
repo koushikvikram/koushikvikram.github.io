@@ -147,3 +147,7 @@ If you are wondering what resources I personally used to learn data science, her
 - Practical Recommender Systems by Kim Falk
 
 Other notable mentions include Khan Academy, Udx, Coursera and Udacity.
+
+## Fixed Effects / Random Effects / Mixed Models and Omitted Variable Bias
+
+Source: https://www.statisticshowto.com/experimental-design/fixed-effects-random-mixed-omitted-variable-bias/

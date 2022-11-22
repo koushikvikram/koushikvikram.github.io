@@ -161,3 +161,7 @@ https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-appl
 
 https://medium.com/@lyle-okoth/how-to-deploy-a-production-grade-flask-application-to-an-aws-ec2-instance-using-github-actions-163be1d5fbd5
 
+## How do I request an EC2 vCPU limit increase for my On-Demand Instance?
+
+Source: https://aws.amazon.com/premiumsupport/knowledge-center/ec2-on-demand-instance-vcpu-increase/
+

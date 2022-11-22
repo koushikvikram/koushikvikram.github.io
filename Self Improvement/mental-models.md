@@ -12,3 +12,6 @@ permalink: /self-improvement/mental-models/
 
 > *Richard Feynman: Learning by understanding builds robust knowledge.*
 
+## The Steel Man Technique: How To Argue Better And Be More Persuasive
+
+https://constantrenewal.com/steel-man

@@ -227,3 +227,66 @@ df.dropna(how="all", inplace=True)
 ```
 
 Source: https://thomas-cokelaer.info/blog/2014/05/pandas-read_csv-how-to-skip-empty-lines/
+
+## Pandas - Find the difference between two dataframes
+
+By using drop_duplicates
+
+`pd.concat([df1,df2]).drop_duplicates(keep=False)`
+
+The above method only works for those data frames that don't already have duplicates themselves. For example:
+
+```
+df1=pd.DataFrame({'A':[1,2,3,3],'B':[2,3,4,4]})
+df2=pd.DataFrame({'A':[1],'B':[2]})
+```
+
+It will output like below , which is wrong
+
+Wrong Output :
+
+```
+pd.concat([df1, df2]).drop_duplicates(keep=False)
+
+   A  B
+1  2  3
+```
+
+Correct Output
+
+```
+   A  B
+1  2  3
+2  3  4
+3  3  4
+```
+
+How to achieve that?
+
+Method 1: Using `isin` with tuple
+
+```
+df1[~df1.apply(tuple,1).isin(df2.apply(tuple,1))]
+   A  B
+1  2  3
+2  3  4
+3  3  4
+```
+
+Method 2: `merge` with `indicator`
+
+```
+df1.merge(df2,indicator = True, how='left').loc[lambda x : x['_merge']!='both']
+   A  B     _merge
+1  2  3  left_only
+2  3  4  left_only
+3  3  4  left_only
+```
+
+Source: https://stackoverflow.com/questions/48647534/python-pandas-find-difference-between-two-data-frames
+
+## how to apply a function to multiple columns in a pandas dataframe at one time
+
+You can do `df[['Col1', 'Col2', 'Col3']].applymap(<FUNCTION>)`. 
+
+Note, though that this will return new columns; it won't modify the existing DataFrame.

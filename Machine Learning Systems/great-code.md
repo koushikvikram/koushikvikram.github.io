@@ -230,3 +230,18 @@ https://towardsdatascience.com/12-steps-to-production-quality-data-science-code-
 - [Core Design Principles for Software Developers by Venkat Subramaniam](https://www.youtube.com/watch?v=llGgO74uXMI&ab_channel=Devoxx)
 - [Design Patterns in Object Oriented Programming](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
 
+# 11 Best Domain-Driven Design Books
+
+Source: https://realtoughcandy.com/domain-driven-design-books/
+
+1. https://www.amazon.ca/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215
+2. https://www.amazon.ca/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577
+3. https://www.amazon.ca/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549
+4. https://www.amazon.ca/Learning-Domain-Driven-Design-Aligning-Architecture/dp/1098100131
+5. https://www.amazon.ca/Domain-Driven-Design-PHP-Carlos-Buenosvinos/dp/1787284948
+6. https://www.amazon.ca/Patterns-Principles-Practices-Domain-Driven-Design/dp/1118714709
+7. https://www.amazon.ca/Hands-Domain-Driven-Design-NET/dp/1788834097
+8. https://www.amazon.ca/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420
+9. https://www.amazon.ca/Applying-Domain-Driven-Design-Patterns-Examples/dp/0321268202
+10. https://www.amazon.ca/Practical-Domain-Driven-Design-Enterprise-Java/dp/1484245423
+11. https://www.amazon.ca/JavaScript-Domain-Driven-Design-Philipp-Fehre-dp-1784394327/dp/1784394327
