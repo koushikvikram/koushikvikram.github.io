@@ -123,6 +123,8 @@ If you understand data science, you'll be able to spot
 - unrealistic assumptions
 - missing pieces
 
+
+
 Example business problem we'll keep coming back to throughout the book:
 - **Predicting Customer Churn**
     - Churn: Customers switching from one company to another
