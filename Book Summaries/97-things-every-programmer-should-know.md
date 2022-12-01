@@ -164,8 +164,30 @@ Resources:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3. Ask, "What Would the User Do?" (You Are Not the User)
-4. Automate Your Coding Standard
+## Programming Wisdom #3 - Ask, "What Would the User Do?" (You Are Not the User)
+
+> *False consensus bias is when we assume that other people think like us. It explains why programmers have such a hard time putting themselves in the users' position.*
+
+- Users don't think like programmers. They don't recognize the patterns and cues programmers use to work with, through, and around an interface.
+- The best way to find out how a user thinks is to watch one complete a real task using our product.
+    - Avoid tasks that are too specific.
+    - Get the user to talk through their progress. Don't interrupt. Don't try to help.
+    - Keep asking yourself "Why are they doing that?" and "Why are they not doing that?"
+- Users do a core of things similarly. They try to complete tasks in the same order - and they make the same mistakes in the same places.
+    - Design around this core behavior.
+- Tool tips are more useful than help menus because when users get stuck, unlike programmers, they narrow their focus.
+    - When they narrow their focus, it becomes harder for them to see solutions elsewhere on the screen.
+    - If you still need to have instructions or help text, make sure to locate it right next to your problem areas.
+- Provide one really obvious way of doing things than two or three shortcuts.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Programming Wisdom #4 - Automate Your Coding Standard
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 5. Beauty Is in Simplicity
 6. Before You Refactor
 7. Beware the Share
