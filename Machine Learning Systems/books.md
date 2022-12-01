@@ -17,6 +17,8 @@ permalink: /ml-systems/books/
 - https://mixtape.scunning.com/
 - http://incompleteideas.net/book/the-book-2nd.html
 - https://datascienceincontext.com/
+- https://otexts.com/fpp2/
+- https://leanpub.com/os
 - - [Software Engineering at Google](https://abseil.io/resources/)
 
 
