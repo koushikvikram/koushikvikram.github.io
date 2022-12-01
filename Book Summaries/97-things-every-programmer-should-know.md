@@ -184,7 +184,18 @@ Resources:
 
 ## Programming Wisdom #4 - Automate Your Coding Standard
 
+> *But if it’s such a problem, why is it that we want a coding standard in the first place? Well-formatted code doesn’t earn you points with a customer that wants more functionality.*
 
+- Following a coding standard that everyone on the project agrees on ensures that
+    - Nobody can “own” a piece of code just by formatting it in his or her private way.
+    - Developers are prevented from using certain antipatterns to avoid common bugs.
+    - Development speed is maintained from the beginning to the end.
+- Following a coding standard can be quite a boring task if it isn’t automated and enforced where possible. So,
+    - Make code formatting part of the build process.
+    - Use static code analysis tools to scan for unwanted antipatterns. If found, break the build.
+    - Automatically check the results of test coverage. Break the build if test coverage is low.
+- For things that can’t be automated, consider them a set of guidelines supplementary to the coding standard that is automated, but accept that you and your colleagues may not follow them as diligently.
+- Have a dynamic coding standard that evolves as the project evolves.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
