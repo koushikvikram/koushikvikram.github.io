@@ -199,7 +199,21 @@ Resources:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-5. Beauty Is in Simplicity
+## Programming Wisdom #5 - Beauty is in Simplicity
+
+> *"Beauty of style and harmony and grace and good rhythm depends on simplicity." - Plato*
+
+- No matter how complex the total application or system is, keep the individual parts simple
+    - Simple objects with a **single responsibility** containing **simple, focused methods** with **descriptive names**
+    - **Simple relationships** with the other parts of the system
+- Simplicity in code enables
+    - Readability
+    - Maintainability
+    - Speed of development
+    - Beauty
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 6. Before You Refactor
 7. Beware the Share
 
