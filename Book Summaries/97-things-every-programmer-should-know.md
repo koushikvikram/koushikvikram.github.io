@@ -274,6 +274,15 @@ Resources:
 
 > *"Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth." - Sherlock Holmes*
 
+- Check your code instead thoroughly using these techniques before blaming the compiler:
+    - Isolate the problem, stub out calls and surround it with tests.
+    - Check calling conventions, shared libraries and version numbers.
+    - Explain it to someone else.
+    - Look out for stack corruption (especially if adding trace code makes the problem move around) and variable type mismatches.
+    - Try the code on different machines and different build configurations, such as debug and release.
+    - Question your own assumptions and the assumptions of others.
+    - When someone else is reporting a problem you cannot duplicate, go and see what they are doing. They may be doing something you never thought of or are doing something in a different order.
+- Favor simple code design for multithreaded code because debugging and unit tests can't be relied on to consistently catch bugs in multithreaded code.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
