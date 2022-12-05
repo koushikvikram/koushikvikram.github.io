@@ -243,8 +243,17 @@ Resources:
 
 ## Programming Widsom #7 - Beware the Share
 
-> *As I worked through my first feature, I took extra care to put in place everything I had learned—commenting, logging, pulling out shared code into libraries where possible, the works. The code review that I had felt so ready for came as a rude awakening—reuse was frowned upon!.*
+> *As I worked through my first feature, I took extra care to put in place everything I had learned—commenting, logging, pulling out shared code into libraries where possible, the works. The code review that I had felt so ready for came as a rude awakening—reuse was frowned upon!*
 
+- Shared code can create dependencies between business domains. Increased coupling
+    - Will require both the business domains to synchronize before making any changes.
+    - Increases the maintenance cost as well as testing requirements of the code.
+- We can avoid these problems by being mindful of the business context in which the reused code was originally being used. Only reuse code that has localized dependencies.
+    - This means each piece of code can evolve independently.
+    - Each code can change its logic to suit the needs of the system's changing business environment.
+
+Resources:
+- https://www.innoq.com/en/blog/code-reuse-or-redundancy/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -264,5 +273,7 @@ Resources:
 ## Programming Widsom #9 - Check Your Code First Before Looking to Blame Others
 
 > *"Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth." - Sherlock Holmes*
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
