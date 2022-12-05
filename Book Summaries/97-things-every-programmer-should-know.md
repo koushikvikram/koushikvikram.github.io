@@ -212,9 +212,57 @@ Resources:
     - Speed of development
     - Beauty
 
+Resources:
+- [Single Responsibility Principle in Python](https://towardsdatascience.com/single-responsibility-principle-in-python-ac4178b922de)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-6. Before You Refactor
-7. Beware the Share
+## Programming Wisdom #6 - Before You Refactor
+
+1. Start by taking stock of the existing codebase and the tests written against that code.
+    - This helps you understand the strength and weaknesses of the code as it currently stands.
+2. Avoid the temptation to rewrite everything.
+    - Throwing away the old code, especially if it was in production, means that you are throwing away months (or years) of tested, battle-hardened code that may have had certain workarounds and bug fixes you aren’t aware of. 
+    - If you don’t take this into account, the new code you write may end up showing the same mysterious bugs that were fixed in the old code. This will waste a lot of time, effort, and knowledge gained over the years.
+3. Many incremental changes are better than one massive change.
+    - Incremental changes allow you to gauge the impact on the system more easily through feedback, such as from tests.
+4. After each development iteration, it is important to ensure that the existing tests pass.
+    - Add new tests if the existing tests are not sufficient to cover the changes you made, but don't throw away tests from old code without due consideration.
+5. Personal preferences with respect to the style and structure of code and ego shouldn't get in the way.
+6. New technology is an insufficient reason to refactor.
+    - Unless a cost-benefit analysis shows that a new language or framework will result in significant improvements in functionality, maintainability, or productivity, it is best to leave it as it is.
+7. Remember that humans make mistakes.
+    - Restructuring will not always guarantee that the new code will be better—or even as good as—the previous attempt.
+
+Resources:
+- https://amberwilson.co.uk/blog/how-to-approach-a-new-codebase/
+- https://blog.jamesmichaelhickey.com/refactoring-legacy-monoliths-part-2-convincing-management/
+- https://wiki.c2.com/?EconomicsOfRefactoring
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Programming Widsom #7 - Beware the Share
+
+> *As I worked through my first feature, I took extra care to put in place everything I had learned—commenting, logging, pulling out shared code into libraries where possible, the works. The code review that I had felt so ready for came as a rude awakening—reuse was frowned upon!.*
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Programming Wisdom #8 - The Boy Scout Rule
+
+> *"Try and leave this world a little better than you found it." - Robert Stephenson Smyth Baden-Powell*
+
+- Follow the boy scout rule in your code. You don't have to make every module perfect before you check it in. You simply have to **make it a little bit better** than when you checked it out.
+    - **Add clean code** to a module.
+    - **Clean up at least one other thing** before you check the module back in.
+- Teams help one another and clean up after one another. They do this because it's good for everyone, not just good for themselves.
+    - This could see help end the relentless deterioration of our software systems. Instead, our systems would gradually get better as they evolve.
+    - Teams would care for the system as a whole, rather than just individuals caring for their own small part.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Programming Widsom #9 - Check Your Code First Before Looking to Blame Others
+
+> *"Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth." - Sherlock Holmes*
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
