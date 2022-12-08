@@ -453,9 +453,17 @@ Find the right commands you need without digging through the web.
 
 Source: https://gitexplorer.com/
 
-## Git rebase and force-push
+## Git rebase your branch on top of main and force-push
 
 https://docs.gitlab.com/ee/topics/git/git_rebase.html
+
+```
+git checkout main
+git pull
+git checkout <your-branch>
+git rebase main
+git push --force origin <your-branch>
+```
 
 ## Better commit messages
 
