@@ -119,7 +119,9 @@ Source: [AliMD/install-doceker.md](https://gist.github.com/AliMD/cfa12d314071739
 
 ## How to fix docker: Got permission denied while trying to connect to the Docker daemon socket
 
-`sudo chmod 666 /var/run/docker.sock`
+`sudo chmod 666 /var/run/docker.sock` (don't use - not secure)
+
+`sudo usermod -aG docker ubuntu`
 
 ## Remote development in WSL - VSCode
 
