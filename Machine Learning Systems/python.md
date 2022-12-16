@@ -988,7 +988,9 @@ Source: https://www.oreilly.com/library/view/programming-python-second/059600085
 3. Set Comprehension: `my_set = {<expression> for <item> in <iterable> if <condition>}`
 4. Generator Comprehension: `my_gen = (<expression> for <item> in <iterable> if <condition>)`
 
-Source: [https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda](https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda)
+Source: 
+- [https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda](https://towardsdatascience.com/4-types-of-comprehensions-in-python-2fbeafdf2fda)
+- [Comprehension in Python](https://www.scaler.com/topics/python/comprehensions-in-python/)
 
 ## A Deep Dive into Python Stack Frames
 
