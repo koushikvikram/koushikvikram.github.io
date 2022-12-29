@@ -545,3 +545,31 @@ git config --global fetch.prune true
 ```
 
 https://stackoverflow.com/questions/18308535/automatic-prune-with-git-fetch-or-pull
+
+## How do I check out a remote Git branch?
+
+`git fetch origin`
+
+This will fetch all of the remote branches for you. You can see the branches available for checkout with:
+
+`git branch -v -a`
+
+With the remote branches in hand, you now need to check out the branch you are interested in with -c to create a new local branch:
+
+`git switch -c test origin/test`
+
+For more information about using git switch:
+
+`man git-switch`
+
+- https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
+
+## Convert line-endings for whole directory tree (Git)
+
+`find . -type f -exec dos2unix {} \;`
+
+- https://stackoverflow.com/questions/7068179/convert-line-endings-for-whole-directory-tree-git/7068241#7068241
+
+## Discard all local changes
+
+`git reset –-hard`

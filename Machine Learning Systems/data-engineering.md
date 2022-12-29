@@ -189,3 +189,7 @@ https://lnkd.in/g78x9KCa
 📌 Link to Subscribe to my youtube channel
 https://lnkd.in/geJt-sMS
 
+## Pandas ETL
+
+- https://blog.devgenius.io/basic-etl-using-pandas-23729ae4e05e
+- https://pbpython.com/pandas-grouper-agg.html

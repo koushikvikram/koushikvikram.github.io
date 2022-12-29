@@ -25,3 +25,8 @@ Source: [https://www.pluralsight.com/guides/web-scraping-with-request-python](ht
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key
 
+## JSON Schema Validation
+
+https://www.fernandomc.com/posts/schema-validation-serverless-framework/
+
+

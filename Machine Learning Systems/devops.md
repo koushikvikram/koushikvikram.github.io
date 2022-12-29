@@ -26,3 +26,6 @@ the way to get real quality is to deploy the system instead of trying to write t
 
 - [Testing on the Toilet](https://gowest.nilin.se/?p=101)
 - [Double, half, quarter: a lesson from the Book of Richard](https://www.linkedin.com/pulse/double-half-quarter-lesson-from-book-richard-david-knott/)
+
+- [The Future of Software Engineering • Mary Poppendieck • GOTO 2016](https://www.youtube.com/watch?v=6K4ljFZWgW8&ab_channel=GOTOConferences)
+- [Velocity 09: John Allspaw and Paul Hammond, "10+ Deploys Pe](https://www.youtube.com/watch?v=LdOe18KhtT4&ab_channel=O%27Reilly)

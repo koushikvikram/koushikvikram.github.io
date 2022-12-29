@@ -208,4 +208,51 @@ The `hash -r` command removes the cache.
 - [Delete GPG Primary Key's Master Key](https://sites.google.com/view/chewkeanho/guides/gnupg/delete-primary-key-master-key)
 - [GPG: Remove keys from your public keyring?](https://blog.chapagain.com.np/gpg-remove-keys-from-your-public-keyring/)
 
+## rsync -- a fast, versatile, remote (and local) file-copying tool
 
+- https://linux.die.net/man/1/rsync
+
+## Monday
+
+```bash
+#monday
+date -dmonday +%Y%m%d
+
+#last monday
+date -dlast-monday +%Y%m%d
+
+#next monday
+date -dnext-monday +%Y%m%d
+
+#two mondays from now
+date -d'monday+14 days' +%Y%m%d
+
+#two mondays ago
+date -d'monday-14 days' +%Y%m%d
+
+#although, if you fancy yourself an Abraham Lincolin
+date -d'monday-fortnight ago' +%Y%m%d #2 weeks ago
+date -d'monday+fortnight' +%Y%m%d #2 weeks from now
+
+#Monday Next Year
+date -d'52+monday' +%Y%m%d
+
+#However, Monday Last Year
+date -d'52-monday' +%Y%m%d  #DOES NOT  WORK
+```
+
+https://stackoverflow.com/questions/6497525/print-date-for-the-monday-of-the-current-week-in-bash
+
+## Generate md5 checksums for all csv files in current directory
+
+`for F in *csv; do md5sum --text $F > ${F}.md5; done`
+
+## Can't execute conda activate from bash script #7980
+
+Functions are not exported by default to be made available in subshells. I'd recommend you do:
+```bash
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate my_env
+```
+
+- https://github.com/conda/conda/issues/7980

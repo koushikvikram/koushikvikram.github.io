@@ -1552,3 +1552,14 @@ https://pypi.org/project/cruft/
 
 - https://towardsdatascience.com/5-pandas-group-by-tricks-you-should-know-in-python-f53246c92c94
 
+## Monday of week
+
+```Python
+from datetime import datetime, timedelta
+now = datetime.now()
+monday = now - timedelta(days = now.weekday())
+print(monday)
+```
+
+- https://stackoverflow.com/questions/59981999/find-monday-of-current-week-in-python
+
