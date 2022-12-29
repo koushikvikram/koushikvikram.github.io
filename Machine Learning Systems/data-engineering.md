@@ -193,3 +193,8 @@ https://lnkd.in/geJt-sMS
 
 - https://blog.devgenius.io/basic-etl-using-pandas-23729ae4e05e
 - https://pbpython.com/pandas-grouper-agg.html
+
+
+# How To Start Your Next Data Engineering Project
+
+- https://seattledataguy.substack.com/p/how-to-start-your-next-data-engineering
