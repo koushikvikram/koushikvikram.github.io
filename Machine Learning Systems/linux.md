@@ -129,6 +129,7 @@ Source: [AliMD/install-doceker.md](https://gist.github.com/AliMD/cfa12d314071739
 - [Selecting Python interpreter from WSL](https://stackoverflow.com/questions/62514756/selecting-python-interpreter-from-wsl)
 - [Remote Development Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_wsl-tips)
 - [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script)
+- [VSCode not showing changes in source control git panel](https://stackoverflow.com/questions/58467720/vscode-not-showing-changes-in-source-control-git-panel)
 
 Make sure to install Python extension for WSL inside VSCode.
 

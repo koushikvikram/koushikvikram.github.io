@@ -573,3 +573,9 @@ For more information about using git switch:
 ## Discard all local changes
 
 `git reset –-hard`
+
+## VSCode not showing changes in source control git panel
+
+Restart the extension host by Command palette (`Ctrl + Shift + P`) -> Restart Extension Host. Then, create a file by running `touch aaa.txt`. Git now shows all changed files. Delete `aaa.txt`
+
+Source: https://stackoverflow.com/questions/58467720/vscode-not-showing-changes-in-source-control-git-panel
