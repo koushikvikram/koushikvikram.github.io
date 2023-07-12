@@ -1459,7 +1459,9 @@ Source: https://stackoverflow.com/questions/47295871/is-there-a-way-to-use-pipen
 
 ## conda - point to correct pip
 
-in ~/,profile, move $PATH to front to avoid conda pointing to wrong pip
+On MacOS, running `conda install pip` fixed the issue
+
+WSL - in ~/.profile, move $PATH to front to avoid conda pointing to wrong pip
 
 ## Hashing in Python
 
