@@ -1,2 +1,1 @@
-# koushikvikram.github.io
-notebook
+# Koushik Vikram's personal notebook
