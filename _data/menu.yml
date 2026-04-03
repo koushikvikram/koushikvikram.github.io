@@ -1,13 +1,13 @@
 entries:
-  - title: blog
-    post_list:
-      limit: 5
-      show_more: true
-      show_more_url: /archive.html
-      show_more_text: see all posts
   - title: about
     entries:
       - title: Engineer, reader, interested in many things
       - title: '<a href="https://github.com/koushikvikram">github</a>'
       - title: '<a href="https://linkedin.com/in/koushikvikram">linkedin</a>'
       - title: '<a href="mailto:koushikvikram91@gmail.com">koushikvikram91@gmail.com</a>'
+  - title: blog
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_url: /archive.html
+      show_more_text: see all posts
