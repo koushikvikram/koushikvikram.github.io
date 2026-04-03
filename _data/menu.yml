@@ -4,7 +4,21 @@ entries:
       - title: '<a href="https://github.com/koushikvikram">github</a>'
       - title: '<a href="https://linkedin.com/in/koushikvikram">linkedin</a>'
       - title: '<a href="mailto:koushikvikram91@gmail.com">koushikvikram91@gmail.com</a>'
-  - title: blog
+  - title: tech
+    post_list:
+      category: tech
+      limit: 5
+      show_more: true
+      show_more_url: /tech.html
+      show_more_text: see all tech posts
+  - title: literature
+    post_list:
+      category: literature
+      limit: 5
+      show_more: true
+      show_more_url: /literature.html
+      show_more_text: see all literature
+  - title: all posts
     post_list:
       limit: 5
       show_more: true
