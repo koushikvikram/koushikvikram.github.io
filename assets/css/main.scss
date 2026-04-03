@@ -1,0 +1,86 @@
+---
+---
+
+@import "no-style-please";
+
+:root {
+  --bg: #1b1e28;
+  --bg-alt: #303340;
+  --fg: #a6accd;
+  --fg-bright: #e4f0fb;
+  --mint: #5DE4C7;
+  --mint-dim: #5fb3a1;
+  --blue: #ADD7FF;
+  --blue-low: #89ddff;
+  --pink: #f087bd;
+  --yellow: #fffac2;
+  --red: #d0679d;
+  --gray: #767c9d;
+  --gray-dim: #506477;
+  --selection: #717cb425;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body[a="dark"] {
+  filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] {
+    filter: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--fg-bright);
+}
+
+a {
+  color: var(--mint);
+
+  &:hover {
+    color: var(--blue-low);
+  }
+}
+
+code {
+  color: var(--fg-bright);
+  background: var(--bg-alt);
+}
+
+div.highlighter-rouge code {
+  background: var(--bg-alt);
+}
+
+blockquote {
+  border-color: var(--gray-dim);
+  color: var(--gray);
+}
+
+hr {
+  color: var(--gray-dim);
+}
+
+table, th, td {
+  border-color: var(--gray-dim);
+}
+
+th {
+  color: var(--fg-bright);
+}
+
+*:target {
+  background: var(--selection);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+.post-meta {
+  color: var(--gray);
+}
