@@ -2,6 +2,7 @@ title: Koushik Vikram
 author: Koushik Vikram
 description: "personal notebook"
 
+favicon: "assets/favicon.ico"
 remote_theme: riggraz/no-style-please
 
 plugins:
