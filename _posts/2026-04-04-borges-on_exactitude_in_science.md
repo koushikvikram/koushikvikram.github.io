@@ -6,7 +6,7 @@ categories: [tech, literature]
 
 This micro-story reflects the tension between perfection and usefulness in representation: a model that approaches total fidelity risks becoming indistinguishable from what it represents—and therefore useless.
 
-<details markdown="1">
+<details class="vocab-reference" markdown="1">
 <summary><strong>Vocabulary Reference</strong></summary>
 
 - **exactitude** (n.) - the quality of being precise or accurate.

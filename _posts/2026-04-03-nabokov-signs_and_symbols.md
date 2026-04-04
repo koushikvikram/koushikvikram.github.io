@@ -12,7 +12,7 @@ So what do you do now? Do you return to the story and decipher its patterns to r
 
 Worth reading again ;)
 
-<details markdown="1">
+<details class="vocab-reference" markdown="1">
 <summary><strong>Vocabulary Reference</strong></summary>
 
 - **dainty** (adj.) - delicately small and pretty.
