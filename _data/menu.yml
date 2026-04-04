@@ -11,13 +11,13 @@ entries:
       show_more: true
       show_more_url: /tech.html
       show_more_text: see all tech posts
-  - title: literature
+  - title: fiction
     post_list:
-      category: literature
+      category: fiction
       limit: 5
       show_more: true
-      show_more_url: /literature.html
-      show_more_text: see all literature
+      show_more_url: /fiction.html
+      show_more_text: see all fiction
   - title: all posts
     post_list:
       limit: 5

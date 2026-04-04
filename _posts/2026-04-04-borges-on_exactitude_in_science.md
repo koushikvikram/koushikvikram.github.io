@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reflecting on 'On Exactitude in Science by Jorge Luis Borges'"
-categories: [tech, literature]
+categories: [tech, fiction]
 ---
 
 This micro-story reflects the tension between perfection and usefulness in representation.

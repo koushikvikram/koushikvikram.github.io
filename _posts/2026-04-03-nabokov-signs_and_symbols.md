@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reflecting on 'Signs and Symbols by Vladimir Nabokov'"
-category: literature
+category: fiction
 ---
 
 > **Referential mania** - "In these very rare cases the patient imagines that everything happening around him is a veiled reference to his personality and existence. He excludes real people from the conspiracy - because he considers himself to be so much more intelligent than other men. Phenomenal nature shadows him wherever he goes."
