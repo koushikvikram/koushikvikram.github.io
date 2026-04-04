@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Signs and Symbols - Vladimir Nabokov"
+title: "Reflecting on 'Signs and Symbols by Vladimir Nabokov'"
 category: literature
 ---
 

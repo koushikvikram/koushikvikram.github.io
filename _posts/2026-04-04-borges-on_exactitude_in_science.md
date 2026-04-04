@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On Exactitude in Science - Jorge Luis Borges"
+title: "Reflecting on 'On Exactitude in Science by Jorge Luis Borges'"
 categories: [tech, literature]
 ---
 
