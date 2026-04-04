@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Exactitude in Science - Jorge Luis Borges"
-category: literature
+categories: [tech, literature]
 ---
 
 This micro-story reflects the tension between perfection and usefulness in representation: a model that approaches total fidelity risks becoming indistinguishable from what it represents—and therefore useless.
