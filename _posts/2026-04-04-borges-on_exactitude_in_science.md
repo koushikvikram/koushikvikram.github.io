@@ -4,7 +4,11 @@ title: "On Exactitude in Science - Jorge Luis Borges"
 categories: [tech, literature]
 ---
 
-This micro-story reflects the tension between perfection and usefulness in representation: a model that approaches total fidelity risks becoming indistinguishable from what it represents—and therefore useless.
+This micro-story reflects the tension between perfection and usefulness in representation.
+
+One generation indulges in the art of cartography so completely that it produces a map of an empire as vast and detailed as the empire itself. Later generations, concerned only with its utility, find it useless and abandon it.
+
+The story suggests that a model approaching total fidelity risks becoming indistinguishable from what it represents—and therefore useless.
 
 <details class="vocab-reference" markdown="1">
 <summary><strong>Vocabulary Reference</strong></summary>
