@@ -4,7 +4,11 @@ title: "Signs and Symbols - Vladimir Nabokov"
 category: literature
 ---
 
-> *"Referential mania - In these very rare cases the patient imagines that everything happening around him is a veiled reference to his personality and existence. He excludes real people from the conspiracy - because he considers himself to be so much more intelligent than other men. Phenomenal nature shadows him wherever he goes."*
+*"Referential mania - In these very rare cases the patient imagines that everything happening around him is a veiled reference to his personality and existence. He excludes real people from the conspiracy - because he considers himself to be so much more intelligent than other men. Phenomenal nature shadows him wherever he goes."*
+
+Reading this story is an interesting experience. It unfolds over a Friday when everything goes wrong for a couple whose son suffers from "Referential Mania". As the day progresses, omens and patterns begin to emerge, and just before the climax, the story abruptly ends—leaving us wondering what might have happened.
+
+What do you do now? Do you return to the story and decipher its patterns to reach a logical conclusion? Do you construct your own—or do you simply not care? In other words, what degree of referential mania do you choose to experience?
 
 ## Vocabulary Reference
 
