@@ -12,7 +12,8 @@ So what do you do now? Do you return to the story and decipher its patterns to r
 
 Worth reading again ;)
 
-## Vocabulary Reference
+<details markdown="1">
+<summary><strong>Vocabulary Reference</strong></summary>
 
 - **dainty** (adj.) - delicately small and pretty.
 - **trifle** (n.) - a thing of little value or importance.
@@ -45,3 +46,4 @@ Worth reading again ;)
 - **gape** (v.) - stare with one's mouth open wide in amazement or wonder.
 - **bristle** (n.) - a short stiff hair, typically one of those on an animal's skin, a man's face, or a plant.
 
+</details>

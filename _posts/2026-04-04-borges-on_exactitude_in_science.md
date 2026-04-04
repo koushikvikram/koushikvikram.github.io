@@ -6,7 +6,8 @@ categories: [tech, literature]
 
 This micro-story reflects the tension between perfection and usefulness in representation: a model that approaches total fidelity risks becoming indistinguishable from what it represents—and therefore useless.
 
-## Vocabulary Reference
+<details markdown="1">
+<summary><strong>Vocabulary Reference</strong></summary>
 
 - **exactitude** (n.) - the quality of being precise or accurate.
 - **cartography** (n.) - the science or practice of drawing maps.
@@ -16,3 +17,5 @@ This micro-story reflects the tension between perfection and usefulness in repre
 - **inclemency** (n.) - the quality in weather of being unpleasant, especially with cold wind and rain
 - **tattered** (adj.) - old and torn; in poor condition.
 - **relic** (n.) - an object surviving from an earlier time, especially one of historical or sentimental interest.
+
+</details>
