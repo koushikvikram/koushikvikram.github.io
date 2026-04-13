@@ -160,8 +160,8 @@ details.vocab-reference > summary {
 
 .bg-theme-toggle {
   position: fixed;
+  top: 1.15rem;
   right: 1.15rem;
-  bottom: 1.15rem;
   z-index: 50;
   max-width: min(20rem, calc(100vw - 2.3rem));
   font-family: monospace;
@@ -172,7 +172,7 @@ details.vocab-reference > summary {
 
 .bg-theme-toggle__panel {
   position: relative;
-  padding: 0.7rem 0.75rem 0.75rem;
+  padding: 0.65rem 0.75rem;
   border-radius: 14px;
   background: color-mix(in srgb, var(--color-bg-alt) 82%, transparent);
   border: 1px solid color-mix(in srgb, var(--color-accent) 28%, var(--color-surface));
@@ -201,16 +201,6 @@ details.vocab-reference > summary {
   );
   opacity: 0.85;
   pointer-events: none;
-}
-
-.bg-theme-toggle__caption {
-  display: block;
-  margin-bottom: 0.55rem;
-  padding-left: 0.1rem;
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-muted);
 }
 
 .bg-theme-toggle__rail {
