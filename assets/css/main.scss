@@ -54,6 +54,30 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--fg-bright);
 }
 
+article {
+  color: var(--mint);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--mint);
+  }
+
+  blockquote {
+    color: var(--mint);
+  }
+
+  code {
+    color: var(--mint);
+  }
+
+  th {
+    color: var(--mint);
+  }
+
+  .post-meta {
+    color: var(--gray);
+  }
+}
+
 @keyframes link-gold-glitter {
   0% {
     background-position: 0% 50%;
