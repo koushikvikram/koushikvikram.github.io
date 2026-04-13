@@ -20,12 +20,23 @@
       </div>
     </main>
 
-    <div class="bg-theme-toggle" role="toolbar" aria-label="Background color">
-      <span class="bg-theme-toggle__label" id="bg-theme-label">Background</span>
-      <div class="bg-theme-toggle__buttons" role="group" aria-labelledby="bg-theme-label">
-        <button type="button" class="bg-theme-toggle__btn" data-bg-theme="blue" title="Royal navy">Blue</button>
-        <button type="button" class="bg-theme-toggle__btn" data-bg-theme="purple" title="Deep royal purple">Purple</button>
-        <button type="button" class="bg-theme-toggle__btn" data-bg-theme="forest" title="Deep forest green">Forest</button>
+    <div class="bg-theme-toggle" role="toolbar" aria-label="Background palette">
+      <div class="bg-theme-toggle__panel">
+        <span class="bg-theme-toggle__caption" id="bg-theme-label">Palette</span>
+        <div class="bg-theme-toggle__rail" role="group" aria-labelledby="bg-theme-label">
+          <button type="button" class="bg-theme-toggle__btn" data-bg-theme="blue" title="Royal navy">
+            <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+            <span class="bg-theme-toggle__name">Blue</span>
+          </button>
+          <button type="button" class="bg-theme-toggle__btn" data-bg-theme="purple" title="Deep royal purple">
+            <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+            <span class="bg-theme-toggle__name">Purple</span>
+          </button>
+          <button type="button" class="bg-theme-toggle__btn" data-bg-theme="forest" title="Deep forest green">
+            <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+            <span class="bg-theme-toggle__name">Forest</span>
+          </button>
+        </div>
       </div>
     </div>
 
