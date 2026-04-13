@@ -4,9 +4,9 @@
 @import "no-style-please";
 
 :root {
-  --color-bg: #16081f;
-  --color-bg-alt: #2a1548;
-  --color-surface: #423063;
+  --color-bg: #04152f;
+  --color-bg-alt: #0a254c;
+  --color-surface: #243655;
 
   --color-accent: #DDB86A;
   --color-accent-2: #B38A54;
@@ -35,7 +35,7 @@
 
 html,
 body {
-  background: linear-gradient(135deg, #16081f 0%, #2a1548 55%, #423063 100%);
+  background: linear-gradient(135deg, #04152f 0%, #0a254c 55%, #243655 100%);
   background-attachment: fixed;
   color: var(--fg);
 }
@@ -78,54 +78,24 @@ article {
   }
 }
 
-@keyframes link-gold-glitter {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 200% 50%;
-  }
-}
-
 a {
   color: var(--mint);
   text-decoration: none;
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
 
   &:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    &:hover,
-    &:focus-visible {
-      color: transparent;
-      background-image: linear-gradient(
-        100deg,
-        #8e674b 0%,
-        #b38a54 16%,
-        #ddb86a 32%,
-        #e5cf9a 42%,
-        #fff6e0 48%,
-        #e5cf9a 54%,
-        #ddb86a 64%,
-        #b38a54 80%,
-        #8e674b 100%
-      );
-      background-size: 220% 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: link-gold-glitter 1.85s linear infinite;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    &:hover,
-    &:focus-visible {
-      color: var(--color-accent-2);
-    }
+  &:hover,
+  &:focus-visible {
+    color: var(--color-accent);
+    text-shadow:
+      0 0 10px rgba(221, 184, 106, 0.55),
+      0 0 24px rgba(221, 184, 106, 0.35);
   }
 }
 
