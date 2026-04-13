@@ -4,24 +4,39 @@
 @import "no-style-please";
 
 :root {
-  --bg: #1b1e28;
-  --bg-alt: #303340;
-  --fg: #a6accd;
-  --fg-bright: #e4f0fb;
-  --mint: #5DE4C7;
-  --mint-dim: #5fb3a1;
-  --blue: #ADD7FF;
-  --blue-low: #89ddff;
-  --pink: #f087bd;
-  --yellow: #fffac2;
-  --red: #d0679d;
-  --gray: #767c9d;
-  --gray-dim: #506477;
-  --selection: #717cb425;
+  --color-bg: #04152F;
+  --color-bg-alt: #0A254C;
+  --color-surface: #243655;
+
+  --color-accent: #DDB86A;
+  --color-accent-2: #B38A54;
+  --color-accent-3: #8E674B;
+
+  --color-text: #F1E7D3;
+  --color-text-soft: #C7B9A0;
+  --color-muted: #8E95A1;
+
+  /* Tokens used by overrides below (no-style-please–compatible names) */
+  --bg: var(--color-bg);
+  --bg-alt: var(--color-bg-alt);
+  --fg: var(--color-text);
+  --fg-bright: var(--color-text);
+  --mint: var(--color-accent);
+  --mint-dim: var(--color-accent-2);
+  --blue: var(--color-accent-2);
+  --blue-low: var(--color-accent-3);
+  --pink: #c4a574;
+  --yellow: var(--color-accent);
+  --red: #9d6b4a;
+  --gray: var(--color-muted);
+  --gray-dim: var(--color-surface);
+  --selection: rgba(221, 184, 106, 0.22);
 }
 
-html, body {
-  background: var(--bg);
+html,
+body {
+  background: linear-gradient(135deg, #04152F 0%, #0A254C 55%, #243655 100%);
+  background-attachment: fixed;
   color: var(--fg);
 }
 
@@ -44,7 +59,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: var(--blue-low);
+    color: var(--color-accent-2);
   }
 }
 
@@ -58,8 +73,8 @@ div.highlighter-rouge code {
 }
 
 blockquote {
-  border-color: var(--gray-dim);
-  color: var(--gray);
+  border-color: var(--color-surface);
+  color: var(--color-text-soft);
 }
 
 hr {
