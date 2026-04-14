@@ -32,7 +32,7 @@
   --gray-dim: var(--color-surface);
   --selection: rgba(221, 184, 106, 0.22);
 
-  --font-body: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-body: "Lora", Georgia, "Times New Roman", serif;
   --font-display: "Italianno", cursive;
 }
 
@@ -73,7 +73,12 @@ body {
   font-family: var(--font-body);
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.62;
+  line-height: 1.65;
+}
+
+b,
+strong {
+  font-weight: 600;
 }
 
 /* Temple manuscript atmosphere: overlays only; base html/body gradients unchanged */
