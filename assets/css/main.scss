@@ -115,14 +115,14 @@ strong {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
-  opacity: 0.065;
-  /* Traced art uses black fills; invert for soft-light on dark bg */
-  filter: invert(1) brightness(1.22);
+  opacity: 0.038;
+  /* Traced art uses black fills; invert then dim so motif stays subtle */
+  filter: invert(1) brightness(0.88);
   background-image:
     url("../mandala_montif.svg"),
     url("../mandala_montif.svg");
-  /* viewBox ~129×125 — keep aspect when tiling */
-  background-size: 280px 272px, 360px 350px;
+  /* viewBox ~129×125 — larger tiles = fewer repeats on screen */
+  background-size: 440px 426px, 560px 542px;
   background-position: 22% 38%, 58% 52%;
   background-repeat: repeat, repeat;
 }
