@@ -13,9 +13,9 @@
   --color-accent-2: #B38A54;
   --color-accent-3: #8E674B;
 
-  /* Slightly warm, muted ivory — easier on the eyes on dark gradients than pure #fcfcf7 */
-  --color-text: #e9e6de;
-  --color-text-soft: #d4d1c7;
+  /* Parchment / off-white — grayer than cream ivory, less yellow */
+  --color-text: #ded8cc;
+  --color-text-soft: #c9c2b4;
   --color-muted: #a0a098;
 
   /* Tokens used by overrides below (no-style-please–compatible names) */
@@ -432,7 +432,7 @@ h1 {
     0 0 22px rgba(221, 184, 106, 0.18);
 }
 
-/* Body copy ivory; headings + links stay gold via h1–h6 and a */
+/* Body copy parchment; headings + links stay gold via h1–h6 and a */
 article {
   color: var(--color-text);
 
