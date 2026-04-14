@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168">
   <!-- Stylized leaf silhouettes on a repeating tile -->
-  <g fill="none" stroke="#ffffff" stroke-width="1" stroke-linejoin="round">
-    <path stroke-opacity="0.95" transform="translate(46 46) rotate(-24)" d="M0 16 C-11 5 -9 -11 0 -17 C9 -11 11 5 0 16 Z"/>
-    <path stroke-opacity="0.68" transform="translate(122 52) rotate(71)" d="M0 14 C-9 3 -8 -9 0 -15 C8 -9 9 3 0 14 Z"/>
-    <path stroke-opacity="0.55" transform="translate(58 118) rotate(188)" d="M0 15 C-10 4 -9 -10 0 -16 C9 -10 10 4 0 15 Z"/>
-    <path stroke-opacity="0.78" transform="translate(128 124) rotate(-52)" d="M0 16 C-10 5 -9 -11 0 -17 C9 -11 10 5 0 16 Z"/>
-    <path stroke-opacity="0.5" transform="translate(92 88) rotate(12)" d="M0 12 C-8 3 -7 -8 0 -13 C7 -8 8 3 0 12 Z"/>
+  <g fill="none" stroke="#ffffff" stroke-width="1.15" stroke-linejoin="round">
+    <path stroke-opacity="1" transform="translate(46 46) rotate(-24)" d="M0 16 C-11 5 -9 -11 0 -17 C9 -11 11 5 0 16 Z"/>
+    <path stroke-opacity="0.82" transform="translate(122 52) rotate(71)" d="M0 14 C-9 3 -8 -9 0 -15 C8 -9 9 3 0 14 Z"/>
+    <path stroke-opacity="0.72" transform="translate(58 118) rotate(188)" d="M0 15 C-10 4 -9 -10 0 -16 C9 -10 10 4 0 15 Z"/>
+    <path stroke-opacity="0.9" transform="translate(128 124) rotate(-52)" d="M0 16 C-10 5 -9 -11 0 -17 C9 -11 10 5 0 16 Z"/>
+    <path stroke-opacity="0.68" transform="translate(92 88) rotate(12)" d="M0 12 C-8 3 -7 -8 0 -13 C7 -8 8 3 0 12 Z"/>
   </g>
 </svg>
