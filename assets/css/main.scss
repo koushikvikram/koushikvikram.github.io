@@ -600,3 +600,11 @@ th {
   display: block;
   pointer-events: none;
 }
+
+@media (max-width: 35rem) {
+  .bg-theme-heritage {
+    top: auto;
+    bottom: max(1rem, calc(env(safe-area-inset-bottom, 0px) + 0.35rem));
+    right: max(1.15rem, calc(env(safe-area-inset-right, 0px) + 0.45rem));
+  }
+}
