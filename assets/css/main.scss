@@ -423,6 +423,14 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+/* Page / post title: lighter gold than section headings */
+h1 {
+  color: color-mix(in srgb, var(--mint) 72%, #fffefc 28%);
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.38),
+    0 0 22px rgba(221, 184, 106, 0.18);
+}
+
 /* Body copy ivory; headings + links stay gold via h1–h6 and a */
 article {
   color: var(--color-text);
