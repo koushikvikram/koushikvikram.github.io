@@ -115,16 +115,34 @@ strong {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
-  opacity: 0.038;
-  /* Traced art uses black fills; invert then dim so motif stays subtle */
-  filter: invert(1) brightness(0.88);
+  /* Match emerald leaf motif: same opacity, tile scale, and positions */
+  opacity: 0.065;
+  /* Black fills → light veil; soften slightly so it reads like white stroke tiles */
+  filter: invert(1) brightness(0.92);
   background-image:
     url("../mandala_montif.svg"),
     url("../mandala_montif.svg");
-  /* viewBox ~129×125 — larger tiles = fewer repeats on screen */
-  background-size: 440px 426px, 560px 542px;
-  background-position: 22% 38%, 58% 52%;
+  /* Same widths as leaf tile (168 / 212); heights follow montif viewBox ~129:125 */
+  background-size: 168px 163px, 212px 205px;
+  background-position: 8% 44%, 55% 28%;
   background-repeat: repeat, repeat;
+  /* Clear the center so the motif doesn’t sit behind the reading column (matches ezhuthani ~38%) */
+  -webkit-mask-image: radial-gradient(
+    ellipse 48vmin 44vmin at 50% 38%,
+    transparent 0%,
+    transparent 38%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 48vmin 44vmin at 50% 38%,
+    transparent 0%,
+    transparent 38%,
+    #000 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
