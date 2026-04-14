@@ -71,14 +71,14 @@ body {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.22rem;
+  font-size: 1.19rem;
   font-weight: 400;
   line-height: 1.82;
   word-spacing: 0.04em;
   font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
   /* Courgette reads heavy; blend slightly toward bg so titles (Italianno) stay dominant */
-  color: color-mix(in srgb, var(--color-text) 82%, var(--color-bg));
+  color: color-mix(in srgb, var(--color-text) 76%, var(--color-bg));
 }
 
 b,
@@ -359,18 +359,19 @@ body[a="dark"] {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--fg-bright);
-  /* Italianno is hairline-thin vs Courgette; add depth so titles read clearly first */
+  /* Italianno is light; weight + shadow read a touch thicker without a second font */
   text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.55),
-    0 2px 12px rgba(0, 0, 0, 0.35),
-    0 0 32px rgba(221, 184, 106, 0.2);
+    0 1px 0 rgba(0, 0, 0, 0.72),
+    0 2px 0 rgba(0, 0, 0, 0.38),
+    0 3px 14px rgba(0, 0, 0, 0.42),
+    0 0 38px rgba(221, 184, 106, 0.26);
 }
 
 article {
-  color: color-mix(in srgb, var(--mint) 80%, var(--color-bg));
+  color: color-mix(in srgb, var(--mint) 74%, var(--color-bg));
 
   h1, h2, h3, h4, h5, h6 {
     color: var(--mint);
