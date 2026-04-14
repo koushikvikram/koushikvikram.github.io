@@ -1,8 +1,14 @@
 (function () {
   var STORAGE_KEY = "bg-theme";
-  var ALLOWED = ["blue", "purple", "forest"];
+  var ALLOWED = ["blue", "burgundy", "forest"];
+
+  function normalizeTheme(theme) {
+    if (theme === "purple") return "burgundy";
+    return theme;
+  }
 
   function apply(theme) {
+    theme = normalizeTheme(theme);
     if (ALLOWED.indexOf(theme) === -1) theme = "blue";
     document.documentElement.setAttribute("data-bg-theme", theme);
     try {

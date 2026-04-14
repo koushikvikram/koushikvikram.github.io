@@ -3,8 +3,14 @@
   <script>
     (function () {
       try {
-        var allowed = ["blue", "purple", "forest"];
+        var allowed = ["blue", "burgundy", "forest"];
         var v = localStorage.getItem("bg-theme");
+        if (v === "purple") {
+          v = "burgundy";
+          try {
+            localStorage.setItem("bg-theme", "burgundy");
+          } catch (e) {}
+        }
         var t = allowed.indexOf(v) >= 0 ? v : "blue";
         document.documentElement.setAttribute("data-bg-theme", t);
       } catch (e) {
@@ -23,13 +29,13 @@
     <div class="bg-theme-toggle" role="toolbar" aria-label="Background color">
       <div class="bg-theme-toggle__rail" role="group">
         <button type="button" class="bg-theme-toggle__btn" data-bg-theme="blue" aria-label="Royal navy" title="Royal navy">
-          <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+          <span class="bg-theme-toggle__segment" aria-hidden="true"></span>
         </button>
-        <button type="button" class="bg-theme-toggle__btn" data-bg-theme="purple" aria-label="Deep royal purple" title="Deep royal purple">
-          <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+        <button type="button" class="bg-theme-toggle__btn" data-bg-theme="burgundy" aria-label="Deep burgundy" title="Deep burgundy">
+          <span class="bg-theme-toggle__segment" aria-hidden="true"></span>
         </button>
         <button type="button" class="bg-theme-toggle__btn" data-bg-theme="forest" aria-label="Deep forest green" title="Deep forest green">
-          <span class="bg-theme-toggle__swatch" aria-hidden="true"></span>
+          <span class="bg-theme-toggle__segment" aria-hidden="true"></span>
         </button>
       </div>
     </div>
