@@ -45,6 +45,12 @@ html[data-bg-theme="forest"] {
   --color-surface: #355c4d;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 0.5rem;
+}
+
 html,
 body {
   background: linear-gradient(
@@ -55,6 +61,105 @@ body {
   );
   background-attachment: fixed;
   color: var(--fg);
+}
+
+@media (max-width: 48rem) {
+  html,
+  body {
+    background-attachment: scroll;
+  }
+}
+
+main.page-content {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+}
+
+.w {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: max(1.75rem, env(safe-area-inset-top, 0px));
+  padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 30rem) {
+  .w {
+    padding-top: max(2.5rem, env(safe-area-inset-top, 0px));
+    padding-bottom: max(3rem, env(safe-area-inset-bottom, 0px));
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+@media (min-width: 48rem) {
+  .w {
+    padding-top: max(4rem, env(safe-area-inset-top, 0px));
+    padding-bottom: max(4rem, env(safe-area-inset-bottom, 0px));
+    padding-left: max(2rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+img,
+video,
+svg:not([class*="icon"]) {
+  max-width: 100%;
+  height: auto;
+}
+
+div.highlighter-rouge {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  max-width: 100%;
+}
+
+@media (max-width: 32rem) {
+  table {
+    font-size: 0.9em;
+  }
+
+  th,
+  td {
+    padding: 0.3rem 0.35rem;
+  }
+}
+
+.post-meta {
+  text-align: right;
+  color: var(--gray);
+}
+
+@media (max-width: 28rem) {
+  .post-meta {
+    text-align: left;
+    font-size: 0.9em;
+  }
+}
+
+article h1 {
+  font-size: clamp(1.35rem, 5.5vw, 2rem);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+details.vocab-reference > summary {
+  font-size: clamp(1.1rem, 3.5vw, 1.35rem);
 }
 
 body[a="dark"] {
@@ -88,10 +193,6 @@ article {
 
   th {
     color: var(--mint);
-  }
-
-  .post-meta {
-    color: var(--gray);
   }
 }
 
@@ -150,22 +251,14 @@ th {
   background: var(--selection);
 }
 
-.post-meta {
-  color: var(--gray);
-}
-
-details.vocab-reference > summary {
-  font-size: 1.35rem;
-}
-
 /* Toggle switch — From Uiverse.io by r7chardgh (dry-rabbit-69), scoped */
 .bg-theme-switch {
   position: fixed;
-  top: 1.15rem;
-  right: 1.15rem;
   z-index: 50;
   font-family: monospace;
   line-height: 1;
+  top: max(0.75rem, env(safe-area-inset-top, 0px));
+  right: max(0.75rem, env(safe-area-inset-right, 0px));
 }
 
 .bg-theme-switch__list {
@@ -323,5 +416,21 @@ details.vocab-reference > summary {
   .bg-theme-switch .switch .toggle > .left,
   .bg-theme-switch .switch .toggle > .right {
     transition: none !important;
+  }
+}
+
+@media (max-width: 35rem) {
+  .bg-theme-switch {
+    top: auto;
+    bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+    right: max(0.65rem, env(safe-area-inset-right, 0px));
+  }
+
+  .bg-theme-switch .switch {
+    font-size: 10px;
+  }
+
+  .bg-theme-switch__list {
+    gap: 0.45rem;
   }
 }
