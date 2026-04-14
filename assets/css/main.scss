@@ -13,9 +13,10 @@
   --color-accent-2: #B38A54;
   --color-accent-3: #8E674B;
 
-  --color-text: #fcfcf7;
-  --color-text-soft: #e4e4de;
-  --color-muted: #a8a8a0;
+  /* Slightly warm, muted ivory — easier on the eyes on dark gradients than pure #fcfcf7 */
+  --color-text: #e9e6de;
+  --color-text-soft: #d4d1c7;
+  --color-muted: #a0a098;
 
   /* Tokens used by overrides below (no-style-please–compatible names) */
   --bg: var(--color-bg);
