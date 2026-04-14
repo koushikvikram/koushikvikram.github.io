@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="208" height="208" viewBox="0 0 208 208">
   <!-- Circular mandala rosette — one unit per tile -->
   <g transform="translate(104 104)" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round">
-    <circle r="78" stroke-opacity="0.32"/>
-    <circle r="52" stroke-opacity="0.48"/>
-    <circle r="26" stroke-opacity="0.62"/>
+    <circle r="78" stroke-opacity="0.42"/>
+    <circle r="52" stroke-opacity="0.58"/>
+    <circle r="26" stroke-opacity="0.76"/>
     <!-- 12 radial spokes -->
     <g stroke-opacity="0.34">
       <line x1="0" y1="-82" x2="0" y2="-58" transform="rotate(0)"/>
