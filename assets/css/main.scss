@@ -116,14 +116,13 @@ strong {
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   opacity: 0.065;
-  /* Traced SVG uses black fills; invert so soft-light motif reads on dark bg */
+  /* Scatter tile uses clips from mandala_montif.svg; invert black artwork for soft-light */
   filter: invert(1) brightness(1.22);
   background-image:
-    url("../mandala_montif.svg"),
-    url("../mandala_montif.svg");
-  /* viewBox 600×404 */
-  background-size: 280px 189px, 360px 242px;
-  background-position: 22% 38%, 58% 52%;
+    url("../mandala_scatter_burgundy.svg"),
+    url("../mandala_scatter_burgundy.svg");
+  background-size: 320px 320px, 400px 400px;
+  background-position: 18% 36%, 58% 54%;
   background-repeat: repeat, repeat;
 }
 
