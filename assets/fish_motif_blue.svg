@@ -9,17 +9,9 @@
       <path d="M0 0 Q20-11 42 0 Q20 11 0 0"/>
       <path d="M42 0 L56-9 M42 0 L56 9"/>
     </g>
-    <g transform="translate(48 122) rotate(198)" stroke-opacity="0.82">
-      <path d="M0 0 Q18-10 38 0 Q18 10 0 0"/>
-      <path d="M38 0 L50-8 M38 0 L50 8"/>
-    </g>
     <g transform="translate(124 118) rotate(-26)" stroke-opacity="0.9">
       <path d="M0 0 Q24-12 50 0 Q24 12 0 0"/>
       <path d="M50 0 L66-12 M50 0 L66 12"/>
-    </g>
-    <g transform="translate(86 88) rotate(8)" stroke-opacity="0.72">
-      <path d="M0 0 Q16-9 34 0 Q16 9 0 0"/>
-      <path d="M34 0 L46-7 M34 0 L46 7"/>
     </g>
   </g>
 </svg>
