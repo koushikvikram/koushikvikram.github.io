@@ -256,37 +256,36 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Leaves / fish: full-bleed tile, but mask fades toward the reading column so text stays legible.
- * Strongest at the sides (~old 18% margins); center stays subtle (never fully cut out).
+ * Leaves / fish: full-bleed tile; mask is high-contrast (strong at edges, very light in the column).
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(0, 0, 0, 0.78) 22%,
-    rgba(0, 0, 0, 0.45) 32%,
-    rgba(0, 0, 0, 0.22) 42%,
-    rgba(0, 0, 0, 0.12) 50%,
-    rgba(0, 0, 0, 0.22) 58%,
-    rgba(0, 0, 0, 0.45) 68%,
-    rgba(0, 0, 0, 0.78) 78%,
-    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(0, 0, 0, 0.9) 17%,
+    rgba(0, 0, 0, 0.52) 27%,
+    rgba(0, 0, 0, 0.18) 38%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.18) 62%,
+    rgba(0, 0, 0, 0.52) 73%,
+    rgba(0, 0, 0, 0.9) 83%,
+    rgba(0, 0, 0, 1) 89%,
     rgba(0, 0, 0, 1) 100%
   );
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(0, 0, 0, 0.78) 22%,
-    rgba(0, 0, 0, 0.45) 32%,
-    rgba(0, 0, 0, 0.22) 42%,
-    rgba(0, 0, 0, 0.12) 50%,
-    rgba(0, 0, 0, 0.22) 58%,
-    rgba(0, 0, 0, 0.45) 68%,
-    rgba(0, 0, 0, 0.78) 78%,
-    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(0, 0, 0, 0.9) 17%,
+    rgba(0, 0, 0, 0.52) 27%,
+    rgba(0, 0, 0, 0.18) 38%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.18) 62%,
+    rgba(0, 0, 0, 0.52) 73%,
+    rgba(0, 0, 0, 0.9) 83%,
+    rgba(0, 0, 0, 1) 89%,
     rgba(0, 0, 0, 1) 100%
   );
   -webkit-mask-mode: alpha;
