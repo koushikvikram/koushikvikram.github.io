@@ -115,6 +115,7 @@ strong {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
+  opacity: 0.065;
   background-image:
     url("../mandala_motif_burgundy.svg"),
     url("../mandala_motif_burgundy.svg");
@@ -153,6 +154,7 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
+  opacity: 0.062;
   background-image: url("../meenakshi_temple_drawing.svg");
 }
 
