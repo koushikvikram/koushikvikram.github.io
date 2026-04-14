@@ -3,6 +3,17 @@
 
 @import "no-style-please";
 
+/* EB Garamond — same files as patdryburgh/hitchens; see assets/fonts/OFL.txt */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/eb-garamond-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/eb-garamond-v9-latin-regular.woff") format("woff");
+}
+
 :root {
   --color-bg: #06121f;
   --color-bg-alt: #142a40;
@@ -32,8 +43,7 @@
   --gray-dim: var(--color-surface);
   --selection: rgba(221, 184, 106, 0.22);
 
-  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-display: "Uncial Antiqua", "Palatino Linotype", Palatino, serif;
+  --font-body: "EB Garamond", Garamond, "Times New Roman", serif;
 }
 
 html[data-bg-theme="burgundy"] {
@@ -73,7 +83,6 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.55;
-  font-optical-sizing: auto;
 }
 
 @media (max-width: 48rem) {
@@ -186,9 +195,8 @@ body[a="dark"] {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-weight: 400;
-  letter-spacing: 0.04em;
   color: var(--fg-bright);
 }
 
