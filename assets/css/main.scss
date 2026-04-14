@@ -167,16 +167,27 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-size: 100% 100%, 100% 100%, 100% 100%;
 }
 
-/* Ezhuthani drawing — same ballpark as Tamil ornaments (≈10% accent gold) */
+/* Large center illustration — theme-specific asset; shared placement and treatment */
 .manuscript-layers__ezhuthani {
   inset: 0;
-  background-image: url("../ezhuthani_drawing.svg");
   background-repeat: no-repeat;
   background-position: center 38%;
   background-size: min(92vw, 44rem);
   opacity: 0.042;
   filter: invert(1) brightness(1.28) sepia(0.08) saturate(0.9);
   mix-blend-mode: soft-light;
+}
+
+html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
+  background-image: url("../ezhuthani_drawing.svg");
+}
+
+html[data-bg-theme="blue"] .manuscript-layers__ezhuthani {
+  background-image: url("../tamil_boat_drawing.svg");
+}
+
+html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
+  background-image: url("../decorative_elephant_drawing.svg");
 }
 
 /* Faint horizontal grain + soft vertical banding; transparent only */
