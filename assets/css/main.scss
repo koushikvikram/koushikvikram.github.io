@@ -115,34 +115,34 @@ strong {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
-  /* Match emerald leaf motif: same opacity, tile scale, and positions */
   opacity: 0.065;
-  /* Black fills → light veil; soften slightly so it reads like white stroke tiles */
+  /* Black fills → light veil */
   filter: invert(1) brightness(0.92);
+  /* One mandala per corner only — no tile repeat, no overlapping layers */
   background-image:
     url("../mandala_montif.svg"),
+    url("../mandala_montif.svg"),
+    url("../mandala_montif.svg"),
     url("../mandala_montif.svg");
-  /* Same widths as leaf tile (168 / 212); heights follow montif viewBox ~129:125 */
-  background-size: 168px 163px, 212px 205px;
-  background-position: 8% 44%, 55% 28%;
-  background-repeat: repeat, repeat;
-  /* Clear the center so the motif doesn’t sit behind the reading column (matches ezhuthani ~38%) */
-  -webkit-mask-image: radial-gradient(
-    ellipse 48vmin 44vmin at 50% 38%,
-    transparent 0%,
-    transparent 38%,
-    #000 100%
-  );
-  mask-image: radial-gradient(
-    ellipse 48vmin 44vmin at 50% 38%,
-    transparent 0%,
-    transparent 38%,
-    #000 100%
-  );
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  /* viewBox ~129:125 */
+  background-size: 132px 128px, 132px 128px, 132px 128px, 132px 128px;
+  background-position:
+    left 0.85rem top 0.85rem,
+    right 0.85rem top 0.85rem,
+    left 0.85rem bottom 0.85rem,
+    right 0.85rem bottom 0.85rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 22rem) {
+  html[data-bg-theme="burgundy"] .manuscript-layers__motif {
+    background-size: 88px 85px, 88px 85px, 88px 85px, 88px 85px;
+    background-position:
+      left 0.5rem top 0.5rem,
+      right 0.5rem top 0.5rem,
+      left 0.5rem bottom 0.5rem,
+      right 0.5rem bottom 0.5rem;
+  }
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
