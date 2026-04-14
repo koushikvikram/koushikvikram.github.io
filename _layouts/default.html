@@ -3,7 +3,7 @@
   <script>
     (function () {
       try {
-        var allowed = ["blue", "burgundy", "forest"];
+        var allowed = ["emerald", "burgundy", "blue"];
         var v = localStorage.getItem("bg-theme");
         if (v === "purple") {
           v = "burgundy";
@@ -11,10 +11,16 @@
             localStorage.setItem("bg-theme", "burgundy");
           } catch (e) {}
         }
-        var t = allowed.indexOf(v) >= 0 ? v : "blue";
+        if (v === "forest") {
+          v = "emerald";
+          try {
+            localStorage.setItem("bg-theme", "emerald");
+          } catch (e) {}
+        }
+        var t = allowed.indexOf(v) >= 0 ? v : "emerald";
         document.documentElement.setAttribute("data-bg-theme", t);
       } catch (e) {
-        document.documentElement.setAttribute("data-bg-theme", "blue");
+        document.documentElement.setAttribute("data-bg-theme", "emerald");
       }
     })();
   </script>
@@ -43,7 +49,7 @@
       <div class="bg-theme-switch__list" role="radiogroup" aria-label="Background palette">
         <div class="bg-theme-switch__row">
           <label class="switch">
-            <input class="cb" type="radio" name="bg-theme" data-bg-theme="blue" value="blue" aria-label="Royal navy background" checked />
+            <input class="cb" type="radio" name="bg-theme" data-bg-theme="emerald" value="emerald" aria-label="Emerald background" checked />
             <span class="toggle">
               <span class="left">off</span>
               <span class="right">on</span>
@@ -61,7 +67,7 @@
         </div>
         <div class="bg-theme-switch__row">
           <label class="switch">
-            <input class="cb" type="radio" name="bg-theme" data-bg-theme="forest" value="forest" aria-label="Deep forest green background" />
+            <input class="cb" type="radio" name="bg-theme" data-bg-theme="blue" value="blue" aria-label="Royal navy background" />
             <span class="toggle">
               <span class="left">off</span>
               <span class="right">on</span>
