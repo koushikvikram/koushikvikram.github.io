@@ -27,15 +27,16 @@
     </main>
 
     <div class="bg-theme-switch" role="toolbar" aria-label="Background color">
-      <div class="bg-theme-switch__shell">
-        <div class="bg-theme-switch__track" aria-hidden="true">
-          <span class="bg-theme-switch__thumb"></span>
-        </div>
-        <div class="bg-theme-switch__hits" role="group">
-          <button type="button" class="bg-theme-switch__hit" data-bg-theme="blue" aria-label="Royal navy" title="Royal navy"></button>
-          <button type="button" class="bg-theme-switch__hit" data-bg-theme="burgundy" aria-label="Deep burgundy" title="Deep burgundy"></button>
-          <button type="button" class="bg-theme-switch__hit" data-bg-theme="forest" aria-label="Deep forest green" title="Deep forest green"></button>
-        </div>
+      <div class="bg-theme-switch__list" role="radiogroup" aria-label="Background palette">
+        <label class="bg-theme-switch__label">
+          <input type="radio" name="bg-theme" class="neon" data-bg-theme="blue" value="blue" style="--color: #5ec8ff" aria-label="Royal navy background" checked />
+        </label>
+        <label class="bg-theme-switch__label">
+          <input type="radio" name="bg-theme" class="neon" data-bg-theme="burgundy" value="burgundy" style="--color: #ff7eb0" aria-label="Deep burgundy background" />
+        </label>
+        <label class="bg-theme-switch__label">
+          <input type="radio" name="bg-theme" class="neon" data-bg-theme="forest" value="forest" style="--color: #5dff9a" aria-label="Deep forest green background" />
+        </label>
       </div>
     </div>
 

@@ -14,9 +14,9 @@
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch (e) {}
-    document.querySelectorAll('.bg-theme-switch__hit[data-bg-theme]').forEach(function (btn) {
-      var t = btn.getAttribute("data-bg-theme");
-      btn.setAttribute("aria-pressed", t === theme ? "true" : "false");
+    document.querySelectorAll("input.neon[data-bg-theme]").forEach(function (input) {
+      var t = input.getAttribute("data-bg-theme");
+      input.checked = t === theme;
     });
   }
 
@@ -26,9 +26,11 @@
       saved = localStorage.getItem(STORAGE_KEY);
     } catch (e) {}
     apply(saved || "blue");
-    document.querySelectorAll('.bg-theme-switch__hit[data-bg-theme]').forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        apply(btn.getAttribute("data-bg-theme"));
+    document.querySelectorAll("input.neon[data-bg-theme]").forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (input.checked) {
+          apply(input.getAttribute("data-bg-theme"));
+        }
       });
     });
   }

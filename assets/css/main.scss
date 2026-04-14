@@ -158,6 +158,19 @@ details.vocab-reference > summary {
   font-size: 1.35rem;
 }
 
+/* Neon glow toggle — adapted from Alvaro Montoro (MIT) via FreeFrontend */
+@property --x {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 1deg;
+}
+
+@property --c {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #0000;
+}
+
 .bg-theme-switch {
   position: fixed;
   top: 1.15rem;
@@ -167,129 +180,125 @@ details.vocab-reference > summary {
   line-height: 1;
 }
 
-.bg-theme-switch__shell {
-  position: relative;
-  width: 4.75rem;
-  height: 1.85rem;
-}
-
-.bg-theme-switch__track {
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #3a3f4a 0%, #232830 55%, #181c22 100%);
-  box-shadow:
-    inset 0 2px 8px rgba(0, 0, 0, 0.55),
-    0 1px 0 color-mix(in srgb, white 12%, transparent) inset,
-    0 0 0 1px rgba(0, 0, 0, 0.45);
-  transition:
-    background 0.28s ease,
-    box-shadow 0.28s ease;
-}
-
-.bg-theme-switch__track::after {
-  content: "";
-  position: absolute;
-  left: 0.45rem;
-  right: 0.45rem;
-  bottom: 0.28rem;
-  height: 0.2rem;
-  border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    #243655 0%,
-    #243655 32%,
-    #6b3d48 34%,
-    #6b3d48 65%,
-    #355c4d 67%,
-    #355c4d 100%
-  );
-  opacity: 0.75;
-  pointer-events: none;
-}
-
-html[data-bg-theme="blue"] .bg-theme-switch__track {
-  background: linear-gradient(180deg, #354560 0%, #1e2a3d 50%, #141c28 100%);
-  box-shadow:
-    inset 0 2px 8px rgba(0, 0, 0, 0.5),
-    0 0 0 1px color-mix(in srgb, #4a6a9a 45%, transparent),
-    0 0 12px rgba(36, 54, 85, 0.35);
-}
-
-html[data-bg-theme="burgundy"] .bg-theme-switch__track {
-  background: linear-gradient(180deg, #4d3038 0%, #2c181e 50%, #1a1014 100%);
-  box-shadow:
-    inset 0 2px 8px rgba(0, 0, 0, 0.5),
-    0 0 0 1px color-mix(in srgb, #a05060 40%, transparent),
-    0 0 12px rgba(107, 61, 72, 0.35);
-}
-
-html[data-bg-theme="forest"] .bg-theme-switch__track {
-  background: linear-gradient(180deg, #2d4538 0%, #1a2e24 50%, #121c17 100%);
-  box-shadow:
-    inset 0 2px 8px rgba(0, 0, 0, 0.5),
-    0 0 0 1px color-mix(in srgb, #4a7a62 45%, transparent),
-    0 0 14px rgba(53, 92, 77, 0.4);
-}
-
-.bg-theme-switch__thumb {
-  position: absolute;
-  top: 0.22rem;
-  left: 0.22rem;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 50%;
-  background: linear-gradient(165deg, #ffffff 0%, #e8eaee 45%, #c8ccd4 100%);
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(0, 0, 0, 0.18),
-    0 1px 0 rgba(255, 255, 255, 0.85) inset;
-  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-  z-index: 1;
-}
-
-html[data-bg-theme="blue"] .bg-theme-switch__thumb {
-  left: 0.22rem;
-}
-
-html[data-bg-theme="burgundy"] .bg-theme-switch__thumb {
-  left: calc(50% - 0.7rem);
-}
-
-html[data-bg-theme="forest"] .bg-theme-switch__thumb {
-  left: calc(100% - 0.22rem - 1.4rem);
-}
-
-.bg-theme-switch__hits {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+.bg-theme-switch__list {
   display: flex;
-}
-
-.bg-theme-switch__hit {
-  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.65rem;
   margin: 0;
   padding: 0;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  cursor: pointer;
 }
 
-.bg-theme-switch__hit:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
-  border-radius: 4px;
+.bg-theme-switch__label {
+  display: block;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.bg-theme-switch .neon {
+  --x: 1deg;
+  --c: #0000;
+  --color: #0ff;
+  font-size: 0.8rem;
+  appearance: none;
+  position: relative;
+  aspect-ratio: 2;
+  border-radius: 100em;
+  background:
+    linear-gradient(to bottom right, #0001, #0000),
+    #444143;
+  width: 3em;
+  margin: 0;
+  box-shadow:
+    inset 0 0 0.25em -0.25em #0008,
+    inset 0.05em 0.05em 0.2em #000811,
+    inset -0.05em -0.05em 0.15em 0.05em #ccc1,
+    0 0 0 0.11em #545153;
+  transition: --x 0.5s, --c 0.5s, box-shadow 0.5s;
+  filter: drop-shadow(0 0 0.2em var(--c));
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background:
+      radial-gradient(#0000 15%, #343133 16%, #545153 20%),
+      repeating-linear-gradient(#0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      repeating-linear-gradient(90deg, #0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      radial-gradient(var(--c) 17%, #0000 0),
+      #545153;
+    box-shadow:
+      inset -0.05em -0.05em 0.1em #0008,
+      inset 0.05em 0.05em 0.1em #ffffff22,
+      inset 0.05em 0em 0.1em -0.065em var(--c),
+      0.1em 0.1em 0.15em #000c;
+    border-radius: 50%;
+    transition: left 0.5s, box-shadow 0.1s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 0.25em);
+    height: calc(100% + 0.25em);
+    border: 0.1em solid var(--color);
+    border-radius: 100em;
+    -webkit-mask: conic-gradient(from calc(270deg - var(--x)), #000 calc(2 * var(--x)), #0001 0);
+    mask: conic-gradient(from calc(270deg - var(--x)), #000 calc(2 * var(--x)), #0001 0);
+    box-shadow: 0 0 0 2em #0000;
+  }
+
+  &:hover {
+    --x: 3deg;
+    --c: color-mix(in srgb, var(--color) 25%, transparent);
+    box-shadow:
+      inset 0 0 0.25em -0.25em #0008,
+      inset 0.05em 0.05em 0.2em #000811,
+      inset -0.05em -0.05em 0.15em 0.05em #ccc1,
+      0 0 0.05em 0.075em #545153;
+  }
+
+  &:checked {
+    --x: 180deg;
+    --c: var(--color);
+    box-shadow:
+      inset 0 0 0.25em -0.25em #0008,
+      inset 0.05em 0.05em 0.2em #000811,
+      inset -0.05em -0.05em 0.15em 0.05em #ccc1,
+      0 0 0.1em 0.05em #545153;
+
+    &::before {
+      left: 75%;
+      box-shadow:
+        inset -0.05em -0.05em 0.1em #0008,
+        inset 0.05em 0.05em 0.1em #ffffff22,
+        inset -0.05em 0em 0.1em -0.035em var(--c),
+        0.1em 0.1em 0.15em #000c;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  &[disabled] {
+    opacity: 0.25;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-theme-switch__thumb {
-    transition: none;
-  }
-
-  .bg-theme-switch__track {
-    transition: none;
+  .bg-theme-switch .neon,
+  .bg-theme-switch .neon::before,
+  .bg-theme-switch .neon::after {
+    transition: none !important;
+    animation: none !important;
   }
 }
