@@ -256,7 +256,7 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Leaves / fish only in the left & right margins — wide clear band for all text
+ * Leaves / fish only in the left & right margins (~18% width each) — clear center band for text
  * (radial ellipse couldn’t track the full column; horizontal bands match .w layout).
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
@@ -264,19 +264,19 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
     #000 0%,
-    #000 9%,
-    transparent 9%,
-    transparent 91%,
-    #000 91%,
+    #000 18%,
+    transparent 18%,
+    transparent 82%,
+    #000 82%,
     #000 100%
   );
   mask-image: linear-gradient(
     to right,
     #000 0%,
-    #000 9%,
-    transparent 9%,
-    transparent 91%,
-    #000 91%,
+    #000 18%,
+    transparent 18%,
+    transparent 82%,
+    #000 82%,
     #000 100%
   );
   -webkit-mask-repeat: no-repeat;
