@@ -97,10 +97,74 @@ strong {
 }
 
 .manuscript-layers__grain,
+.manuscript-layers__motif,
 .manuscript-layers__ezhuthani,
 .manuscript-layers__depth,
 .manuscript-layers__frame {
   position: absolute;
+}
+
+/* Theme motif: ~3–5% opacity — temple mandala / ship waves / elephant foliage */
+.manuscript-layers__motif {
+  inset: 0;
+  opacity: 0.045;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+html[data-bg-theme="burgundy"] .manuscript-layers__motif {
+  background-image:
+    repeating-conic-gradient(
+      from 0deg at 50% 42%,
+      transparent 0deg 5deg,
+      rgba(255, 255, 255, 0.85) 5deg 5.8deg
+    ),
+    radial-gradient(circle at 50% 40%, transparent 22%, rgba(255, 255, 255, 0.4) 23%, transparent 25%),
+    radial-gradient(circle at 50% 40%, transparent 38%, rgba(255, 255, 255, 0.28) 39%, transparent 41%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 18px,
+      rgba(255, 255, 255, 0.12) 18px,
+      19px
+    );
+  background-size:
+    100% 100%,
+    240px 240px,
+    380px 380px,
+    100% 100%;
+  background-position: center 40%, center 40%, center 40%, center;
+}
+
+html[data-bg-theme="blue"] .manuscript-layers__motif {
+  background-image:
+    repeating-linear-gradient(
+      92deg,
+      transparent 0,
+      transparent 16px,
+      rgba(255, 255, 255, 0.55) 16px,
+      17px
+    ),
+    repeating-linear-gradient(
+      88deg,
+      transparent 0,
+      transparent 28px,
+      rgba(255, 255, 255, 0.28) 28px,
+      30px
+    );
+  background-size:
+    100% 22px,
+    100% 36px;
+  background-position: center, center;
+}
+
+html[data-bg-theme="emerald"] .manuscript-layers__motif {
+  background-image:
+    repeating-linear-gradient(128deg, transparent 0 14px, rgba(255, 255, 255, 0.45) 14px 15px),
+    repeating-linear-gradient(38deg, transparent 0 20px, rgba(255, 255, 255, 0.32) 20px 21px),
+    radial-gradient(ellipse 70% 55% at 65% 35%, rgba(255, 255, 255, 0.2), transparent 60%);
+  background-size: 100% 100%, 100% 100%, 100% 100%;
 }
 
 /* Ezhuthani drawing — same ballpark as Tamil ornaments (≈10% accent gold) */
@@ -449,186 +513,97 @@ th {
   background: var(--selection);
 }
 
-/* Toggle switch — From Uiverse.io by r7chardgh (dry-rabbit-69), scoped */
-.bg-theme-switch {
+/* Background theme: Tamil heritage icons (Temple / Ship / Elephant) */
+.bg-theme-heritage {
   position: fixed;
   z-index: 60;
-  font-family: var(--font-body);
-  line-height: 1;
-  top: max(0.75rem, env(safe-area-inset-top, 0px));
-  right: max(0.75rem, env(safe-area-inset-right, 0px));
+  top: max(0.65rem, env(safe-area-inset-top, 0px));
+  right: max(0.65rem, env(safe-area-inset-right, 0px));
 }
 
-.bg-theme-switch__list {
+.bg-theme-heritage__group {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.55rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.35rem 0.45rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--color-bg) 55%, transparent);
+  border: 1px solid rgba(221, 184, 106, 0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bg-theme-heritage__opt {
+  position: relative;
+  display: flex;
+  cursor: pointer;
   margin: 0;
   padding: 0;
 }
 
-.bg-theme-switch__row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.bg-theme-switch .switch {
-  --sw-track: #4a3d28;
-  --sw-track-edge: #352a1c;
-  --sw-face: #f2e6c8;
-  --sw-face-side: #c9a86c;
-  --sw-face-bottom: #6b5435;
-  --sw-text: #3d3020;
-  --sw-text-muted: #a09070;
-  --on-accent: #ddb86a;
-  font-size: 11px;
-  position: relative;
-  display: inline-block;
-  width: 5em;
-  height: 2.5em;
-  user-select: none;
-  font-family: var(--font-body);
-  cursor: pointer;
-}
-
-.bg-theme-switch .switch .cb {
+.bg-theme-heritage__opt .cb {
+  position: absolute;
   opacity: 0;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
   margin: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }
 
-.bg-theme-switch .switch .cb:focus-visible + .toggle {
+.bg-theme-heritage__face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+  color: rgba(221, 184, 106, 0.45);
+  border: 1px solid rgba(221, 184, 106, 0.12);
+  background: rgba(0, 0, 0, 0.12);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bg-theme-heritage__opt:hover .bg-theme-heritage__face {
+  color: rgba(221, 184, 106, 0.75);
+  border-color: rgba(221, 184, 106, 0.28);
+}
+
+.bg-theme-heritage__opt:has(.cb:checked) .bg-theme-heritage__face {
+  color: var(--color-accent);
+  border-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+  background: rgba(221, 184, 106, 0.1);
+  box-shadow: 0 0 14px rgba(221, 184, 106, 0.18);
+}
+
+.bg-theme-heritage__opt .cb:focus-visible + .bg-theme-heritage__face {
   outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
-.bg-theme-switch .switch .toggle {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  background-color: var(--sw-track);
-  border-radius: 0.1em;
-  transition: 0.4s;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  box-shadow:
-    -0.3em 0 0 0 var(--sw-track-edge),
-    -0.3em 0.3em 0 0 var(--sw-track-edge),
-    0.3em 0 0 0 var(--sw-track-edge),
-    0.3em 0.3em 0 0 var(--sw-track-edge),
-    0 0.3em 0 0 var(--sw-track-edge);
-}
-
-.bg-theme-switch .switch .toggle > .left {
-  position: absolute;
-  display: flex;
-  width: 50%;
-  height: 88%;
-  background-color: var(--sw-face);
-  color: var(--sw-text);
-  left: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  transform-origin: right;
-  transform: rotateX(10deg);
-  transform-style: preserve-3d;
-  transition: all 150ms;
-}
-
-.bg-theme-switch .switch .toggle > .left::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--sw-face-side);
-  transform-origin: center left;
-  transform: rotateY(90deg);
-}
-
-.bg-theme-switch .switch .toggle > .left::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--sw-face-bottom);
-  transform-origin: center bottom;
-  transform: rotateX(90deg);
-}
-
-.bg-theme-switch .switch .toggle > .right {
-  position: absolute;
-  display: flex;
-  width: 50%;
-  height: 88%;
-  background-color: var(--sw-face);
-  color: var(--sw-text-muted);
-  right: 1px;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  transform-origin: left;
-  transform: rotateX(10deg) rotateY(-45deg);
-  transform-style: preserve-3d;
-  transition: all 150ms;
-}
-
-.bg-theme-switch .switch .toggle > .right::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--sw-face-side);
-  transform-origin: center right;
-  transform: rotateY(-90deg);
-}
-
-.bg-theme-switch .switch .toggle > .right::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--sw-face-bottom);
-  transform-origin: center bottom;
-  transform: rotateX(90deg);
-}
-
-.bg-theme-switch .switch input:checked + .toggle > .left {
-  transform: rotateX(10deg) rotateY(45deg);
-  color: var(--sw-text-muted);
-}
-
-.bg-theme-switch .switch input:checked + .toggle > .right {
-  transform: rotateX(10deg) rotateY(0deg);
-  color: var(--on-accent);
-  text-shadow: 0 0 0.35em color-mix(in srgb, var(--on-accent) 55%, transparent);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bg-theme-switch .switch .toggle,
-  .bg-theme-switch .switch .toggle > .left,
-  .bg-theme-switch .switch .toggle > .right {
-    transition: none !important;
-  }
+.bg-theme-heritage__svg {
+  display: block;
 }
 
 @media (max-width: 35rem) {
-  .bg-theme-switch {
+  .bg-theme-heritage {
     top: auto;
-    bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
-    right: max(0.65rem, env(safe-area-inset-right, 0px));
+    bottom: max(0.65rem, env(safe-area-inset-bottom, 0px));
+    right: max(0.5rem, env(safe-area-inset-right, 0px));
   }
 
-  .bg-theme-switch .switch {
-    font-size: 10px;
+  .bg-theme-heritage__group {
+    padding: 0.3rem 0.4rem;
+    gap: 0.35rem;
   }
 
-  .bg-theme-switch__list {
-    gap: 0.45rem;
+  .bg-theme-heritage__face {
+    width: 2.05rem;
+    height: 2.05rem;
   }
 }

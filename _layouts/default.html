@@ -28,6 +28,7 @@
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <div class="manuscript-layers" aria-hidden="true">
       <div class="manuscript-layers__grain"></div>
+      <div class="manuscript-layers__motif" aria-hidden="true"></div>
       <div class="manuscript-layers__ezhuthani" role="presentation"></div>
       <div class="manuscript-layers__depth"></div>
       <div class="manuscript-layers__frame"></div>
@@ -45,37 +46,38 @@
       </div>
     </main>
 
-    <div class="bg-theme-switch" role="toolbar" aria-label="Background color">
-      <div class="bg-theme-switch__list" role="radiogroup" aria-label="Background palette">
-        <div class="bg-theme-switch__row">
-          <label class="switch">
-            <input class="cb" type="radio" name="bg-theme" data-bg-theme="blue" value="blue" aria-label="Royal navy background" checked />
-            <span class="toggle">
-              <span class="left">off</span>
-              <span class="right">on</span>
-            </span>
-          </label>
-        </div>
-        <div class="bg-theme-switch__row">
-          <label class="switch">
-            <input class="cb" type="radio" name="bg-theme" data-bg-theme="emerald" value="emerald" aria-label="Emerald background" />
-            <span class="toggle">
-              <span class="left">off</span>
-              <span class="right">on</span>
-            </span>
-          </label>
-        </div>
-        <div class="bg-theme-switch__row">
-          <label class="switch">
-            <input class="cb" type="radio" name="bg-theme" data-bg-theme="burgundy" value="burgundy" aria-label="Deep burgundy background" />
-            <span class="toggle">
-              <span class="left">off</span>
-              <span class="right">on</span>
-            </span>
-          </label>
-        </div>
+    <nav class="bg-theme-heritage" aria-label="Background theme">
+      <div class="bg-theme-heritage__group" role="radiogroup" aria-label="Background palette">
+        <label class="bg-theme-heritage__opt">
+          <input class="cb" type="radio" name="bg-theme" data-bg-theme="burgundy" value="burgundy" aria-label="Temple — burgundy background" />
+          <span class="bg-theme-heritage__face" title="Temple">
+            <svg class="bg-theme-heritage__svg" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" d="M16 4 L26 10 L26 26 L6 26 L6 10 Z M10 14 h12 M8 18 h16" />
+              <circle cx="16" cy="8" r="2" fill="none" stroke="currentColor" stroke-width="1" />
+            </svg>
+          </span>
+        </label>
+        <label class="bg-theme-heritage__opt">
+          <input class="cb" type="radio" name="bg-theme" data-bg-theme="blue" value="blue" aria-label="Ship — blue background" checked />
+          <span class="bg-theme-heritage__face" title="Ship">
+            <svg class="bg-theme-heritage__svg" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" d="M4 20 Q10 14 16 18 T28 18 L26 24 L6 24 Z" />
+              <path fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.7" d="M2 22 Q8 19 14 21 T30 20" />
+            </svg>
+          </span>
+        </label>
+        <label class="bg-theme-heritage__opt">
+          <input class="cb" type="radio" name="bg-theme" data-bg-theme="emerald" value="emerald" aria-label="Elephant — emerald background" />
+          <span class="bg-theme-heritage__face" title="Elephant">
+            <svg class="bg-theme-heritage__svg" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" d="M8 18 Q6 12 12 10 Q18 8 22 12 Q24 16 22 20 L20 24 L10 24 Q8 20 8 18 Z" />
+              <path fill="none" stroke="currentColor" stroke-width="1" d="M20 14 Q24 12 26 14" />
+              <ellipse cx="14" cy="22" rx="3" ry="2" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+            </svg>
+          </span>
+        </label>
       </div>
-    </div>
+    </nav>
 
     <script src="{{ "/assets/js/bg-theme.js" | relative_url }}" defer></script>
 
