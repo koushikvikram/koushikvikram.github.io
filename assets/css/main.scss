@@ -32,7 +32,7 @@
   --gray-dim: var(--color-surface);
   --selection: rgba(221, 184, 106, 0.22);
 
-  --font-body: "Lora", Georgia, "Times New Roman", serif;
+  --font-body: "Dancing Script", cursive, Georgia, serif;
   --font-display: "Italianno", cursive;
 }
 
@@ -71,14 +71,17 @@ body {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.125rem;
+  font-size: 1.22rem;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.82;
+  word-spacing: 0.04em;
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Temple manuscript atmosphere: overlays only; base html/body gradients unchanged */
