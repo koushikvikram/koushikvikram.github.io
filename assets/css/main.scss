@@ -104,7 +104,7 @@ strong {
   position: absolute;
 }
 
-/* Theme motif: ~3–5% opacity — temple mandala / ship waves / elephant foliage */
+/* Theme motif: ~3–5% opacity — mandalas / waves / leaves (SVG tiles, dual scale) */
 .manuscript-layers__motif {
   inset: 0;
   opacity: 0.045;
@@ -115,26 +115,11 @@ strong {
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   background-image:
-    repeating-conic-gradient(
-      from 0deg at 50% 42%,
-      transparent 0deg 5deg,
-      rgba(255, 255, 255, 0.85) 5deg 5.8deg
-    ),
-    radial-gradient(circle at 50% 40%, transparent 22%, rgba(255, 255, 255, 0.4) 23%, transparent 25%),
-    radial-gradient(circle at 50% 40%, transparent 38%, rgba(255, 255, 255, 0.28) 39%, transparent 41%),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 18px,
-      rgba(255, 255, 255, 0.12) 18px,
-      19px
-    );
-  background-size:
-    100% 100%,
-    240px 240px,
-    380px 380px,
-    100% 100%;
-  background-position: center 40%, center 40%, center 40%, center;
+    url("../mandala_motif_burgundy.svg"),
+    url("../mandala_motif_burgundy.svg");
+  background-size: 208px 208px, 268px 268px;
+  background-position: 22% 38%, 58% 52%;
+  background-repeat: repeat, repeat;
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
@@ -148,10 +133,11 @@ html[data-bg-theme="blue"] .manuscript-layers__motif {
 
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-image:
-    repeating-linear-gradient(128deg, transparent 0 14px, rgba(255, 255, 255, 0.45) 14px 15px),
-    repeating-linear-gradient(38deg, transparent 0 20px, rgba(255, 255, 255, 0.32) 20px 21px),
-    radial-gradient(ellipse 70% 55% at 65% 35%, rgba(255, 255, 255, 0.2), transparent 60%);
-  background-size: 100% 100%, 100% 100%, 100% 100%;
+    url("../leaf_motif_emerald.svg"),
+    url("../leaf_motif_emerald.svg");
+  background-size: 168px 168px, 212px 212px;
+  background-position: 8% 44%, 55% 28%;
+  background-repeat: repeat, repeat;
 }
 
 /* Large center illustration — theme-specific asset; shared placement and treatment */
