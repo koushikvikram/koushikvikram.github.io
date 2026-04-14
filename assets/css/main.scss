@@ -139,24 +139,11 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
   background-image:
-    repeating-linear-gradient(
-      92deg,
-      transparent 0,
-      transparent 16px,
-      rgba(255, 255, 255, 0.55) 16px,
-      17px
-    ),
-    repeating-linear-gradient(
-      88deg,
-      transparent 0,
-      transparent 28px,
-      rgba(255, 255, 255, 0.28) 28px,
-      30px
-    );
-  background-size:
-    100% 22px,
-    100% 36px;
-  background-position: center, center;
+    url("../wave_motif_blue.svg"),
+    url("../wave_motif_blue.svg");
+  background-size: 220px 80px, 280px 102px;
+  background-position: 12% 42%, 58% 55%;
+  background-repeat: repeat, repeat;
 }
 
 html[data-bg-theme="emerald"] .manuscript-layers__motif {

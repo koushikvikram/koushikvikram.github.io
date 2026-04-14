@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="80" viewBox="0 0 220 80">
+  <!-- Tileable horizontal waves: period 220px; paths meet seamlessly at x=0 and x=220 -->
+  <path fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="1" d="M0 14 Q55 4 110 14 T220 14"/>
+  <path fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1" d="M0 38 Q55 26 110 38 T220 38"/>
+  <path fill="none" stroke="#ffffff" stroke-opacity="0.38" stroke-width="1" d="M0 62 Q55 50 110 62 T220 62"/>
+</svg>
