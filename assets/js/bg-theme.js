@@ -14,7 +14,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch (e) {}
-    document.querySelectorAll("input.neon[data-bg-theme]").forEach(function (input) {
+    document.querySelectorAll("input.cb[data-bg-theme]").forEach(function (input) {
       var t = input.getAttribute("data-bg-theme");
       input.checked = t === theme;
     });
@@ -26,7 +26,7 @@
       saved = localStorage.getItem(STORAGE_KEY);
     } catch (e) {}
     apply(saved || "blue");
-    document.querySelectorAll("input.neon[data-bg-theme]").forEach(function (input) {
+    document.querySelectorAll("input.cb[data-bg-theme]").forEach(function (input) {
       input.addEventListener("change", function () {
         if (input.checked) {
           apply(input.getAttribute("data-bg-theme"));

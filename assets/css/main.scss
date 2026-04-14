@@ -158,19 +158,7 @@ details.vocab-reference > summary {
   font-size: 1.35rem;
 }
 
-/* Neon glow toggle — adapted from Alvaro Montoro (MIT) via FreeFrontend */
-@property --x {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 1deg;
-}
-
-@property --c {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #0000;
-}
-
+/* Toggle switch — From Uiverse.io by r7chardgh (dry-rabbit-69), scoped */
 .bg-theme-switch {
   position: fixed;
   top: 1.15rem;
@@ -217,116 +205,137 @@ details.vocab-reference > summary {
   background: linear-gradient(145deg, #355c4d, #0d1814);
 }
 
-.bg-theme-switch__label {
-  display: block;
+.bg-theme-switch .switch {
+  --on-accent: #487bdb;
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  height: 2.5em;
+  user-select: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   cursor: pointer;
-  line-height: 0;
 }
 
-.bg-theme-switch .neon {
-  --x: 1deg;
-  --c: #0000;
-  --color: #0ff;
-  font-size: 0.8rem;
-  appearance: none;
-  position: relative;
-  aspect-ratio: 2;
-  border-radius: 100em;
-  background:
-    linear-gradient(to bottom right, #0001, #0000),
-    #444143;
-  width: 3em;
+.bg-theme-switch .switch .cb {
+  opacity: 0;
+  width: 0;
+  height: 0;
   margin: 0;
+}
+
+.bg-theme-switch .switch .cb:focus-visible + .toggle {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.bg-theme-switch .switch .toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #373737;
+  border-radius: 0.1em;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
   box-shadow:
-    inset 0 0 0.25em -0.25em #0008,
-    inset 0.05em 0.05em 0.2em #000811,
-    inset -0.05em -0.05em 0.15em 0.05em #ccc1,
-    0 0 0 0.11em #545153;
-  transition: --x 0.5s, --c 0.5s, box-shadow 0.5s;
-  filter: drop-shadow(0 0 0.2em var(--c));
+    -0.3em 0 0 0 #373737,
+    -0.3em 0.3em 0 0 #373737,
+    0.3em 0 0 0 #373737,
+    0.3em 0.3em 0 0 #373737,
+    0 0.3em 0 0 #373737;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    height: 80%;
-    aspect-ratio: 1;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    background:
-      radial-gradient(#0000 15%, #343133 16%, #545153 20%),
-      repeating-linear-gradient(#0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
-      repeating-linear-gradient(90deg, #0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
-      radial-gradient(var(--c) 17%, #0000 0),
-      #545153;
-    box-shadow:
-      inset -0.05em -0.05em 0.1em #0008,
-      inset 0.05em 0.05em 0.1em #ffffff22,
-      inset 0.05em 0em 0.1em -0.065em var(--c),
-      0.1em 0.1em 0.15em #000c;
-    border-radius: 50%;
-    transition: left 0.5s, box-shadow 0.1s;
-  }
+.bg-theme-switch .switch .toggle > .left {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: #f3f3f3;
+  color: #373737;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: right;
+  transform: rotateX(10deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 0.25em);
-    height: calc(100% + 0.25em);
-    border: 0.1em solid var(--color);
-    border-radius: 100em;
-    -webkit-mask: conic-gradient(from calc(270deg - var(--x)), #000 calc(2 * var(--x)), #0001 0);
-    mask: conic-gradient(from calc(270deg - var(--x)), #000 calc(2 * var(--x)), #0001 0);
-    box-shadow: 0 0 0 2em #0000;
-  }
+.bg-theme-switch .switch .toggle > .left::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center left;
+  transform: rotateY(90deg);
+}
 
-  &:hover {
-    --x: 3deg;
-    --c: color-mix(in srgb, var(--color) 25%, transparent);
-    box-shadow:
-      inset 0 0 0.25em -0.25em #0008,
-      inset 0.05em 0.05em 0.2em #000811,
-      inset -0.05em -0.05em 0.15em 0.05em #ccc1,
-      0 0 0.05em 0.075em #545153;
-  }
+.bg-theme-switch .switch .toggle > .left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
 
-  &:checked {
-    --x: 180deg;
-    --c: var(--color);
-    box-shadow:
-      inset 0 0 0.25em -0.25em #0008,
-      inset 0.05em 0.05em 0.2em #000811,
-      inset -0.05em -0.05em 0.15em 0.05em #ccc1,
-      0 0 0.1em 0.05em #545153;
+.bg-theme-switch .switch .toggle > .right {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: #f3f3f3;
+  color: rgb(206, 206, 206);
+  right: 1px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: left;
+  transform: rotateX(10deg) rotateY(-45deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+}
 
-    &::before {
-      left: 75%;
-      box-shadow:
-        inset -0.05em -0.05em 0.1em #0008,
-        inset 0.05em 0.05em 0.1em #ffffff22,
-        inset -0.05em 0em 0.1em -0.035em var(--c),
-        0.1em 0.1em 0.15em #000c;
-    }
-  }
+.bg-theme-switch .switch .toggle > .right::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center right;
+  transform: rotateY(-90deg);
+}
 
-  &:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 4px;
-  }
+.bg-theme-switch .switch .toggle > .right::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
 
-  &[disabled] {
-    opacity: 0.25;
-  }
+.bg-theme-switch .switch input:checked + .toggle > .left {
+  transform: rotateX(10deg) rotateY(45deg);
+  color: rgb(206, 206, 206);
+}
+
+.bg-theme-switch .switch input:checked + .toggle > .right {
+  transform: rotateX(10deg) rotateY(0deg);
+  color: var(--on-accent, #487bdb);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-theme-switch .neon,
-  .bg-theme-switch .neon::before,
-  .bg-theme-switch .neon::after {
+  .bg-theme-switch .switch .toggle,
+  .bg-theme-switch .switch .toggle > .left,
+  .bg-theme-switch .switch .toggle > .right {
     transition: none !important;
-    animation: none !important;
   }
 }
