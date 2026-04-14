@@ -28,15 +28,27 @@
 
     <div class="bg-theme-switch" role="toolbar" aria-label="Background color">
       <div class="bg-theme-switch__list" role="radiogroup" aria-label="Background palette">
-        <label class="bg-theme-switch__label">
-          <input type="radio" name="bg-theme" class="neon" data-bg-theme="blue" value="blue" style="--color: #5ec8ff" aria-label="Royal navy background" checked />
-        </label>
-        <label class="bg-theme-switch__label">
-          <input type="radio" name="bg-theme" class="neon" data-bg-theme="burgundy" value="burgundy" style="--color: #ff7eb0" aria-label="Deep burgundy background" />
-        </label>
-        <label class="bg-theme-switch__label">
-          <input type="radio" name="bg-theme" class="neon" data-bg-theme="forest" value="forest" style="--color: #5dff9a" aria-label="Deep forest green background" />
-        </label>
+        <div class="bg-theme-switch__row">
+          <span class="bg-theme-switch__name" id="bg-sw-navy">Navy</span>
+          <span class="bg-theme-switch__swatch bg-theme-switch__swatch--blue" aria-hidden="true"></span>
+          <label class="bg-theme-switch__label">
+            <input type="radio" name="bg-theme" class="neon" data-bg-theme="blue" value="blue" style="--color: #5ec8ff" aria-labelledby="bg-sw-navy" checked />
+          </label>
+        </div>
+        <div class="bg-theme-switch__row">
+          <span class="bg-theme-switch__name" id="bg-sw-burgundy">Burgundy</span>
+          <span class="bg-theme-switch__swatch bg-theme-switch__swatch--burgundy" aria-hidden="true"></span>
+          <label class="bg-theme-switch__label">
+            <input type="radio" name="bg-theme" class="neon" data-bg-theme="burgundy" value="burgundy" style="--color: #ff7eb0" aria-labelledby="bg-sw-burgundy" />
+          </label>
+        </div>
+        <div class="bg-theme-switch__row">
+          <span class="bg-theme-switch__name" id="bg-sw-forest">Forest</span>
+          <span class="bg-theme-switch__swatch bg-theme-switch__swatch--forest" aria-hidden="true"></span>
+          <label class="bg-theme-switch__label">
+            <input type="radio" name="bg-theme" class="neon" data-bg-theme="forest" value="forest" style="--color: #5dff9a" aria-labelledby="bg-sw-forest" />
+          </label>
+        </div>
       </div>
     </div>
 
