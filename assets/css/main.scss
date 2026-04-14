@@ -157,6 +157,21 @@ body {
     inset 0 0 0 1px rgba(221, 184, 106, 0.05);
 }
 
+.manuscript-layers__suzhi {
+  position: absolute;
+  left: 50%;
+  top: max(0.6rem, env(safe-area-inset-top, 0px));
+  transform: translateX(-50%);
+  width: min(4.5rem, 12vw);
+  pointer-events: none;
+}
+
+.manuscript-layers__suzhi-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .manuscript-layers__corners {
   position: absolute;
   inset: 0;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stylized Pillayar suzhi (?? ): auspicious manuscript opening mark  circle, curve, two base strokes -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 104" fill="none" aria-hidden="true">
+  <g stroke="rgba(221,184,106,0.13)" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head: suzhi (small circle) -->
+    <circle cx="44" cy="22" r="10"/>
+    <!-- Curves from the circle  traditional flourish before writing -->
+    <path d="M 34 24c-6 10-8 24-2 36 3 7 9 12 16 14"/>
+    <path d="M 52 26c8 6 14 18 12 32-1 9-7 17-15 20"/>
+    <!-- Two closing strokes at the base -->
+    <path d="M 24 78 L 20 98"/>
+    <path d="M 64 78 L 68 98"/>
+  </g>
+</svg>
