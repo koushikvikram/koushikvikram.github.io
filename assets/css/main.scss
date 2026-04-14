@@ -184,7 +184,14 @@ details.vocab-reference > summary {
 }
 
 .bg-theme-switch .switch {
-  --on-accent: #487bdb;
+  --sw-track: #4a3d28;
+  --sw-track-edge: #352a1c;
+  --sw-face: #f2e6c8;
+  --sw-face-side: #c9a86c;
+  --sw-face-bottom: #6b5435;
+  --sw-text: #3d3020;
+  --sw-text-muted: #a09070;
+  --on-accent: #ddb86a;
   font-size: 11px;
   position: relative;
   display: inline-block;
@@ -212,18 +219,18 @@ details.vocab-reference > summary {
   cursor: pointer;
   width: 100%;
   height: 100%;
-  background-color: #373737;
+  background-color: var(--sw-track);
   border-radius: 0.1em;
   transition: 0.4s;
   text-transform: uppercase;
   font-weight: 700;
   overflow: hidden;
   box-shadow:
-    -0.3em 0 0 0 #373737,
-    -0.3em 0.3em 0 0 #373737,
-    0.3em 0 0 0 #373737,
-    0.3em 0.3em 0 0 #373737,
-    0 0.3em 0 0 #373737;
+    -0.3em 0 0 0 var(--sw-track-edge),
+    -0.3em 0.3em 0 0 var(--sw-track-edge),
+    0.3em 0 0 0 var(--sw-track-edge),
+    0.3em 0.3em 0 0 var(--sw-track-edge),
+    0 0.3em 0 0 var(--sw-track-edge);
 }
 
 .bg-theme-switch .switch .toggle > .left {
@@ -231,8 +238,8 @@ details.vocab-reference > summary {
   display: flex;
   width: 50%;
   height: 88%;
-  background-color: #f3f3f3;
-  color: #373737;
+  background-color: var(--sw-face);
+  color: var(--sw-text);
   left: 0;
   bottom: 0;
   align-items: center;
@@ -248,7 +255,7 @@ details.vocab-reference > summary {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(206, 206, 206);
+  background-color: var(--sw-face-side);
   transform-origin: center left;
   transform: rotateY(90deg);
 }
@@ -258,7 +265,7 @@ details.vocab-reference > summary {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(112, 112, 112);
+  background-color: var(--sw-face-bottom);
   transform-origin: center bottom;
   transform: rotateX(90deg);
 }
@@ -268,8 +275,8 @@ details.vocab-reference > summary {
   display: flex;
   width: 50%;
   height: 88%;
-  background-color: #f3f3f3;
-  color: rgb(206, 206, 206);
+  background-color: var(--sw-face);
+  color: var(--sw-text-muted);
   right: 1px;
   bottom: 0;
   align-items: center;
@@ -285,7 +292,7 @@ details.vocab-reference > summary {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(206, 206, 206);
+  background-color: var(--sw-face-side);
   transform-origin: center right;
   transform: rotateY(-90deg);
 }
@@ -295,19 +302,20 @@ details.vocab-reference > summary {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(112, 112, 112);
+  background-color: var(--sw-face-bottom);
   transform-origin: center bottom;
   transform: rotateX(90deg);
 }
 
 .bg-theme-switch .switch input:checked + .toggle > .left {
   transform: rotateX(10deg) rotateY(45deg);
-  color: rgb(206, 206, 206);
+  color: var(--sw-text-muted);
 }
 
 .bg-theme-switch .switch input:checked + .toggle > .right {
   transform: rotateX(10deg) rotateY(0deg);
-  color: var(--on-accent, #487bdb);
+  color: var(--on-accent);
+  text-shadow: 0 0 0.35em color-mix(in srgb, var(--on-accent) 55%, transparent);
 }
 
 @media (prefers-reduced-motion: reduce) {
