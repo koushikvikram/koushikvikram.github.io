@@ -222,13 +222,25 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
-  opacity: 0.065;
+  /* Waves + fish tile — visibility aligned with emerald leaf motif */
+  opacity: 0.088;
+  filter: brightness(1.14);
   background-image:
     url("../wave_motif_blue.svg"),
-    url("../wave_motif_blue.svg");
-  background-size: 220px 80px, 280px 102px;
-  background-position: 12% 42%, 58% 55%;
-  background-repeat: repeat, repeat;
+    url("../wave_motif_blue.svg"),
+    url("../fish_motif_blue.svg"),
+    url("../fish_motif_blue.svg");
+  background-size:
+    220px 80px,
+    280px 102px,
+    168px 168px,
+    212px 212px;
+  background-position:
+    12% 42%,
+    58% 55%,
+    8% 44%,
+    55% 28%;
+  background-repeat: repeat, repeat, repeat, repeat;
 }
 
 html[data-bg-theme="emerald"] .manuscript-layers__motif {

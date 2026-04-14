@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168">
+  <!-- Side-view fish — stroke-only, clear body + fork tail (like leaf motif line weight) -->
+  <g fill="none" stroke="#ffffff" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(28 46) rotate(-14)" stroke-opacity="1">
+      <path d="M0 0 Q22-13 46 0 Q22 13 0 0"/>
+      <path d="M46 0 L62-11 M46 0 L62 11"/>
+    </g>
+    <g transform="translate(118 54) rotate(172)" stroke-opacity="0.88">
+      <path d="M0 0 Q20-11 42 0 Q20 11 0 0"/>
+      <path d="M42 0 L56-9 M42 0 L56 9"/>
+    </g>
+    <g transform="translate(48 122) rotate(198)" stroke-opacity="0.82">
+      <path d="M0 0 Q18-10 38 0 Q18 10 0 0"/>
+      <path d="M38 0 L50-8 M38 0 L50 8"/>
+    </g>
+    <g transform="translate(124 118) rotate(-26)" stroke-opacity="0.9">
+      <path d="M0 0 Q24-12 50 0 Q24 12 0 0"/>
+      <path d="M50 0 L66-12 M50 0 L66 12"/>
+    </g>
+    <g transform="translate(86 88) rotate(8)" stroke-opacity="0.72">
+      <path d="M0 0 Q16-9 34 0 Q16 9 0 0"/>
+      <path d="M34 0 L46-7 M34 0 L46 7"/>
+    </g>
+  </g>
+</svg>
