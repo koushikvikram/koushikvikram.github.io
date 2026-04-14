@@ -125,6 +125,7 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
+  opacity: 0.065;
   background-image:
     url("../wave_motif_blue.svg"),
     url("../wave_motif_blue.svg");
@@ -159,6 +160,7 @@ html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__ezhuthani {
+  opacity: 0.062;
   background-image: url("../ship_drawing.svg");
 }
 
