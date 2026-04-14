@@ -181,28 +181,6 @@ details.vocab-reference > summary {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.45rem;
-}
-
-.bg-theme-switch__swatch {
-  width: 0.55rem;
-  height: 0.55rem;
-  flex-shrink: 0;
-  border-radius: 50%;
-  border: 1px solid color-mix(in srgb, white 12%, transparent);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45) inset;
-}
-
-.bg-theme-switch__swatch--blue {
-  background: linear-gradient(145deg, #0a254c, #04152f);
-}
-
-.bg-theme-switch__swatch--burgundy {
-  background: linear-gradient(145deg, #6b3d48, #1c0b0f);
-}
-
-.bg-theme-switch__swatch--forest {
-  background: linear-gradient(145deg, #355c4d, #0d1814);
 }
 
 .bg-theme-switch .switch {
