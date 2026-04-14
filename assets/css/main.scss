@@ -85,6 +85,130 @@ body {
   line-height: 1.6;
 }
 
+/* Temple manuscript atmosphere: overlays only; base html/body gradients unchanged */
+.manuscript-layers {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.manuscript-layers__grain,
+.manuscript-layers__depth,
+.manuscript-layers__frame {
+  position: absolute;
+}
+
+/* Faint horizontal grain + soft vertical banding; transparent only */
+.manuscript-layers__grain {
+  inset: 0;
+  opacity: 0.48;
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 12px,
+      rgba(221, 184, 106, 0.042) 12px,
+      rgba(221, 184, 106, 0.042) 13px
+    ),
+    repeating-linear-gradient(
+      89deg,
+      transparent 0,
+      transparent 56px,
+      rgba(0, 0, 0, 0.03) 56px,
+      rgba(0, 0, 0, 0.03) 57px
+    ),
+    linear-gradient(
+      94deg,
+      rgba(0, 0, 0, 0.055) 0%,
+      transparent 38%,
+      transparent 62%,
+      rgba(0, 0, 0, 0.045) 100%
+    );
+}
+
+.manuscript-layers__depth {
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 96% 72% at 50% 46%,
+      transparent 40%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.12) 0%,
+      transparent 15%,
+      transparent 85%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+}
+
+.manuscript-layers__frame {
+  top: max(0.45rem, env(safe-area-inset-top, 0px));
+  right: max(0.45rem, env(safe-area-inset-right, 0px));
+  bottom: max(0.45rem, env(safe-area-inset-bottom, 0px));
+  left: max(0.45rem, env(safe-area-inset-left, 0px));
+  border: 1px solid rgba(221, 184, 106, 0.12);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 90px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(221, 184, 106, 0.05);
+}
+
+.manuscript-layers__corners {
+  position: absolute;
+  inset: 0;
+}
+
+.manuscript-layers__corner {
+  position: absolute;
+  font-family: "Noto Sans Tamil", system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.58rem, 1.25vw, 0.85rem);
+  letter-spacing: 0.14em;
+  color: rgba(221, 184, 106, 0.1);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.manuscript-layers__corner--tl {
+  top: max(1rem, env(safe-area-inset-top, 0px));
+  left: max(0.85rem, env(safe-area-inset-left, 0px));
+}
+
+.manuscript-layers__corner--tr {
+  top: max(1rem, env(safe-area-inset-top, 0px));
+  right: max(0.85rem, env(safe-area-inset-right, 0px));
+  text-align: right;
+}
+
+.manuscript-layers__corner--bl {
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  left: max(0.85rem, env(safe-area-inset-left, 0px));
+}
+
+.manuscript-layers__corner--br {
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  right: max(0.85rem, env(safe-area-inset-right, 0px));
+  text-align: right;
+}
+
+@media (max-width: 35rem) {
+  .manuscript-layers__corner--bl,
+  .manuscript-layers__corner--br {
+    bottom: max(5.5rem, env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (max-width: 22rem) {
+  .manuscript-layers__corner {
+    font-size: 0.52rem;
+    opacity: 0.85;
+  }
+}
+
 @media (max-width: 48rem) {
   html,
   body {
@@ -93,6 +217,8 @@ body {
 }
 
 main.page-content {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   min-height: 100vh;
@@ -141,6 +267,10 @@ div.highlighter-rouge {
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  border: 1px solid rgba(221, 184, 106, 0.1);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-bg-alt) 72%, transparent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 table {
@@ -259,8 +389,11 @@ div.highlighter-rouge code {
 }
 
 blockquote {
-  border-color: var(--color-surface);
+  border-color: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface));
   color: var(--color-text-soft);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-bg-alt) 38%, transparent);
+  box-shadow: inset 0 0 0 1px rgba(221, 184, 106, 0.06);
 }
 
 hr {
@@ -286,7 +419,7 @@ th {
 /* Toggle switch — From Uiverse.io by r7chardgh (dry-rabbit-69), scoped */
 .bg-theme-switch {
   position: fixed;
-  z-index: 50;
+  z-index: 60;
   font-family: var(--font-body);
   line-height: 1;
   top: max(0.75rem, env(safe-area-inset-top, 0px));
