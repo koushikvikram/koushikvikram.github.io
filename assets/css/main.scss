@@ -95,9 +95,22 @@ body {
 }
 
 .manuscript-layers__grain,
+.manuscript-layers__ezhuthani,
 .manuscript-layers__depth,
 .manuscript-layers__frame {
   position: absolute;
+}
+
+/* Ezhuthani drawing — subtle watermark over gradient (does not replace palette) */
+.manuscript-layers__ezhuthani {
+  inset: 0;
+  background-image: url("../ezhuthani_drawing.svg");
+  background-repeat: no-repeat;
+  background-position: center 38%;
+  background-size: min(92vw, 44rem);
+  opacity: 0.1;
+  filter: invert(1) brightness(1.12) sepia(0.25);
+  mix-blend-mode: soft-light;
 }
 
 /* Faint horizontal grain + soft vertical banding; transparent only */
