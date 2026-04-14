@@ -243,9 +243,9 @@ html[data-bg-theme="blue"] .manuscript-layers__waves {
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__motif {
-  /* Fish tile — stronger than waves (see manuscript-layers__waves) */
-  opacity: 0.088;
-  filter: brightness(1.14);
+  /* Fish tile — same family as waves: light strokes */
+  opacity: 0.032;
+  filter: brightness(1.08);
   background-image:
     url("../fish_motif_blue.svg"),
     url("../fish_motif_blue.svg");
