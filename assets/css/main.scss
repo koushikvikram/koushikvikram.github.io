@@ -160,16 +160,17 @@ body {
 .manuscript-layers__suzhi {
   position: absolute;
   left: 50%;
-  top: max(0.6rem, env(safe-area-inset-top, 0px));
+  top: max(0.65rem, env(safe-area-inset-top, 0px));
   transform: translateX(-50%);
-  width: min(4.5rem, 12vw);
   pointer-events: none;
-}
-
-.manuscript-layers__suzhi-img {
-  display: block;
-  width: 100%;
-  height: auto;
+  font-family: "Noto Sans Tamil", system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.52rem, 1.2vw, 0.82rem);
+  letter-spacing: 0.12em;
+  color: rgba(221, 184, 106, 0.1);
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .manuscript-layers__corners {
@@ -218,7 +219,8 @@ body {
 }
 
 @media (max-width: 22rem) {
-  .manuscript-layers__corner {
+  .manuscript-layers__corner,
+  .manuscript-layers__suzhi {
     font-size: 0.52rem;
     opacity: 0.85;
   }
@@ -239,6 +241,8 @@ main.page-content {
   min-height: 100vh;
   min-height: 100dvh;
   box-sizing: border-box;
+  /* Let html/body gradient + manuscript layers show; theme may paint main opaque otherwise */
+  background: transparent;
 }
 
 .w {
