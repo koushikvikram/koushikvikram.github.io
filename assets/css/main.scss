@@ -256,29 +256,41 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Leaves / fish only in the left & right margins (~18% width each) — clear center band for text
- * (radial ellipse couldn’t track the full column; horizontal bands match .w layout).
+ * Leaves / fish: full-bleed tile, but mask fades toward the reading column so text stays legible.
+ * Strongest at the sides (~old 18% margins); center stays subtle (never fully cut out).
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
-    #000 0%,
-    #000 18%,
-    transparent 18%,
-    transparent 82%,
-    #000 82%,
-    #000 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 0.78) 22%,
+    rgba(0, 0, 0, 0.45) 32%,
+    rgba(0, 0, 0, 0.22) 42%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.22) 58%,
+    rgba(0, 0, 0, 0.45) 68%,
+    rgba(0, 0, 0, 0.78) 78%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 1) 100%
   );
   mask-image: linear-gradient(
     to right,
-    #000 0%,
-    #000 18%,
-    transparent 18%,
-    transparent 82%,
-    #000 82%,
-    #000 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 0.78) 22%,
+    rgba(0, 0, 0, 0.45) 32%,
+    rgba(0, 0, 0, 0.22) 42%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.22) 58%,
+    rgba(0, 0, 0, 0.45) 68%,
+    rgba(0, 0, 0, 0.78) 78%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 1) 100%
   );
+  -webkit-mask-mode: alpha;
+  mask-mode: alpha;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
