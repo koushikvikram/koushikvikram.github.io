@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_KEY = "bg-theme";
-  var ALLOWED = ["emerald", "burgundy", "blue"];
+  var ALLOWED = ["burgundy", "blue", "emerald"];
 
   function normalizeTheme(theme) {
     if (theme === "purple") return "burgundy";
@@ -10,7 +10,7 @@
 
   function apply(theme) {
     theme = normalizeTheme(theme);
-    if (ALLOWED.indexOf(theme) === -1) theme = "emerald";
+    if (ALLOWED.indexOf(theme) === -1) theme = "burgundy";
     document.documentElement.setAttribute("data-bg-theme", theme);
     try {
       localStorage.setItem(STORAGE_KEY, theme);
@@ -26,7 +26,7 @@
     try {
       saved = localStorage.getItem(STORAGE_KEY);
     } catch (e) {}
-    apply(saved || "emerald");
+    apply(saved || "burgundy");
     document.querySelectorAll("input.cb[data-bg-theme]").forEach(function (input) {
       input.addEventListener("change", function () {
         if (input.checked) {

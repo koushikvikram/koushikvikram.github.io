@@ -4,10 +4,10 @@
 @import "no-style-please";
 
 :root {
-  /* Default theme: emerald */
-  --color-bg: #0d1814;
-  --color-bg-alt: #1f4034;
-  --color-surface: #355c4d;
+  /* Default theme: burgundy */
+  --color-bg: #1c0b0f;
+  --color-bg-alt: #451c2a;
+  --color-surface: #6b3d48;
 
   --color-accent: #DDB86A;
   --color-accent-2: #B38A54;
@@ -38,16 +38,16 @@
   --font-display: "Libre Baskerville", Georgia, "Times New Roman", serif;
 }
 
-html[data-bg-theme="burgundy"] {
-  --color-bg: #1c0b0f;
-  --color-bg-alt: #451c2a;
-  --color-surface: #6b3d48;
-}
-
 html[data-bg-theme="blue"] {
   --color-bg: #06121f;
   --color-bg-alt: #142a40;
   --color-surface: #2f4152;
+}
+
+html[data-bg-theme="emerald"] {
+  --color-bg: #0d1814;
+  --color-bg-alt: #1f4034;
+  --color-surface: #355c4d;
 }
 
 html {
