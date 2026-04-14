@@ -98,6 +98,7 @@ strong {
 }
 
 .manuscript-layers__grain,
+.manuscript-layers__waves,
 .manuscript-layers__motif,
 .manuscript-layers__ezhuthani,
 .manuscript-layers__depth,
@@ -221,26 +222,36 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   }
 }
 
+/* Blue waves on their own layer so strength is independent of fish */
+.manuscript-layers__waves {
+  inset: 0;
+  display: none;
+  mix-blend-mode: soft-light;
+  background-repeat: no-repeat;
+}
+
+html[data-bg-theme="blue"] .manuscript-layers__waves {
+  display: block;
+  opacity: 0.028;
+  filter: brightness(1.08);
+  background-image:
+    url("../wave_motif_blue.svg"),
+    url("../wave_motif_blue.svg");
+  background-size: 220px 80px, 280px 102px;
+  background-position: 12% 42%, 58% 55%;
+  background-repeat: repeat, repeat;
+}
+
 html[data-bg-theme="blue"] .manuscript-layers__motif {
-  /* Waves + fish tile — visibility aligned with emerald leaf motif */
+  /* Fish tile — stronger than waves (see manuscript-layers__waves) */
   opacity: 0.088;
   filter: brightness(1.14);
   background-image:
-    url("../wave_motif_blue.svg"),
-    url("../wave_motif_blue.svg"),
     url("../fish_motif_blue.svg"),
     url("../fish_motif_blue.svg");
-  background-size:
-    220px 80px,
-    280px 102px,
-    168px 168px,
-    212px 212px;
-  background-position:
-    12% 42%,
-    58% 55%,
-    8% 44%,
-    55% 28%;
-  background-repeat: repeat, repeat, repeat, repeat;
+  background-size: 168px 168px, 212px 212px;
+  background-position: 8% 44%, 55% 28%;
+  background-repeat: repeat, repeat;
 }
 
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
@@ -256,9 +267,10 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Leaves / fish: full-bleed tile; mask is high-contrast (strong at edges, very light in the column).
+ * Blue: waves + fish; emerald: leaves — full-bleed tiles; mask is high-contrast at edges, light in the column.
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
+html[data-bg-theme="blue"] .manuscript-layers__waves,
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
