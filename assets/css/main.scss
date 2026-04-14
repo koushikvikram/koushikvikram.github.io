@@ -255,19 +255,28 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-repeat: repeat, repeat;
 }
 
-/* Repeating motifs stay in the periphery — not behind the main text column */
+/*
+ * Leaves / fish only in the left & right margins — wide clear band for all text
+ * (radial ellipse couldn’t track the full column; horizontal bands match .w layout).
+ */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="emerald"] .manuscript-layers__motif {
-  -webkit-mask-image: radial-gradient(
-    ellipse 56vmin 52vmin at 50% 38%,
-    transparent 0%,
-    transparent 28%,
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 9%,
+    transparent 9%,
+    transparent 91%,
+    #000 91%,
     #000 100%
   );
-  mask-image: radial-gradient(
-    ellipse 56vmin 52vmin at 50% 38%,
-    transparent 0%,
-    transparent 28%,
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 9%,
+    transparent 9%,
+    transparent 91%,
+    #000 91%,
     #000 100%
   );
   -webkit-mask-repeat: no-repeat;
