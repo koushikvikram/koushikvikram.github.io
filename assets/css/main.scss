@@ -119,8 +119,8 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   /* Black fills → light veil */
   filter: invert(1) brightness(0.92);
   /*
-   * Four small mandalas per corner, inset from edges (not flush to corners).
-   * Stacking order is intentionally shuffled (fixed) so overlap reads varied.
+   * 2×2 grid per corner (16 layers), 84×81px (2× prior ~42×40), 14px gutter — no overlap.
+   * Order: TL → TR → BL → BR (row-major within each corner).
    */
   background-image:
     url("../mandala_montif.svg"),
@@ -140,78 +140,83 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
     url("../mandala_montif.svg"),
     url("../mandala_montif.svg");
   background-size:
-    42px 41px,
-    34px 33px,
-    42px 41px,
-    34px 33px,
-    36px 35px,
-    48px 46px,
-    36px 35px,
-    48px 46px,
-    48px 46px,
-    34px 33px,
-    42px 41px,
-    36px 35px,
-    42px 41px,
-    34px 33px,
-    48px 46px,
-    36px 35px;
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px,
+    84px 81px;
   background-position:
-    left 2.5rem bottom 3.55rem,
-    left 3.6rem top 3.2rem,
-    right 2.4rem bottom 3.6rem,
-    right 3.55rem top 3.1rem,
-    left 3.15rem top 2.55rem,
-    right 2rem bottom 2rem,
-    right 3.1rem top 2.45rem,
-    left 2rem bottom 2rem,
+    /* TL */
     left 2rem top 2rem,
-    right 3.5rem bottom 3.05rem,
-    right 2.45rem top 3.65rem,
-    left 3.1rem bottom 2.55rem,
-    left 2.35rem top 3.65rem,
-    left 3.45rem bottom 3.05rem,
+    left calc(2rem + 84px + 14px) top 2rem,
+    left 2rem top calc(2rem + 81px + 14px),
+    left calc(2rem + 84px + 14px) top calc(2rem + 81px + 14px),
+    /* TR */
     right 2rem top 2rem,
-    right 3.2rem bottom 2.5rem;
+    right calc(2rem + 84px + 14px) top 2rem,
+    right 2rem top calc(2rem + 81px + 14px),
+    right calc(2rem + 84px + 14px) top calc(2rem + 81px + 14px),
+    /* BL */
+    left 2rem bottom 2rem,
+    left calc(2rem + 84px + 14px) bottom 2rem,
+    left 2rem bottom calc(2rem + 81px + 14px),
+    left calc(2rem + 84px + 14px) bottom calc(2rem + 81px + 14px),
+    /* BR */
+    right 2rem bottom 2rem,
+    right calc(2rem + 84px + 14px) bottom 2rem,
+    right 2rem bottom calc(2rem + 81px + 14px),
+    right calc(2rem + 84px + 14px) bottom calc(2rem + 81px + 14px);
   background-repeat: no-repeat;
 }
 
-@media (max-width: 22rem) {
+/* Half-scale grid below ~432px so TL/TR (and BL/BR) 2×2 clusters do not meet in the middle */
+@media (max-width: 27rem) {
   html[data-bg-theme="burgundy"] .manuscript-layers__motif {
     background-size:
-      30px 29px,
-      24px 23px,
-      30px 29px,
-      24px 23px,
-      26px 25px,
-      34px 33px,
-      26px 25px,
-      34px 33px,
-      34px 33px,
-      24px 23px,
-      30px 29px,
-      26px 25px,
-      30px 29px,
-      24px 23px,
-      34px 33px,
-      26px 25px;
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px,
+      42px 40px;
     background-position:
-      left 1.35rem bottom 2.35rem,
-      left 2.35rem top 2.15rem,
-      right 1.45rem bottom 2.35rem,
-      right 2.35rem top 1.95rem,
-      left 2.05rem top 1.65rem,
-      right 1.1rem bottom 1.1rem,
-      right 2rem top 1.55rem,
-      left 1.1rem bottom 1.1rem,
-      left 1.1rem top 1.1rem,
-      right 2.25rem bottom 2.05rem,
-      right 1.55rem top 2.35rem,
-      left 2rem bottom 1.65rem,
-      left 1.45rem top 2.35rem,
-      left 2.25rem bottom 2.05rem,
-      right 1.1rem top 1.1rem,
-      right 2.05rem bottom 1.65rem;
+      left 1.25rem top 1.25rem,
+      left calc(1.25rem + 42px + 10px) top 1.25rem,
+      left 1.25rem top calc(1.25rem + 40px + 10px),
+      left calc(1.25rem + 42px + 10px) top calc(1.25rem + 40px + 10px),
+      right 1.25rem top 1.25rem,
+      right calc(1.25rem + 42px + 10px) top 1.25rem,
+      right 1.25rem top calc(1.25rem + 40px + 10px),
+      right calc(1.25rem + 42px + 10px) top calc(1.25rem + 40px + 10px),
+      left 1.25rem bottom 1.25rem,
+      left calc(1.25rem + 42px + 10px) bottom 1.25rem,
+      left 1.25rem bottom calc(1.25rem + 40px + 10px),
+      left calc(1.25rem + 42px + 10px) bottom calc(1.25rem + 40px + 10px),
+      right 1.25rem bottom 1.25rem,
+      right calc(1.25rem + 42px + 10px) bottom 1.25rem,
+      right 1.25rem bottom calc(1.25rem + 40px + 10px),
+      right calc(1.25rem + 42px + 10px) bottom calc(1.25rem + 40px + 10px);
   }
 }
 
