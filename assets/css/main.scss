@@ -116,13 +116,12 @@ strong {
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   opacity: 0.065;
-  /* Scatter tile uses clips from mandala_montif.svg; invert black artwork for soft-light */
-  filter: invert(1) brightness(1.22);
+  /* Single rosette tile from mandala_montif.svg (white fills, no invert) */
   background-image:
-    url("../mandala_scatter_burgundy.svg"),
-    url("../mandala_scatter_burgundy.svg");
-  background-size: 320px 320px, 400px 400px;
-  background-position: 18% 36%, 58% 54%;
+    url("../mandala_motif_burgundy.svg"),
+    url("../mandala_motif_burgundy.svg");
+  background-size: 208px 208px, 268px 268px;
+  background-position: 22% 38%, 58% 52%;
   background-repeat: repeat, repeat;
 }
 
