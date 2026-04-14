@@ -305,7 +305,8 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   }
 }
 
-@media (max-width: 48rem) {
+/* Use scroll on smaller/large-touch viewports: fixed backgrounds stutter on mobile scroll (incl. landscape). */
+@media (max-width: 64rem) {
   html,
   body {
     background-attachment: scroll;
@@ -318,7 +319,8 @@ main.page-content {
   display: block;
   width: 100%;
   min-height: 100vh;
-  min-height: 100dvh;
+  /* svh = small viewport; avoids min-height jumping when URL/toolbars show or hide (unlike dvh). */
+  min-height: 100svh;
   box-sizing: border-box;
   /* Let html/body gradient + manuscript layers show; theme may paint main opaque otherwise */
   background: transparent;
@@ -606,5 +608,8 @@ th {
     top: auto;
     bottom: max(1rem, calc(env(safe-area-inset-bottom, 0px) + 0.35rem));
     right: max(1.15rem, calc(env(safe-area-inset-right, 0px) + 0.45rem));
+    /* Own compositing layer: reduces fixed-bottom flicker/jitter while scrolling on iOS. */
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 }
