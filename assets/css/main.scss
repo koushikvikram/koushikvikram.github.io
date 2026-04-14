@@ -101,15 +101,15 @@ body {
   position: absolute;
 }
 
-/* Ezhuthani drawing — subtle watermark over gradient (does not replace palette) */
+/* Ezhuthani drawing — same ballpark as Tamil ornaments (≈10% accent gold) */
 .manuscript-layers__ezhuthani {
   inset: 0;
   background-image: url("../ezhuthani_drawing.svg");
   background-repeat: no-repeat;
   background-position: center 38%;
   background-size: min(92vw, 44rem);
-  opacity: 0.1;
-  filter: invert(1) brightness(1.12) sepia(0.25);
+  opacity: 0.042;
+  filter: invert(1) brightness(1.28) sepia(0.08) saturate(0.9);
   mix-blend-mode: soft-light;
 }
 
