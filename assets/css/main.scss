@@ -78,8 +78,7 @@ body {
   word-spacing: 0.04em;
   font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
-  /* Courgette reads heavy; blend slightly toward bg so headings stay dominant */
-  color: color-mix(in srgb, var(--color-text) 76%, var(--color-bg));
+  color: var(--color-text);
 }
 
 b,
@@ -362,23 +361,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--fg-bright);
+  color: var(--mint);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+/* Body copy ivory; headings + links stay gold via h1–h6 and a */
 article {
-  color: color-mix(in srgb, var(--mint) 74%, var(--color-bg));
-
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--mint);
-  }
+  color: var(--color-text);
 
   blockquote {
-    color: var(--mint);
+    color: var(--color-text-soft);
   }
 
   code {
-    color: var(--mint);
+    color: var(--color-text);
   }
 
   th {
