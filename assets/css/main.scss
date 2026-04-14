@@ -116,10 +116,13 @@ strong {
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   opacity: 0.065;
+  /* Traced SVG uses black fills; invert so soft-light motif reads on dark bg */
+  filter: invert(1) brightness(1.22);
   background-image:
-    url("../mandala_motif_burgundy.svg"),
-    url("../mandala_motif_burgundy.svg");
-  background-size: 208px 208px, 268px 268px;
+    url("../mandala_montif.svg"),
+    url("../mandala_montif.svg");
+  /* viewBox 600×404 */
+  background-size: 280px 189px, 360px 242px;
   background-position: 22% 38%, 58% 52%;
   background-repeat: repeat, repeat;
 }
