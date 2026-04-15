@@ -74,10 +74,10 @@ body {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.19rem;
+  /* ~Hitchens trade-paperback scale (github.com/patdryburgh/hitchens _base.scss) */
+  font-size: 1.3125rem;
   font-weight: 400;
-  line-height: 1.82;
-  word-spacing: 0.04em;
+  line-height: 1.5;
   font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
@@ -483,7 +483,8 @@ main.page-content {
 .w {
   box-sizing: border-box;
   width: 100%;
-  max-width: 40rem;
+  /* Hitchens inner column is 36rem; outer “sheet” there is 60rem */
+  max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: max(1.75rem, env(safe-area-inset-top, 0px));
@@ -508,6 +509,54 @@ main.page-content {
     padding-left: max(2rem, env(safe-area-inset-left, 0px));
     padding-right: max(2rem, env(safe-area-inset-right, 0px));
   }
+}
+
+/* Long-form alignment: justified paragraphs + indent; centered section titles (Hitchens _article / _base) */
+main.page-content .w h1 {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+main.page-content .w h2,
+main.page-content .w h3,
+main.page-content .w h4,
+main.page-content .w h5,
+main.page-content .w h6 {
+  text-align: center;
+}
+
+main.page-content .w p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-indent: 1.5em;
+}
+
+main.page-content .w p:first-of-type,
+main.page-content .w h1 + p,
+main.page-content .w h2 + p,
+main.page-content .w h3 + p,
+main.page-content .w h4 + p,
+main.page-content .w h5 + p,
+main.page-content .w h6 + p {
+  text-indent: 0;
+}
+
+main.page-content .w blockquote p {
+  text-align: left;
+  text-indent: 0;
+}
+
+main.page-content .w li p {
+  text-indent: 0;
+}
+
+main.page-content .w li p + p {
+  text-indent: 1.5em;
+  text-align: justify;
 }
 
 img,
@@ -554,8 +603,9 @@ table {
   }
 }
 
-article h1 {
-  font-size: clamp(1.35rem, 5.5vw, 2rem);
+article h1,
+main.page-content .w h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
   line-height: 1.2;
   overflow-wrap: break-word;
 }
