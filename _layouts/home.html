@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="site-section site-section--masthead">
+  {% if site.title %}
+    <h1 class="site-title">{{ site.title }}</h1>
+  {% endif %}
+  {% if site.theme_config.show_description and site.description %}
+    <p class="site-description">{{ site.description }}</p>
+  {% endif %}
+</section>
+
+{% include menu_item.html collection=site.data.menu.entries %}
+
+{{ content }}

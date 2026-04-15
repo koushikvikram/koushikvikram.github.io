@@ -483,8 +483,8 @@ main.page-content {
 .w {
   box-sizing: border-box;
   width: 100%;
-  /* Hitchens inner column is 36rem; outer “sheet” there is 60rem */
-  max-width: 36rem;
+  /* Hitchens-like outer reading width (see patdryburgh/hitchens .post) */
+  max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: max(1.75rem, env(safe-area-inset-top, 0px));
@@ -513,7 +513,7 @@ main.page-content {
 
 /* Long-form alignment: justified paragraphs + indent; centered section titles (Hitchens _article / _base) */
 main.page-content .w h1 {
-  max-width: 48rem;
+  max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -557,6 +557,76 @@ main.page-content .w li p {
 main.page-content .w li p + p {
   text-indent: 1.5em;
   text-align: justify;
+}
+
+/* Markdown lists: no bullets; nested lists indent (Hitchens .post-list is list-style: none) */
+main.page-content .w ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75em 0 1em;
+}
+
+main.page-content .w ul ul {
+  padding-left: 1.25em;
+  margin-top: 0.35em;
+}
+
+main.page-content .w ol {
+  margin: 0.75em 0 1em;
+  padding-left: 1.5em;
+}
+
+/* Home masthead + menu sections (Hitchens-style blocks) */
+.site-section--masthead {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(221, 184, 106, 0.12);
+}
+
+.site-section--masthead .site-title {
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 0.35em;
+  max-width: none;
+}
+
+main.page-content .w .site-description {
+  text-align: center;
+  text-indent: 0;
+  margin: 0 auto;
+  max-width: 42rem;
+  color: var(--color-text-soft);
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+.menu-block {
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(221, 184, 106, 0.12);
+}
+
+.menu-block:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-block__title {
+  margin: 0 0 0.85em;
+  font-size: clamp(1.15rem, 3vw, 1.35rem);
+}
+
+.menu-block__content {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-line {
+  margin: 0.4em 0;
+  text-align: center;
 }
 
 img,

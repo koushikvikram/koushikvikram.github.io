@@ -1,0 +1,35 @@
+{%- assign level = include.level | default: 0 -%}
+{%- for item in include.collection -%}
+
+{%- if level == 0 -%}
+<section class="menu-block">
+  <h2 class="menu-block__title">{{ item.title }}</h2>
+  <div class="menu-block__content">
+{%- endif -%}
+
+{%- if level > 0 -%}
+    <div class="menu-line">{{ item.title }}</div>
+{%- endif -%}
+
+{%- if item.post_list -%}
+    {%
+      include post_list.html
+      category=item.post_list.category
+      limit=item.post_list.limit
+      show_more=item.post_list.show_more
+      show_more_text=item.post_list.show_more_text
+      show_more_url=item.post_list.show_more_url
+    -%}
+{%- endif -%}
+
+{%- if item.entries -%}
+    {%- assign next_level = level | plus: 1 -%}
+    {%- include menu_item.html collection=item.entries level=next_level -%}
+{%- endif -%}
+
+{%- if level == 0 -%}
+  </div>
+</section>
+{%- endif -%}
+
+{%- endfor -%}
