@@ -116,9 +116,9 @@ strong {
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
-  opacity: 0.065;
-  /* Black fills → light veil */
-  filter: invert(1) brightness(0.92);
+  opacity: 0.092;
+  /* Black fills → light veil (higher opacity + brightness than before for clearer mandalas) */
+  filter: invert(1) brightness(1.04);
   /*
    * L per corner (4 layers): 2 along each horizontal arm + 2 along the vertical (corner shared),
    * omitting the innermost third tile on each horizontal row toward the page center.
