@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reflections on 'On Exactitude in Science by Jorge Luis Borges'"
+title: "Reflections on 'On Exactitude in Science' by Jorge Luis Borges"
 categories: [tech, fiction]
 ---
 
