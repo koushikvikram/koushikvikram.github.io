@@ -587,8 +587,40 @@ main.page-content .w ol {
 .site-section--masthead .site-title {
   font-size: clamp(2rem, 5.5vw, 3rem);
   line-height: 1.15;
-  margin: 0 0 0.35em;
+  margin: 0 0 0.5rem;
   max-width: none;
+}
+
+/* One row: tagline + github + linkedin + email (below site title) */
+main.page-content .w .site-tagline-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  text-indent: 0;
+  font-size: clamp(0.82rem, 2.1vw, 1.05rem);
+  line-height: 1.45;
+  color: var(--color-text-soft);
+  scrollbar-width: thin;
+}
+
+main.page-content .w .site-tagline__lede,
+main.page-content .w .site-tagline__link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+main.page-content .w .site-tagline-row > * + *::before {
+  content: " · ";
+  color: color-mix(in srgb, var(--color-muted) 78%, transparent);
 }
 
 main.page-content .w .site-description {

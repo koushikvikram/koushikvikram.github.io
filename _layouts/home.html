@@ -7,7 +7,16 @@ layout: default
     <h1 class="site-title">{{ site.title }}</h1>
   {% endif %}
   {% if site.theme_config.show_description and site.description %}
-    <p class="site-description">{{ site.description }}</p>
+    {% if site.data.menu.contact_links %}
+      <div class="site-tagline-row" role="navigation" aria-label="Tagline and contact">
+        <span class="site-tagline__lede">{{ site.description }}</span>
+        {% for item in site.data.menu.contact_links %}
+          <span class="site-tagline__link">{{ item.title }}</span>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="site-description">{{ site.description }}</p>
+    {% endif %}
   {% endif %}
 </section>
 
