@@ -499,27 +499,41 @@ main.page-content {
   box-sizing: border-box;
   /* Let html/body gradient + manuscript layers show; theme may paint main opaque otherwise */
   background: transparent;
-  opacity: 1;
-  transform: translateY(0);
-  transition:
-    opacity 0.4s ease,
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Hotwired Turbo: fade / slide while fetching the next page (see assets/js/page-transitions.js) */
+/* Turbo: brief dim while fetching (often one frame — entrance animation below is what you feel) */
 html.is-page-navigating main.page-content {
-  opacity: 0;
-  transform: translateY(10px);
+  opacity: 0.4;
+  filter: blur(1px);
+  transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+/* Obvious entrance after each in-app navigation (assets/js/page-transitions.js) */
+main.page-content.page-content--enter {
+  animation: page-content-enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  main.page-content {
+  html.is-page-navigating main.page-content {
+    opacity: 1;
+    filter: none;
     transition: none;
   }
 
-  html.is-page-navigating main.page-content {
-    opacity: 1;
-    transform: none;
+  main.page-content.page-content--enter {
+    animation: none;
   }
 }
 
