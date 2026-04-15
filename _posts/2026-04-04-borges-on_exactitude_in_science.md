@@ -7,5 +7,3 @@ categories: [tech, fiction]
 In this micro-story, a generation of cartographers pursue their art to such an extreme that they produce a map as vast and detailed as the empire itself. Later generations, concerned only with its utility, abandon it as useless.
 
 This reflects the tension between perfection and usefulness in representation: a model approaching total fidelity risks becoming indistinguishable from reality—and therefore useless.
-
-[Vocabulary for this piece]({% post_url 2026-04-04-vocabulary-borges-on_exactitude_in_science %}).

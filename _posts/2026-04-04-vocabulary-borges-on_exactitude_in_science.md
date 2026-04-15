@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Vocabulary: On Exactitude in Science"
+title: "Vocabulary for 'On Exactitude in Science' by Jorge Luis Borges"
 categories: [vocabulary]
 ---
-
-Companion notes for [Reflections on 'On Exactitude in Science by Jorge Luis Borges']({% post_url 2026-04-04-borges-on_exactitude_in_science %}).
 
 - **exactitude** (n.) - the quality of being precise or accurate.
 - **cartography** (n.) - the science or practice of drawing maps.

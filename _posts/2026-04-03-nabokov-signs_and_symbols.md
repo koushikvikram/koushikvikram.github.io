@@ -11,5 +11,3 @@ This is an interesting read. It unfolds over a Friday when everything goes wrong
 So what do you do now? Do you return to the story and decipher its patterns to reach a logical conclusion? Do you construct your own—or do you simply not care? In other words, what degree of referential mania do you choose to experience?
 
 Worth reading again ;)
-
-[Vocabulary for this piece]({% post_url 2026-04-03-vocabulary-nabokov-signs_and_symbols %}).

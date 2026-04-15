@@ -18,13 +18,13 @@ entries:
       show_more: true
       show_more_url: /fiction.html
       show_more_text: see all fiction
-  - title: vocabulary reference
+  - title: vocabulary
     post_list:
       category: vocabulary
       limit: 5
       show_more: true
-      show_more_url: /vocabulary-reference.html
-      show_more_text: see all vocabulary posts
+      show_more_url: /vocabulary.html
+      show_more_text: see all vocabulary
   - title: all posts
     post_list:
       limit: 5

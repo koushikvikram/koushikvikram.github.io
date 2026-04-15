@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Vocabulary: Signs and Symbols"
+title: "Vocabulary for 'Signs and Symbols' by Vladimir Nabokov"
 categories: [vocabulary]
 ---
-
-Companion notes for [Reflections on 'Signs and Symbols by Vladimir Nabokov']({% post_url 2026-04-03-nabokov-signs_and_symbols %}).
 
 - **dainty** (adj.) - delicately small and pretty.
 - **trifle** (n.) - a thing of little value or importance.
