@@ -634,6 +634,33 @@ a {
   }
 }
 
+/* Home (back) link — olai chuvadi replaces theme “..” text */
+a.back-home {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+
+  img {
+    display: block;
+    height: 1.45em;
+    width: auto;
+    max-width: 4.25em;
+    object-fit: contain;
+    border-radius: 2px;
+    transition: filter 0.2s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    text-shadow: none;
+  }
+
+  &:hover img,
+  &:focus-visible img {
+    filter: brightness(1.12);
+  }
+}
+
 code,
 pre,
 kbd,
