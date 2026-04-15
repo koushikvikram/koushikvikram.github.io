@@ -36,7 +36,7 @@
 
   --font-body: "Courgette", cursive, Georgia, serif;
   --font-display: "Libre Baskerville", Georgia, "Times New Roman", serif;
-  --font-heading: "Libre Bodoni", var(--font-display);
+  --font-heading: "Fredericka the Great", cursive, var(--font-display);
 }
 
 html[data-bg-theme="emerald"] {
@@ -938,8 +938,8 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Page / post title: lighter gold than section headings */
-h1 {
+/* Page / post / masthead title: lighter gold than section headings (scoped so h1.site-title matches h1.page-title) */
+main.page-content .w h1 {
   color: color-mix(in srgb, var(--mint) 72%, #fffefc 28%);
   text-shadow:
     0 1px 3px rgba(0, 0, 0, 0.38),
