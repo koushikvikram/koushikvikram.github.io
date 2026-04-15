@@ -594,8 +594,7 @@ main.page-content .w ol {
 main.page-content .w .site-description {
   text-align: center;
   text-indent: 0;
-  margin: 0 auto;
-  max-width: 42rem;
+  margin: 0;
   color: var(--color-text-soft);
   font-size: 1.05em;
   line-height: 1.5;
@@ -616,12 +615,6 @@ main.page-content .w .site-description {
 .menu-block__title {
   margin: 0 0 0.85em;
   font-size: clamp(1.15rem, 3vw, 1.35rem);
-}
-
-.menu-block__content {
-  max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu-line {
