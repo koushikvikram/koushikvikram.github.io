@@ -21,24 +21,22 @@
     });
   }
 
-  function init() {
+  function syncFromStorage() {
     var saved = null;
     try {
       saved = localStorage.getItem(STORAGE_KEY);
     } catch (e) {}
     apply(saved || "blue");
-    document.querySelectorAll("input.cb[data-bg-theme]").forEach(function (input) {
-      input.addEventListener("change", function () {
-        if (input.checked) {
-          apply(input.getAttribute("data-bg-theme"));
-        }
-      });
-    });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  document.addEventListener("change", function (e) {
+    var el = e.target;
+    if (!el.matches || !el.matches("input.cb[data-bg-theme]")) return;
+    if (el.checked) {
+      apply(el.getAttribute("data-bg-theme"));
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", syncFromStorage);
+  document.addEventListener("turbo:load", syncFromStorage);
 })();

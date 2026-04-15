@@ -499,6 +499,28 @@ main.page-content {
   box-sizing: border-box;
   /* Let html/body gradient + manuscript layers show; theme may paint main opaque otherwise */
   background: transparent;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.4s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hotwired Turbo: fade / slide while fetching the next page (see assets/js/page-transitions.js) */
+html.is-page-navigating main.page-content {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main.page-content {
+    transition: none;
+  }
+
+  html.is-page-navigating main.page-content {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .w {
