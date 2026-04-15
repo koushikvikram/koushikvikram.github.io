@@ -585,8 +585,8 @@ main.page-content .w ol {
 }
 
 .site-section--masthead .site-title {
-  font-size: clamp(2rem, 5.5vw, 3rem);
-  line-height: 1.15;
+  font-size: clamp(2.5rem, 7.5vw, 4rem);
+  line-height: 1.12;
   margin: 0 0 0.5rem;
   max-width: none;
 }
@@ -636,6 +636,7 @@ main.page-content .w .site-description {
   margin-bottom: 2.25rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(221, 184, 106, 0.12);
+  text-align: left;
 }
 
 .menu-block:last-child {
@@ -644,14 +645,115 @@ main.page-content .w .site-description {
   padding-bottom: 0;
 }
 
-.menu-block__title {
-  margin: 0 0 0.85em;
-  font-size: clamp(1.15rem, 3vw, 1.35rem);
+main.page-content .w h2.menu-block__title {
+  margin: 0 0 0.65em;
+  /* Near Hitchens “Contents” / section heading scale (github.com/patdryburgh/hitchens) */
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  text-align: left;
+  text-transform: capitalize;
 }
 
 .menu-line {
   margin: 0.4em 0;
   text-align: center;
+}
+
+/* Post lists — Hitchens-style rows (title + date), list hover dim, row hover full (patdryburgh.github.io/hitchens) */
+$post-list-break: 48rem;
+
+.post-list {
+  margin: 0.5em 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+
+  &:hover .post-link,
+  &:focus-within .post-link {
+    opacity: 0.58;
+  }
+}
+
+.post-list li {
+  margin-bottom: 1em;
+}
+
+.post-link {
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-decoration: none;
+  padding: 0.25em;
+  border-radius: 4px;
+  transition: opacity 0.125s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1 !important;
+    color: var(--color-text);
+    text-shadow: none;
+  }
+
+  @media (min-width: $post-list-break) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .post-date {
+      margin-left: auto;
+    }
+  }
+}
+
+.post-link__heading {
+  display: block;
+  min-width: 0;
+
+  @media (min-width: $post-list-break) {
+    margin-right: 3rem;
+    padding: 0.25em 0;
+  }
+}
+
+.post-link__title {
+  font-family: var(--font-body);
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  color: inherit;
+}
+
+.post-date {
+  color: var(--color-muted);
+  font-size: 0.92em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-top: 0.35em;
+
+  @media (min-width: $post-list-break) {
+    margin-top: 0;
+  }
+}
+
+.post-list__more {
+  margin: 1rem 0 0;
+  text-align: right;
+  text-indent: 0;
+  font-size: 0.92em;
+
+  a {
+    color: var(--mint);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-accent);
+    }
+  }
 }
 
 img,
