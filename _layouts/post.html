@@ -5,8 +5,14 @@ layout: default
 {%- include back_link.html -%}
 
 <article class="post-page">
-  <h1>{{ page.title }}</h1>
+  <header class="page-heading">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="heading-rule" aria-hidden="true"></div>
+  </header>
   {{ content }}
 </article>
 
-<time class="post-page-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.theme_config.date_format }}</time>
+<div class="post-page-meta">
+  <span class="post-page-author">{{ site.author | default: site.title }}</span>
+  <time class="post-date post-page-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, '%y" }}</time>
+</div>
