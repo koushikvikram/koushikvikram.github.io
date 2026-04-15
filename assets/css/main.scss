@@ -98,9 +98,9 @@ html {
   /* Avoid horizontal jump when the scrollbar appears as content height changes */
   scrollbar-gutter: stable;
   transition:
-    --color-bg 0.75s ease,
-    --color-bg-alt 0.75s ease,
-    --color-surface 0.75s ease;
+    --color-bg 1.4s cubic-bezier(0.33, 0, 0.2, 1),
+    --color-bg-alt 1.4s cubic-bezier(0.33, 0, 0.2, 1),
+    --color-surface 1.4s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
