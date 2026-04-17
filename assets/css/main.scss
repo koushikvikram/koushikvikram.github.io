@@ -91,6 +91,12 @@ html[data-bg-theme="burgundy"] {
   --color-surface: #553038;
 }
 
+html[data-bg-theme="music"] {
+  --color-bg: #0a0605;
+  --color-bg-alt: #221410;
+  --color-surface: #4c2a22;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -167,7 +173,8 @@ strong {
   background-repeat: no-repeat;
 }
 
-html[data-bg-theme="burgundy"] .manuscript-layers__motif {
+html[data-bg-theme="burgundy"] .manuscript-layers__motif,
+html[data-bg-theme="music"] .manuscript-layers__motif {
   opacity: 0.092;
   /* Black fills → light veil (higher opacity + brightness than before for clearer mandalas) */
   filter: invert(1) brightness(1.04);
@@ -236,7 +243,8 @@ html[data-bg-theme="burgundy"] .manuscript-layers__motif {
 
 /* Half-scale extended L below ~432px so TL/TR arms do not collide */
 @media (max-width: 27rem) {
-  html[data-bg-theme="burgundy"] .manuscript-layers__motif {
+  html[data-bg-theme="burgundy"] .manuscript-layers__motif,
+  html[data-bg-theme="music"] .manuscript-layers__motif {
     background-size:
       42px 40px,
       42px 40px,
@@ -371,7 +379,8 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   mix-blend-mode: soft-light;
 }
 
-html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
+html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani,
+html[data-bg-theme="music"] .manuscript-layers__ezhuthani {
   opacity: 0.062;
   background-image: url("../meenakshi_temple_drawing.svg");
 }
@@ -1170,7 +1179,7 @@ th {
   background: var(--selection);
 }
 
-/* Background theme: Tamil heritage icons (Temple / Ship / Elephant) */
+/* Background theme: four icons in a 2×2 square */
 .bg-theme-heritage {
   position: fixed;
   z-index: 60;
@@ -1180,9 +1189,9 @@ th {
 }
 
 .bg-theme-heritage__group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 2.25rem);
+  grid-auto-rows: 2.25rem;
   gap: 0.4rem;
   margin: 0;
   padding: 0;
@@ -1191,6 +1200,9 @@ th {
 .bg-theme-heritage__opt {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
   cursor: pointer;
   margin: 0;
   padding: 0;

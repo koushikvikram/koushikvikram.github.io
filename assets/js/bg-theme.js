@@ -1,10 +1,11 @@
 (function () {
   var STORAGE_KEY = "bg-theme";
-  var ALLOWED = ["blue", "emerald", "burgundy"];
+  var ALLOWED = ["blue", "emerald", "burgundy", "music"];
 
   function normalizeTheme(theme) {
     if (theme === "purple") return "burgundy";
     if (theme === "forest") return "emerald";
+    if (theme === "earth") return "music";
     return theme;
   }
 

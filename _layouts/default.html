@@ -3,8 +3,14 @@
   <script>
     (function () {
       try {
-        var allowed = ["blue", "emerald", "burgundy"];
+        var allowed = ["blue", "emerald", "burgundy", "music"];
         var v = localStorage.getItem("bg-theme");
+        if (v === "earth") {
+          v = "music";
+          try {
+            localStorage.setItem("bg-theme", "music");
+          } catch (e) {}
+        }
         if (v === "purple") {
           v = "burgundy";
           try {
@@ -107,6 +113,19 @@
                 <path d="M25.5 17.5c1.6 0.6 2.6 1.8 2.8 3.2" stroke-width="1.1" />
                 <!-- Eye -->
                 <circle cx="9.2" cy="16.2" r="0.65" fill="currentColor" stroke="none" />
+              </g>
+            </svg>
+          </span>
+        </label>
+        <label class="bg-theme-heritage__opt">
+          <input class="cb" type="radio" name="bg-theme" data-bg-theme="music" value="music" aria-label="Music — burnt copper background" />
+          <span class="bg-theme-heritage__face" title="Music">
+            <svg class="bg-theme-heritage__svg" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false">
+              <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+                <!-- Eighth note -->
+                <line x1="19" y1="8.5" x2="19" y2="23" stroke-width="1.35" />
+                <ellipse cx="12.8" cy="23.2" rx="5.2" ry="3.4" transform="rotate(-24 12.8 23.2)" stroke-width="1.25" />
+                <path d="M19 8.5c3.2 0.8 5.5 2.8 5.5 5.2s-2 4.5-5.5 4" stroke-width="1.2" />
               </g>
             </svg>
           </span>
