@@ -395,8 +395,9 @@ html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
 }
 
 html[data-bg-theme="music"] .manuscript-layers__ezhuthani {
-  opacity: 0.062;
+  opacity: 0.042;
   background-image: url("../yazh_artistic_drawing.svg");
+  background-size: min(78vw, 37rem);
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__ezhuthani {
