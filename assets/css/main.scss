@@ -447,7 +447,7 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   line-height: 1;
 }
 
-/* Line width = ௳ advance width (not letter-spacing / flex stretch) */
+/* Same ink color as ௳ (inherits .manuscript-layers__suzhi color) */
 .manuscript-layers__suzhi__stem {
   position: absolute;
   left: 0;
@@ -456,8 +456,7 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   margin-top: 0.03em;
   height: max(1px, 0.06em);
   border-radius: 1px;
-  background: rgba(221, 184, 106, 0.3);
-  box-shadow: 0 0 4px rgba(221, 184, 106, 0.12);
+  background: currentColor;
 }
 
 .manuscript-layers__anbu {
