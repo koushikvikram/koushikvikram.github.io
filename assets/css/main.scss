@@ -429,6 +429,9 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   left: 50%;
   top: max(0.65rem, env(safe-area-inset-top, 0px));
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   pointer-events: none;
   font-family: "Noto Sans Tamil", system-ui, sans-serif;
   font-weight: 300;
@@ -437,7 +440,25 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   color: rgba(221, 184, 106, 0.1);
   line-height: 1.25;
   text-align: center;
+}
+
+.manuscript-layers__suzhi__mark {
+  display: block;
   white-space: nowrap;
+}
+
+/* Vertical stem below ௳ (like ‖ flanking ‖ ஓம் ‖) */
+.manuscript-layers__suzhi__stem {
+  width: max(1px, 0.07em);
+  height: clamp(0.45rem, 1.35vw, 0.72rem);
+  margin-top: 0.1em;
+  border-radius: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(221, 184, 106, 0.32) 0%,
+    rgba(221, 184, 106, 0.06) 100%
+  );
+  box-shadow: 0 0 6px rgba(221, 184, 106, 0.12);
 }
 
 .manuscript-layers__anbu {
@@ -749,15 +770,15 @@ main.page-content .w .site-description {
 }
 
 /*
- * Fancy rule under page / home headings: gradient line + Tamil pilcrow.
- * Margin below creates space before body content.
+ * Fancy rule under page / home headings: gradient line + Tamil pilcrow + stem below.
+ * Margin below creates space before body content. Markup: _includes/heading_rule.html
  */
 .heading-rule {
   position: relative;
   display: block;
   width: 100%;
   margin: 0.35rem 0 2rem;
-  min-height: 2rem;
+  min-height: 2.25rem;
   border: 0;
   padding: 0;
   pointer-events: none;
@@ -780,29 +801,49 @@ main.page-content .w .site-description {
     );
     box-shadow: 0 0 16px rgba(221, 184, 106, 0.28);
   }
+}
 
-  &::after {
-    content: "௳";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Noto Sans Tamil", system-ui, sans-serif;
-    font-size: clamp(0.95rem, 2.6vw, 1.2rem);
-    font-weight: 400;
-    color: var(--color-accent);
-    opacity: 0.92;
-    line-height: 1;
-    text-shadow:
-      0 0 14px rgba(221, 184, 106, 0.5),
-      0 1px 2px rgba(0, 0, 0, 0.35);
-    background: radial-gradient(
-      ellipse 85% 100% at 50% 50%,
-      color-mix(in srgb, var(--color-bg) 94%, transparent) 0%,
-      transparent 70%
-    );
-    padding: 0.15em 0.5em;
-  }
+.heading-rule__pilcrow-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.heading-rule__mark {
+  font-family: "Noto Sans Tamil", system-ui, sans-serif;
+  font-size: clamp(0.95rem, 2.6vw, 1.2rem);
+  font-weight: 400;
+  color: var(--color-accent);
+  opacity: 0.92;
+  line-height: 1;
+  text-shadow:
+    0 0 14px rgba(221, 184, 106, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.35);
+  background: radial-gradient(
+    ellipse 85% 100% at 50% 50%,
+    color-mix(in srgb, var(--color-bg) 94%, transparent) 0%,
+    transparent 70%
+  );
+  padding: 0.15em 0.5em;
+  white-space: nowrap;
+}
+
+.heading-rule__stem {
+  width: max(1px, 0.07em);
+  height: clamp(0.42rem, 1.2vw, 0.65rem);
+  margin-top: 0.08em;
+  border-radius: 1px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-accent) 78%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent) 18%, transparent) 100%
+  );
+  box-shadow: 0 0 10px rgba(221, 184, 106, 0.35);
 }
 
 .page-heading {
