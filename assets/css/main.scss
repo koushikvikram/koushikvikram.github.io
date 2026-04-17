@@ -395,9 +395,10 @@ html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
 }
 
 html[data-bg-theme="music"] .manuscript-layers__ezhuthani {
-  opacity: 0.042;
+  opacity: 0.036;
   background-image: url("../yazh_artistic_drawing.svg");
   background-size: min(calc(78vw * 0.7), calc(37rem * 0.7));
+  filter: invert(1) brightness(1.18) sepia(0.12) saturate(0.8) contrast(0.93) blur(0.55px);
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__ezhuthani {
@@ -1198,9 +1199,8 @@ th {
 .bg-theme-heritage {
   position: fixed;
   z-index: 60;
-  /* Inset from top-right so it doesn’t hug the corner */
-  top: max(1rem, calc(env(safe-area-inset-top, 0px) + 0.35rem));
-  right: max(1.15rem, calc(env(safe-area-inset-right, 0px) + 0.45rem));
+  top: max(1.65rem, calc(env(safe-area-inset-top, 0px) + 0.85rem));
+  right: max(1.85rem, calc(env(safe-area-inset-right, 0px) + 1rem));
 }
 
 .bg-theme-heritage__group {
@@ -1284,8 +1284,8 @@ th {
 @media (max-width: 35rem) {
   .bg-theme-heritage {
     top: auto;
-    bottom: max(1rem, calc(env(safe-area-inset-bottom, 0px) + 0.35rem));
-    right: max(1.15rem, calc(env(safe-area-inset-right, 0px) + 0.45rem));
+    bottom: max(1.65rem, calc(env(safe-area-inset-bottom, 0px) + 0.85rem));
+    right: max(1.85rem, calc(env(safe-area-inset-right, 0px) + 1rem));
     /* Own compositing layer: reduces fixed-bottom flicker/jitter while scrolling on iOS. */
     transform: translateZ(0);
     backface-visibility: hidden;
