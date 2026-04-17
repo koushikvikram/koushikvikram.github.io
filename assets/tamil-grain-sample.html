@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ta">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample: Tamil repeat pattern (grain replacement)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans Tamil", system-ui, sans-serif;
+        background: #06121f;
+        color: #ded8cc;
+      }
+      .note {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 1.25rem 1rem 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        opacity: 0.9;
+      }
+      .zoom {
+        margin: 1rem auto 1.5rem;
+        max-width: min(100%, 28rem);
+        padding: 0 1rem;
+      }
+      .zoom table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.35rem;
+        text-align: center;
+        color: rgba(221, 184, 106, 0.9);
+      }
+      .zoom td {
+        border: 1px solid rgba(221, 184, 106, 0.25);
+        padding: 0.5rem;
+      }
+      .sample {
+        position: relative;
+        margin: 0 auto 2rem;
+        max-width: min(100%, 52rem);
+        min-height: 62vh;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(221, 184, 106, 0.15);
+      }
+      .sample__pattern {
+        position: absolute;
+        inset: 0;
+        opacity: 0.38;
+        color: rgba(221, 184, 106, 0.55);
+      }
+      .sample__pattern svg {
+        width: 100%;
+        height: 100%;
+      }
+      .sample__content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem 1.5rem 3rem;
+      }
+      .sample h1 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 0 0 0.75rem;
+      }
+      .sample p {
+        margin: 0;
+        line-height: 1.55;
+        opacity: 0.92;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="note">
+      Open this file in a browser. Top: one full 5×5 block at readable size. Below: that block tiled as a background behind sample content (similar role to
+      <code>manuscript-layers__grain</code>).
+    </p>
+    <div class="zoom">
+      <table>
+        <tr>
+          <td>சி</td>
+          <td>வ</td>
+          <td>ய</td>
+          <td>ந</td>
+          <td>ம</td>
+        </tr>
+        <tr>
+          <td>ம</td>
+          <td>சி</td>
+          <td>வ</td>
+          <td>ய</td>
+          <td>ந</td>
+        </tr>
+        <tr>
+          <td>ந</td>
+          <td>ம</td>
+          <td>சி</td>
+          <td>வ</td>
+          <td>ய</td>
+        </tr>
+        <tr>
+          <td>ய</td>
+          <td>ந</td>
+          <td>ம</td>
+          <td>சி</td>
+          <td>வ</td>
+        </tr>
+        <tr>
+          <td>வ</td>
+          <td>ய</td>
+          <td>ந</td>
+          <td>ம</td>
+          <td>சி</td>
+        </tr>
+      </table>
+    </div>
+    <div class="sample">
+      <div class="sample__pattern" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="tamil-cycle" width="120" height="120" patternUnits="userSpaceOnUse">
+              <!-- 5×5 grid, 24×24px cells; cyclic shifts per your table -->
+              <text x="12" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">சி</text>
+              <text x="36" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">வ</text>
+              <text x="60" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ய</text>
+              <text x="84" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ந</text>
+              <text x="108" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ம</text>
+              <text x="12" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ம</text>
+              <text x="36" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">சி</text>
+              <text x="60" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">வ</text>
+              <text x="84" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ய</text>
+              <text x="108" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ந</text>
+              <text x="12" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ந</text>
+              <text x="36" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ம</text>
+              <text x="60" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">சி</text>
+              <text x="84" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">வ</text>
+              <text x="108" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ய</text>
+              <text x="12" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ய</text>
+              <text x="36" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ந</text>
+              <text x="60" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ம</text>
+              <text x="84" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">சி</text>
+              <text x="108" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">வ</text>
+              <text x="12" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">வ</text>
+              <text x="36" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ய</text>
+              <text x="60" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ந</text>
+              <text x="84" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">ம</text>
+              <text x="108" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, sans-serif" font-weight="300">சி</text>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#tamil-cycle)" />
+        </svg>
+      </div>
+      <div class="sample__content">
+        <h1>Sample content column</h1>
+        <p>
+          The background is one 120×120px SVG pattern tile (5×5 letters), repeated. Each row is a cyclic shift of சி · வ · ய · ந · ம so the tile edges match when
+          repeated.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

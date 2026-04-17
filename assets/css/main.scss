@@ -385,32 +385,17 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   background-image: url("../decorative_elephant_drawing.svg");
 }
 
-/* Faint horizontal grain + soft vertical banding; transparent only */
+/* Tamil syllable grid (சி·வ·ய·ந·ம cyclic tile) — _includes/manuscript_grain_svg.html */
 .manuscript-layers__grain {
   inset: 0;
-  opacity: 0.48;
-  background-image:
-    repeating-linear-gradient(
-      180deg,
-      transparent 0,
-      transparent 12px,
-      rgba(221, 184, 106, 0.042) 12px,
-      rgba(221, 184, 106, 0.042) 13px
-    ),
-    repeating-linear-gradient(
-      89deg,
-      transparent 0,
-      transparent 56px,
-      rgba(0, 0, 0, 0.03) 56px,
-      rgba(0, 0, 0, 0.03) 57px
-    ),
-    linear-gradient(
-      94deg,
-      rgba(0, 0, 0, 0.055) 0%,
-      transparent 38%,
-      transparent 62%,
-      rgba(0, 0, 0, 0.045) 100%
-    );
+  opacity: 0.42;
+  mix-blend-mode: soft-light;
+}
+
+.manuscript-layers__grain svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .manuscript-layers__depth {
