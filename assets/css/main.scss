@@ -447,18 +447,20 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   white-space: nowrap;
 }
 
-/* Vertical stem below ௳ (like ‖ flanking ‖ ஓம் ‖) */
+/* Short horizontal line below ௳ (echoes ‖ … ‖ beside ஓம்) */
 .manuscript-layers__suzhi__stem {
-  width: max(1px, 0.07em);
-  height: clamp(0.45rem, 1.35vw, 0.72rem);
-  margin-top: 0.1em;
+  width: clamp(1.1rem, 3.2vw, 1.8rem);
+  height: max(1px, 0.06em);
+  margin-top: 0.12em;
   border-radius: 1px;
   background: linear-gradient(
-    180deg,
-    rgba(221, 184, 106, 0.32) 0%,
-    rgba(221, 184, 106, 0.06) 100%
+    90deg,
+    transparent 0%,
+    rgba(221, 184, 106, 0.3) 18%,
+    rgba(221, 184, 106, 0.3) 82%,
+    transparent 100%
   );
-  box-shadow: 0 0 6px rgba(221, 184, 106, 0.12);
+  box-shadow: 0 0 5px rgba(221, 184, 106, 0.14);
 }
 
 .manuscript-layers__anbu {
@@ -770,7 +772,7 @@ main.page-content .w .site-description {
 }
 
 /*
- * Fancy rule under page / home headings: gradient line + Tamil pilcrow + stem below.
+ * Fancy rule under page / home headings: gradient line + Tamil pilcrow + short horizontal line under ௳.
  * Margin below creates space before body content. Markup: _includes/heading_rule.html
  */
 .heading-rule {
@@ -834,16 +836,18 @@ main.page-content .w .site-description {
 }
 
 .heading-rule__stem {
-  width: max(1px, 0.07em);
-  height: clamp(0.42rem, 1.2vw, 0.65rem);
-  margin-top: 0.08em;
+  width: clamp(1.35rem, 4vw, 2.35rem);
+  height: max(1px, 0.055em);
+  margin-top: 0.1em;
   border-radius: 1px;
   background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-accent) 78%, transparent) 0%,
-    color-mix(in srgb, var(--color-accent) 18%, transparent) 100%
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--color-accent) 72%, transparent) 12%,
+    color-mix(in srgb, var(--color-accent) 72%, transparent) 88%,
+    transparent 100%
   );
-  box-shadow: 0 0 10px rgba(221, 184, 106, 0.35);
+  box-shadow: 0 0 10px rgba(221, 184, 106, 0.32);
 }
 
 .page-heading {
