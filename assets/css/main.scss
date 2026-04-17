@@ -164,7 +164,7 @@ strong {
   position: absolute;
 }
 
-/* Theme motif: ~3–5% opacity — mandalas / waves / leaves (SVG tiles, dual scale) */
+/* Theme motif: ~3–5% opacity — mandalas / waves / leaves / music (SVG tiles, dual scale where repeated) */
 .manuscript-layers__motif {
   inset: 0;
   opacity: 0.045;
@@ -173,8 +173,7 @@ strong {
   background-repeat: no-repeat;
 }
 
-html[data-bg-theme="burgundy"] .manuscript-layers__motif,
-html[data-bg-theme="music"] .manuscript-layers__motif {
+html[data-bg-theme="burgundy"] .manuscript-layers__motif {
   opacity: 0.092;
   /* Black fills → light veil (higher opacity + brightness than before for clearer mandalas) */
   filter: invert(1) brightness(1.04);
@@ -243,8 +242,7 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
 
 /* Half-scale extended L below ~432px so TL/TR arms do not collide */
 @media (max-width: 27rem) {
-  html[data-bg-theme="burgundy"] .manuscript-layers__motif,
-  html[data-bg-theme="music"] .manuscript-layers__motif {
+  html[data-bg-theme="burgundy"] .manuscript-layers__motif {
     background-size:
       42px 40px,
       42px 40px,
@@ -326,12 +324,24 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-repeat: repeat, repeat;
 }
 
+html[data-bg-theme="music"] .manuscript-layers__motif {
+  opacity: 0.088;
+  filter: brightness(1.14);
+  background-image:
+    url("../music_motif.svg"),
+    url("../music_motif.svg");
+  background-size: 168px 168px, 212px 212px;
+  background-position: 8% 44%, 55% 28%;
+  background-repeat: repeat, repeat;
+}
+
 /*
- * Blue: waves + fish; emerald: leaves — full-bleed tiles; mask is high-contrast at edges, light in the column.
+ * Blue: waves + fish; emerald: leaves; music: notes — full-bleed tiles; mask is high-contrast at edges, light in the column.
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="blue"] .manuscript-layers__waves,
-html[data-bg-theme="emerald"] .manuscript-layers__motif {
+html[data-bg-theme="emerald"] .manuscript-layers__motif,
+html[data-bg-theme="music"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
