@@ -440,6 +440,22 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   white-space: nowrap;
 }
 
+.manuscript-layers__anbu {
+  position: absolute;
+  left: 50%;
+  bottom: max(0.65rem, env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  pointer-events: none;
+  font-family: "Noto Sans Tamil", system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.78rem, 1.8vw, 1.23rem);
+  letter-spacing: 0.12em;
+  color: rgba(221, 184, 106, 0.1);
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .manuscript-layers__corners {
   position: absolute;
   inset: 0;
@@ -483,11 +499,16 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   .manuscript-layers__corner--br {
     bottom: max(5.5rem, env(safe-area-inset-bottom, 0px));
   }
+
+  .manuscript-layers__anbu {
+    bottom: max(5.5rem, env(safe-area-inset-bottom, 0px));
+  }
 }
 
 @media (max-width: 22rem) {
   .manuscript-layers__corner,
-  .manuscript-layers__suzhi {
+  .manuscript-layers__suzhi,
+  .manuscript-layers__anbu {
     font-size: 0.78rem;
     opacity: 0.85;
   }
