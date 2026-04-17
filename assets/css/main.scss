@@ -389,10 +389,14 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
   mix-blend-mode: soft-light;
 }
 
-html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani,
-html[data-bg-theme="music"] .manuscript-layers__ezhuthani {
+html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
   opacity: 0.062;
   background-image: url("../meenakshi_temple_drawing.svg");
+}
+
+html[data-bg-theme="music"] .manuscript-layers__ezhuthani {
+  opacity: 0.062;
+  background-image: url("../yazh_drawing.svg");
 }
 
 html[data-bg-theme="blue"] .manuscript-layers__ezhuthani {
