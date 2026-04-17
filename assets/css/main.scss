@@ -433,30 +433,11 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   font-family: "Noto Sans Tamil", system-ui, sans-serif;
   font-weight: 300;
   font-size: clamp(0.78rem, 1.8vw, 1.23rem);
-  letter-spacing: 0;
+  letter-spacing: 0.12em;
   color: rgba(221, 184, 106, 0.1);
   line-height: 1;
   text-align: center;
-}
-
-/* Shrink-wrap to glyph only; stem is positioned to that ink width */
-.manuscript-layers__suzhi__mark {
-  position: relative;
-  display: inline-block;
   white-space: nowrap;
-  line-height: 1;
-}
-
-/* Same ink color as ௳ (inherits .manuscript-layers__suzhi color) */
-.manuscript-layers__suzhi__stem {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  margin-top: 0.03em;
-  height: max(1px, 0.06em);
-  border-radius: 1px;
-  background: currentColor;
 }
 
 .manuscript-layers__anbu {
