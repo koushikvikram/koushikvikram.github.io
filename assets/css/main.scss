@@ -429,31 +429,32 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   left: 50%;
   top: max(0.65rem, env(safe-area-inset-top, 0px));
   transform: translateX(-50%);
-  display: inline-flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: max-content;
   pointer-events: none;
   font-family: "Noto Sans Tamil", system-ui, sans-serif;
   font-weight: 300;
   font-size: clamp(0.78rem, 1.8vw, 1.23rem);
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   color: rgba(221, 184, 106, 0.1);
-  line-height: 1.25;
+  line-height: 1;
   text-align: center;
 }
 
+/* Shrink-wrap to glyph only; stem is positioned to that ink width */
 .manuscript-layers__suzhi__mark {
-  display: block;
+  position: relative;
+  display: inline-block;
   white-space: nowrap;
+  line-height: 1;
 }
 
-/* Full width of ௳; tiny gap under the glyph */
+/* Line width = ௳ advance width (not letter-spacing / flex stretch) */
 .manuscript-layers__suzhi__stem {
-  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 0.03em;
   height: max(1px, 0.06em);
-  margin-top: 0.08em;
-  flex-shrink: 0;
   border-radius: 1px;
   background: rgba(221, 184, 106, 0.3);
   box-shadow: 0 0 4px rgba(221, 184, 106, 0.12);
@@ -806,14 +807,12 @@ main.page-content .w .site-description {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: max-content;
   z-index: 1;
 }
 
 .heading-rule__mark {
+  display: flex;
+  justify-content: center;
   font-family: "Noto Sans Tamil", system-ui, sans-serif;
   font-size: clamp(0.95rem, 2.6vw, 1.2rem);
   font-weight: 400;
@@ -832,12 +831,20 @@ main.page-content .w .site-description {
   white-space: nowrap;
 }
 
-/* Same width as the mark box (௳ + padding); tiny gap */
+/* Shrink-wrap to ௳; line matches glyph, not the padded mark box */
+.heading-rule__pilcrow-inner {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
 .heading-rule__stem {
-  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 0.03em;
   height: max(1px, 0.055em);
-  margin-top: 0.08em;
-  flex-shrink: 0;
   border-radius: 1px;
   background: color-mix(in srgb, var(--color-accent) 58%, transparent);
   box-shadow: 0 0 8px rgba(221, 184, 106, 0.28);
