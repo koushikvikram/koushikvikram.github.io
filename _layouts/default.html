@@ -27,9 +27,7 @@
   {%- include head.html -%}
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <div class="manuscript-layers" id="manuscript-layers" data-turbo-permanent aria-hidden="true">
-      <div class="manuscript-layers__grain">
-        {%- include manuscript_grain_svg.html -%}
-      </div>
+      <div class="manuscript-layers__grain" aria-hidden="true"></div>
       <div class="manuscript-layers__waves" aria-hidden="true"></div>
       <div class="manuscript-layers__motif" aria-hidden="true"></div>
       <div class="manuscript-layers__ezhuthani" role="presentation"></div>

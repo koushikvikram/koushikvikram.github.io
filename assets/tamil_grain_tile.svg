@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <pattern id="tamilGrainPattern" width="120" height="120" patternUnits="userSpaceOnUse">
+      <text x="12" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ùù</text>
+      <text x="36" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="60" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="84" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="108" y="19" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="12" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="36" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ùù</text>
+      <text x="60" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="84" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="108" y="43" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="12" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="36" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="60" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ùù</text>
+      <text x="84" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="108" y="67" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="12" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="36" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="60" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="84" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ùù</text>
+      <text x="108" y="91" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="12" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="36" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="60" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="84" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ù</text>
+      <text x="108" y="115" text-anchor="middle" font-size="15" font-family="Noto Sans Tamil, Latha, Tamil Sangam MN, sans-serif" font-weight="300" fill="#ddb86a" fill-opacity="0.1">ùù</text>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#tamilGrainPattern)" />
+</svg>

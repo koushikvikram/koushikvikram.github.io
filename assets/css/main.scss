@@ -385,17 +385,14 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   background-image: url("../decorative_elephant_drawing.svg");
 }
 
-/* Tamil syllable grid (சி·வ·ய·ந·ம cyclic tile) — _includes/manuscript_grain_svg.html */
+/* Tamil syllable grid — repeating tiles (assets/tamil_grain_tile.svg), ~same visual weight as old CSS grain */
 .manuscript-layers__grain {
   inset: 0;
   opacity: 0.42;
-  mix-blend-mode: soft-light;
-}
-
-.manuscript-layers__grain svg {
-  display: block;
-  width: 100%;
-  height: 100%;
+  background-image: url("../tamil_grain_tile.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  /* No mix-blend: keeps contrast stable for reading */
 }
 
 .manuscript-layers__depth {
