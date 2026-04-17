@@ -456,6 +456,31 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
   white-space: nowrap;
 }
 
+/* Vertical midline: left / right (matches corner type scale) */
+.manuscript-layers__mid-left,
+.manuscript-layers__mid-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family: "Noto Sans Tamil", system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.87rem, 1.88vw, 1.28rem);
+  letter-spacing: 0.14em;
+  color: rgba(221, 184, 106, 0.1);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.manuscript-layers__mid-left {
+  left: max(0.85rem, env(safe-area-inset-left, 0px));
+}
+
+.manuscript-layers__mid-right {
+  right: max(0.85rem, env(safe-area-inset-right, 0px));
+  text-align: right;
+}
+
 .manuscript-layers__corners {
   position: absolute;
   inset: 0;
@@ -508,7 +533,9 @@ html[data-bg-theme="emerald"] .manuscript-layers__ezhuthani {
 @media (max-width: 22rem) {
   .manuscript-layers__corner,
   .manuscript-layers__suzhi,
-  .manuscript-layers__anbu {
+  .manuscript-layers__anbu,
+  .manuscript-layers__mid-left,
+  .manuscript-layers__mid-right {
     font-size: 0.78rem;
     opacity: 0.85;
   }
