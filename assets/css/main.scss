@@ -164,7 +164,7 @@ strong {
   position: absolute;
 }
 
-/* Theme motif: ~3–5% opacity — mandalas / waves / leaves / music (SVG tiles, dual scale where repeated) */
+/* Theme motif: mandalas / waves / leaves / music cymatics ring */
 .manuscript-layers__motif {
   inset: 0;
   opacity: 0.045;
@@ -324,19 +324,50 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-repeat: repeat, repeat;
 }
 
+/*
+ * Burnt copper: one ring — ॐ center, five mantras clockwise from top (72° steps).
+ * Layer order: OM drawn first (topmost); ring tiles follow user order starting at 12 o’clock.
+ */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  opacity: 0.088;
+  --cym-ring-r: min(24vw, 8.75rem);
+  --cym-size: clamp(52px, 11vw, 76px);
+  opacity: 0.1;
   filter: brightness(1.14);
+  display: block;
+  background-repeat: no-repeat;
   background-image:
-    url("../music_motif.svg"),
-    url("../music_motif.svg");
-  background-size: 168px 168px, 212px 212px;
-  background-position: 8% 44%, 55% 28%;
-  background-repeat: repeat, repeat;
+    url("../cymatics-om.svg"),
+    url("../cymatics-sivayanama.svg"),
+    url("../cymatics-masivayana.svg"),
+    url("../cymatics-namasivaya.svg"),
+    url("../cymatics-yanamasiva.svg"),
+    url("../cymatics-vayanamasi.svg");
+  background-size:
+    var(--cym-size) var(--cym-size),
+    var(--cym-size) var(--cym-size),
+    var(--cym-size) var(--cym-size),
+    var(--cym-size) var(--cym-size),
+    var(--cym-size) var(--cym-size),
+    var(--cym-size) var(--cym-size);
+  /* φ = 0° top, +72° each step clockwise (sin/cos from top as 0°) */
+  background-position:
+    center center,
+    calc(50% + sin(0deg) * var(--cym-ring-r)) calc(50% - cos(0deg) * var(--cym-ring-r)),
+    calc(50% + sin(72deg) * var(--cym-ring-r)) calc(50% - cos(72deg) * var(--cym-ring-r)),
+    calc(50% + sin(144deg) * var(--cym-ring-r)) calc(50% - cos(144deg) * var(--cym-ring-r)),
+    calc(50% + sin(216deg) * var(--cym-ring-r)) calc(50% - cos(216deg) * var(--cym-ring-r)),
+    calc(50% + sin(288deg) * var(--cym-ring-r)) calc(50% - cos(288deg) * var(--cym-ring-r));
+}
+
+@media (max-width: 27rem) {
+  html[data-bg-theme="music"] .manuscript-layers__motif {
+    --cym-ring-r: min(38vw, 6.5rem);
+    --cym-size: clamp(40px, 14vw, 58px);
+  }
 }
 
 /*
- * Blue: waves + fish; emerald: leaves; music: notes — full-bleed tiles; mask is high-contrast at edges, light in the column.
+ * Blue: waves + fish; emerald: leaves — full-bleed tiles; mask is high-contrast at edges, light in the column.
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="blue"] .manuscript-layers__waves,
