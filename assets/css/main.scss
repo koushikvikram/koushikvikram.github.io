@@ -325,15 +325,17 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Music / copper: 5 + 5 cymatics mandalas — vertical zig-zag on left and right (mirror).
- * Top tile centered on each side; rows below alternate offset. Inverted for dark bg.
+ * Music / copper: 5 + 5 cymatics mandalas — vertical zig-zag on left and right.
+ * Horizontally flipped; softened opacity + contrast. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
   /* Slightly smaller tiles + wide spacing → no overlap at common viewport sizes */
   --music-cluster-size: clamp(5.25rem, 13vw, 8.25rem);
-  opacity: 0.22;
+  transform: scaleX(-1);
+  transform-origin: center center;
+  opacity: 0.14;
   mix-blend-mode: soft-light;
-  filter: invert(1) brightness(1.08);
+  filter: invert(1) brightness(1.04) contrast(0.9) saturate(0.92);
   background-repeat: no-repeat;
   background-image:
     url("../cymatics_circle_motif.svg"),
@@ -379,7 +381,7 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
     --music-cluster-size: clamp(4.5rem, 16vw, 7rem);
-    opacity: 0.2;
+    opacity: 0.12;
     background-position:
       9% 5%,
       3% 22%,
