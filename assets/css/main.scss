@@ -164,7 +164,7 @@ strong {
   position: absolute;
 }
 
-/* Theme motif: mandalas / waves / leaves / music (SVG tiles) */
+/* Theme motif: mandalas / waves / leaves / music (five cymatics mandalas) */
 .manuscript-layers__motif {
   inset: 0;
   opacity: 0.045;
@@ -324,24 +324,50 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   background-repeat: repeat, repeat;
 }
 
+/*
+ * Music / copper: five inlined cymatics mandalas on a pentagon around the center yazh (ezhuthani layer).
+ * No horizontal mask here — that fade targets the viewport center and would hide the orbit.
+ */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  opacity: 0.088;
-  filter: brightness(1.14);
+  --music-orbit-r: min(38vw, 16rem);
+  --music-cluster-size: min(19vw, 10rem);
+  opacity: 0.085;
+  filter: brightness(1.12);
+  background-repeat: no-repeat;
   background-image:
-    url("../music_motif.svg"),
-    url("../music_motif.svg");
-  background-size: 168px 168px, 212px 212px;
-  background-position: 8% 44%, 55% 28%;
-  background-repeat: repeat, repeat;
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg");
+  background-size:
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size);
+  /* 72° steps, clockwise from top — full spread */
+  background-position:
+    50% calc(50% - var(--music-orbit-r)),
+    calc(50% + 0.95106 * var(--music-orbit-r)) calc(50% - 0.30902 * var(--music-orbit-r)),
+    calc(50% + 0.58779 * var(--music-orbit-r)) calc(50% + 0.80902 * var(--music-orbit-r)),
+    calc(50% - 0.58779 * var(--music-orbit-r)) calc(50% + 0.80902 * var(--music-orbit-r)),
+    calc(50% - 0.95106 * var(--music-orbit-r)) calc(50% - 0.30902 * var(--music-orbit-r));
+}
+
+@media (max-width: 27rem) {
+  html[data-bg-theme="music"] .manuscript-layers__motif {
+    --music-orbit-r: min(44vw, 13.5rem);
+    --music-cluster-size: min(22vw, 8.25rem);
+  }
 }
 
 /*
- * Blue: waves + fish; emerald: leaves; music: notes — full-bleed tiles; mask is high-contrast at edges, light in the column.
+ * Blue: waves + fish; emerald: leaves — full-bleed tiles; mask is high-contrast at edges, light in the column.
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="blue"] .manuscript-layers__waves,
-html[data-bg-theme="emerald"] .manuscript-layers__motif,
-html[data-bg-theme="music"] .manuscript-layers__motif {
+html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
