@@ -164,7 +164,7 @@ strong {
   position: absolute;
 }
 
-/* Theme motif: mandalas / waves / leaves / music (five cymatics mandalas) */
+/* Theme motif: mandalas / waves / leaves / music (zig-zag cymatics columns) */
 .manuscript-layers__motif {
   inset: 0;
   opacity: 0.045;
@@ -325,13 +325,10 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Music / copper: five cymatics mandalas on a pentagon around the yazh (ezhuthani).
- * Black ink → invert so it reads on dark copper (same idea as burgundy mandalas).
- * No horizontal mask — orbit sits around the center, not under the column fade.
+ * Music / copper: 5 + 5 cymatics mandalas — vertical zig-zag on left and right (mirror).
+ * Top tile centered on each side; rows below alternate offset. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  /* Single-length custom props for reliable calc() in background-position */
-  --music-orbit-r: clamp(11rem, 34vw, 17rem);
   --music-cluster-size: clamp(7rem, 18vw, 11rem);
   opacity: 0.22;
   mix-blend-mode: soft-light;
@@ -342,27 +339,58 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     url("../cymatics_circle_motif.svg"),
     url("../cymatics_circle_motif.svg"),
     url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
+    url("../cymatics_circle_motif.svg"),
     url("../cymatics_circle_motif.svg");
   background-size:
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
+    var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size);
-  /* 72° steps, clockwise from top */
+  /*
+   * Left column (~17%): center top → zig left → zag right → zig → zag.
+   * Right column (~83%): same pattern mirrored (zig toward viewport center).
+   */
   background-position:
-    50% calc(50% - var(--music-orbit-r)),
-    calc(50% + 0.95106 * var(--music-orbit-r)) calc(50% - 0.30902 * var(--music-orbit-r)),
-    calc(50% + 0.58779 * var(--music-orbit-r)) calc(50% + 0.80902 * var(--music-orbit-r)),
-    calc(50% - 0.58779 * var(--music-orbit-r)) calc(50% + 0.80902 * var(--music-orbit-r)),
-    calc(50% - 0.95106 * var(--music-orbit-r)) calc(50% - 0.30902 * var(--music-orbit-r));
+    /* left */
+    17% 9%,
+    12.5% 21%,
+    21.5% 33%,
+    12.5% 45%,
+    21.5% 57%,
+    /* right */
+    83% 9%,
+    78.5% 21%,
+    87.5% 33%,
+    78.5% 45%,
+    87.5% 57%;
 }
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-orbit-r: clamp(9rem, 42vw, 14rem);
     --music-cluster-size: clamp(5.5rem, 20vw, 9rem);
     opacity: 0.2;
+    /* Tighter zig-zag inside margins */
+    background-position:
+      14% 8%,
+      9% 19%,
+      19% 30%,
+      9% 41%,
+      19% 52%,
+      86% 8%,
+      81% 19%,
+      91% 30%,
+      81% 41%,
+      91% 52%;
   }
 }
 
