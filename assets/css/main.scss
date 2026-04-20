@@ -326,13 +326,13 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 
 /*
  * Burnt copper: one ring — ॐ center, five mantras clockwise from top (72° steps).
- * Layer order: OM drawn first (topmost); ring tiles follow user order starting at 12 o’clock.
+ * Not using the blue/emerald horizontal mask — that fades the viewport center (~5% alpha) where this ring sits.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
   --cym-ring-r: min(24vw, 8.75rem);
   --cym-size: clamp(52px, 11vw, 76px);
-  opacity: 0.1;
-  filter: brightness(1.14);
+  opacity: 0.16;
+  filter: brightness(1.18);
   display: block;
   background-repeat: no-repeat;
   background-image:
@@ -349,14 +349,14 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--cym-size) var(--cym-size),
     var(--cym-size) var(--cym-size),
     var(--cym-size) var(--cym-size);
-  /* φ = 0° top, +72° each step clockwise (sin/cos from top as 0°) */
+  /* Pentagon from top, clockwise; precomputed sin/cos × r (no trig-in-calc — wider browser support) */
   background-position:
     center center,
-    calc(50% + sin(0deg) * var(--cym-ring-r)) calc(50% - cos(0deg) * var(--cym-ring-r)),
-    calc(50% + sin(72deg) * var(--cym-ring-r)) calc(50% - cos(72deg) * var(--cym-ring-r)),
-    calc(50% + sin(144deg) * var(--cym-ring-r)) calc(50% - cos(144deg) * var(--cym-ring-r)),
-    calc(50% + sin(216deg) * var(--cym-ring-r)) calc(50% - cos(216deg) * var(--cym-ring-r)),
-    calc(50% + sin(288deg) * var(--cym-ring-r)) calc(50% - cos(288deg) * var(--cym-ring-r));
+    50% calc(50% - var(--cym-ring-r)),
+    calc(50% + 0.95106 * var(--cym-ring-r)) calc(50% - 0.30902 * var(--cym-ring-r)),
+    calc(50% + 0.58779 * var(--cym-ring-r)) calc(50% + 0.80902 * var(--cym-ring-r)),
+    calc(50% - 0.58779 * var(--cym-ring-r)) calc(50% + 0.80902 * var(--cym-ring-r)),
+    calc(50% - 0.95106 * var(--cym-ring-r)) calc(50% - 0.30902 * var(--cym-ring-r));
 }
 
 @media (max-width: 27rem) {
@@ -368,11 +368,11 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
 
 /*
  * Blue: waves + fish; emerald: leaves — full-bleed tiles; mask is high-contrast at edges, light in the column.
+ * (Music / copper uses a centered ring — do not mask; see above.)
  */
 html[data-bg-theme="blue"] .manuscript-layers__motif,
 html[data-bg-theme="blue"] .manuscript-layers__waves,
-html[data-bg-theme="emerald"] .manuscript-layers__motif,
-html[data-bg-theme="music"] .manuscript-layers__motif {
+html[data-bg-theme="emerald"] .manuscript-layers__motif {
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1) 0%,
