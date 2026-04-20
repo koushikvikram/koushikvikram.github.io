@@ -325,14 +325,17 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 }
 
 /*
- * Music / copper: five inlined cymatics mandalas on a pentagon around the center yazh (ezhuthani layer).
- * No horizontal mask here — that fade targets the viewport center and would hide the orbit.
+ * Music / copper: five cymatics mandalas on a pentagon around the yazh (ezhuthani).
+ * Black ink → invert so it reads on dark copper (same idea as burgundy mandalas).
+ * No horizontal mask — orbit sits around the center, not under the column fade.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  --music-orbit-r: min(38vw, 16rem);
-  --music-cluster-size: min(19vw, 10rem);
-  opacity: 0.085;
-  filter: brightness(1.12);
+  /* Single-length custom props for reliable calc() in background-position */
+  --music-orbit-r: clamp(11rem, 34vw, 17rem);
+  --music-cluster-size: clamp(7rem, 18vw, 11rem);
+  opacity: 0.22;
+  mix-blend-mode: soft-light;
+  filter: invert(1) brightness(1.08);
   background-repeat: no-repeat;
   background-image:
     url("../cymatics_circle_motif.svg"),
@@ -346,7 +349,7 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size);
-  /* 72° steps, clockwise from top — full spread */
+  /* 72° steps, clockwise from top */
   background-position:
     50% calc(50% - var(--music-orbit-r)),
     calc(50% + 0.95106 * var(--music-orbit-r)) calc(50% - 0.30902 * var(--music-orbit-r)),
@@ -357,8 +360,9 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-orbit-r: min(44vw, 13.5rem);
-    --music-cluster-size: min(22vw, 8.25rem);
+    --music-orbit-r: clamp(9rem, 42vw, 14rem);
+    --music-cluster-size: clamp(5.5rem, 20vw, 9rem);
+    opacity: 0.2;
   }
 }
 
