@@ -329,7 +329,8 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
  * Top tile centered on each side; rows below alternate offset. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  --music-cluster-size: clamp(7rem, 18vw, 11rem);
+  /* Slightly smaller tiles + wide spacing → no overlap at common viewport sizes */
+  --music-cluster-size: clamp(5.25rem, 13vw, 8.25rem);
   opacity: 0.22;
   mix-blend-mode: soft-light;
   filter: invert(1) brightness(1.08);
@@ -357,40 +358,39 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size);
   /*
-   * Left column (~17%): center top → zig left → zag right → zig → zag.
-   * Right column (~83%): same pattern mirrored (zig toward viewport center).
+   * Left: column near edge — top centered on column, then zig / zag with ~13% horizontal swing.
+   * Right: mirrored. Vertical rhythm ~19% to clear tile height + gap.
    */
   background-position:
-    /* left */
-    17% 9%,
-    12.5% 21%,
-    21.5% 33%,
-    12.5% 45%,
-    21.5% 57%,
+    /* left: center, zig-out, zag-in, zig, zag */
+    11% 6%,
+    4.5% 24%,
+    19% 43%,
+    4.5% 62%,
+    19% 81%,
     /* right */
-    83% 9%,
-    78.5% 21%,
-    87.5% 33%,
-    78.5% 45%,
-    87.5% 57%;
+    89% 6%,
+    95.5% 24%,
+    81% 43%,
+    95.5% 62%,
+    81% 81%;
 }
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-cluster-size: clamp(5.5rem, 20vw, 9rem);
+    --music-cluster-size: clamp(4.5rem, 16vw, 7rem);
     opacity: 0.2;
-    /* Tighter zig-zag inside margins */
     background-position:
-      14% 8%,
-      9% 19%,
-      19% 30%,
-      9% 41%,
-      19% 52%,
-      86% 8%,
-      81% 19%,
-      91% 30%,
-      81% 41%,
-      91% 52%;
+      9% 5%,
+      3% 22%,
+      17% 40%,
+      3% 58%,
+      17% 77%,
+      91% 5%,
+      97% 22%,
+      83% 40%,
+      97% 58%,
+      83% 77%;
   }
 }
 
