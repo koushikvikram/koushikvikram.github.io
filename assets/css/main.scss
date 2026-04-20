@@ -326,13 +326,11 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
 
 /*
  * Music / copper: 5 + 5 cymatics mandalas — vertical zig-zag on left and right.
- * Horizontally flipped; softened opacity + contrast. Inverted for dark bg.
+ * Softened opacity + contrast. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
   /* Slightly smaller tiles + wide spacing → no overlap at common viewport sizes */
   --music-cluster-size: clamp(5.25rem, 13vw, 8.25rem);
-  transform: scaleX(-1);
-  transform-origin: center center;
   opacity: 0.14;
   mix-blend-mode: soft-light;
   filter: invert(1) brightness(1.04) contrast(0.9) saturate(0.92);
@@ -360,22 +358,22 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--music-cluster-size) var(--music-cluster-size),
     var(--music-cluster-size) var(--music-cluster-size);
   /*
-   * Left: column near edge — top centered on column, then zig / zag with ~13% horizontal swing.
-   * Right: mirrored. Vertical rhythm ~19% to clear tile height + gap.
+   * Zig-zag: swap inner offsets only (flip pattern within each column). Top row unchanged.
+   * Left: 4.5% ↔ 19%; right: 81% ↔ 95.5%.
    */
   background-position:
-    /* left: center, zig-out, zag-in, zig, zag */
+    /* left */
     11% 6%,
-    4.5% 24%,
-    19% 43%,
-    4.5% 62%,
-    19% 81%,
+    19% 24%,
+    4.5% 43%,
+    19% 62%,
+    4.5% 81%,
     /* right */
     89% 6%,
-    95.5% 24%,
-    81% 43%,
-    95.5% 62%,
-    81% 81%;
+    81% 24%,
+    95.5% 43%,
+    81% 62%,
+    95.5% 81%;
 }
 
 @media (max-width: 27rem) {
@@ -384,15 +382,15 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     opacity: 0.12;
     background-position:
       9% 5%,
-      3% 22%,
-      17% 40%,
-      3% 58%,
-      17% 77%,
+      17% 22%,
+      3% 40%,
+      17% 58%,
+      3% 77%,
       91% 5%,
-      97% 22%,
-      83% 40%,
-      97% 58%,
-      83% 77%;
+      83% 22%,
+      97% 40%,
+      83% 58%,
+      97% 77%;
   }
 }
 
