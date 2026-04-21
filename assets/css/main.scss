@@ -79,6 +79,13 @@
   --font-heading: "Fredericka the Great", cursive, var(--font-display);
 }
 
+/* Same values as :root — keeps palette transitions on `html` when every theme uses [data-bg-theme] */
+html[data-bg-theme="blue"] {
+  --color-bg: #06121f;
+  --color-bg-alt: #142a40;
+  --color-surface: #2f4152;
+}
+
 html[data-bg-theme="emerald"] {
   --color-bg: #080f0d;
   --color-bg-alt: #172e27;
@@ -111,6 +118,11 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   html {
+    transition: none;
+  }
+
+  .manuscript-layers__motif,
+  .manuscript-layers__ezhuthani {
     transition: none;
   }
 }
@@ -171,6 +183,9 @@ strong {
   mix-blend-mode: soft-light;
   pointer-events: none;
   background-repeat: no-repeat;
+  transition:
+    opacity 1.4s cubic-bezier(0.33, 0, 0.2, 1),
+    filter 1.4s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__motif {
@@ -445,6 +460,9 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
   opacity: 0.042;
   filter: invert(1) brightness(1.28) sepia(0.08) saturate(0.9);
   mix-blend-mode: soft-light;
+  transition:
+    opacity 1.4s cubic-bezier(0.33, 0, 0.2, 1),
+    filter 1.4s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 html[data-bg-theme="burgundy"] .manuscript-layers__ezhuthani {
