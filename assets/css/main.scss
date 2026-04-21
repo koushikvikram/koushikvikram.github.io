@@ -345,11 +345,12 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
   /*
-   * Tall axis + slight horizontal stretch so fine structure reads larger (ellipse, not tiny circle).
-   * --music-mw/--music-mh used for spacing — keep zig-zag steps ≥ max(mw, mh).
+   * Slight horizontal stretch; size + positions tuned so zig-zag neighbors stay past max(mw,mh).
+   * Larger glyphs, tighter grid than before — still ~20% vertical rhythm for the steepest diagonal.
    */
-  --music-mh: clamp(7rem, 16.5vw, 11rem);
-  --music-mw: calc(var(--music-mh) * 1.14);
+  /* Cap with vh so short windows keep % gaps larger than the stretched diameter */
+  --music-mh: clamp(8.5rem, 18vw, min(12rem, 28vh));
+  --music-mw: calc(var(--music-mh) * 1.1);
   opacity: 0.14;
   mix-blend-mode: soft-light;
   filter: invert(1) brightness(1.04) contrast(0.9) saturate(0.92);
@@ -377,39 +378,39 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--music-mw) var(--music-mh),
     var(--music-mw) var(--music-mh);
   /*
-   * Zig-zag: swap inner offsets only. Generous % steps so stretched tiles stay separated.
+   * Zig-zag: closer packing than the previous ~23% steps; 20% vertical bands keep diagonals clear.
    */
   background-position:
     /* left */
-    10% 5%,
-    24% 28%,
-    2.5% 50%,
-    24% 72%,
-    2.5% 91%,
+    10% 8%,
+    22.5% 28%,
+    3% 48%,
+    22.5% 68%,
+    3% 88%,
     /* right */
-    90% 5%,
-    76% 28%,
-    97.5% 50%,
-    76% 72%,
-    97.5% 91%;
+    90% 8%,
+    77.5% 28%,
+    97% 48%,
+    77.5% 68%,
+    97% 88%;
 }
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-mh: clamp(5.5rem, 18vw, 8.25rem);
-    --music-mw: calc(var(--music-mh) * 1.1);
+    --music-mh: clamp(6rem, 20vw, 9rem);
+    --music-mw: calc(var(--music-mh) * 1.08);
     opacity: 0.12;
     background-position:
-      7% 4%,
-      20% 26%,
-      2% 49%,
-      20% 72%,
-      2% 93%,
-      93% 4%,
-      80% 26%,
-      98% 49%,
-      80% 72%,
-      98% 93%;
+      7% 7%,
+      19% 27%,
+      2.5% 47%,
+      19% 67%,
+      2.5% 87%,
+      93% 7%,
+      81% 27%,
+      97.5% 47%,
+      81% 67%,
+      97.5% 87%;
   }
 }
 
