@@ -344,8 +344,8 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
  * Softened opacity + contrast. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  /* Slightly smaller tiles + wide spacing → no overlap at common viewport sizes */
-  --music-cluster-size: clamp(5.25rem, 13vw, 8.25rem);
+  /* Large tiles — positions spaced so zig-zag neighbors stay ≥ ~1 diameter apart */
+  --music-cluster-size: clamp(6rem, 14.5vw, 9.75rem);
   opacity: 0.14;
   mix-blend-mode: soft-light;
   filter: invert(1) brightness(1.04) contrast(0.9) saturate(0.92);
@@ -374,38 +374,38 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     var(--music-cluster-size) var(--music-cluster-size);
   /*
    * Zig-zag: swap inner offsets only (flip pattern within each column). Top row unchanged.
-   * Left: 4.5% ↔ 19%; right: 81% ↔ 95.5%.
+   * Wider horizontal swing + ~20% vertical steps so larger background-size stays separated.
    */
   background-position:
     /* left */
-    11% 6%,
-    19% 24%,
-    4.5% 43%,
-    19% 62%,
-    4.5% 81%,
+    10% 5%,
+    21% 25%,
+    3.5% 45%,
+    21% 65%,
+    3.5% 85%,
     /* right */
-    89% 6%,
-    81% 24%,
-    95.5% 43%,
-    81% 62%,
-    95.5% 81%;
+    90% 5%,
+    79% 25%,
+    96.5% 45%,
+    79% 65%,
+    96.5% 85%;
 }
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-cluster-size: clamp(4.5rem, 16vw, 7rem);
+    --music-cluster-size: clamp(5.25rem, 17vw, 7.75rem);
     opacity: 0.12;
     background-position:
-      9% 5%,
-      17% 22%,
-      3% 40%,
-      17% 58%,
-      3% 77%,
-      91% 5%,
-      83% 22%,
-      97% 40%,
-      83% 58%,
-      97% 77%;
+      8% 4%,
+      18% 23%,
+      2% 42%,
+      18% 62%,
+      2% 82%,
+      92% 4%,
+      82% 23%,
+      98% 42%,
+      82% 62%,
+      98% 82%;
   }
 }
 
