@@ -344,8 +344,12 @@ html[data-bg-theme="emerald"] .manuscript-layers__motif {
  * Softened opacity + contrast. Inverted for dark bg.
  */
 html[data-bg-theme="music"] .manuscript-layers__motif {
-  /* Large tiles — positions spaced so zig-zag neighbors stay ≥ ~1 diameter apart */
-  --music-cluster-size: clamp(6rem, 14.5vw, 9.75rem);
+  /*
+   * Tall axis + slight horizontal stretch so fine structure reads larger (ellipse, not tiny circle).
+   * --music-mw/--music-mh used for spacing — keep zig-zag steps ≥ max(mw, mh).
+   */
+  --music-mh: clamp(7rem, 16.5vw, 11rem);
+  --music-mw: calc(var(--music-mh) * 1.14);
   opacity: 0.14;
   mix-blend-mode: soft-light;
   filter: invert(1) brightness(1.04) contrast(0.9) saturate(0.92);
@@ -362,50 +366,50 @@ html[data-bg-theme="music"] .manuscript-layers__motif {
     url("../cymatics_circle_motif.svg"),
     url("../cymatics_circle_motif.svg");
   background-size:
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size),
-    var(--music-cluster-size) var(--music-cluster-size);
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh),
+    var(--music-mw) var(--music-mh);
   /*
-   * Zig-zag: swap inner offsets only (flip pattern within each column). Top row unchanged.
-   * Wider horizontal swing + ~20% vertical steps so larger background-size stays separated.
+   * Zig-zag: swap inner offsets only. Generous % steps so stretched tiles stay separated.
    */
   background-position:
     /* left */
     10% 5%,
-    21% 25%,
-    3.5% 45%,
-    21% 65%,
-    3.5% 85%,
+    24% 28%,
+    2.5% 50%,
+    24% 72%,
+    2.5% 91%,
     /* right */
     90% 5%,
-    79% 25%,
-    96.5% 45%,
-    79% 65%,
-    96.5% 85%;
+    76% 28%,
+    97.5% 50%,
+    76% 72%,
+    97.5% 91%;
 }
 
 @media (max-width: 27rem) {
   html[data-bg-theme="music"] .manuscript-layers__motif {
-    --music-cluster-size: clamp(5.25rem, 17vw, 7.75rem);
+    --music-mh: clamp(5.5rem, 18vw, 8.25rem);
+    --music-mw: calc(var(--music-mh) * 1.1);
     opacity: 0.12;
     background-position:
-      8% 4%,
-      18% 23%,
-      2% 42%,
-      18% 62%,
-      2% 82%,
-      92% 4%,
-      82% 23%,
-      98% 42%,
-      82% 62%,
-      98% 82%;
+      7% 4%,
+      20% 26%,
+      2% 49%,
+      20% 72%,
+      2% 93%,
+      93% 4%,
+      80% 26%,
+      98% 49%,
+      80% 72%,
+      98% 93%;
   }
 }
 
