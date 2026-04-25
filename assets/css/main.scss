@@ -816,14 +816,14 @@ main.page-content .w ol {
 /* One row: tagline + github + linkedin + email (below site title) */
 main.page-content .w .site-tagline-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
   gap: 0;
   margin: 0;
   padding: 0;
   max-width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: visible;
   -webkit-overflow-scrolling: touch;
   text-align: center;
@@ -836,13 +836,26 @@ main.page-content .w .site-tagline-row {
 
 main.page-content .w .site-tagline__lede,
 main.page-content .w .site-tagline__link {
-  flex: 0 0 auto;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+main.page-content .w .site-tagline__lede {
+  flex: 1 1 100%;
+}
+
+main.page-content .w .site-tagline__link {
+  flex: 0 1 auto;
 }
 
 main.page-content .w .site-tagline-row > * + *::before {
   content: " · ";
   color: color-mix(in srgb, var(--color-muted) 78%, transparent);
+}
+
+/* When the lede is full-width (wraps to its own line), don't lead the next line with a dot. */
+main.page-content .w .site-tagline__lede + .site-tagline__link::before {
+  content: "";
 }
 
 main.page-content .w .site-description {
