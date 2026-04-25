@@ -1,7 +1,5 @@
 contact_links:
-  - title: '<a href="https://github.com/koushikvikram">github</a>'
-  - title: '<a href="https://linkedin.com/in/koushikvikram">linkedin</a>'
-  - title: '<a href="mailto:koushikvikram91@gmail.com">koushikvikram91@gmail.com</a>'
+  - title: "I write this blog for myself. It’s a place to think out loud, keep track of ideas, and document what I’m learning."
 
 entries:
   - title: tech
