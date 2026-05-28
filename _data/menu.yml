@@ -2,6 +2,13 @@ contact_links:
   - title: "I write this blog for myself. It’s a place to think out loud, keep track of ideas, and document what I’m learning."
 
 entries:
+  - title: literature
+    post_list:
+      category: literature
+      limit: 5
+      show_more: true
+      show_more_url: /literature.html
+      show_more_text: see all literature posts
   - title: tech
     post_list:
       category: tech
@@ -9,13 +16,27 @@ entries:
       show_more: true
       show_more_url: /tech.html
       show_more_text: see all tech posts
-  - title: fiction
+  - title: general
     post_list:
-      category: fiction
+      category: general
       limit: 5
       show_more: true
-      show_more_url: /fiction.html
-      show_more_text: see all fiction
+      show_more_url: /general.html
+      show_more_text: see all general posts
+  - title: non-fiction
+    post_list:
+      category: non-fiction
+      limit: 5
+      show_more: true
+      show_more_url: /non-fiction.html
+      show_more_text: see all non-fiction posts
+  - title: business
+    post_list:
+      category: business
+      limit: 5
+      show_more: true
+      show_more_url: /business.html
+      show_more_text: see all business posts
   - title: vocabulary
     post_list:
       category: vocabulary
