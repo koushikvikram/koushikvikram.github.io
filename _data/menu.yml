@@ -37,6 +37,13 @@ entries:
       show_more: true
       show_more_url: /business.html
       show_more_text: see all business posts
+  - title: finance
+    post_list:
+      category: finance
+      limit: 5
+      show_more: true
+      show_more_url: /finance.html
+      show_more_text: see all finance posts
   - title: vocabulary
     post_list:
       category: vocabulary
