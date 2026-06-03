@@ -1207,6 +1207,13 @@ main.page-content .w h1 {
 }
 
 /* Body copy parchment; headings + links stay gold via h1–h6 and a */
+main.page-content .w .katex-display {
+  margin: 1.25em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 article {
   color: var(--color-text);
 
