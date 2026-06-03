@@ -14,7 +14,7 @@ Financial planning is easy to understand. Executing properly can be challenging.
 
 Golden rule taught to Roy by Mr. White: Invest at least 10 per cent of all you make for long-term growth through compounding.
 
-Example to illustrate the power of long-term growth through compounding: if a person saves <span>$580</span> a month for the next 30 years (360 months) and averages an 8 percent return, the future value is <span>$816,959.34</span>.
+Example to illustrate the power of long-term growth through compounding: if a person saves and invests <span>$580</span> a month for the next 30 years (360 months) and averages an 8 percent return, the future value of this investment is <span>$816,959.34</span>.
 
 $$
 A = P\left(1 + \frac{r}{m}\right)^{mt} + PMT \cdot \frac{\left(1 + \frac{r}{m}\right)^{mt} - 1}{\frac{r}{m}}
