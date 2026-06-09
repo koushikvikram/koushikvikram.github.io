@@ -1370,12 +1370,12 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3.65rem;
+  height: 3.65rem;
   margin: 0;
   padding: 0;
   border: 1px solid rgba(221, 184, 106, 0.12);
-  border-radius: 12px;
+  border-radius: 15px;
   color: rgba(221, 184, 106, 0.58);
   background: rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 14px rgba(221, 184, 106, 0.08);
@@ -1405,6 +1405,8 @@ th {
 
 .site-search__trigger-icon {
   display: block;
+  width: 2.35rem;
+  height: 2.35rem;
   pointer-events: none;
 }
 
