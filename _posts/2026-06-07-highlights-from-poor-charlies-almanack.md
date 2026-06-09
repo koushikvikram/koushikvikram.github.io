@@ -10,13 +10,9 @@ Charlie learned that by supporting each other, the Mungers weathered the worst e
 
 He has often stated that anyone who wants to be successful should study Physics because its concepts and formulas so beautifully demonstrate the powers of sound theory.
 
-With Nancy's support, he turned to outside ventures and alternative ways to generate income. However, he never forgot the sound principles taught by his grandfather:
+With Nancy's support, he turned to outside ventures and alternative ways to generate income. However, he never forgot the sound principles taught by his grandfather: <u>to concentrate on the task immediately in front of him and to control spending</u>
 
-> to concentrate on the task immediately in front of him and to control spending
-
-He sharpened his business acumen by handling the negotiations and contracts. 
-
-> In all cases, he left all of his profits in real estate ventures so that bigger and bigger projects became possible.
+He sharpened his business acumen by handling the negotiations and contracts. <u>In all cases, he left all of his profits in real estate ventures so that bigger and bigger projects became possible.</u>
 
 At about the time he was planning to launch his new law firm, he was carefully crafting his exit plan.
 
@@ -26,10 +22,7 @@ Warren was unenthusiastic about Charlie's continued practice of law. he said tha
 
 There were many benefits to their partnership: friendship, investment opportunities, and the unique ability to grasp each other's ideas and observations. Later, the two organizations they headed were also beneficiaries.
 
-Munger, Tolles is not just about money, though. Mirroring the way Charlie conducts his personal life, the firm has an enviable record of providing pro bono assistane to support groups for impoverished and disadvantaged people in the Los Angeles community. To this day, Charlie continues to influence the firm's attorneys, reminding them: 
-
-> "You don't need to take the last dollar"
-> "Choose clients as you would friends."
+Munger, Tolles is not just about money, though. Mirroring the way Charlie conducts his personal life, the firm has an enviable record of providing pro bono assistane to support groups for impoverished and disadvantaged people in the Los Angeles community. To this day, Charlie continues to influence the firm's attorneys, reminding them: <u>"You don't need to take the last dollar"</u> and <u>"Choose clients as you would friends."</u>
 
 At the 75th anniversary of See's Candies, Charlie said:
 
