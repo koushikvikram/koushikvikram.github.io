@@ -1341,7 +1341,22 @@ th {
 
 .scroll-brain__fold {
   stroke-width: 2.2;
-  opacity: 0.58;
+  opacity: 0.32;
+}
+
+.scroll-brain__percent {
+  fill: color-mix(in srgb, var(--color-accent) 86%, #fffef6 14%);
+  stroke: color-mix(in srgb, var(--color-bg) 72%, transparent);
+  stroke-width: 2.8;
+  paint-order: stroke;
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  letter-spacing: -0.06em;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .site-search {

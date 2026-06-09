@@ -1,6 +1,7 @@
 (function () {
   var indicator = null;
   var meter = null;
+  var percent = null;
   var ticking = false;
 
   function clamp(value, min, max) {
@@ -20,8 +21,12 @@
 
     var progress = getScrollProgress();
     var height = progress * 64;
+    var percentValue = Math.round(progress * 100);
     meter.setAttribute("y", (64 - height).toFixed(2));
     meter.setAttribute("height", height.toFixed(2));
+    if (percent) {
+      percent.textContent = percentValue + "%";
+    }
   }
 
   function requestUpdate() {
@@ -33,6 +38,7 @@
   function init() {
     indicator = document.getElementById("scroll-brain");
     meter = indicator ? indicator.querySelector(".scroll-brain__meter") : null;
+    percent = indicator ? indicator.querySelector(".scroll-brain__percent") : null;
     requestUpdate();
   }
 
