@@ -30,12 +30,41 @@
     apply(saved || "blue");
   }
 
+  function currentTheme() {
+    return normalizeTheme(document.documentElement.getAttribute("data-bg-theme") || "blue");
+  }
+
+  function cycleTheme() {
+    var current = currentTheme();
+    var index = ALLOWED.indexOf(current);
+    var next = ALLOWED[(index + 1) % ALLOWED.length];
+    apply(next);
+  }
+
+  function isEditableTarget(element) {
+    if (!element) return false;
+    var tag = element.tagName;
+    return (
+      tag === "INPUT" ||
+      tag === "TEXTAREA" ||
+      tag === "SELECT" ||
+      element.isContentEditable
+    );
+  }
+
   document.addEventListener("change", function (e) {
     var el = e.target;
     if (!el.matches || !el.matches("input.cb[data-bg-theme]")) return;
     if (el.checked) {
       apply(el.getAttribute("data-bg-theme"));
     }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key.toLowerCase() !== "t" || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (isEditableTarget(e.target)) return;
+    e.preventDefault();
+    cycleTheme();
   });
 
   document.addEventListener("DOMContentLoaded", syncFromStorage);
