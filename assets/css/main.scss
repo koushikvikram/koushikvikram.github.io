@@ -1304,9 +1304,9 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 12px;
+  width: 3.65rem;
+  height: 3.65rem;
+  border-radius: 15px;
   color: var(--color-accent);
   border: 1px solid rgba(221, 184, 106, 0.12);
   background: rgba(0, 0, 0, 0.12);
@@ -1316,8 +1316,8 @@ th {
 
 .scroll-brain__svg {
   display: block;
-  width: 2.15rem;
-  height: 2.15rem;
+  width: 3rem;
+  height: 3rem;
   overflow: visible;
 }
 
@@ -1347,10 +1347,10 @@ th {
 .scroll-brain__percent {
   fill: color-mix(in srgb, var(--color-accent) 86%, #fffef6 14%);
   stroke: color-mix(in srgb, var(--color-bg) 72%, transparent);
-  stroke-width: 2.8;
+  stroke-width: 2.5;
   paint-order: stroke;
   font-family: var(--font-display);
-  font-size: 0.86rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-anchor: middle;
   dominant-baseline: middle;
@@ -1362,7 +1362,7 @@ th {
 .site-search {
   position: fixed;
   z-index: 70;
-  top: max(5rem, calc(env(safe-area-inset-top, 0px) + 4.15rem));
+  top: max(5.8rem, calc(env(safe-area-inset-top, 0px) + 4.95rem));
   right: max(1.85rem, calc(env(safe-area-inset-right, 0px) + 1rem));
 }
 
@@ -1654,7 +1654,7 @@ html.is-search-open body {
 
 @media (max-width: 35rem) {
   .site-search {
-    top: max(4.9rem, calc(env(safe-area-inset-top, 0px) + 4rem));
+    top: max(5.8rem, calc(env(safe-area-inset-top, 0px) + 4.95rem));
     right: max(1.85rem, calc(env(safe-area-inset-right, 0px) + 1rem));
   }
 
