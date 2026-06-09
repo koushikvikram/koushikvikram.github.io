@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes from 'The Wealthy Barber' by David Chilton"
+title: "Highlights from Poor Charlie's Almanack"
 categories: [non-fiction]
 ---
 
