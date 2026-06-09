@@ -71,6 +71,31 @@
       </svg>
     </div>
 
+    <div class="site-search" id="site-search" data-search-index-url="{{ '/search.json' | relative_url }}" data-turbo-permanent>
+      <button class="site-search__trigger" type="button" aria-label="Search notes" aria-controls="site-search-dialog" aria-expanded="false">
+        <svg class="site-search__trigger-icon" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="14" r="7.2" stroke-width="1.35" />
+            <path d="M19.2 19.2 26 26" stroke-width="1.35" />
+            <path d="M10.4 14h7.2M14 10.4v7.2" stroke-width="0.95" opacity="0.58" />
+          </g>
+        </svg>
+      </button>
+      <div class="site-search__veil" data-search-close hidden></div>
+      <section class="site-search__dialog" id="site-search-dialog" role="dialog" aria-modal="true" aria-labelledby="site-search-title" hidden>
+        <div class="site-search__panel">
+          <button class="site-search__close" type="button" data-search-close aria-label="Close search">&times;</button>
+          <h2 class="site-search__title" id="site-search-title">Search Notes</h2>
+          <div class="site-search__field-wrap">
+            <label class="site-search__label" for="site-search-input">Find a phrase, title, or category</label>
+            <input class="site-search__input" id="site-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="search notes..." />
+          </div>
+          <p class="site-search__status" id="site-search-status" aria-live="polite">Type to search the notebook.</p>
+          <ul class="site-search__results" id="site-search-results" role="list"></ul>
+        </div>
+      </section>
+    </div>
+
     <nav class="bg-theme-heritage" id="bg-theme-nav" data-turbo-permanent aria-label="Background theme">
       <div class="bg-theme-heritage__group" role="radiogroup" aria-label="Background palette">
         <label class="bg-theme-heritage__opt">
@@ -152,6 +177,7 @@
     <script src="{{ "/assets/js/page-transitions.js" | relative_url }}" defer></script>
     <script src="{{ "/assets/js/bg-theme.js" | relative_url }}" defer></script>
     <script src="{{ "/assets/js/scroll-brain.js" | relative_url }}" defer></script>
+    <script src="{{ "/assets/js/search.js" | relative_url }}" defer></script>
 
     {%-if site.goat_counter and jekyll.environment == "production"-%}
       {%-include goat_counter.html-%}
