@@ -1296,6 +1296,54 @@ th {
   background: var(--selection);
 }
 
+.scroll-brain {
+  position: fixed;
+  z-index: 60;
+  top: max(1.65rem, calc(env(safe-area-inset-top, 0px) + 0.85rem));
+  right: max(1.85rem, calc(env(safe-area-inset-right, 0px) + 1rem));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 12px;
+  color: var(--color-accent);
+  border: 1px solid rgba(221, 184, 106, 0.12);
+  background: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 14px rgba(221, 184, 106, 0.08);
+  pointer-events: none;
+}
+
+.scroll-brain__svg {
+  display: block;
+  width: 2.15rem;
+  height: 2.15rem;
+  overflow: visible;
+}
+
+.scroll-brain__fill {
+  fill: currentColor;
+  opacity: 0.72;
+}
+
+.scroll-brain__outline,
+.scroll-brain__fold {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.scroll-brain__outline {
+  stroke-width: 3;
+  opacity: 0.62;
+}
+
+.scroll-brain__fold {
+  stroke-width: 2.2;
+  opacity: 0.58;
+}
+
 /* Background theme: four icons in a 2×2 square */
 .bg-theme-heritage {
   position: fixed;
