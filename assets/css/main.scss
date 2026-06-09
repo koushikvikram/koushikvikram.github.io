@@ -74,8 +74,8 @@
   --gray-dim: var(--color-surface);
   --selection: rgba(221, 184, 106, 0.22);
 
-  --font-body: "Courgette", cursive, Georgia, serif;
   --font-display: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --font-body: var(--font-display);
   --font-heading: "Fredericka the Great", cursive, var(--font-display);
 }
 
