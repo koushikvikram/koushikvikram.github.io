@@ -36,9 +36,9 @@
   }
 
   function init() {
-    indicator = document.getElementById("scroll-brain");
-    meter = indicator ? indicator.querySelector(".scroll-brain__meter") : null;
-    percent = indicator ? indicator.querySelector(".scroll-brain__percent") : null;
+    indicator = document.getElementById("scroll-meditator");
+    meter = indicator ? indicator.querySelector(".scroll-meditator__meter") : null;
+    percent = indicator ? indicator.querySelector(".scroll-meditator__percent") : null;
     requestUpdate();
   }
 

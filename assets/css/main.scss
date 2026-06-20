@@ -1296,7 +1296,7 @@ th {
   background: var(--selection);
 }
 
-.scroll-brain {
+.scroll-meditator {
   position: fixed;
   z-index: 60;
   top: max(1.65rem, calc(env(safe-area-inset-top, 0px) + 0.85rem));
@@ -1314,47 +1314,47 @@ th {
   pointer-events: none;
 }
 
-.scroll-brain__svg {
+.scroll-meditator__svg {
   display: block;
   width: 3rem;
   height: 3rem;
   overflow: visible;
 }
 
-.scroll-brain__fill {
+.scroll-meditator__fill {
   fill: currentColor;
   opacity: 0.72;
 }
 
-.scroll-brain__outline,
-.scroll-brain__fold {
+.scroll-meditator__outline,
+.scroll-meditator__detail {
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.scroll-brain__outline {
-  stroke-width: 3;
+.scroll-meditator__outline {
+  stroke-width: 2.45;
   opacity: 0.62;
 }
 
-.scroll-brain__fold {
-  stroke-width: 2.2;
+.scroll-meditator__detail {
+  stroke-width: 1.9;
   opacity: 0.32;
 }
 
-.scroll-brain__percent {
+.scroll-meditator__percent {
   fill: color-mix(in srgb, var(--color-accent) 86%, #fffef6 14%);
   stroke: color-mix(in srgb, var(--color-bg) 72%, transparent);
   stroke-width: 2.5;
   paint-order: stroke;
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-anchor: middle;
   dominant-baseline: middle;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   opacity: 0.9;
   pointer-events: none;
 }
